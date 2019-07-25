@@ -5,11 +5,37 @@
         <h1 class="text-5xl leading-tight font-semibold mb-6">
           Hi, I'm Lukas Hermann
         </h1>
-        <p class="text-xl">
+        <p class="text-xl mb-6">
           I'm a <strong>Front-End Developer</strong> who loves working with
           <strong>Vue.js</strong> and <strong>User Interface Design</strong>.
         </p>
-        <p></p>
+        <ul class="flex text-2xl text-gray-600">
+          <li class="mr-3 hover:text-orange-600">
+            <a href="https://twitter.com/codinglukas">
+              <twitter-icon />
+            </a>
+          </li>
+          <li class="mr-3 hover:text-orange-600">
+            <a href="https://github.com/lhermann">
+              <github-icon />
+            </a>
+          </li>
+          <li class="mr-3 hover:text-orange-600">
+            <a href="https://www.linkedin.com/in/lukas-hermann/">
+              <linkedin-icon />
+            </a>
+          </li>
+          <li class="mr-3 hover:text-orange-600">
+            <a href="https://dev.to/lhermann">
+              <devto-icon />
+            </a>
+          </li>
+          <li class="mr-3 hover:text-orange-600">
+            <a href="mailto:lukas@tentmaker.dev">
+              <mail-icon />
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="md:w-1/3 flex-shrink-0">
         <img
@@ -28,7 +54,13 @@
 </template>
 
 <script>
+import TwitterIcon from '~/components/icons/Twitter'
+import GithubIcon from '~/components/icons/Github'
+import LinkedinIcon from '~/components/icons/LinkedIn'
+import DevtoIcon from '~/components/icons/DevTo'
+import MailIcon from '~/components/icons/Mail'
+
 export default {
-  components: {}
+  components: { TwitterIcon, GithubIcon, LinkedinIcon, DevtoIcon, MailIcon }
 }
 </script>
