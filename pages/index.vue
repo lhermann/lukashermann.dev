@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
-    <section class="flex">
-      <div class="md:mr-12 md:w-2/3">
+    <section class="flex flex-wrap">
+      <div class="md:pr-12 md:w-2/3">
         <h1 class="text-5xl leading-tight font-semibold mb-6">
           Hi, I'm Lukas Hermann
         </h1>
@@ -37,7 +37,7 @@
           </li>
         </ul>
       </div>
-      <div class="md:w-1/3 flex-shrink-0">
+      <div class="max-w-full md:w-1/3 mt-8 md:mt-0 flex-shrink-0">
         <img
           class="rounded-lg shadow-lg"
           src="/img/lukas-portrait-300.jpg"

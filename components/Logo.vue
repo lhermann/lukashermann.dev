@@ -8,6 +8,7 @@
     viewBox="0 0 939 195"
     class="w-48"
   >
+    <title>tentmaker.dev Logo</title>
     <path
       fill="#2e282a"
       fill-rule="nonzero"

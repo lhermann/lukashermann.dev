@@ -8,6 +8,7 @@
     height="1em"
     width="1em"
   >
+    <title>Mail</title>
     <path
       d="M22 8.62V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.62l9.55 4.77a1 1 0 0 0 .9 0L22 8.62z"
     ></path>
