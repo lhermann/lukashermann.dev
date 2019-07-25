@@ -13,3 +13,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+
+.wrapper {
+  @apply max-w-5xl px-16 mx-auto;
+}

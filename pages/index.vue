@@ -1,19 +1,19 @@
 <template>
-  <div class="container">
+  <div class="wrapper">
     <section class="flex">
       <div class="md:mr-12 md:w-2/3">
-        <h1 class="text-4xl leading-tight font-semibold">
+        <h1 class="text-5xl leading-tight font-semibold mb-6">
           Hi, I'm Lukas Hermann
         </h1>
         <p class="text-xl">
-          I'm a Front-End Developer who loves working with Vue.js and User
-          Interface Design.
+          I'm a <strong>Front-End Developer</strong> who loves working with
+          <strong>Vue.js</strong> and <strong>User Interface Design</strong>.
         </p>
         <p></p>
       </div>
       <div class="md:w-1/3 flex-shrink-0">
         <img
-          class="rounded-lg"
+          class="rounded-lg shadow-lg"
           src="/img/lukas-portrait-300.jpg"
           alt="Portrait of me, Lukas Hermann"
           srcset="
@@ -32,9 +32,3 @@ export default {
   components: {}
 }
 </script>
-
-<style scoped>
-.container {
-  @apply min-h-screen max-w-4xl flex justify-center items-center mx-auto;
-}
-</style>
