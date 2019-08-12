@@ -1,6 +1,6 @@
 <template>
   <section class="wrapper">
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap mb-16">
       <div class="md:pr-12 md:w-2/3">
         <h1 class="text-5xl leading-tight font-semibold mb-6">
           Hi, I'm Lukas Hermann
@@ -39,7 +39,7 @@
       </div>
       <div class="max-w-full md:w-1/3 mt-8 md:mt-0 flex-shrink-0">
         <img
-          class="rounded-lg shadow-lg"
+          class="rounded-lg shadow-md"
           src="/img/lukas-portrait-300.jpg"
           alt="Portrait of me, Lukas Hermann"
           srcset="
@@ -48,6 +48,32 @@
             /img/lukas-portrait-300.jpg   300w
           "
         />
+      </div>
+    </div>
+
+    <hr class="border-t border-gray-400 mb-16" />
+
+    <div class="flex">
+      <img
+        class="rounded shadow-md w-32 mr-8"
+        src="/img/katutubo-300.jpg"
+        alt="Katutubo, native of the Philippines"
+        srcset="
+          /img/katutubo-1200.jpg 1200w,
+          /img/katutubo-600.jpg   600w,
+          /img/katutubo-300.jpg   300w,
+          /img/katutubo-150.jpg   150w
+        "
+      />
+      <div>
+        <h2 class="text-lg font-semibold">Why Tentmaker?</h2>
+        <p class="text-gray-600">
+          The concept derived from the apostle Paul who used to earn his living
+          with his trade, tent making, while ministering in different cities in
+          Asia Minor. Similarly, my wife and I are supporting several social
+          projects in foreign countries, both financially and actively in person
+          and with counsel, while earning a living with my trade, programming.
+        </p>
       </div>
     </div>
   </section>

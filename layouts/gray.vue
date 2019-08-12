@@ -2,7 +2,7 @@
   <div>
     <site-header />
     <hr class="border-t border-gray-400 m-0" />
-    <div class="bg-gray-300 py-16">
+    <div class="bg-gray-300 pt-16 pb-24">
       <nuxt />
     </div>
     <hr class="border-t border-gray-400 m-0" />

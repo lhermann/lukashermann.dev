@@ -2,7 +2,7 @@
   <div>
     <site-header class="mb-16" />
     <nuxt />
-    <hr class="border-t border-gray-300 mt-32 mb-0" />
+    <hr class="border-t border-gray-300 mt-24 mb-0" />
     <site-footer />
   </div>
 </template>
