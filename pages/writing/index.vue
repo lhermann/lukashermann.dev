@@ -1,12 +1,12 @@
 <template>
   <section class="wrapper">
-    <header>
+    <header class="mb-8">
       <h1 class="text-2xl font-semibold text-gray-600">
-        Articles I wrote
+        Articles
       </h1>
     </header>
 
-    <ul class="flex flex-wrap">
+    <ul class="body flex flex-wrap">
       <li v-for="post in posts" :key="post.slug" class="p-2 w-full md:w-1/2">
         <excerpt :post="post" />
       </li>
@@ -36,3 +36,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.body {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+</style>
