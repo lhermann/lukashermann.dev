@@ -4,7 +4,7 @@
       <h1 v-if="attributes.title">{{ attributes.title }}</h1>
     </header>
 
-    <div class="content">Content</div>
+    <div class="content" v-html="html"></div>
   </article>
 </template>
 

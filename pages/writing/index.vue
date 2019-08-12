@@ -21,18 +21,11 @@ export default {
   layout: 'gray',
   components: { Excerpt },
   asyncData() {
-    if (process.server) {
-      const fs = require('fs')
-      const posts = fs
-        .readdirSync('content/writing/')
-        .map(file =>
-          Object.assign(
-            { slug: file.replace('.md', '') },
-            require(`~/content/writing/${file}`)
-          )
-        )
-      return { posts }
-    }
+    const posts = require
+      .context('~/content/writing/', true, /\.md$/)
+      .keys()
+      .map(file => require(`~/content/writing/${file.replace('./', '')}`))
+    return { posts }
   }
 }
 </script>

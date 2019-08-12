@@ -52,6 +52,7 @@ export default {
       return this.post.attributes || {}
     },
     url() {
+      // return `/writing/${this.post.slug}`
       return this.attr.canonical_url || `/writing/${this.post.slug}`
     },
     created() {

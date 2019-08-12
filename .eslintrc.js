@@ -20,6 +20,7 @@ module.exports = {
     'vue/html-self-closing': 0,
     'vue/singleline-html-element-content-newline': 0,
     'vue/no-v-html': 0,
-    'no-console': process.env.NODE_ENV === 'development' ? 'off' : 'error'
+    'no-console': process.env.NODE_ENV === 'development' ? 'off' : 'error',
+    'arrow-parens': 0
   }
 }

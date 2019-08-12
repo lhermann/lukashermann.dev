@@ -78,5 +78,5 @@ export default {
 function getDynamicPaths(contentDir) {
   return glob
     .sync(`${contentDir}**/*.md`)
-    .map((file) => file.replace(contentDir, '').replace('.md', ''))
+    .map(file => file.replace(contentDir, '').replace('.md', ''))
 }

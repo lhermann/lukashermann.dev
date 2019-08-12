@@ -4,7 +4,7 @@
       <logo />
     </nuxt-link>
     <div class="flex-grow"></div>
-    <nuxt-link to="/work" class="link">Work</nuxt-link>
+    <!-- <nuxt-link to="/work" class="link">Work</nuxt-link> -->
     <nuxt-link to="/writing" class="link">Writing</nuxt-link>
   </header>
 </template>
