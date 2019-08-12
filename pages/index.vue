@@ -1,6 +1,6 @@
 <template>
-  <div class="wrapper">
-    <section class="flex flex-wrap">
+  <section class="wrapper">
+    <div class="flex flex-wrap">
       <div class="md:pr-12 md:w-2/3">
         <h1 class="text-5xl leading-tight font-semibold mb-6">
           Hi, I'm Lukas Hermann
@@ -49,8 +49,8 @@
           "
         />
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>

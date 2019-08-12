@@ -16,6 +16,10 @@ html {
   box-sizing: border-box;
 }
 
+a {
+  transition: color 0.3s;
+}
+
 .wrapper {
   @apply max-w-5xl px-16 mx-auto;
 }
