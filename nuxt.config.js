@@ -1,3 +1,7 @@
+const path = require('path')
+const glob = require('glob')
+const fs = require('fs')
+
 export default {
   mode: 'universal',
   /*
@@ -39,14 +43,15 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
+    // '@nuxtjs/axios',
     '@nuxtjs/eslint-module'
   ],
   /*
-   ** Axios module configuration
-   ** See https://axios.nuxtjs.org/options
+   * Generate Dynamic Routes
    */
-  axios: {},
+  generate: {
+    routes: getDynamicPaths('content/')
+  },
   /*
    ** Build configuration
    */
@@ -59,6 +64,19 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {
+      // add frontmatter-markdown-loader
+      config.module.rules.push({
+        test: /\.md$/,
+        include: path.resolve(__dirname, 'content'),
+        loader: 'frontmatter-markdown-loader'
+      })
+    }
   }
+}
+
+function getDynamicPaths(contentDir) {
+  return glob
+    .sync(`${contentDir}**/*.md`)
+    .map((file) => file.replace(contentDir, '').replace('.md', ''))
 }
