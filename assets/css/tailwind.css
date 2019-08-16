@@ -21,5 +21,11 @@ a {
 }
 
 .wrapper {
-  @apply max-w-5xl px-16 mx-auto;
+  @apply max-w-5xl px-8 mx-auto;
+}
+
+@screen md {
+  .wrapper {
+    @apply px-16;
+  }
 }

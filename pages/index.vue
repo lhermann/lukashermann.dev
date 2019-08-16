@@ -53,19 +53,21 @@
 
     <hr class="border-t border-gray-400 mb-16" />
 
-    <div class="flex">
-      <img
-        class="rounded shadow-md w-32 mr-8"
-        src="/img/katutubo-300.jpg"
-        alt="Katutubo, native of the Philippines"
-        srcset="
-          /img/katutubo-1200.jpg 1200w,
-          /img/katutubo-600.jpg   600w,
-          /img/katutubo-300.jpg   300w,
-          /img/katutubo-150.jpg   150w
-        "
-      />
-      <div>
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-1/4 mb-8 md:pr-8">
+        <img
+          class="rounded shadow-md"
+          src="/img/katutubo-300.jpg"
+          alt="Katutubo, native of the Philippines"
+          srcset="
+            /img/katutubo-1200.jpg 1200w,
+            /img/katutubo-600.jpg   600w,
+            /img/katutubo-300.jpg   300w,
+            /img/katutubo-150.jpg   150w
+          "
+        />
+      </div>
+      <div class="w-full md:w-3/4">
         <h2 class="text-lg font-semibold">Why Tentmaker?</h2>
         <p class="text-gray-600">
           The concept derived from the apostle Paul who used to earn his living
