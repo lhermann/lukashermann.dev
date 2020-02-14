@@ -8,6 +8,6 @@
 
 <script>
 export default {
-  layout: 'gray'
+  layout: 'gray',
 }
 </script>

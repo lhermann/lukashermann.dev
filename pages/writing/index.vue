@@ -26,7 +26,7 @@ export default {
       .keys()
       .map(file => require(`~/content/writing/${file.replace('./', '')}`))
     return { posts }
-  }
+  },
 }
 </script>
 

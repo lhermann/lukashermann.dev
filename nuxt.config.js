@@ -1,6 +1,5 @@
-const path = require('path')
-const glob = require('glob')
-const fs = require('fs')
+import path from 'path'
+import glob from 'glob'
 
 export default {
   mode: 'universal',
@@ -18,36 +17,36 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: process.env.npm_package_description || '',
       },
       { name: 'msapplication-TileColor', content: '#e88823' },
-      { name: 'theme-color', content: '#ffffff' }
+      { name: 'theme-color', content: '#ffffff' },
     ],
     link: [
       {
         rel: 'apple-touch-icon',
         sizes: '180x180',
-        href: '/apple-touch-icon.png'
+        href: '/apple-touch-icon.png',
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '32x32',
-        href: '/favicon-32x32.png'
+        href: '/favicon-32x32.png',
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '16x16',
-        href: '/favicon-16x16.png'
+        href: '/favicon-16x16.png',
       },
       { rel: 'manifest', href: '/site.webmanifest' },
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#e88823' },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v=2' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v=2' },
     ],
     htmlAttrs: {
-      lang: 'en'
-    }
+      lang: 'en',
+    },
   },
   /*
    ** Customize the progress-bar color
@@ -67,13 +66,13 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     // '@nuxtjs/axios',
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
   ],
   /*
    * Generate Dynamic Routes
    */
   generate: {
-    routes: getDynamicPaths('content/')
+    routes: getDynamicPaths('content/'),
   },
   /*
    ** Build configuration
@@ -81,8 +80,8 @@ export default {
   build: {
     postcss: {
       plugins: {
-        tailwindcss: './tailwind.config.js'
-      }
+        tailwindcss: './tailwind.config.js',
+      },
     },
     /*
      ** You can extend webpack config here
@@ -92,10 +91,10 @@ export default {
       config.module.rules.push({
         test: /\.md$/,
         include: path.resolve(__dirname, 'content'),
-        loader: 'frontmatter-markdown-loader'
+        loader: 'frontmatter-markdown-loader',
       })
-    }
-  }
+    },
+  },
 }
 
 function getDynamicPaths(contentDir) {

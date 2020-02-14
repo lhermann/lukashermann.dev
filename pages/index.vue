@@ -89,6 +89,6 @@ import DevtoIcon from '~/components/icons/DevTo'
 import MailIcon from '~/components/icons/Mail'
 
 export default {
-  components: { TwitterIcon, GithubIcon, LinkedinIcon, DevtoIcon, MailIcon }
+  components: { TwitterIcon, GithubIcon, LinkedinIcon, DevtoIcon, MailIcon },
 }
 </script>

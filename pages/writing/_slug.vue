@@ -17,6 +17,6 @@ export default {
     } catch (error) {
       return { body: '', html: '', attributes: {} }
     }
-  }
+  },
 }
 </script>

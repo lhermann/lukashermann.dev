@@ -15,6 +15,6 @@ import SiteHeader from '~/components/Header'
 import SiteFooter from '~/components/Footer'
 
 export default {
-  components: { SiteHeader, SiteFooter }
+  components: { SiteHeader, SiteFooter },
 }
 </script>

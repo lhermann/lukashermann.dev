@@ -45,7 +45,7 @@ import format from 'date-fns/format'
 
 export default {
   props: {
-    post: { type: Object, default: () => ({}) }
+    post: { type: Object, default: () => ({}) },
   },
   computed: {
     attr() {
@@ -59,8 +59,8 @@ export default {
       return this.attr.created
         ? format(parseISO(this.attr.created), 'd MMMM y')
         : ''
-    }
-  }
+    },
+  },
 }
 </script>
 
