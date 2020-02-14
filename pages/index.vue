@@ -6,7 +6,7 @@
           Hi, I'm Lukas Hermann
         </h1>
         <p class="text-xl mb-6">
-          I'm a <strong>Front-End Developer</strong> who loves working with
+          I'm a <strong>Front-End Engineer</strong> who loves working with
           <strong>Vue.js</strong> and <strong>User Interface Design</strong>.
         </p>
         <ul class="flex text-2xl text-gray-600">
@@ -73,8 +73,8 @@
           The concept derived from the apostle Paul who used to earn his living
           with his trade, tent making, while ministering in different cities in
           Asia Minor. Similarly, my wife and I are supporting several social
-          projects in foreign countries, both financially and actively in person
-          and with counsel, while earning a living with my trade, programming.
+          projects in foreign countries financially, actively in person and with
+          counsel, while earning a living with my trade, programming.
         </p>
       </div>
     </div>
