@@ -90,5 +90,10 @@ import MailIcon from '~/components/icons/Mail'
 
 export default {
   components: { TwitterIcon, GithubIcon, LinkedinIcon, DevtoIcon, MailIcon },
+  head() {
+    return {
+      link: [{ rel: 'canonical', href: 'https://tentmaker.dev' }],
+    }
+  },
 }
 </script>

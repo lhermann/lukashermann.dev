@@ -8,7 +8,7 @@
 
     <ul class="body flex flex-wrap">
       <li v-for="post in posts" :key="post.slug" class="p-2 w-full md:w-1/2">
-        <TmExcerpt :post="post" />
+        <TmExcerpt type="writing" :data="post" />
       </li>
     </ul>
   </section>

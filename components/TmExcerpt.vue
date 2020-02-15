@@ -24,7 +24,10 @@
       <h1 class="title text-lg font-semibold leading-tight my-1">
         {{ attr.title }}
       </h1>
-      <TmTags :tags="attr.tags" />
+      <p v-if="attr.description" class="text-gray-600 mb-2">
+        {{ attr.description }}
+      </p>
+      <TmTags v-if="attr.tags" :tags="attr.tags" />
       <p
         v-if="attr.canonical_plattform"
         class="text-sm text-gray-500 text-right mt-2"
@@ -45,18 +48,19 @@ export default {
     TmTags,
   },
   props: {
-    post: { type: Object, required: true },
+    data: { type: Object, required: true },
+    type: { type: String, default: 'writing' },
   },
   computed: {
     attr() {
-      return this.post.attributes || {}
+      return this.data.attributes || {}
     },
     url() {
-      const filename = this.post.meta.resourcePath
+      const filename = this.data.meta.resourcePath
         .split('/')
         .pop()
         .replace('.md', '')
-      return this.attr.canonical_url || `/writing/${filename}`
+      return this.attr.canonical_url || `/${this.type}/${filename}`
     },
     created() {
       return this.attr.created

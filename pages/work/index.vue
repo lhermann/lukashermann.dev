@@ -12,7 +12,7 @@
         :key="project.slug"
         class="p-2 w-full md:w-1/2"
       >
-        <TmExcerpt :post="project" />
+        <TmExcerpt type="work" :data="project" />
       </li>
     </ul>
   </section>

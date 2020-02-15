@@ -48,7 +48,6 @@ export default {
       { rel: 'manifest', href: '/site.webmanifest' },
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#e88823' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v=2' },
-      { rel: 'canonical', href: 'https://tentmaker.dev' },
     ],
     htmlAttrs: {
       lang: 'en',

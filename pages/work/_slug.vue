@@ -40,7 +40,7 @@ export default {
   },
   async asyncData({ params }) {
     try {
-      return await require(`~/content/writing/${params.slug}.md`)
+      return await require(`~/content/work/${params.slug}.md`)
     } catch (error) {
       return { attributes: {}, meta: '', html: '' }
     }
