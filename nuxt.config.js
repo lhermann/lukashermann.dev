@@ -1,5 +1,10 @@
 import path from 'path'
 import glob from 'glob'
+import Mode from 'frontmatter-markdown-loader/mode'
+import markdownIt from 'markdown-it'
+import markdownItAnchor from 'markdown-it-anchor'
+import hljs from 'highlight.js'
+import uslug from 'uslug'
 
 export default {
   mode: 'universal',
@@ -56,7 +61,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/css/tailwind.css'],
+  css: ['~/assets/css/tailwind.css', 'highlight.js/styles/gruvbox-dark.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -93,6 +98,24 @@ export default {
         test: /\.md$/,
         include: path.resolve(__dirname, 'content'),
         loader: 'frontmatter-markdown-loader',
+        options: {
+          mode: [Mode.HTML, Mode.META],
+          markdownIt: markdownIt({
+            html: true,
+            typographer: true,
+            highlight: (str, lang) => {
+              const code =
+                lang && hljs.getLanguage(lang)
+                  ? hljs.highlight(lang, str).value
+                  : markdownIt.utils.escapeHtml(str)
+              return `<pre class="hljs"><code>${code}</code></pre>`
+            },
+          }).use(markdownItAnchor, {
+            permalink: true,
+            permalinkBefore: true,
+            slugify: s => uslug(s),
+          }),
+        },
       })
     },
   },

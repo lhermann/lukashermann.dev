@@ -29,3 +29,59 @@ a {
     @apply px-16;
   }
 }
+
+.content {
+  @apply text-base;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content p,
+.content pre,
+.content ol,
+.content ul,
+.content iframe {
+  @apply mb-3;
+}
+
+.content h1 {
+  @apply text-3xl mt-6;
+}
+.content h2 {
+  @apply text-2xl mt-6;
+}
+.content h3 {
+  @apply text-xl mt-6;
+}
+.content p {
+  @apply text-lg;
+}
+.content a {
+  @apply text-blue-600 underline;
+}
+.content :not(pre) code {
+  @apply text-base bg-gray-200 text-gray-700 py-0 px-1 rounded;
+}
+.content ol,
+.content ul {
+  @apply text-lg ml-6;
+}
+.content ol {
+  @apply list-decimal;
+}
+.content ul {
+  @apply list-disc;
+}
+.content .hljs {
+  @apply rounded px-3;
+}
+.content .header-anchor {
+  @apply absolute -ml-8 px-3 no-underline text-gray-400 invisible;
+}
+.content .header-anchor:hover {
+  @apply text-gray-500;
+}
+.content *:hover > .header-anchor {
+  @apply visible;
+}

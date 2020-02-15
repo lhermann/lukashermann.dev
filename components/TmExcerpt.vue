@@ -52,12 +52,11 @@ export default {
       return this.post.attributes || {}
     },
     url() {
-      // return `/writing/${this.post.slug}`
-      const slug = this.post.meta.resourcePath
+      const filename = this.post.meta.resourcePath
         .split('/')
         .pop()
         .replace('.md', '')
-      return this.attr.canonical_url || `/writing/${slug}`
+      return this.attr.canonical_url || `/writing/${filename}`
     },
     created() {
       return this.attr.created
