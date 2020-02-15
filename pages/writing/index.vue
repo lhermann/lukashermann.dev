@@ -8,18 +8,18 @@
 
     <ul class="body flex flex-wrap">
       <li v-for="post in posts" :key="post.slug" class="p-2 w-full md:w-1/2">
-        <excerpt :post="post" />
+        <TmExcerpt :post="post" />
       </li>
     </ul>
   </section>
 </template>
 
 <script>
-import Excerpt from '~/components/Excerpt'
+import TmExcerpt from '~/components/TmExcerpt'
 
 export default {
   layout: 'gray',
-  components: { Excerpt },
+  components: { TmExcerpt },
   asyncData() {
     const posts = require
       .context('~/content/writing/', true, /\.md$/)

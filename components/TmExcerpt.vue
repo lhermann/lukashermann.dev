@@ -1,14 +1,14 @@
 <template>
   <component
     :is="attr.canonical_url ? 'a' : 'nuxt-link'"
-    class="excerpt"
+    class="excerpt block transition-transform duration-300"
     :to="url"
     :href="url"
   >
     <div class="image">
       <img
         v-if="attr.cover_image"
-        class="absolute top-0 rounded"
+        class="absolute top-0 rounded transition-opacity duration-300"
         :src="attr.cover_image"
       />
     </div>
@@ -21,7 +21,7 @@
       >
         {{ created }}
       </time>
-      <h1 class="text-lg font-semibold leading-tight my-1">
+      <h1 class="title text-lg font-semibold leading-tight my-1">
         {{ post.attributes.title }}
       </h1>
       <ul v-if="attr.tags">
@@ -45,7 +45,7 @@ import format from 'date-fns/format'
 
 export default {
   props: {
-    post: { type: Object, default: () => ({}) },
+    post: { type: Object, required: true },
   },
   computed: {
     attr() {
@@ -53,7 +53,11 @@ export default {
     },
     url() {
       // return `/writing/${this.post.slug}`
-      return this.attr.canonical_url || `/writing/${this.post.slug}`
+      const slug = this.post.meta.resourcePath
+        .split('/')
+        .pop()
+        .replace('.md', '')
+      return this.attr.canonical_url || `/writing/${slug}`
     },
     created() {
       return this.attr.created
@@ -66,28 +70,37 @@ export default {
 
 <style scoped>
 .image {
-  @apply relative rounded shadow bg-yellow-500 w-full;
+  @apply relative rounded shadow bg-white w-full;
+  @apply transition-shadow duration-300;
   padding-top: 42%;
-}
-
-.image img {
-  transition: opacity 0.3s;
 }
 
 .content {
   @apply relative rounded shadow-lg bg-white mx-4 px-4 py-2 z-10;
+  @apply transition-shadow duration-300;
   margin-top: -2em;
-  transition: box-shadow 0.3s;
 }
 
 .tag {
   @apply inline text-sm bg-yellow-400 text-yellow-900 py-0 px-1 rounded;
 }
 
-.excerpt:hover .image img {
-  opacity: 0.9;
+.excerpt:hover {
+  @apply transform translate-y-px;
+}
+
+.excerpt:hover .image {
+  @apply shadow-sm;
+}
+
+.excerpt:hover .image > img {
+  opacity: 0.8;
 }
 .excerpt:hover .content {
-  @apply shadow-md;
+  @apply shadow-md transform;
+}
+
+.excerpt:hover .title {
+  @apply underline;
 }
 </style>
