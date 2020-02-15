@@ -84,6 +84,13 @@ export default {
    ** Build configuration
    */
   build: {
+    loaders: {
+      vue: {
+        compilerOptions: {
+          whitespace: 'condense',
+        },
+      },
+    },
     postcss: {
       plugins: {
         tailwindcss: './tailwind.config.js',

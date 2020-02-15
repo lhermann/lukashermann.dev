@@ -1,24 +1,50 @@
 <template>
   <article class="wrapper">
-    <header class="mb-12">
+    <header v-if="attributes" class="mb-12">
       <h1 v-if="attributes.title" class="text-4xl font-semibold">
         {{ attributes.title }}
       </h1>
+      <div class="flex items-center">
+        <TmIdentity />
+        <span class="text-gray-400 mx-2">&middot;</span>
+        <div class="text-gray-500">{{ formatDate(attributes.created) }}</div>
+        <template v-if="attributes.updated">
+          <span class="text-gray-400 mx-2">&middot;</span>
+          <div class="text-gray-500">
+            Updated on {{ formatDate(attributes.updated) }}
+          </div>
+        </template>
+        <span class="text-gray-400 mx-2">&middot;</span>
+        <TmTags class="test" :tags="attributes.tags" />
+      </div>
     </header>
 
-    <div class="content" v-html="html"></div>
+    <div class="markdown" v-html="html"></div>
   </article>
 </template>
 
 <script>
+import parseISO from 'date-fns/parseISO'
+import format from 'date-fns/format'
+import TmIdentity from '~/components/TmIdentity'
+import TmTags from '~/components/TmTags'
+
 export default {
+  components: {
+    TmIdentity,
+    TmTags,
+  },
   async asyncData({ params }) {
     try {
-      const post = await require(`~/content/writing/${params.slug}.md`)
-      return post
+      return await require(`~/content/writing/${params.slug}.md`)
     } catch (error) {
-      return { body: '', html: '', attributes: {} }
+      return { attributes: {}, meta: '', html: '' }
     }
+  },
+  methods: {
+    formatDate(date) {
+      return date ? format(parseISO(date), 'MMMM d, y') : date
+    },
   },
 }
 </script>

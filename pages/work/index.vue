@@ -26,9 +26,9 @@ export default {
   components: { TmExcerpt },
   asyncData() {
     const projects = require
-      .context('~/content/projects/', true, /\.md$/)
+      .context('~/content/work/', true, /\.md$/)
       .keys()
-      .map(file => require(`~/content/projects/${file.replace('./', '')}`))
+      .map(file => require(`~/content/work/${file.replace('./', '')}`))
     return { projects }
   },
 }

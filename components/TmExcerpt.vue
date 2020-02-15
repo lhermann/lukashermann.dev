@@ -22,13 +22,9 @@
         {{ created }}
       </time>
       <h1 class="title text-lg font-semibold leading-tight my-1">
-        {{ post.attributes.title }}
+        {{ attr.title }}
       </h1>
-      <ul v-if="attr.tags">
-        <li v-for="tag in attr.tags.split(',')" :key="tag" class="tag mr-1">
-          #{{ tag }}
-        </li>
-      </ul>
+      <TmTags :tags="attr.tags" />
       <p
         v-if="attr.canonical_plattform"
         class="text-sm text-gray-500 text-right mt-2"
@@ -42,8 +38,12 @@
 <script>
 import parseISO from 'date-fns/parseISO'
 import format from 'date-fns/format'
+import TmTags from '~/components/TmTags'
 
 export default {
+  components: {
+    TmTags,
+  },
   props: {
     post: { type: Object, required: true },
   },
@@ -60,7 +60,7 @@ export default {
     },
     created() {
       return this.attr.created
-        ? format(parseISO(this.attr.created), 'd MMMM y')
+        ? format(parseISO(this.attr.created), 'MMMM d, y')
         : ''
     },
   },
