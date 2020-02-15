@@ -53,9 +53,10 @@ export default {
   },
   computed: {
     attr() {
-      return this.data.attributes || {}
+      return this.data ? this.data.attributes : {}
     },
     url() {
+      if (!this.data) return ''
       const filename = this.data.meta.resourcePath
         .split('/')
         .pop()

@@ -24,5 +24,6 @@ module.exports = {
     'arrow-parens': 0,
     'space-before-function-paren': 0,
     'comma-dangle': ['warn', 'always-multiline'],
+    curly: ['warn', 'multi-line'],
   },
 }
