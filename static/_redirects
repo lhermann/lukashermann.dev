@@ -2,6 +2,7 @@
 
 # Redirect domain aliases to primary domain
 https://lukashermann.dev/* https://tentmaker.dev/:splat 301!
+https://www.lukashermann.dev/* https://tentmaker.dev/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://tentmaker.netlify.com/* https://tentmaker.dev/:splat 301!
