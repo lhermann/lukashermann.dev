@@ -12,27 +12,27 @@
         <ul class="flex text-2xl text-gray-600">
           <li class="mr-3 hover:text-orange-600">
             <a href="https://twitter.com/codinglukas">
-              <twitter-icon />
+              <TwitterIcon />
             </a>
           </li>
           <li class="mr-3 hover:text-orange-600">
             <a href="https://github.com/lhermann">
-              <github-icon />
+              <GithubIcon />
             </a>
           </li>
           <li class="mr-3 hover:text-orange-600">
             <a href="https://www.linkedin.com/in/lukas-hermann/">
-              <linkedin-icon />
+              <LinkedinIcon />
             </a>
           </li>
           <li class="mr-3 hover:text-orange-600">
             <a href="https://dev.to/lhermann">
-              <devto-icon />
+              <DevtoIcon />
             </a>
           </li>
           <li class="mr-3 hover:text-orange-600">
             <a href="mailto:lukas@tentmaker.dev">
-              <mail-icon />
+              <MailIcon />
             </a>
           </li>
         </ul>

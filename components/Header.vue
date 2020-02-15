@@ -1,7 +1,7 @@
 <template>
   <header class="wrapper flex items-center py-4">
     <nuxt-link to="/">
-      <logo />
+      <TmLogo />
     </nuxt-link>
     <div class="flex-grow"></div>
     <!-- <nuxt-link to="/work" class="link">Work</nuxt-link> -->
@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo'
+import TmLogo from '~/components/TmLogo'
 
 export default {
-  components: { Logo },
+  components: { TmLogo },
 }
 </script>
 
