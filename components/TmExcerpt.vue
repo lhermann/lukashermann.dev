@@ -53,9 +53,10 @@ export default {
   },
   computed: {
     attr() {
-      return this.data.attributes || {}
+      return this.data ? this.data.attributes : {}
     },
     url() {
+      if (!this.data) return ''
       const filename = this.data.meta.resourcePath
         .split('/')
         .pop()
@@ -81,7 +82,7 @@ export default {
 .content {
   @apply relative rounded shadow-lg bg-white mx-4 px-4 py-2 z-10;
   @apply transition-shadow duration-300;
-  margin-top: -2em;
+  margin-top: -1em;
 }
 
 .tag {

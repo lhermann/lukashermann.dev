@@ -8,9 +8,9 @@ module.exports = {
     parser: 'babel-eslint',
   },
   extends: [
-    'prettier',
-    'prettier/vue',
-    'plugin:prettier/recommended',
+    // 'prettier',
+    // 'prettier/vue',
+    // 'plugin:prettier/recommended',
     '@nuxtjs',
     'plugin:nuxt/recommended',
   ],
@@ -24,5 +24,7 @@ module.exports = {
     'arrow-parens': 0,
     'space-before-function-paren': 0,
     'comma-dangle': ['warn', 'always-multiline'],
+    curly: ['warn', 'multi-line'],
+    camelcase: 0,
   },
 }

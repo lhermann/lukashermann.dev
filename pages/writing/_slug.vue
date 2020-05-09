@@ -8,12 +8,17 @@
         <TmIdentity />
         <template v-if="attributes.created">
           <span class="text-gray-400 mx-2">&middot;</span>
-          <div class="text-gray-500">{{ formatDate(attributes.created) }}</div>
+          <time class="text-gray-500" :datetime="attributes.created">
+            {{ formatDate(attributes.created) }}
+          </time>
         </template>
         <template v-if="attributes.updated">
           <span class="text-gray-400 mx-2">&middot;</span>
           <div class="text-gray-500">
-            Updated on {{ formatDate(attributes.updated) }}
+            Updated on
+            <time :datetime="attributes.updated">
+              {{ formatDate(attributes.updated) }}
+            </time>
           </div>
         </template>
         <template v-if="attributes.tags">
@@ -38,7 +43,7 @@ export default {
     TmIdentity,
     TmTags,
   },
-  async asyncData({ params }) {
+  async asyncData ({ params }) {
     try {
       return await require(`~/content/writing/${params.slug}.md`)
     } catch (error) {
@@ -49,6 +54,25 @@ export default {
     formatDate(date) {
       return date ? format(parseISO(date), 'MMMM d, y') : date
     },
+  },
+  head () {
+    const canonical = process.env.host + this.$route.path
+    return {
+      title: this.attributes?.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.attributes?.description,
+        },
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: this.attributes?.canonical_url || canonical,
+        },
+      ],
+    }
   },
 }
 </script>
