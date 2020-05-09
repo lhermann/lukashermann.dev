@@ -72,6 +72,7 @@ export default {
         { name: 'twitter:title', content: this.attributes?.title },
         { name: 'twitter:description', content: this.attributes?.description },
         { name: 'twitter:image', content: this.attributes?.cover_image },
+        { name: 'twitter:card', content: 'summary_large_image' },
       ],
       link: [
         {
