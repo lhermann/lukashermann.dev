@@ -4,10 +4,10 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  // purge: [
-  //   './layouts/**/*.vue',
-  //   './components/**/*.vue',
-  //   './content/**/*.md',
-  // ],
-  purge: false,
+  purge: [
+    './layouts/**/*.vue',
+    './components/**/*.vue',
+    './pages/**/*.vue',
+    './content/**/*.md',
+  ],
 }
