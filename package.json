@@ -16,16 +16,20 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.10.3",
     "date-fns": "^2.13.0",
+    "lodash": "^4.17.15",
+    "markdown-it-attrs": "^3.0.2",
     "nuxt": "^2.12.2",
     "uslug": "^1.0.4"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
     "@nuxtjs/eslint-config": "^2.0.2",
     "@nuxtjs/eslint-module": "^2.0.0",
     "@vue/test-utils": "^1.0.2",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.0.1",
+    "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": "^14.1.1",

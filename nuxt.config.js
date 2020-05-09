@@ -3,11 +3,17 @@ import glob from 'glob'
 import Mode from 'frontmatter-markdown-loader/mode'
 import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
+import markdownItAttrs from 'markdown-it-attrs'
 import hljs from 'highlight.js'
 import uslug from 'uslug'
 
+require('dotenv').config()
+
 export default {
   mode: 'universal',
+  env: {
+    host: process.env.VUE_APP_HOST || 'http://localhost:3000',
+  },
   /*
    ** Headers of the page
    */
@@ -60,7 +66,10 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/css/tailwind.css', 'highlight.js/styles/gruvbox-dark.css'],
+  css: [
+    '~/assets/css/tailwind.css',
+    'highlight.js/styles/gruvbox-dark.css',
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -120,9 +129,17 @@ export default {
             permalink: true,
             permalinkBefore: true,
             slugify: s => uslug(s),
-          }),
+          }).use(markdownItAttrs),
         },
       })
+    },
+    babel: {
+      plugins: ['@babel/plugin-proposal-optional-chaining'],
+      env: {
+        test: {
+          presets: ['@babel/preset-env'],
+        },
+      },
     },
   },
 }
