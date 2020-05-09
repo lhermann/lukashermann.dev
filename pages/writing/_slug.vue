@@ -57,6 +57,7 @@ export default {
   },
   head () {
     const canonical = this.attributes?.canonical_url || process.env.host + this.$route.path
+    const image = process.env.host + this.attributes?.cover_image
     return {
       title: this.attributes?.title,
       meta: [
@@ -67,11 +68,11 @@ export default {
         },
         { name: 'og:title', content: this.attributes?.title },
         { name: 'og:description', content: this.attributes?.description },
-        { name: 'og:image', content: this.attributes?.cover_image },
+        { name: 'og:image', content: image },
         { name: 'og:url', content: canonical },
         { name: 'twitter:title', content: this.attributes?.title },
         { name: 'twitter:description', content: this.attributes?.description },
-        { name: 'twitter:image', content: this.attributes?.cover_image },
+        { name: 'twitter:image', content: image },
         { name: 'twitter:card', content: 'summary_large_image' },
       ],
       link: [
