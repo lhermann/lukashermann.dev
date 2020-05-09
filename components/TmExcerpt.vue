@@ -76,12 +76,13 @@ export default {
 .image {
   @apply relative rounded shadow bg-white w-full;
   @apply transition-shadow duration-300;
-  padding-top: 42%;
+  /*padding-top: 42%;*/
+  padding-top: 50%;
 }
 
 .content {
   @apply relative rounded shadow-lg bg-white mx-4 px-4 py-2 z-10;
-  @apply transition-shadow duration-300;
+  @apply transition-all duration-300;
   margin-top: -1em;
 }
 
@@ -90,7 +91,7 @@ export default {
 }
 
 .excerpt:hover {
-  @apply transform translate-y-px;
+  /*@apply transform translate-y-px;*/
 }
 
 .excerpt:hover .image {
@@ -101,7 +102,7 @@ export default {
   opacity: 0.8;
 }
 .excerpt:hover .content {
-  @apply shadow-md transform;
+  @apply shadow-md transform translate-y-px;
 }
 
 .excerpt:hover .title {
