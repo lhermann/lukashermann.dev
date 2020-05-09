@@ -32,6 +32,8 @@ export default {
       },
       { name: 'msapplication-TileColor', content: '#e88823' },
       { name: 'theme-color', content: '#ffffff' },
+      { name: 'theme-color', content: '#ffffff' },
+      { name: 'twitter:site', content: '@codinglukas' },
     ],
     link: [
       {

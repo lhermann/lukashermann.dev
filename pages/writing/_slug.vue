@@ -56,7 +56,7 @@ export default {
     },
   },
   head () {
-    const canonical = process.env.host + this.$route.path
+    const canonical = this.attributes?.canonical_url || process.env.host + this.$route.path
     return {
       title: this.attributes?.title,
       meta: [
@@ -65,11 +65,18 @@ export default {
           name: 'description',
           content: this.attributes?.description,
         },
+        { name: 'og:title', content: this.attributes?.title },
+        { name: 'og:description', content: this.attributes?.description },
+        { name: 'og:image', content: this.attributes?.cover_image },
+        { name: 'og:url', content: canonical },
+        { name: 'twitter:title', content: this.attributes?.title },
+        { name: 'twitter:description', content: this.attributes?.description },
+        { name: 'twitter:image', content: this.attributes?.cover_image },
       ],
       link: [
         {
           rel: 'canonical',
-          href: this.attributes?.canonical_url || canonical,
+          href: canonical,
         },
       ],
     }
