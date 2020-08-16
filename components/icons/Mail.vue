@@ -7,6 +7,8 @@
     stroke-width="0"
     height="1em"
     width="1em"
+    :class="[data.class, data.staticClass]"
+    :style="[data.style, data.staticStyle]"
   >
     <title>Mail</title>
     <path

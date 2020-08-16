@@ -4,6 +4,7 @@
       <TmLogo />
     </nuxt-link>
     <div class="flex-grow"></div>
+    <nuxt-link to="/" class="link" exact>Bio</nuxt-link>
     <!-- <nuxt-link to="/work" class="link">Work</nuxt-link> -->
     <nuxt-link to="/writing" class="link">Writing</nuxt-link>
   </header>

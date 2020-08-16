@@ -19,9 +19,9 @@ export default {
    */
   head: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: 'tentmaker.dev – Front-End Developer & UI Designer',
+    title: 'Lukas Hermann – Front-End Developer & UI Designer',
     // all titles will be injected into this template
-    titleTemplate: '%s | tentmaker.dev',
+    titleTemplate: '%s | Lukas Hermann',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

@@ -9,30 +9,35 @@
           I'm a <strong>Front-End Engineer</strong> who loves working with
           <strong>Vue.js</strong> and <strong>User Interface Design</strong>.
         </p>
-        <ul class="flex text-2xl text-gray-600">
-          <li class="mr-3 hover:text-orange-600">
-            <a href="https://twitter.com/codinglukas">
-              <TwitterIcon />
+        <ul class="text-gray-600">
+          <li class="mb-3 hover:text-orange-600">
+            <a href="https://twitter.com/_lhermann">
+              <TwitterIcon class="text-2xl inline-block align-top" />
+              @_lhermann
             </a>
           </li>
-          <li class="mr-3 hover:text-orange-600">
+          <li class="mb-3 hover:text-orange-600">
             <a href="https://github.com/lhermann">
-              <GithubIcon />
+              <GithubIcon class="text-2xl inline-block align-top" />
+              github.com/lhermann
             </a>
           </li>
-          <li class="mr-3 hover:text-orange-600">
+          <li class="mb-3 hover:text-orange-600">
             <a href="https://www.linkedin.com/in/lukas-hermann/">
-              <LinkedinIcon />
+              <LinkedinIcon class="text-2xl inline-block align-top" />
+              linkedin.com/in/lukas-hermann
             </a>
           </li>
-          <li class="mr-3 hover:text-orange-600">
+          <li class="mb-3 hover:text-orange-600">
             <a href="https://dev.to/lhermann">
-              <DevtoIcon />
+              <DevtoIcon class="text-2xl inline-block align-top" />
+              dev.to/lhermann
             </a>
           </li>
-          <li class="mr-3 hover:text-orange-600">
-            <a href="mailto:lukas@tentmaker.dev">
-              <MailIcon />
+          <li class="mb-3 hover:text-orange-600">
+            <a href="mailto:hey@lukashermann.dev">
+              <MailIcon class="text-2xl inline-block align-top" />
+              hey@lukashermann.dev
             </a>
           </li>
         </ul>
