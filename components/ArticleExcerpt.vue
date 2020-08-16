@@ -16,46 +16,22 @@
           {{ created }}
         </time>
       </div>
-      <div class="w-1/3">
+      <div class="w-full md:w-1/3">
         <h2 class="title text-2xl font-semibold leading-tight text-gray-900 my-1">
           {{ attr.title }}
         </h2>
       </div>
-      <div class="w-2/3 pl-8">
+      <div class="w-full md:w-2/3 pl-0 md:pl-12">
         <p>{{ attr.description }}</p>
+        <p
+          v-if="attr.canonical_plattform"
+          class="text-sm text-gray-500 mb-2"
+        >
+          Originally published on: <strong>{{ attr.canonical_plattform }}</strong>
+        </p>
         <TmTags v-if="attr.tags" :tags="attr.tags" />
       </div>
     </article>
-    <!-- <div class="image">
-      <img
-        v-if="attr.cover_image"
-        class="absolute top-0 rounded transition-opacity duration-300"
-        :src="attr.cover_image"
-      />
-    </div>
-    <div class="content">
-      <time
-              v-if="created"
-              class="font-semibold text-blue-600"
-              :datetime="attr.created"
-              :title="created"
-            >
-              {{ created }}
-            </time>
-      <h1 class="title text-lg font-semibold leading-tight my-1">
-        {{ attr.title }}
-      </h1>
-      <p v-if="attr.description" class="text-gray-600 mb-2">
-        {{ attr.description }}
-      </p>
-      <TmTags v-if="attr.tags" :tags="attr.tags" />
-      <p
-        v-if="attr.canonical_plattform"
-        class="text-sm text-gray-500 text-right mt-2"
-      >
-        Originally published on: <strong>{{ attr.canonical_plattform }}</strong>
-      </p>
-    </div> -->
   </component>
 </template>
 
