@@ -1,14 +1,14 @@
 <template>
   <section class="wrapper">
-    <header class="mb-8">
-      <h1 class="text-2xl font-semibold text-gray-600">
+    <header class="mb-12">
+      <h1 class="text-6xl font-semibold text-gray-400">
         Articles
       </h1>
     </header>
 
-    <ul class="body flex flex-wrap">
-      <li v-for="post in posts" :key="post.slug" class="p-2 w-full md:w-1/2">
-        <TmExcerpt type="writing" :data="post" />
+    <ul>
+      <li v-for="post in posts" :key="post.slug" class="mb-8">
+        <ArticleExcerpt :data="post" />
       </li>
     </ul>
   </section>
@@ -16,11 +16,11 @@
 
 <script>
 import uslug from 'uslug'
-import TmExcerpt from '~/components/TmExcerpt'
+import ArticleExcerpt from '~/components/ArticleExcerpt'
 
 export default {
   layout: 'gray',
-  components: { TmExcerpt },
+  components: { ArticleExcerpt },
   asyncData() {
     const posts = require
       .context('~/content/writing/', true, /\.md$/)

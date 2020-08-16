@@ -12,18 +12,18 @@
         :key="project.slug"
         class="p-2 w-full md:w-1/2"
       >
-        <TmExcerpt type="work" :data="project" />
+        <WorkExcerpt type="work" :data="project" />
       </li>
     </ul>
   </section>
 </template>
 
 <script>
-import TmExcerpt from '~/components/TmExcerpt'
+import WorkExcerpt from '~/components/WorkExcerpt'
 
 export default {
   layout: 'gray',
-  components: { TmExcerpt },
+  components: { WorkExcerpt },
   asyncData() {
     const projects = require
       .context('~/content/work/', true, /\.md$/)
