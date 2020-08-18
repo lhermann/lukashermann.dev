@@ -1,4 +1,6 @@
-# tentmaker.dev
+# lukashermann.dev
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4558bba9-8ef4-4328-8cb0-b241579af1a3/deploy-status)](https://app.netlify.com/sites/lukashermann/deploys)
 
 > Front-End Developer, Vue.js, UX Design
 
