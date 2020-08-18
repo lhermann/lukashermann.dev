@@ -1,6 +1,6 @@
 <template>
   <header class="wrapper flex items-center py-4">
-    <nuxt-link to="/">
+    <nuxt-link to="/" class="hidden sm:block">
       <TmLogo />
     </nuxt-link>
     <div class="flex-grow"></div>
