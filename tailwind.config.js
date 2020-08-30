@@ -10,4 +10,7 @@ module.exports = {
     './pages/**/*.vue',
     './content/**/*.md',
   ],
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
 }
