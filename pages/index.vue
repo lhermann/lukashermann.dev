@@ -25,7 +25,7 @@
           <li class="mb-3 hover:text-orange-600">
             <a href="https://www.linkedin.com/in/lukas-hermann/">
               <LinkedinIcon class="text-2xl inline-block align-top" />
-              linkedin.com/in/lukas-hermann
+              Lukas Hermann
             </a>
           </li>
           <li class="mb-3 hover:text-orange-600">
@@ -35,9 +35,12 @@
             </a>
           </li>
           <li class="mb-3 hover:text-orange-600">
-            <a href="mailto:hey@lukashermann.dev">
+            <a
+              v-email-obfuscate="'x.f'"
+              href="mailto:Lukas%20Hermann<hx.fey@lukasherx.fmann.dev>?subject=Hey%20Lukas"
+            >
               <MailIcon class="text-2xl inline-block align-top" />
-              hey@lukashermann.dev
+              h<b>x.f</b>ey@<i>luk</i>asher<b>tty</b>mann.dev
             </a>
           </li>
         </ul>
