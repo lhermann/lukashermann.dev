@@ -97,7 +97,7 @@ export default {
   components: { TwitterIcon, GithubIcon, LinkedinIcon, DevtoIcon, MailIcon },
   head() {
     return {
-      link: [{ rel: 'canonical', href: 'https://tentmaker.dev' }],
+      link: [{ rel: 'canonical', href: 'https://lukashermann.dev' }],
     }
   },
 }

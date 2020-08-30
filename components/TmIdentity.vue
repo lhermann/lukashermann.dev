@@ -9,6 +9,6 @@
         /img/lukas-thumbnail-300.jpg 300w
       "
     />
-    <a href="https://tentmaker.dev/">Lukas Hermann</a>
+    <a href="/">Lukas Hermann</a>
   </div>
 </template>
