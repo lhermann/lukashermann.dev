@@ -82,9 +82,8 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    // '@nuxtjs/axios',
     '@nuxtjs/eslint-module',
+    '@nuxtjs/svg',
   ],
   /*
    * Generate Dynamic Routes

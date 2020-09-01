@@ -6,37 +6,38 @@
           Hi, I'm Lukas Hermann
         </h1>
         <p class="text-xl mb-6">
-          I'm a <strong>Front-End Engineer</strong> who loves working with
+          I'm a <strong>Maker</strong> and <strong>Front-End Engineer</strong> who loves working with
           <strong>Vue.js</strong> and <strong>User Interface Design</strong>.
         </p>
-        <ul class="text-gray-600">
-          <li class="mb-3 hover:text-orange-600">
-            <a href="https://twitter.com/_lhermann">
+        <ul class="flex text-gray-600">
+          <li class="mb-3 mr-3">
+            <a href="https://twitter.com/_lhermann" class="hover:text-orange-600">
               <TwitterIcon class="text-2xl inline-block align-top" />
-              @_lhermann
+              <!-- @_lhermann -->
             </a>
           </li>
-          <li class="mb-3 hover:text-orange-600">
-            <a href="https://github.com/lhermann">
+          <li class="mb-3 mr-3">
+            <a href="https://github.com/lhermann" class="hover:text-orange-600">
               <GithubIcon class="text-2xl inline-block align-top" />
-              github.com/lhermann
+              <!-- github.com/lhermann -->
             </a>
           </li>
-          <li class="mb-3 hover:text-orange-600">
-            <a href="https://www.linkedin.com/in/lukas-hermann/">
+          <li class="mb-3 mr-3">
+            <a href="https://www.linkedin.com/in/lukas-hermann/" class="hover:text-orange-600">
               <LinkedinIcon class="text-2xl inline-block align-top" />
-              Lukas Hermann
+              <!-- Lukas Hermann -->
             </a>
           </li>
-          <li class="mb-3 hover:text-orange-600">
-            <a href="https://dev.to/lhermann">
+          <li class="mb-3 mr-3">
+            <a href="https://dev.to/lhermann" class="hover:text-orange-600">
               <DevtoIcon class="text-2xl inline-block align-top" />
-              dev.to/lhermann
+              <!-- dev.to/lhermann -->
             </a>
           </li>
-          <li class="mb-3 hover:text-orange-600">
+          <li class="mb-3 mr-3">
             <a
               v-email-obfuscate="'x.f'"
+              class="hover:text-orange-600"
               href="mailto:Lukas%20Hermann<hx.fey@lukasherx.fmann.dev>?subject=Hey%20Lukas"
             >
               <MailIcon class="text-2xl inline-block align-top" />
@@ -90,11 +91,11 @@
 </template>
 
 <script>
-import TwitterIcon from '~/components/icons/Twitter'
-import GithubIcon from '~/components/icons/Github'
-import LinkedinIcon from '~/components/icons/LinkedIn'
-import DevtoIcon from '~/components/icons/DevTo'
-import MailIcon from '~/components/icons/Mail'
+import TwitterIcon from '~/assets/icons/twitter.svg?inline'
+import GithubIcon from '~/assets/icons/github.svg?inline'
+import LinkedinIcon from '~/assets/icons/linkedin.svg?inline'
+import DevtoIcon from '~/assets/icons/devto.svg?inline'
+import MailIcon from '~/assets/icons/mail.svg?inline'
 
 export default {
   components: { TwitterIcon, GithubIcon, LinkedinIcon, DevtoIcon, MailIcon },

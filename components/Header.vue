@@ -1,7 +1,7 @@
 <template>
   <header class="wrapper flex items-center py-4">
-    <nuxt-link to="/" class="hidden sm:block">
-      <TmLogo />
+    <nuxt-link to="/" class="hover:text-orange-600 w-6">
+      <LhLogo />
     </nuxt-link>
     <div class="flex-grow"></div>
     <nuxt-link to="/" class="link" exact>Bio</nuxt-link>
@@ -11,10 +11,12 @@
 </template>
 
 <script>
-import TmLogo from '~/components/TmLogo'
+import LhLogo from '~/components/LhLogo'
 
 export default {
-  components: { TmLogo },
+  components: {
+    LhLogo,
+  },
 }
 </script>
 
