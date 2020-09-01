@@ -37,7 +37,7 @@
           <li class="mb-3 mr-3">
             <a
               v-email-obfuscate="'x.f'"
-              class="hover:text-orange-600"
+              class="mail hover:text-orange-600"
               href="mailto:Lukas%20Hermann<hx.fey@lukasherx.fmann.dev>?subject=Hey%20Lukas"
             >
               <MailIcon class="text-2xl inline-block align-top" />
@@ -106,3 +106,13 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.mail > b {
+  visibility: hidden;
+  font-size: 0px;
+}
+.mail > i {
+  font-style: normal;
+}
+</style>
