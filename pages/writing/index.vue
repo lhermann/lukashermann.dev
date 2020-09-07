@@ -16,6 +16,8 @@
 
 <script>
 import uslug from 'uslug'
+import compareDesc from 'date-fns/compareDesc'
+import parseISO from 'date-fns/parseISO'
 import ArticleExcerpt from '~/components/ArticleExcerpt'
 
 export default {
@@ -30,6 +32,10 @@ export default {
         post.slug = uslug(post.attributes.title)
         return post
       })
+      .sort((postA, postB) => compareDesc(
+        parseISO(postA.attributes.created),
+        parseISO(postB.attributes.created),
+      ))
     return { posts }
   },
 }
