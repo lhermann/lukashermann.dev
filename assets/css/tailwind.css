@@ -20,6 +20,13 @@ a {
   transition: color 0.3s;
 }
 
+.links a {
+  border-bottom: 1px dotted currentcolor;
+}
+.links a:hover {
+  @apply border-solid border-orange-500;
+}
+
 .wrapper {
   @apply max-w-5xl px-8 mx-auto;
 }
