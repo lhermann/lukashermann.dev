@@ -45,7 +45,26 @@
             </a>
           </li>
         </ul>
+
+        <section class="mt-10">
+          <h2 class="text-2xl font-semibold mb-3">Life Excerpt</h2>
+          <dl class="cv-list">
+            <dt class="font-semibold">2007</dt>
+            <dd class="text-gray-700 mb-3">Got my first web development job while still in high school</dd>
+            <dt class="font-semibold">2010</dt>
+            <dd class="text-gray-700 mb-3">Worked as volunteer teacher in a Filipino native village for a year</dd>
+            <dt class="font-semibold">2012</dt>
+            <dd class="text-gray-700 mb-3">Started developing Wordpress Themes</dd>
+            <dt class="font-semibold">2016</dt>
+            <dd class="text-gray-700 mb-3">Started my first company for web hosting and web development</dd>
+            <dt class="font-semibold">2020</dt>
+            <dd class="text-gray-700 mb-3">Graduated as Software Engineer from HS Esslingen</dd>
+            <dt class="font-semibold">2020</dt>
+            <dd class="text-gray-700 mb-3">Currently working for Laserhub, a Stuttgart based startup</dd>
+          </dl>
+        </section>
       </div>
+
       <div class="max-w-full md:w-1/3 mt-8 md:mt-0 flex-shrink-0">
         <img
           class="rounded-lg shadow-md"
