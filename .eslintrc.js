@@ -27,4 +27,7 @@ module.exports = {
     curly: ['warn', 'multi-line'],
     camelcase: 0,
   },
+  ignorePatterns: [
+    '**/*.md',
+  ],
 }
