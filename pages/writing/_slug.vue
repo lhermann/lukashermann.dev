@@ -24,6 +24,14 @@
     </header>
 
     <div class="markdown" v-html="html"></div>
+
+    <footer class="max-w-xl text-center my-24 mx-auto">
+      <p class="text-3xl font-semibold">I would love to hear from you if you liked it or have any questions</p>
+      <a
+        class="text-blue-600 underline"
+        href="https://twitter.com/_lhermann"
+      >Twitter</a>
+    </footer>
   </article>
 </template>
 
