@@ -42,7 +42,9 @@ export default {
     try {
       return await require(`~/content/writing/${params.slug}.md`)
     } catch (error) {
-      return { attributes: {}, meta: '', html: '' }
+      const draft = await require(`~/content/drafts/${params.slug}.md`)
+      if (draft) return draft
+      else return { attributes: {}, meta: '', html: '' }
     }
   },
   methods: {

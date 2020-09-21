@@ -125,7 +125,7 @@ export default {
               const code =
                 lang && hljs.getLanguage(lang)
                   ? hljs.highlight(lang, str).value
-                  : markdownIt.utils.escapeHtml(str)
+                  : markdownIt().utils.escapeHtml(str)
               return `<pre class="hljs"><code>${code}</code></pre>`
             },
           }).use(markdownItAnchor, {
