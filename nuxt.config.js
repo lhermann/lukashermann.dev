@@ -6,6 +6,7 @@ import markdownItAnchor from 'markdown-it-anchor'
 import markdownItAttrs from 'markdown-it-attrs'
 import hljs from 'highlight.js'
 import uslug from 'uslug'
+const CONTENT_DIR = 'content/'
 
 require('dotenv').config()
 
@@ -84,12 +85,16 @@ export default {
   modules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/svg',
+    '@nuxtjs/sitemap',
   ],
   /*
    * Generate Dynamic Routes
    */
   generate: {
-    routes: getDynamicPaths('content/'),
+    routes: getDynamicRoutes(),
+  },
+  sitemap: {
+    hostname: process.env.VUE_APP_HOST || 'http://localhost:3000',
   },
   /*
    ** Build configuration
@@ -147,8 +152,17 @@ export default {
   },
 }
 
-function getDynamicPaths(contentDir) {
+function getDynamicRoutes () {
+  // get routes
+  const work = pathToRoute(CONTENT_DIR, 'work/*.md')
+  const writing = pathToRoute(CONTENT_DIR, 'writing/*.md')
+
+  // return list
+  return [...work, ...writing]
+}
+
+function pathToRoute (base, globStr) {
   return glob
-    .sync(`${contentDir}**/*.md`)
-    .map(file => file.replace(contentDir, '').replace('.md', ''))
+    .sync(base + globStr)
+    .map(file => file.replace(base, '').replace('.md', ''))
 }
