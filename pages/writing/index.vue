@@ -7,8 +7,8 @@
     </header>
 
     <ul>
-      <li v-for="post in posts" :key="post.slug" class="mb-8">
-        <ArticleExcerpt :data="post" />
+      <li v-for="article in articles" :key="article.slug" class="mb-8">
+        <ArticleExcerpt :data="article" />
       </li>
     </ul>
   </section>
@@ -24,19 +24,18 @@ export default {
   layout: 'gray',
   components: { ArticleExcerpt },
   asyncData() {
-    const posts = require
-      .context('~/content/writing/', true, /\.md$/)
+    const articles = require.context('~/content/writing/', true, /\.md$/)
       .keys()
       .map(file => {
-        const post = require(`~/content/writing/${file.replace('./', '')}`)
-        post.slug = uslug(post.attributes.title)
-        return post
+        const article = require(`~/content/writing/${file.replace('./', '')}`)
+        article.slug = uslug(article.attributes.title)
+        return article
       })
-      .sort((postA, postB) => compareDesc(
-        parseISO(postA.attributes.created),
-        parseISO(postB.attributes.created),
+      .sort((a, b) => compareDesc(
+        parseISO(a.attributes.created),
+        parseISO(b.attributes.created),
       ))
-    return { posts }
+    return { articles }
   },
 }
 </script>

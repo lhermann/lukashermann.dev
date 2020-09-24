@@ -48,11 +48,14 @@ export default {
   },
   async asyncData ({ params }) {
     try {
-      return await require(`~/content/writing/${params.slug}.md`)
+      if (params.slug.endsWith('-draft')) {
+        const file = params.slug.replace(/-draft$/, '') + '.md'
+        return await require(`~/content/drafts/${file}`)
+      } else {
+        return await require(`~/content/writing/${params.slug}.md`)
+      }
     } catch (error) {
-      const draft = await require(`~/content/drafts/${params.slug}.md`)
-      if (draft) return draft
-      else return { attributes: {}, meta: '', html: '' }
+      return { attributes: {}, meta: '', html: '' }
     }
   },
   methods: {
