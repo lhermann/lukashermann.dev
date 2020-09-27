@@ -46,7 +46,7 @@ export default {
     TmIdentity,
     TmTags,
   },
-  async asyncData ({ params }) {
+  async asyncData ({ params, error }) {
     try {
       if (params.slug.endsWith('-draft')) {
         const file = params.slug.replace(/-draft$/, '') + '.md'
@@ -54,8 +54,8 @@ export default {
       } else {
         return await require(`~/content/writing/${params.slug}.md`)
       }
-    } catch (error) {
-      return { attributes: {}, meta: '', html: '' }
+    } catch (e) {
+      error({ statusCode: 404, message: 'Artcile not found' })
     }
   },
   methods: {

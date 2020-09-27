@@ -38,11 +38,11 @@ export default {
     TmIdentity,
     TmTags,
   },
-  async asyncData({ params }) {
+  async asyncData({ params, error }) {
     try {
       return await require(`~/content/work/${params.slug}.md`)
-    } catch (error) {
-      return { attributes: {}, meta: '', html: '' }
+    } catch (e) {
+      error({ statusCode: 404, message: 'Artcile not found' })
     }
   },
   methods: {
