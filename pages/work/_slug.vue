@@ -42,7 +42,7 @@ export default {
     try {
       return await require(`~/content/work/${params.slug}.md`)
     } catch (e) {
-      error({ statusCode: 404, message: 'Artcile not found' })
+      error({ statusCode: 404, message: 'Page not found' })
     }
   },
   methods: {
