@@ -102,6 +102,22 @@ figcaption {
 .markdown iframe {
   @apply my-6;
 }
+.markdown figure {
+  @apply text-center;
+}
+.markdown blockquote {
+  @apply font-light mx-12 my-8 relative;
+}
+.markdown blockquote::before {
+  content: "\201C";
+  position: absolute;
+  left: -0.3em;
+  top: -0.275em;
+  font-size: 6em;
+  z-index: -1;
+  font-family: serif;
+  @apply text-gray-300 leading-none;
+}
 
 /*
  * CV List

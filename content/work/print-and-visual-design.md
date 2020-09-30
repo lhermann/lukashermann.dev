@@ -17,9 +17,9 @@ Orrery is a model of our solar system driven by a clockwork-like mechanism. The 
 
 Bulbworld is, as can be surmised by the title, a tiny world in a lightbulb. The lightbulb was the stock image provided. I still remember getting a real lightbulb and holding it against my window in a thousand different ways to recreate the most photorealistic reflections on the glass.
 
-Guitar Manual may look a bit bland. The provided stock was a top-down picture of the guitar. My inspiration was [this Team Fortress 2 art](https://wiki.teamfortress.com/wiki/Sandvich/de#/media/File:Meetthesandvich4.PNG) showing the building instructions for a benign sandwich in the style of a vintage-looking metal plaque advertisement. I especially love the outlined breakdown of the guitar and the small details at the bottom with specially crafted logos in the style of the time.
+Guitar Manual may look a bit bland at first. The provided stock was a top-down picture of the guitar. My inspiration was [this Team Fortress 2 art](https://wiki.teamfortress.com/wiki/Sandvich/de#/media/File:Meetthesandvich4.PNG) showing the building instructions for a benign sandwich in the style of a vintage-looking metal plaque advertisement. I especially love the outlined breakdown of the guitar and the small details at the bottom with specially crafted logos in the style of the time.
 
-<div class="flex items-stretch mb-4">
+<div class="flex items-stretch justify-around mb-4">
   <figure>
     <a href="/img/work/2d-orrery.jpg">
       <img
@@ -59,7 +59,7 @@ Guitar Manual may look a bit bland. The provided stock was a top-down picture of
 
 I gave myself the challenge to recreate simple real-world objects as faithful as possible. The fun part was to tweak the different surface materials until they felt just right.
 
-<div class="flex items-stretch mb-4">
+<div class="flex items-stretch justify-around mb-4">
   <figure class="">
     <a href="/img/work/3d-ipod-nano.jpg">
       <img
@@ -86,7 +86,7 @@ I gave myself the challenge to recreate simple real-world objects as faithful as
 
 These two buildings were created for a harbor scene as part of a 3D artist contest. I really like the video game feel of these models. They won the contest.
 
-<div class="flex items-stretch mb-4">
+<div class="flex items-stretch justify-around mb-4">
   <figure class="">
     <a href="/img/work/3d-harbor-storehouse.jpg">
       <img
@@ -122,9 +122,9 @@ These two buildings were created for a harbor scene as part of a 3D artist conte
   </figure>
 </div>
 
-This work in progress render of a futuristic space ship comes with a turret animation. Even though the animation is very simple I had great fun tweaking it until it felt just right inconveying the mass and recoil of each shot.
+<!-- This work in progress render of a futuristic space ship comes with a turret animation. Even though the animation is very simple I had great fun tweaking it until it felt just right inconveying the mass and recoil of each shot.
 
-<div class="flex items-stretch mb-4">
+<div class="flex items-stretch justify-around mb-4">
   <figure class="">
     <a href="/img/work/3d-spaceship-feme.jpg">
       <img
@@ -146,9 +146,83 @@ This work in progress render of a futuristic space ship comes with a turret anim
     </a>
     <figcaption>Turret Animation [2009]</figcaption>
   </figure>
+</div> -->
+
+## Print Design
+
+Print design is a discipline I rather enjoy. The art lies in conveying a set of information in the most clear and simple manner possible while also being pleasing to the eye. Often there are very specific constraints like in the case of the Hyvecamp pitch canvas below that has to be printed on normal black and white laser printers as handouts in a conference setting.
+
+Similar to user interface design, the challenge in print design lies not with what you see on the final page, but what was left out. Just as the author of the Little Prince fittingly said:
+
+> Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
+>
+> – _Antoine de Saint-Exupéry, Airman's Odyssey_
+
+The best results an artist achieves not when working for a client but when creating a piece for the sake of the piece itself. That's why I included the invation card for my wedding that is immitating an airplane borading pass.
+
+<div class="flex items-stretch justify-around mb-4">
+  <figure class="">
+    <a href="/img/work/print-ellen4all-flyer.jpg">
+      <img
+        class="max-h-64 rounded inline-block shadow"
+        src="/img/work/print-ellen4all-flyer-480.jpg"
+        srcset="/img/work/print-ellen4all-flyer-480.jpg 480w, /img/work/print-ellen4all-flyer-640.jpg 640w, /img/work/print-ellen4all-flyer.jpg"
+        alt="Flyer for translation service"
+      />
+    </a>
+    <figcaption>Flyer for translation service [2018]</figcaption>
+  </figure>
+  <figure class="ml-3">
+    <a href="/img/work/print-hyvecamp-pitch-canvas.jpg">
+      <img
+        class="max-h-64 rounded inline-block shadow"
+        src="/img/work/print-hyvecamp-pitch-canvas-480.jpg"
+        srcset="/img/work/print-hyvecamp-pitch-canvas-480.jpg 480w, /img/work/print-hyvecamp-pitch-canvas-640.jpg 640w, /img/work/print-hyvecamp-pitch-canvas.jpg"
+        alt="Hyvecamp Pitch Canvas"
+      />
+    </a>
+    <figcaption><a href="http://www.hyvecamp.com/">Hyvecamp</a> Pitch Canvas [2018]</figcaption>
+  </figure>
+  <figure class="ml-3">
+    <a href="/img/work/print-wedding-program.jpg">
+      <img
+        class="max-h-64 rounded inline-block shadow"
+        src="/img/work/print-wedding-program-480.jpg"
+        srcset="/img/work/print-wedding-program-480.jpg 480w, /img/work/print-wedding-program-640.jpg 640w, /img/work/print-wedding-program.jpg"
+        alt="Wedding Program"
+      />
+    </a>
+    <figcaption>Wedding Program [2016]</figcaption>
+  </figure>
 </div>
 
-<!-- ## Print Design -->
+
+<div class="flex items-stretch justify-around mb-4">
+  <figure class="">
+    <a href="/img/work/print-wedding-invite-1.jpg">
+      <img
+        class="max-h-64 rounded"
+        src="/img/work/print-wedding-invite-1-480.jpg"
+        srcset="/img/work/print-wedding-invite-1-480.jpg 480w, /img/work/print-wedding-invite-1-640.jpg 640w, /img/work/print-wedding-invite-1.jpg"
+        alt="Our wedding invatation card"
+      />
+    </a>
+    <figcaption>Our wedding invatation card ... [2016]</figcaption>
+  </figure>
+  <figure class="ml-3">
+    <a href="/img/work/print-wedding-invite-2.jpg">
+      <img
+        class="max-h-64 rounded"
+        src="/img/work/print-wedding-invite-2-480.jpg"
+        srcset="/img/work/print-wedding-invite-2-480.jpg 480w, /img/work/print-wedding-invite-2-640.jpg 640w, /img/work/print-wedding-invite-2.jpg"
+        alt="And our wedding directions"
+      />
+    </a>
+    <figcaption>... and directions [2016]</figcaption>
+  </figure>
+</div>
+
+
 
 <!-- ## Logo Design -->
 
