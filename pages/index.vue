@@ -6,8 +6,7 @@
           Hi, I'm Lukas Hermann
         </h1>
         <p class="text-xl mb-6">
-          I'm a <strong>Maker</strong> and <strong>Front-End Engineer</strong> who loves working with
-          <strong>Vue.js</strong> and <strong>User Interface Design</strong>.
+          I'm a <strong>Maker</strong> and <strong>Full Stack Developer</strong> who loves working with the <strong>Frontend</strong>, <strong>Vue.js</strong> and <strong>User Interface Design</strong>.
         </p>
         <ul class="flex text-gray-600">
           <li class="mb-3 mr-3">
