@@ -15,6 +15,9 @@ export default {
   env: {
     host: process.env.VUE_APP_HOST || 'http://localhost:3000',
   },
+  router: {
+    trailingSlash: true,
+  },
   /*
    ** Headers of the page
    */
@@ -95,6 +98,7 @@ export default {
   },
   sitemap: {
     hostname: process.env.VUE_APP_HOST || 'http://localhost:3000',
+    trailingSlash: true,
   },
   /*
    ** Build configuration
@@ -164,5 +168,5 @@ function getDynamicRoutes () {
 function pathToRoute (base, globStr) {
   return glob
     .sync(base + globStr)
-    .map(file => file.replace(base, '').replace('.md', ''))
+    .map(file => file.replace(base, '').replace('.md', '/'))
 }

@@ -60,7 +60,7 @@
             <dt class="font-semibold">2010</dt>
             <dd class="text-gray-700 mb-3">Worked as volunteer teacher in a Filipino native village for a year</dd>
             <dt class="font-semibold">2008</dt>
-            <dd class="text-gray-700 mb-3">Started teaching myself Photoshop and Cinema4D - <router-link to="/work/print-and-visual-design">I still treasure some of my creations</router-link></dd>
+            <dd class="text-gray-700 mb-3">Started teaching myself Photoshop and Cinema4D - <router-link to="/work/print-and-visual-design/">I still treasure some of my creations</router-link></dd>
             <dt class="font-semibold">2007</dt>
             <dd class="text-gray-700 mb-3">Got my first web development job while still in high school</dd>
           </dl>

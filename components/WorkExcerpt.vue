@@ -61,7 +61,7 @@ export default {
         .split('/')
         .pop()
         .replace('.md', '')
-      return this.attr.canonical_url || `/${this.type}/${filename}`
+      return this.attr.canonical_url || `/${this.type}/${filename}/`
     },
     created() {
       return this.attr.created

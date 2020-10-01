@@ -58,13 +58,17 @@ export default {
       error({ statusCode: 404, message: 'Article not found' })
     }
   },
+  computed: {
+    canonical () {
+      return this.attributes?.canonical_url || process.env.host + this.$route.path
+    },
+  },
   methods: {
     formatDate(date) {
       return date ? format(parseISO(date), 'MMMM d, y') : date
     },
   },
   head () {
-    const canonical = this.attributes?.canonical_url || process.env.host + this.$route.path
     const image = process.env.host + this.attributes?.cover_image
     return {
       title: this.attributes?.title,
@@ -77,17 +81,14 @@ export default {
         { name: 'og:title', content: this.attributes?.title },
         { name: 'og:description', content: this.attributes?.description },
         { name: 'og:image', content: image },
-        { name: 'og:url', content: canonical },
+        { name: 'og:url', content: this.canonical },
         { name: 'twitter:title', content: this.attributes?.title },
         { name: 'twitter:description', content: this.attributes?.description },
         { name: 'twitter:image', content: image },
         { name: 'twitter:card', content: 'summary_large_image' },
       ],
       link: [
-        {
-          rel: 'canonical',
-          href: canonical,
-        },
+        { rel: 'canonical', href: this.canonical },
       ],
     }
   },
