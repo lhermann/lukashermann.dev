@@ -12,25 +12,21 @@
           <li class="mb-3 mr-3">
             <a href="https://twitter.com/_lhermann" class="hover:text-orange-600">
               <TwitterIcon class="text-2xl inline-block align-top" />
-              <!-- @_lhermann -->
             </a>
           </li>
           <li class="mb-3 mr-3">
             <a href="https://github.com/lhermann" class="hover:text-orange-600">
               <GithubIcon class="text-2xl inline-block align-top" />
-              <!-- github.com/lhermann -->
             </a>
           </li>
           <li class="mb-3 mr-3">
             <a href="https://www.linkedin.com/in/lukas-hermann/" class="hover:text-orange-600">
               <LinkedinIcon class="text-2xl inline-block align-top" />
-              <!-- Lukas Hermann -->
             </a>
           </li>
           <li class="mb-3 mr-3">
             <a href="https://dev.to/lhermann" class="hover:text-orange-600">
               <DevtoIcon class="text-2xl inline-block align-top" />
-              <!-- dev.to/lhermann -->
             </a>
           </li>
           <li class="mb-3 mr-3">
