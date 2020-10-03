@@ -44,20 +44,48 @@
         <section class="mt-10">
           <h2 class="text-2xl font-semibold mb-3">Life Excerpt</h2>
           <dl class="cv-list links">
-            <dt class="font-semibold">2020</dt>
-            <dd class="text-gray-700 mb-3">Currently working for <a href="https://laserhub.com/">Laserhub</a>, a Stuttgart based startup</dd>
-            <dt class="font-semibold">2020</dt>
-            <dd class="text-gray-700 mb-3">Got my Software Engineer degree from <a href="https://www.hs-esslingen.de/en/">HS Esslingen</a></dd>
-            <dt class="font-semibold">2016</dt>
-            <dd class="text-gray-700 mb-3">Started my first company for web hosting and web development</dd>
-            <dt class="font-semibold">2012</dt>
-            <dd class="text-gray-700 mb-3">Started developing Wordpress Themes</dd>
-            <dt class="font-semibold">2010</dt>
-            <dd class="text-gray-700 mb-3">Worked as volunteer teacher in a Filipino native village for a year</dd>
-            <dt class="font-semibold">2008</dt>
-            <dd class="text-gray-700 mb-3">Started teaching myself Photoshop and Cinema4D - <router-link to="/work/print-and-visual-design/">I still treasure some of my creations</router-link></dd>
-            <dt class="font-semibold">2007</dt>
-            <dd class="text-gray-700 mb-3">Got my first web development job while still in high school</dd>
+            <dt class="year">2020</dt>
+            <dd class="mb-4">
+              <p class="work">Currently working for <a href="https://laserhub.com/">Laserhub</a>, a Stuttgart based startup</p>
+              <p class="skills">Vue.js, Express, MySQL, Figma</p>
+            </dd>
+            <dt class="year">2020</dt>
+            <dd class="mb-4">
+              <p class="work">Got my Software Engineer degree from <a href="https://www.hs-esslingen.de/en/">HS Esslingen</a></p>
+              <p class="skills">Software Engineering / Computer Science</p>
+            </dd>
+            <dt class="year">2016</dt>
+            <dd class="mb-4">
+              <p class="work">Started my first company for web hosting and web development</p>
+              <p class="skills">Debian/Linux, PHP, Wordpress</p>
+            </dd>
+            <dt class="year">2015</dt>
+            <dd class="mb-4">
+              <p class="work">Moved to Brazil to study Theology</p>
+              <p class="skills">Portuguese, Theology</p>
+            </dd>
+            <dt class="year">2012</dt>
+            <dd class="mb-4">
+              <p class="work">Started developing Wordpress Themes</p>
+              <p class="skills">PHP, Wordpress, UI/UX</p>
+            </dd>
+            <dt class="year">2010</dt>
+            <dd class="mb-4">
+              <p class="work">Worked as volunteer teacher in a Filipino native village for a year</p>
+              <p class="skills">English, Education, People Skills</p>
+            </dd>
+            <dt class="year">2008</dt>
+            <dd class="mb-4">
+              <p class="work">
+                <router-link to="/work/print-and-visual-design/">Started working with Visual & Print Design and 3D Modeling</router-link>
+              </p>
+              <p class="skills">Photoshop, InDesign, Cinema4D &middot; <router-link to="/work/print-and-visual-design/">Read More</router-link></p>
+            </dd>
+            <dt class="year">2007</dt>
+            <dd class="mb-4">
+              <p class="work">Got my first web development job while still in high school</p>
+              <p class="skills">HTML, CSS</p>
+            </dd>
           </dl>
         </section>
       </div>
@@ -130,5 +158,14 @@ export default {
 }
 .mail > i {
   font-style: normal;
+}
+.year {
+  @apply text-gray-600;
+}
+.work {
+  @apply font-semibold;
+}
+.skills {
+  @apply text-gray-600;
 }
 </style>
