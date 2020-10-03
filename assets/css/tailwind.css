@@ -69,6 +69,10 @@ figcaption {
 .markdown a {
   @apply text-blue-600 underline;
 }
+.markdown figure > a:hover,
+.markdown figure > a:focus {
+  @apply inline-block shadow-outline rounded;
+}
 .markdown :not(pre) code {
   font-size: 80%;
 
@@ -116,7 +120,7 @@ figcaption {
   font-size: 6em;
   z-index: -1;
   font-family: serif;
-  @apply text-gray-300 leading-none;
+  @apply text-gray-200 leading-none;
 }
 
 /*

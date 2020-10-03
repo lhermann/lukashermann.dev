@@ -23,7 +23,7 @@ Guitar Manual may look a bit bland at first. The provided stock was a top-down p
   <figure>
     <a href="/img/work/2d-orrery.jpg">
       <img
-        class="max-h-64 rounded"
+        class="max-h-64 rounded inline-block shadow"
         src="/img/work/2d-orrery-480.jpg"
         srcset="/img/work/2d-orrery-480.jpg 480w, /img/work/2d-orrery-640.jpg 640w, /img/work/2d-orrery-960.jpg 960w, /img/work/2d-orrery.jpg"
         alt="Orrery"
@@ -34,7 +34,7 @@ Guitar Manual may look a bit bland at first. The provided stock was a top-down p
   <figure class="ml-3">
     <a href="/img/work/2d-bulbworld.jpg">
       <img
-        class="max-h-64 rounded"
+        class="max-h-64 rounded inline-block shadow"
         src="/img/work/2d-bulbworld-480.jpg"
         srcset="/img/work/2d-bulbworld-480.jpg 480w, /img/work/2d-bulbworld-640.jpg 640w, /img/work/2d-bulbworld-960.jpg 960w, /img/work/2d-bulbworld.jpg"
         alt="Buldworld"
@@ -45,7 +45,7 @@ Guitar Manual may look a bit bland at first. The provided stock was a top-down p
   <figure class="ml-3">
     <a href="/img/work/2d-guitar-manual.jpg">
       <img
-        class="max-h-64 rounded"
+        class="max-h-64 rounded inline-block shadow"
         src="/img/work/2d-guitar-manual-480.jpg"
         srcset="/img/work/2d-guitar-manual-480.jpg 480w, /img/work/2d-guitar-manual-640.jpg 640w, /img/work/2d-guitar-manual-960.jpg 960w, /img/work/2d-guitar-manual.jpg"
         alt="Guitar Manual"
@@ -63,7 +63,7 @@ I gave myself the challenge to recreate simple real-world objects as faithful as
   <figure class="">
     <a href="/img/work/3d-ipod-nano.jpg">
       <img
-        class="max-h-64 rounded"
+        class="max-h-64 rounded inline-block shadow"
         src="/img/work/3d-ipod-nano-480.jpg"
         srcset="/img/work/3d-ipod-nano-480.jpg 480w, /img/work/3d-ipod-nano-640.jpg 640w, /img/work/3d-ipod-nano-960.jpg 960w, /img/work/3d-ipod-nano.jpg"
         alt="3D render of an iPod nano (4th generation)"
@@ -74,7 +74,7 @@ I gave myself the challenge to recreate simple real-world objects as faithful as
   <figure class="ml-3">
     <a href="/img/work/3d-axe-deodorant.jpg">
       <img
-        class="max-h-64 rounded"
+        class="max-h-64 rounded inline-block shadow"
         src="/img/work/3d-axe-deodorant-480.jpg"
         srcset="/img/work/3d-axe-deodorant-480.jpg 480w, /img/work/3d-axe-deodorant-640.jpg 640w, /img/work/3d-axe-deodorant-960.jpg 960w, /img/work/3d-axe-deodorant.jpg"
         alt="3D render of a fictional Axe deodorant spray"
@@ -90,7 +90,7 @@ These two buildings were created for a harbor scene as part of a 3D artist conte
   <figure class="">
     <a href="/img/work/3d-harbor-storehouse.jpg">
       <img
-        class="max-h-64 rounded"
+        class="max-h-64 rounded inline-block shadow"
         src="/img/work/3d-harbor-storehouse-480.jpg"
         srcset="/img/work/3d-harbor-storehouse-480.jpg 480w, /img/work/3d-harbor-storehouse-640.jpg 640w, /img/work/3d-harbor-storehouse-960.jpg 960w, /img/work/3d-harbor-storehouse.jpg"
         alt="3D render of a harbor storehouse"
@@ -101,7 +101,7 @@ These two buildings were created for a harbor scene as part of a 3D artist conte
   <figure class="ml-3">
     <a href="/img/work/3d-harbor-shipyard.jpg">
       <img
-        class="max-h-64 rounded"
+        class="max-h-64 rounded inline-block shadow"
         src="/img/work/3d-harbor-shipyard-480.jpg"
         srcset="/img/work/3d-harbor-shipyard-480.jpg 480w, /img/work/3d-harbor-shipyard-640.jpg 640w, /img/work/3d-harbor-shipyard-960.jpg 960w, /img/work/3d-harbor-shipyard.jpg"
         alt="3D render of a shipyard"
@@ -112,7 +112,7 @@ These two buildings were created for a harbor scene as part of a 3D artist conte
   <figure class="ml-3">
     <a href="/img/work/3d-harbor-scene.jpg">
       <img
-        class="max-h-64 rounded"
+        class="max-h-64 rounded inline-block shadow"
         src="/img/work/3d-harbor-scene-480.jpg"
         srcset="/img/work/3d-harbor-scene-480.jpg 480w, /img/work/3d-harbor-scene-640.jpg 640w, /img/work/3d-harbor-scene-960.jpg 960w, /img/work/3d-harbor-scene.jpg"
         alt="3D render of a harbor scene"
@@ -128,7 +128,7 @@ These two buildings were created for a harbor scene as part of a 3D artist conte
   <figure class="">
     <a href="/img/work/3d-spaceship-feme.jpg">
       <img
-        class="max-h-64 rounded"
+        class="max-h-64 rounded inline-block shadow"
         src="/img/work/3d-spaceship-feme-480.jpg"
         srcset="/img/work/3d-spaceship-feme-480.jpg 480w, /img/work/3d-spaceship-feme-640.jpg 640w, /img/work/3d-spaceship-feme.jpg"
         alt="3D render of a work in progress spaceship"
@@ -139,7 +139,7 @@ These two buildings were created for a harbor scene as part of a 3D artist conte
   <figure class="ml-3">
     <a href="/img/work/3d-turret-animation.gif">
       <img
-        class="max-h-64 rounded"
+        class="max-h-64 rounded inline-block shadow"
         src="/img/work/3d-turret-animation.gif"
         alt="3D animation of a turret"
       />
@@ -201,7 +201,7 @@ The best results an artist achieves not when working for a client but when creat
   <figure class="">
     <a href="/img/work/print-wedding-invite-1.jpg">
       <img
-        class="max-h-64 rounded"
+        class="max-h-64 rounded inline-block shadow"
         src="/img/work/print-wedding-invite-1-480.jpg"
         srcset="/img/work/print-wedding-invite-1-480.jpg 480w, /img/work/print-wedding-invite-1-640.jpg 640w, /img/work/print-wedding-invite-1.jpg"
         alt="Our wedding invatation card"
@@ -212,7 +212,7 @@ The best results an artist achieves not when working for a client but when creat
   <figure class="ml-3">
     <a href="/img/work/print-wedding-invite-2.jpg">
       <img
-        class="max-h-64 rounded"
+        class="max-h-64 rounded inline-block shadow"
         src="/img/work/print-wedding-invite-2-480.jpg"
         srcset="/img/work/print-wedding-invite-2-480.jpg 480w, /img/work/print-wedding-invite-2-640.jpg 640w, /img/work/print-wedding-invite-2.jpg"
         alt="And our wedding directions"
@@ -223,8 +223,59 @@ The best results an artist achieves not when working for a client but when creat
 </div>
 
 
+## Logo Design
 
-<!-- ## Logo Design -->
+This section is more for fond memories than showing off. A lot of work goes into a well-designed logo of which the casual observer may be oblivious due to its simple appearance.
+
+The first logo was for a summer camp (great memories!), the second one was for an acquaintance's business idea of a bakery, the design being a mix between a traditional 19th century and modern style, and the latter two are for a website and the podcast of my wife respectively.
+
+<div class="flex items-stretch justify-around mb-4">
+  <figure class="">
+    <a href="/img/work/logo-gallierlager.jpg">
+      <img
+        class="max-h-64 rounded inline-block shadow"
+        src="/img/work/logo-gallierlager-480.jpg"
+        srcset="/img/work/logo-gallierlager-480.jpg 480w, /img/work/logo-gallierlager-640.jpg 640w, /img/work/logo-gallierlager.jpg"
+        alt="Our wedding invatation card"
+      />
+    </a>
+    <figcaption>[2010]</figcaption>
+  </figure>
+  <figure class="ml-3">
+    <a href="/img/work/logo-lighthouse-goods.jpg">
+      <img
+        class="max-h-64 rounded inline-block shadow"
+        src="/img/work/logo-lighthouse-goods-480.jpg"
+        srcset="/img/work/logo-lighthouse-goods-480.jpg 480w, /img/work/logo-lighthouse-goods-640.jpg 640w, /img/work/logo-lighthouse-goods.jpg"
+        alt="And our wedding directions"
+      />
+    </a>
+    <figcaption>[2013]</figcaption>
+  </figure>
+  <figure class="ml-3">
+    <a href="/img/work/logo-ide.png">
+      <img
+        class="max-h-64 rounded inline-block shadow"
+        src="/img/work/logo-ide-480.png"
+        srcset="/img/work/logo-ide-480.png 480w, /img/work/logo-ide-640.png 640w, /img/work/logo-ide.png"
+        alt="Our wedding invatation card"
+      />
+    </a>
+    <figcaption>[2017]</figcaption>
+  </figure>
+  <figure class="ml-3">
+    <a href="/img/work/logo-papo-missionario.jpg">
+      <img
+        class="max-h-64 rounded inline-block shadow"
+        src="/img/work/logo-papo-missionario-480.jpg"
+        srcset="/img/work/logo-papo-missionario-480.jpg 480w, /img/work/logo-papo-missionario-640.jpg 640w, /img/work/logo-papo-missionario.jpg"
+        alt="And our wedding directions"
+      />
+    </a>
+    <figcaption>[2018]</figcaption>
+  </figure>
+</div>
+
 
 <!-- ## User Interfaces -->
 
