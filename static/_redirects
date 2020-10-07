@@ -6,3 +6,8 @@ https://www.tentmaker.dev/* https://lukashermann.dev/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://lukashermann.netlify.com/* https://lukashermann.dev/:splat 301!
+
+# Rockrolling intruders
+/.env         https://youtube.com/watch?v=dQw4w9WgXcQ
+/wp-login.php https://youtube.com/watch?v=dQw4w9WgXcQ
+/wp-admin     https://youtube.com/watch?v=dQw4w9WgXcQ
