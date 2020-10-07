@@ -95,6 +95,7 @@ export default {
    */
   generate: {
     routes: getDynamicRoutes(),
+    fallback: '404.html',
   },
   sitemap: {
     hostname: process.env.VUE_APP_HOST || 'http://localhost:3000',
