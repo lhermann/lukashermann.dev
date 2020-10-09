@@ -9,6 +9,14 @@ cover_image: https://thepracticaldev.s3.amazonaws.com/i/kvatjg8j5spcage2jeuj.jpg
 
 This collection serves less as space to show off and more as a archive of fond memories. There are beaturiful expressions of creativity and some dorky designs that are connected to nice memories. This is a place to enjoy.
 
+## Contents
+
+- [2D Image Manipulation](#2d-image-manipulation)
+- [3D Renders with Cinema4D](#3d-renders-with-cinema4d)
+- [Print Design](#print-design)
+- [Logo Design](#logo-design)
+- [User Interface Design](#user-interface-design)
+
 ## 2D Image Manipulation
 
 These are products of a Photoshop contest. In every case, a stock image was provided and the result was judged by the community based on creativity and execution.
@@ -19,7 +27,7 @@ Bulbworld is, as can be surmised by the title, a tiny world in a lightbulb. The 
 
 Guitar Manual may look a bit bland at first. The provided stock was a top-down picture of the guitar. My inspiration was [this Team Fortress 2 art](https://wiki.teamfortress.com/wiki/Sandvich/de#/media/File:Meetthesandvich4.PNG) showing the building instructions for a benign sandwich in the style of a vintage-looking metal plaque advertisement. I especially love the outlined breakdown of the guitar and the small details at the bottom with specially crafted logos in the style of the time.
 
-<div class="flex items-stretch justify-around mb-4">
+<div class="flex items-stretch justify-around my-6">
   <figure>
     <a href="/img/work/2d-orrery.jpg">
       <img
@@ -59,7 +67,7 @@ Guitar Manual may look a bit bland at first. The provided stock was a top-down p
 
 I gave myself the challenge to recreate simple real-world objects as faithful as possible. The fun part was to tweak the different surface materials until they felt just right.
 
-<div class="flex items-stretch justify-around mb-4">
+<div class="flex items-stretch justify-around my-6">
   <figure class="">
     <a href="/img/work/3d-ipod-nano.jpg">
       <img
@@ -86,7 +94,7 @@ I gave myself the challenge to recreate simple real-world objects as faithful as
 
 These two buildings were created for a harbor scene as part of a 3D artist contest. I really like the video game feel of these models. They won the contest.
 
-<div class="flex items-stretch justify-around mb-4">
+<div class="flex items-stretch justify-around my-6">
   <figure class="">
     <a href="/img/work/3d-harbor-storehouse.jpg">
       <img
@@ -124,7 +132,7 @@ These two buildings were created for a harbor scene as part of a 3D artist conte
 
 <!-- This work in progress render of a futuristic space ship comes with a turret animation. Even though the animation is very simple I had great fun tweaking it until it felt just right inconveying the mass and recoil of each shot.
 
-<div class="flex items-stretch justify-around mb-4">
+<div class="flex items-stretch justify-around my-6">
   <figure class="">
     <a href="/img/work/3d-spaceship-feme.jpg">
       <img
@@ -160,7 +168,7 @@ Similar to user interface design, the challenge in print design lies not with wh
 
 The best results an artist achieves not when working for a client but when creating a piece for the sake of the piece itself. That's why I included the invation card for my wedding that is immitating an airplane borading pass.
 
-<div class="flex items-stretch justify-around mb-4">
+<div class="flex items-stretch justify-around my-6">
   <figure class="">
     <a href="/img/work/print-ellen4all-flyer.jpg">
       <img
@@ -197,7 +205,7 @@ The best results an artist achieves not when working for a client but when creat
 </div>
 
 
-<div class="flex items-stretch justify-around mb-4">
+<div class="flex items-stretch justify-around my-6">
   <figure class="">
     <a href="/img/work/print-wedding-invite-1.jpg">
       <img
@@ -229,7 +237,7 @@ This section is more for fond memories than showing off. A lot of work goes into
 
 The first logo was for a summer camp (great memories!), the second one was for an acquaintance's business idea of a bakery, the design being a mix between a traditional 19th century and modern style, and the latter two are for a website and the podcast of my wife respectively.
 
-<div class="flex items-stretch justify-around mb-4">
+<div class="flex items-stretch justify-around my-6">
   <figure class="">
     <a href="/img/work/logo-gallierlager.jpg">
       <img
@@ -277,7 +285,98 @@ The first logo was for a summer camp (great memories!), the second one was for a
 </div>
 
 
-<!-- ## User Interfaces -->
+## User Interface Design
+
+I love user interfaces, good user interfaces that is. The thought that somebody else would use an interface I crafted, read the information I organized and navigate a structure I created always filled me with joy. There are so many subtle details to a good user interface, the art of presenting information in the clearest way possible, the challenge of guiding users through error states or asynchronous operations, the frustration of observing people using workarounds that you never intended, and finally, the joy of watching others accomplishing their task on an intuitive interface is just like watching a child learning to walk.
+
+The first two designs are from my youth when the work was exclusively done for the passion of it. The first is a webpage for a LAN party we were organizing with the primary requirement that it needed to look awesome. The second was a UI theme for a browser game (yes, remember those?) I was playing back in the day called Syndicates. I just finished playing the original Call of Duty Modern Warefare and the impressions spilled over somewhat.
+
+The [Joel Media](https://www.joelmedia.de/) UI was a redesign of a video archive page that was a few years old by that time and saw a good number of monthly users. The design went through [several iterations](/img/work/ui-joelmedia-iterations.jpg) which produced a great end result. It was my first time creating a user interface with several stakeholders and existing users. It motivated me to read up on how the "pros" do it, and just like them, I started by [writing words on paper cards](/img/work/ui-joelmedia-prototyping.jpg) and grouping them by topic. From that we derived our navigation and sitemap, and only then did Adobe Illustrator come to bear. It was a great project and taught me a lot.
+
+The latter three images are from more recent projects. The first two are from the prototyping phase of [Ellen4all](https://www.ellen4all.org/), a crowd translation platform. The last is from a project connected to my undergraduate thesis. I included them not because they are the most pretty, but because of the functional challenge they posed. The translation website has since gone through more iterations making it even simpler to use. Maybe I will write a separate post about it one day. CEMicro is extracting existing functionality from a point of sales software of a big car maker. As often the case with such software it has a feature set like a Swiss army knife with the usability of an income tax report. Even after boiling it down to as simple an interface as I could come up with the first impression is still daunting. But, to my personal joy, the existing users immediately understood how to use it. So there is that.
+
+<div class="flex items-stretch justify-around my-6">
+  <figure class="">
+    <a href="/img/work/ui-exp-lan.jpg">
+      <img
+        class="max-h-64 rounded inline-block shadow"
+        src="/img/work/ui-exp-lan-480.jpg"
+        srcset="/img/work/ui-exp-lan-480.jpg 480w, /img/work/ui-exp-lan-640.jpg 640w, /img/work/ui-exp-lan.jpg"
+        alt="exp lan party page user interface design"
+      />
+    </a>
+    <figcaption>exp lan [2007]</figcaption>
+  </figure>
+  <figure class="ml-3">
+    <a href="/img/work/ui-syndicates-ui-pack.jpg">
+      <img
+        class="max-h-64 rounded inline-block shadow"
+        src="/img/work/ui-syndicates-ui-pack-480.jpg"
+        srcset="/img/work/ui-syndicates-ui-pack-480.jpg 480w, /img/work/ui-syndicates-ui-pack-640.jpg 640w, /img/work/ui-syndicates-ui-pack.jpg"
+        alt="browsergame syndicates user interface design"
+      />
+    </a>
+    <figcaption>Syndicates [2008]</figcaption>
+  </figure>
+  <figure class="ml-3">
+    <a href="/img/work/ui-joelmedia-landing.jpg">
+      <img
+        class="max-h-64 rounded inline-block shadow"
+        src="/img/work/ui-joelmedia-landing-480.jpg"
+        srcset="/img/work/ui-joelmedia-landing-480.jpg 480w, /img/work/ui-joelmedia-landing-640.jpg 640w, /img/work/ui-joelmedia-landing.jpg"
+        alt="joel media landing page user interface"
+      />
+    </a>
+    <figcaption>landing page Joel Media [2017]</figcaption>
+  </figure>
+  <figure class="ml-3">
+    <a href="/img/work/ui-joelmedia-video.jpg">
+      <img
+        class="max-h-64 rounded inline-block shadow"
+        src="/img/work/ui-joelmedia-video-480.jpg"
+        srcset="/img/work/ui-joelmedia-video-480.jpg 480w, /img/work/ui-joelmedia-video-640.jpg 640w, /img/work/ui-joelmedia-video.jpg"
+        alt="joel media video page user interface"
+      />
+    </a>
+    <figcaption>video page Joel Media [2017]</figcaption>
+  </figure>
+</div>
+
+<div class="flex items-stretch justify-around my-6">
+  <figure class="">
+    <a href="/img/work/ui-translation-editor.jpg">
+      <img
+        class="max-h-64 rounded inline-block shadow"
+        src="/img/work/ui-translation-editor-480.jpg"
+        srcset="/img/work/ui-translation-editor-480.jpg 480w, /img/work/ui-translation-editor-640.jpg 640w, /img/work/ui-translation-editor.jpg"
+        alt="translation editor user interface"
+      />
+    </a>
+    <figcaption>translation editor [2018]</figcaption>
+  </figure>
+  <figure class="ml-3">
+    <a href="/img/work/ui-user-profile.png">
+      <img
+        class="max-h-64 rounded inline-block shadow"
+        src="/img/work/ui-user-profile-480.png"
+        srcset="/img/work/ui-user-profile-480.png 480w, /img/work/ui-user-profile-640.png 640w, /img/work/ui-user-profile.png"
+        alt="user profile user interface"
+      />
+    </a>
+    <figcaption>user profile [2018]</figcaption>
+  </figure>
+  <figure class="ml-3">
+    <a href="/img/work/ui-cemicro.png">
+      <img
+        class="max-h-64 rounded inline-block shadow"
+        src="/img/work/ui-cemicro-480.png"
+        srcset="/img/work/ui-cemicro-480.png 480w, /img/work/ui-cemicro-640.png 640w, /img/work/ui-cemicro.png"
+        alt="pdf template translator user interface"
+      />
+    </a>
+    <figcaption>pdf template translator [2019]</figcaption>
+  </figure>
+</div>
 
 
 
