@@ -5,7 +5,7 @@ created: 2019-08-04
 updated: 2020-02-15
 description: Using a Vue Renderless Component to handle async requests to abstract the HTTP request logic and make it reusable.
 tags: js, vuejs, async, axios
-cover_image: /img/writing/vue-async-component/cover.png
+cover_image: /img/writing/covers/vuejs-async-renderless-component.png
 canonical_plattform: dev.to
 --canonical_url: https://dev.to/codinglukas/vue-js-pattern-for-async-requests-using-renderless-components-3gd
 ---

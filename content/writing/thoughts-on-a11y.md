@@ -4,6 +4,7 @@ published: true
 created: 2020-08-16
 description: Your app is not as accessible as it shouls be because it doesn't pay.
 tags: thoughts
+cover_image: /img/writing/covers/thoughts-on-a11y.jpg
 ---
 
 This American Life shares the speaking disablility of [Jerome Ellis](http://www.jeromeellis.com/) in a very touching section of their podcast.

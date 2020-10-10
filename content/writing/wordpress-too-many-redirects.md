@@ -5,7 +5,7 @@ created: 2020-05-09
 updated: 2020-05-09
 description: Every Wordpress developer sooner or later faces the ERR_TOO_MANY_REDIRECTS problem. Here is how to fix it.
 tags: php, wordpress, reverse-proxy, error
-cover_image: /img/writing/too-many-redirects/cover.png
+cover_image: /img/writing/covers/wordpress-too-many-redirects.png
 --canonical_plattform: dev.to
 --canonical_url: https://dev.to/codinglukas/vue-js-pattern-for-async-requests-using-renderless-components-3gd
 ---
