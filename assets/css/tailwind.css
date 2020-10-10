@@ -168,3 +168,8 @@ figcaption {
 .max-h-64 {
   max-height: 16rem;
 }
+@screen md {
+  .md\:max-h-64 {
+    max-height: 16rem;
+  }
+}

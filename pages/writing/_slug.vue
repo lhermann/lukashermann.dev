@@ -5,7 +5,7 @@
         {{ attributes.title }}
       </h1>
       <div class="flex flex-wrap items-center">
-        <TmIdentity class="mr-5" />
+        <TmIdentity class="mb-3 md:mb-0 mr-5" />
         <div v-if="attributes.created" class="mr-5">
           <time class="text-gray-500" :datetime="attributes.created">
             {{ formatDate(attributes.created) }}

@@ -4,20 +4,17 @@
       <h1 v-if="attributes.title" class="text-4xl font-semibold">
         {{ attributes.title }}
       </h1>
-      <div class="flex items-center">
-        <TmIdentity />
+      <div class="flex flex-wrap items-center">
+        <TmIdentity class="mb-3 md:mb-0 mr-5" />
         <template v-if="attributes.created">
-          <span class="text-gray-400 mx-2">&middot;</span>
           <div class="text-gray-500">{{ formatDate(attributes.created) }}</div>
         </template>
-        <template v-if="attributes.updated">
-          <span class="text-gray-400 mx-2">&middot;</span>
+        <template v-if="attributes.updated" class="mr-5">
           <div class="text-gray-500">
             Updated on {{ formatDate(attributes.updated) }}
           </div>
         </template>
-        <template v-if="attributes.tags">
-          <span class="text-gray-400 mx-2">&middot;</span>
+        <template v-if="attributes.tags" class="mr-5">
           <TmTags class="test" :tags="attributes.tags" />
         </template>
       </div>
