@@ -73,7 +73,7 @@ figcaption {
 .markdown figure > a:focus {
   @apply inline-block shadow-outline rounded;
 }
-.markdown :not(pre) code {
+.markdown :not(pre) > code {
   font-size: 80%;
 
   @apply bg-gray-200 text-gray-700 py-0 px-1 rounded;
@@ -95,12 +95,13 @@ figcaption {
   @apply rounded px-3;
 }
 .markdown .header-anchor {
-  @apply absolute -ml-12 px-4 no-underline text-gray-400 invisible;
+  @apply absolute -ml-12 pl-4 pr-8 no-underline text-gray-400 invisible;
 }
 .markdown .header-anchor:hover {
   @apply text-gray-500;
 }
-.markdown *:hover > .header-anchor {
+.markdown *:hover > .header-anchor,
+.markdown .header-anchor:hover {
   @apply visible;
 }
 .markdown iframe {
