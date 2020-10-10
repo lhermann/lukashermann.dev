@@ -34,10 +34,10 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || '',
       },
-      { name: 'msapplication-TileColor', content: '#e88823' },
-      { name: 'theme-color', content: '#ffffff' },
-      { name: 'theme-color', content: '#ffffff' },
-      { name: 'twitter:site', content: '@codinglukas' },
+      { name: 'msapplication-TileColor', content: '#E29449' },
+      { name: 'theme-color', content: '#E29449' },
+      { name: 'theme-color', content: '#E29449' },
+      { name: 'twitter:site', content: '@_lhermann' },
     ],
     link: [
       {
@@ -58,7 +58,7 @@ export default {
         href: '/favicon-16x16.png',
       },
       { rel: 'manifest', href: '/site.webmanifest' },
-      { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#e88823' },
+      { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#E29449' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v=2' },
     ],
     htmlAttrs: {
