@@ -2,7 +2,7 @@
 title: 'Writing good CSS: 11 Best Practices'
 published: true
 created: 2020-10-10
-description: Through my years of using CSS, I have found some principles to stand the proof of time while others did cause me many headaches in the long run. I want to share with you the those that stood the test of time.
+description: Lessons learned from over 10 years of writing CSS. The 11 most important CSS principles I would like to have taught myself as a beginner.
 tags: css, best-practice
 cover_image: /img/writing/covers/writing-good-css-11-best-practices.jpg
 ---
@@ -279,8 +279,6 @@ _Note: A probable exception to this role might be a `.btn` component. If you wan
 
 If two selectors have the same specificity, the latter will be used. Therefore, to play to the strengths of the CSS specificity feature, it makes sense to organize your CSS file by increasing specificity. Put your resets and element selectors first, your normal classes afterward, and finish with your utility classes like `.text-center` or `.nowrap` where you can then safely use `!important`.
 
-![Code example: two selectors with equal specificity, the second will win](annotated/same-specificity-a.png)
-
 <div class="flex justify-around flex-wrap md:flex-no-wrap">
   <div class="w-full md:w-1/2">
     <p class="bg-red-200 rounded text-red-700 text-center italic">
@@ -527,14 +525,14 @@ _Further reading: Harry Roberts makes a great case for this in [CSS Shorthand Sy
 
 ## 11. Keep presentation (CSS), semantics (HTML) and behavior (JS) separate
 
-I often see styling tied to ids or elements (like `#nav` or `.nav ul li`), or javascript behaviour tied to a class (like `document.getElementsByClassName(".nav")`). However, if you do this you rob yourself of the flexibility to keep presentation (CSS), semantics (HTML), and behavior (JS) separate. You want to be able to style something as a button, regardless if it is an `<a>`, `<button>` or `<div>` (note that the latter is not good for accessibility). Or if you create a navbar, you want to be able to use `<li>`-tags or `<div>`-tags depending on the necessary semantics, without losing your styling or have to change the CSS.
+I often see styling tied to ids or elements (like `#nav` or `.nav ul li`), or javascript behavior tied to a class (like `document.getElementsByClassName(".nav")`). However, if you do this you rob yourself of the flexibility to keep presentation (CSS), semantics (HTML), and behavior (JS) separate. You want to be able to style something as a button, regardless if it is an `<a>`, `<button>` or `<div>` (note that the latter is not good for accessibility). Or if you create a navbar, you want to be able to use `<li>`-tags or `<div>`-tags depending on the necessary semantics, without losing your styling or have to change the CSS.
 
 To achieve this use ids for javascript (as originally intended), or better, `data`-attributes like so: `document.querySelectorAll('[data-nav]');` and don't mingle the `button` element selector with your styles. This gives you the freedom to change either semantics, presentation, or behavior independently without having to worry about the other two.
 
 <div class="flex justify-around flex-wrap">
   <div class="w-full">
     <p class="bg-red-200 rounded text-red-700 text-center italic">
-      Bad: mixing presentation and behaviour
+      Bad: mixing presentation and behavior
     </p>
 
 ```html
@@ -556,7 +554,7 @@ To achieve this use ids for javascript (as originally intended), or better, `dat
   </div>
   <div class="w-full">
     <p class="bg-green-200 rounded text-green-700 text-center italic">
-      Good: presentation and behaviour are kept separate
+      Good: presentation and behavior are kept separate
     </p>
 
 ```html
