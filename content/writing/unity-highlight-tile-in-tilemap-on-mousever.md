@@ -2,9 +2,9 @@
 title: 'Unity: Highlight Tile in Tilemap on Mouseover'
 published: true
 created: 2020-10-18
-description:
+description: My project today was a simple 2D top-down view tilemap that highlights tiles on mouseover and places them on click. In this article you will learn how to accomplish just that.
 tags: unity, csharp, gamedev
-cover_image:
+cover_image: /img/writing/covers/unity-highlight-tile-in-tilemap-on-mousever.png
 ---
 
 I am a web developer getting into game development with Unity. My project today was a simple 2D top-down view tilemap that highlights tiles on mouseover and places them on click. The result should look like this:
