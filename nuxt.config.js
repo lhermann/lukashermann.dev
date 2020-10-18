@@ -4,6 +4,7 @@ import Mode from 'frontmatter-markdown-loader/mode'
 import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItAttrs from 'markdown-it-attrs'
+import markdownItEmoji from 'markdown-it-emoji'
 import hljs from 'highlight.js'
 import uslug from 'uslug'
 const CONTENT_DIR = 'content/'
@@ -131,6 +132,7 @@ export default {
           markdownIt: markdownIt({
             html: true,
             typographer: true,
+            linkify: true,
             highlight: (str, lang) => {
               const code =
                 lang && hljs.getLanguage(lang)
@@ -138,11 +140,14 @@ export default {
                   : markdownIt().utils.escapeHtml(str)
               return `<pre class="hljs"><code>${code}</code></pre>`
             },
-          }).use(markdownItAnchor, {
-            permalink: true,
-            permalinkBefore: true,
-            slugify: s => uslug(s),
-          }).use(markdownItAttrs),
+          })
+            .use(markdownItAnchor, {
+              permalink: true,
+              permalinkBefore: true,
+              slugify: s => uslug(s),
+            })
+            .use(markdownItAttrs)
+            .use(markdownItEmoji),
         },
       })
     },
