@@ -12,7 +12,6 @@ const CONTENT_DIR = 'content/'
 require('dotenv').config()
 
 export default {
-  mode: 'universal',
   env: {
     host: process.env.VUE_APP_HOST || 'http://localhost:3000',
   },
