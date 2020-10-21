@@ -1,8 +1,8 @@
-# lukashermann.dev
+# [lukashermann.dev](lukashermann.dev)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4558bba9-8ef4-4328-8cb0-b241579af1a3/deploy-status)](https://app.netlify.com/sites/lukashermann/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/99840335-8bf8-4806-ab8a-64ecb98a4af8/deploy-status)](https://app.netlify.com/sites/lukashermann/deploys)
 
-> Front-End Developer, Vue.js, UX Design
+> I'm a Maker and Full Stack Developer who loves working with the Frontend, Vue.js and User Interface Design.
 
 ## Build Setup
 
