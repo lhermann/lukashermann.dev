@@ -58,16 +58,6 @@ export default {
       error({ statusCode: 404, message: 'Article not found' })
     }
   },
-  computed: {
-    canonical () {
-      return this.attributes?.canonical_url || process.env.host + this.$route.path
-    },
-  },
-  methods: {
-    formatDate(date) {
-      return date ? format(parseISO(date), 'MMMM d, y') : date
-    },
-  },
   head () {
     const image = process.env.host + this.attributes?.cover_image
     return {
@@ -91,6 +81,16 @@ export default {
         { rel: 'canonical', href: this.canonical },
       ],
     }
+  },
+  computed: {
+    canonical () {
+      return this.attributes?.canonical_url || process.env.host + this.$route.path
+    },
+  },
+  methods: {
+    formatDate(date) {
+      return date ? format(parseISO(date), 'MMMM d, y') : date
+    },
   },
 }
 </script>

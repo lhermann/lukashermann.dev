@@ -21,8 +21,8 @@ import parseISO from 'date-fns/parseISO'
 import ArticleExcerpt from '~/components/ArticleExcerpt'
 
 export default {
-  layout: 'gray',
   components: { ArticleExcerpt },
+  layout: 'gray',
   asyncData() {
     const articles = require.context('~/content/writing/', true, /\.md$/)
       .keys()
