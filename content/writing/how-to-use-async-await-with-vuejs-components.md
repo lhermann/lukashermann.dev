@@ -91,14 +91,14 @@ Content of Vue Single File Component's `<script>` tag{.text-sm .text-center}
 
 Computed properties are the exception, Vue does not allow them to be async. There are ways to get around this restriction like the [vue-async-computed](https://www.npmjs.com/package/vue-async-computed) plugin, but this is not a good practice.
 
-If you need an async computed property, then you probably made an architectural mistake in your component. With some experience, it becomes natural to handle computed properties as purely synchronous functions. All async operations should be done in methods.
+If you need an async computed property, then you probably made an architectural mistake in your component. With some experience it becomes natural to handle computed properties as purely synchronous functions. All async operations should be done in methods.
 
 If you still find yourself needing an async computed property then try using a watcher instead.
 
 
 # Watchers
 
-[Watchers](https://vuejs.org/v2/guide/computed.html#Watchers) can perform async operations when they detect changes in the data. Therefore watchers can cause computed properties to update with asynchronously.
+[Watchers](https://vuejs.org/v2/guide/computed.html#Watchers) can perform async operations when they detect changes in the data. Therefore watchers can cause computed properties to update asynchronously.
 
 Here is an example where the computed prop returns a count of users. The watcher reloads the user list as soon as the `userRoles` filter changes.
 
@@ -132,7 +132,7 @@ Content of Vue Single File Component's `<script>` tag{.text-sm .text-center}
 
 [Nuxt](https://nuxtjs.org/) is a framework on top of Vue that makes the development of server-side rendered applications easier.
 
-Nuxt has a special method called `asyncData ()` that is called before the component is created. This allows the server to pre-render the component before sending it to the client and it allows the client to pre-fetch data before the new component is shown to the user. This is especially interesting with page-level components where data can be fetched before the user even clicks on the next link creating the experience, similar to a mobile app, of instant page navigation.
+Nuxt has a special method called `asyncData ()` that is called before the component is created. This allows the server to pre-render the component before sending it to the client and it allows the client to pre-fetch data before the new component is shown to the user. This is especially interesting with page-level components where data can be fetched before the user even clicks on the next link creating the experience of instant page navigation, similar to a mobile app.
 
 _Be aware that `asyncData ()` doesn't have access to the component's instance and `this` context, therefore the data must be returned instead._
 
