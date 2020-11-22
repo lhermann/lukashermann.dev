@@ -21,7 +21,6 @@
     "markdown-it-attrs": "^3.0.3",
     "markdown-it-container": "^3.0.0",
     "markdown-it-emoji": "^2.0.0",
-    "markdown-it-github-toc": "^3.2.4",
     "nuxt": "^2.14.7",
     "uslug": "^1.0.4"
   },
