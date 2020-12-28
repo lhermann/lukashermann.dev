@@ -22,8 +22,8 @@
 import WorkExcerpt from '~/components/WorkExcerpt'
 
 export default {
-  layout: 'gray',
   components: { WorkExcerpt },
+  layout: 'gray',
   asyncData() {
     const projects = require
       .context('~/content/work/', true, /\.md$/)

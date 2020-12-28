@@ -11,10 +11,10 @@
 
 <script>
 export default {
+  layout: 'gray',
   props: {
     error: { type: Object, required: true },
   },
-  layout: 'gray',
   computed: {
     statusCode () {
       return (this.error && this.error.statusCode) || 500
