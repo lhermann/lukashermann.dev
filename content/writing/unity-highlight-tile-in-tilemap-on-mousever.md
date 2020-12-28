@@ -9,7 +9,16 @@ cover_image: /img/writing/covers/unity-highlight-tile-in-tilemap-on-mousever.png
 
 I am a web developer getting into game development with Unity. My project today was a simple 2D top-down view tilemap that highlights tiles on mouseover and places them on click. The result should look like this:
 
-![Highlighting and adding tiles in Unity: the desired result](/img/writing/unity-highlight-tiles-result.gif){.rounded .shadow}
+<div class="text-center">
+  <figure data-gifpause onclick="gifpause_toggle(event)">
+    <img
+      class="rounded shadow"
+      src="/img/writing/unity-highlight-tiles-result.gif"
+      data-still="/img/writing/unity-highlight-tiles-result-still.jpg"
+      alt="Highlighting and adding tiles in Unity: the desired result"
+    />
+  </figure>
+</div>
 
 Since I will not start at zero in this article, here is a list of tutorials I consumed to get here myself:
 

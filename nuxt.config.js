@@ -81,6 +81,7 @@ export default {
    */
   plugins: [
     '@/plugins/email-obfuscate.js',
+    { src: '@/plugins/gif-pause.js', mode: 'client' },
   ],
   /*
    ** Nuxt.js modules
