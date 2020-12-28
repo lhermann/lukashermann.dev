@@ -74,3 +74,7 @@ I figured that the good folks at Apple add an extra fake 500ms to the actual tim
 </div>
 
 So there you have it, the iPhone timer is technically lying to you.
+
+### References:
+
+- [The code from the animations in this article](https://codepen.io/lhermann/pen/wvzPxXj)
