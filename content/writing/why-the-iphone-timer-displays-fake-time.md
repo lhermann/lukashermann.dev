@@ -7,7 +7,7 @@ tags: ios, js, project
 cover_image: /img/writing/covers/why-the-iphone-timer-displays-fake-time.jpg
 ---
 
-While building my event timer app called [stagetimer.io](https://stagetimer.io) I came across a peculiarity with displaying time found out that the iPhone timer addresses it by showing us a fake time. By definition, a countdown shows how much time is left. So if the countdown says 5s we assume there are 5 seconds left. But that's not the whole truth.
+While building my event timer app called [stagetimer.io](https://stagetimer.io) I came across a peculiarity with displaying time and found out that the iPhone timer addresses it by showing us a fake time. By definition, a countdown shows how much time is left. So if the countdown says 5s we assume there are 5 seconds left. But that's not the whole truth.
 
 # TL;DR
 
@@ -77,9 +77,9 @@ So there you have it, the iPhone timer is technically lying a little bit to you.
 
 # Edit: About rounding time
 
-Some have pointed out that the problem could be simply solved by rounding to the nearest integer or rounding up instead of rounding down.
+Some have pointed out that the problem could be solved more easily by rounding to the nearest second or rounding up instead of rounding down. This is correct. Suppose we have `5459543ms` that we want to bring into the traditional form `HH:mm:ss`.
 
-Suppose we have `5459543ms` that we want to bring into the traditional form `HH:mm:ss`. We need to devide this number and apply some modular arithmatic to get hours, minutes and seconds. Here is the formula with the respective results:
+I first divided the number into hours, minutes, and seconds with the help of some modular arithmetic and applied the rounding afterward. Rounding down results in `01:30:59`, which is correct, but rounding to the nearest integer or rounding up results in the impossible time `02:31:60`.
 
 ```js
 time = 5459543
@@ -88,16 +88,16 @@ minutes = (time / 60000) % 60 // 30.992
 hours = (time / 3600000) % 24 // 59.543
 ```
 
-Rounding down will give us the correct time `01:30:59` while rounding up or to the nearest integer would result in `02:31:60`. We could also round `time` to full seconds first and divide afterwards:
+However, rounding the time to seconds first `5460000ms`, and breaking it down afterward yields the same result as described above with adding 500ms, namely `01:31:00`.
 
 ```js
-timeInSeconds = Math.ceil(5459543 / 1000)
-seconds = timeInSeconds % 60 // 0
-minutes = (timeInSeconds / 60) % 60 // 31
-hours = (timeInSeconds / 3600) % 24 // 1.516
+time = 5460000
+seconds = (time / 1000) % 60 // 0.000
+minutes = (time / 60000) % 60 // 31.000
+hours = (time / 3600000) % 24 // 1.517
 ```
 
-This kind of works, giving us a better display for a countdown timer if we round down the hour (or do more fancy calculations which is not the point of this article). Hence adding 500ms before displaying the time may be the simpler solution the iOS developer chose to solve the problem.
+__Edit 2: In an earlier version I messed up my rounding as described. Many helpful, as well as helpful and insulting, comments pointed out my error. So in addition to learning about counting time I also learned how it feels to be wrong on the internet 😅__
 
 ### References:
 
