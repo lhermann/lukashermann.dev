@@ -77,7 +77,7 @@ So there you have it, the iPhone timer is technically lying to you.
 
 # Edit: about rounding time
 
-As some have pointed out to me the problem could be solved by simply rounding to the nearest integer or rounding up instead of rounding down. I want to propose that this is not a feasable solution.
+Some have pointed out that the problem could be simply solved by rounding to the nearest integer or rounding up instead of rounding down. I want to propose that this is not a feasible solution.
 
 Suppose we have `5459543 ms` that we want to bring into the traditional form `HH:mm:ss`. We need to devide this number and apply some modular arithmatic to get hours, minutes and seconds. Here is the formula with the respective results:
 
@@ -88,7 +88,7 @@ minutes = (time / 60000) % 60 // 30.992383333333336
 hours = (time / 3600000) % 24 // 59.542999999999665
 ```
 
-Rounding down will give us the correct time `01:30:59` while rounding up or to nearest integer would result in `02:31:60`. Of course, we could substract the seconds and minutes of `time` after each step, but this would still leave us with an impossible display of `60` seconds. Hence I propose that adding 500ms before displaying the time is the simplest solution to the problem.
+Rounding down will give us the correct time `01:30:59` while rounding up or to the nearest integer would result in `02:31:60`. Of course, we could subtract the seconds and minutes of `time` after each step, but this would still leave us with an impossible display of `60` seconds. Hence I propose that adding 500ms before displaying the time is the simplest solution to the problem.
 
 ### References:
 
