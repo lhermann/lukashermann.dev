@@ -75,7 +75,7 @@ I figured that the good folks at Apple add an extra fake 500ms to the actual tim
 
 So there you have it, the iPhone timer is technically lying a little bit to you.
 
-# Edit: about rounding time
+# Edit: About rounding time
 
 Some have pointed out that the problem could be simply solved by rounding to the nearest integer or rounding up instead of rounding down.
 
