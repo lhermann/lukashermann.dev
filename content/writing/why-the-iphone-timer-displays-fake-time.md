@@ -73,22 +73,31 @@ I figured that the good folks at Apple add an extra fake 500ms to the actual tim
   </figure>
 </div>
 
-So there you have it, the iPhone timer is technically lying to you.
+So there you have it, the iPhone timer is technically lying a little bit to you.
 
 # Edit: about rounding time
 
-Some have pointed out that the problem could be simply solved by rounding to the nearest integer or rounding up instead of rounding down. I want to propose that this is not a feasible solution.
+Some have pointed out that the problem could be simply solved by rounding to the nearest integer or rounding up instead of rounding down.
 
-Suppose we have `5459543 ms` that we want to bring into the traditional form `HH:mm:ss`. We need to devide this number and apply some modular arithmatic to get hours, minutes and seconds. Here is the formula with the respective results:
+Suppose we have `5459543ms` that we want to bring into the traditional form `HH:mm:ss`. We need to devide this number and apply some modular arithmatic to get hours, minutes and seconds. Here is the formula with the respective results:
 
 ```js
 time = 5459543
-seconds = (time / 1000) % 60 // 1.5165397222222223
-minutes = (time / 60000) % 60 // 30.992383333333336
-hours = (time / 3600000) % 24 // 59.542999999999665
+seconds = (time / 1000) % 60 // 1.517
+minutes = (time / 60000) % 60 // 30.992
+hours = (time / 3600000) % 24 // 59.543
 ```
 
-Rounding down will give us the correct time `01:30:59` while rounding up or to the nearest integer would result in `02:31:60`. Of course, we could subtract the seconds and minutes of `time` after each step, but this would still leave us with an impossible display of `60` seconds. Hence I propose that adding 500ms before displaying the time is the simplest solution to the problem.
+Rounding down will give us the correct time `01:30:59` while rounding up or to the nearest integer would result in `02:31:60`. We could also round `time` to full seconds first and divide afterwards:
+
+```js
+timeInSeconds = Math.ceil(5459543 / 1000)
+seconds = timeInSeconds % 60 // 0
+minutes = (timeInSeconds / 60) % 60 // 31
+hours = (timeInSeconds / 3600) % 24 // 1.516
+```
+
+This kind of works, giving us a better display for a countdown timer if we round down the hour (or do more fancy calculations which is not the point of this article). Hence adding 500ms before displaying the time may be the simpler solution the iOS developer chose to solve the problem.
 
 ### References:
 
