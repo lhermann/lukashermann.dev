@@ -97,7 +97,7 @@ minutes = (time / 60000) % 60 // 31.000
 hours = (time / 3600000) % 24 // 1.517
 ```
 
-__Edit 2: In an earlier version I messed up my rounding as described. Many helpful, as well as helpful and insulting, comments pointed out my error. So in addition to learning about counting time I also learned how it feels to be wrong on the internet 😅__
+_Edit 2: In an earlier version I messed up my rounding as described. Many helpful, as well as helpful and insulting, comments pointed out my error. So in addition to learning about counting time I also learned how it feels to be wrong on the internet_ 😅
 
 ### References:
 
