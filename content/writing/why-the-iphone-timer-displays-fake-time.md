@@ -7,6 +7,8 @@ tags: ios, js, project
 cover_image: /img/writing/covers/why-the-iphone-timer-displays-fake-time.jpg
 ---
 
+[本文的中文翻译](https://mp.weixin.qq.com/s/VDmjQacZNEmnynN6PylFhw "Chinese translation of this article")
+
 While building my event timer app called [stagetimer.io](https://stagetimer.io) I came across a peculiarity with displaying time and found out that the iPhone timer addresses it by showing us a fake time. By definition, a countdown shows how much time is left. So if the countdown says 5s we assume there are 5 seconds left. But that's not the whole truth.
 
 # TL;DR
