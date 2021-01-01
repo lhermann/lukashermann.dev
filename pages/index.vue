@@ -77,9 +77,9 @@
             <dt class="year">2008</dt>
             <dd class="mb-4">
               <p class="work">
-                <router-link to="/work/print-and-visual-design/">Started working with Visual & Print Design and 3D Modeling</router-link>
+                <router-link to="/writing/print-and-visual-design/">Started working with Visual & Print Design and 3D Modeling</router-link>
               </p>
-              <p class="skills">Photoshop, InDesign, Cinema4D &middot; <router-link to="/work/print-and-visual-design/">Read More</router-link></p>
+              <p class="skills">Photoshop, InDesign, Cinema4D &middot; <router-link to="/writing/print-and-visual-design/">Read More</router-link></p>
             </dd>
             <dt class="year">2007</dt>
             <dd class="mb-4">

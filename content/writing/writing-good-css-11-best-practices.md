@@ -1,6 +1,5 @@
 ---
 title: 'Writing good CSS: 11 Best Practices'
-published: true
 created: 2020-10-10
 description: Lessons learned from over 10 years of writing CSS. The 11 most important CSS principles I would like to have taught myself as a beginner.
 tags: css, best-practice

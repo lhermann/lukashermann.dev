@@ -1,6 +1,5 @@
 ---
 title: 404 Error Page and Redirect with Nuxt
-published: true
 created: 2020-09-27
 description: How to create a custom 404 Error Page with Nuxt and perform 404 redirects from other pages programmatically
 tags: js, vuejs, nuxt

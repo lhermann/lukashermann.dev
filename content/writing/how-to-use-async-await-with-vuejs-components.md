@@ -1,6 +1,5 @@
 ---
 title: How to use Async/Await with Vue.js Components
-published: true
 created: 2020-09-21
 description: Code examples for the usage of async/await with Vue.js single file components
 tags: js, vuejs, async, await, nuxt

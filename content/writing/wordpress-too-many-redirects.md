@@ -1,6 +1,5 @@
 ---
 title: Fixing the ERR_TOO_MANY_REDIRECTS error with Wordpress
-published: true
 created: 2020-05-09
 updated: 2020-05-09
 description: Every Wordpress developer sooner or later faces the ERR_TOO_MANY_REDIRECTS problem. Here is how to fix it.

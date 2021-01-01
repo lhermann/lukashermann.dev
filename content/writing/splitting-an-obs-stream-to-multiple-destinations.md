@@ -1,6 +1,5 @@
 ---
 title: 'Splitting an OBS Stream to multiple YouTube Channels'
-published: true
 created: 2020-11-22
 description: Recently Joel Media needed to distribute a live stream from OBS Studio to four YouTube channels simultaneously. OBS Studio itself doesn’t provide a way to define more than one output, therefore we had to find a way to split the stream into four.
 tags: docker, nginx, obs, streaming

@@ -1,7 +1,7 @@
 ---
 title: 'Why the iPhone Timer App displays a Fake Time'
-published: true
 created: 2020-12-22
+updated: 2020-12-30
 description: While building a timer app I came across a peculiarity with displaying time and found out that the iPhone timer addresses it by showing you a fake time.
 tags: ios, js, project
 cover_image: /img/writing/covers/why-the-iphone-timer-displays-fake-time.jpg

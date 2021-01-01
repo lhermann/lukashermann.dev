@@ -1,6 +1,5 @@
 ---
 title: Thoughts on a11y (Accessibility)
-published: true
 created: 2020-08-16
 description: Your app is not as accessible as it should be because a11y doesn't pay.
 tags: thoughts
