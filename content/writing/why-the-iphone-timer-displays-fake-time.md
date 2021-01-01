@@ -23,7 +23,7 @@ Javascript likes to use milliseconds when dealing with time, 1000ms equals 1s. H
   <figure data-gifpause onclick="gifpause_toggle(event)">
     <img
       class="rounded"
-      src="/img/writing/5s-timer-seconds-temp.gif"
+      src="/img/writing/5s-timer-seconds.gif"
       data-still="/img/writing/5s-timer-seconds.png"
       alt="5s countdown timer showing only seconds"
     />
@@ -36,7 +36,7 @@ The timer jumps to 4s right when hitting start and once the timer switches to 0s
   <figure data-gifpause onclick="gifpause_toggle(event)">
     <img
       class="rounded"
-      src="/img/writing/5s-timer-seconds-fractions-temp.gif"
+      src="/img/writing/5s-timer-seconds-fractions.gif"
       data-still="/img/writing/5s-timer-seconds-fractions.png"
       alt="5s countdown timer showing seconds and its fractions"
     />
@@ -53,7 +53,7 @@ Now I was curious how my iPhone solves this conundrum. So I set my iPhone timer 
   <figure data-gifpause onclick="gifpause_toggle(event)">
     <img
       class="rounded"
-      src="/img/writing/5s-timer-iphone-temp.gif"
+      src="/img/writing/5s-timer-iphone.gif"
       data-still="/img/writing/5s-timer-iphone.png"
       alt="5s countdown timer on the iPhone"
     />
@@ -68,7 +68,7 @@ I figured that the good folks at Apple add an extra fake 500ms to the actual tim
   <figure data-gifpause onclick="gifpause_toggle(event)">
     <img
       class="rounded"
-      src="/img/writing/5s-timer-fake-seconds-temp.gif"
+      src="/img/writing/5s-timer-fake-seconds.gif"
       data-still="/img/writing/5s-timer-fake-seconds.png"
       alt="5s countdown timer showing fake seconds"
     />
