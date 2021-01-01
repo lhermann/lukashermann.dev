@@ -32,7 +32,7 @@ _Note: The advice in this article is concerned with the developer experience of 
 
 It is really important to understand CSS specificity first, [here is an excellent article](https://dev.to/emmawedekind/css-specificity-1kca). In essence, whenever you want to overwrite styles applied by one selector, you need to exceed or at least match its specificity.
 
-<div class="flex justify-around flex-wrap md:flex-no-wrap">
+<div class="flex justify-around flex-wrap md:flex-nowrap">
   <div class="w-full md:w-1/2">
     <p class="bg-red-200 rounded text-red-700 text-center italic">
       Bad: specificity of first selector is too high
@@ -73,7 +73,7 @@ To avoid the specificity wars, you want to avoid adding selectors that are not n
 
 Id selectors have the highest specificity. This means whenever you use one, you are forced to use it again every time you want to modify the element's style. This might work well when you write your code in the first place but causes a headache whenever you want to extend it. I recommend generally avoiding `#id` selectors in your stylesheet.
 
-<div class="flex justify-around flex-wrap md:flex-no-wrap">
+<div class="flex justify-around flex-wrap md:flex-nowrap">
   <div class="w-full md:w-1/2">
     <p class="bg-red-200 rounded text-red-700 text-center italic">
       Bad: forced to use the #footer selector repeatedly
@@ -114,7 +114,7 @@ _Further Reading: This article of Harry Roberts shows how you can [use ids witho
 
 `!important` is the ace of spades of CSS, it is the ultimate trump card, and it should be treated as such. If you use it to escape the frustration of dealing with specificity which has gotten out of hand, then you are using it wrong. Use it sparingly, with selectors that have a very narrow scope and where you are certain that you want it to overpower all other styles.
 
-<div class="flex justify-around flex-wrap md:flex-no-wrap">
+<div class="flex justify-around flex-wrap md:flex-nowrap">
   <div class="w-full md:w-1/2">
     <p class="bg-red-200 rounded text-red-700 text-center italic">
       Bad: using !important to deal with specificity frustration
@@ -153,7 +153,7 @@ Especially with pre-processors like Sass, it is very easy to nest selectors whic
 
 This might seem attractive because it helps you to write very specific CSS, but it also leads to bloated CSS. Let's say you have a `.list` class which is used inside `.header` and also inside `.footer`.
 
-<div class="flex justify-around flex-wrap md:flex-no-wrap">
+<div class="flex justify-around flex-wrap md:flex-nowrap">
   <div class="w-full md:w-1/2">
     <p class="bg-red-200 rounded text-red-700 text-center italic">
       Bad: selectors are unnecessarily chained
@@ -231,7 +231,7 @@ When you start writing CSS it seems intuitive to keep your classes very specific
 
 With this background, it makes sense to write selectors like `div.card a.link` because we want to make sure that **only** anchor tags with `.link` inside a div with `.card` will receive this styling. But doing this is like fighting windmills, but CSS features are not our enemy. As a rule, don't combine element and class selectors, ever! If you want to modify the styling of an element in a particular place, use a modifier class instead.
 
-<div class="flex justify-around flex-wrap md:flex-no-wrap">
+<div class="flex justify-around flex-wrap md:flex-nowrap">
   <div class="w-full md:w-1/2">
     <p class="bg-red-200 rounded text-red-700 text-center italic">
       Bad: mixing element and class selectors
@@ -278,7 +278,7 @@ _Note: A probable exception to this role might be a `.btn` component. If you wan
 
 If two selectors have the same specificity, the latter will be used. Therefore, to play to the strengths of the CSS specificity feature, it makes sense to organize your CSS file by increasing specificity. Put your resets and element selectors first, your normal classes afterward, and finish with your utility classes like `.text-center` or `.nowrap` where you can then safely use `!important`.
 
-<div class="flex justify-around flex-wrap md:flex-no-wrap">
+<div class="flex justify-around flex-wrap md:flex-nowrap">
   <div class="w-full md:w-1/2">
     <p class="bg-red-200 rounded text-red-700 text-center italic">
       Bad: unordered styles makes it easy to miss overwrites
@@ -352,7 +352,7 @@ A good way to know if your classes are too bloated:
 
 Classes become bloated because many different concerns (aesthetics, spacing, typography) are packed together. A great way to improve this, even without dropping any properties, is to simply break it up into its different concerns.
 
-<div class="flex justify-around flex-wrap md:flex-no-wrap">
+<div class="flex justify-around flex-wrap md:flex-nowrap">
   <div class="w-full md:w-1/2">
     <p class="bg-red-200 rounded text-red-700 text-center italic">
       Bad: bloated, properties of different concerns are mixed
@@ -424,7 +424,7 @@ Here are two points I struggled with at the beginning with BEM.
 
 If you have a title within a header within a card, only "nest" maximum one level deep like so:
 
-<div class="flex justify-around flex-wrap md:flex-no-wrap">
+<div class="flex justify-around flex-wrap md:flex-nowrap">
   <div class="w-full md:w-1/2">
     <p class="bg-red-200 rounded text-red-700 text-center italic">
       Nesting BEM selector produces ugly classes
@@ -455,7 +455,7 @@ If you have a title within a header within a card, only "nest" maximum one level
 
 Modifiers on children can be used, but they make it hard to remember which child has which modifier. If possible, apply the modifier to the root element, this will keep your HTML markup and your CSS cleaner and therefore easier to see which modifiers are used or available.
 
-<div class="flex justify-around flex-wrap md:flex-no-wrap">
+<div class="flex justify-around flex-wrap md:flex-nowrap">
   <div class="w-full md:w-1/2">
     <p class="bg-red-200 rounded text-red-700 text-center italic">
       Using BEM modifiers on children get's messy
@@ -488,7 +488,7 @@ When defining a background color it is very common to just use shorthands like `
 
 This causes problems only in the rarest of cases, but if it does, it will be very hard to debug. It is therefore best practice to **only change as little as necessary**. Be safe and use `background-color` etc., the prevented headache is worth the extra characters.
 
-<div class="flex justify-around flex-wrap md:flex-no-wrap">
+<div class="flex justify-around flex-wrap md:flex-nowrap">
   <div class="w-full md:w-1/2">
     <p class="bg-red-200 rounded text-red-700 text-center italic">
       Using shorthands can have unintended side effects

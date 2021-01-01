@@ -1,8 +1,8 @@
 <template>
   <section class="wrapper">
-    <header class="mb-8">
-      <h1 class="text-2xl font-semibold text-gray-600">
-        My Project and Work Portfolio
+    <header class="mb-12 py-8">
+      <h1 class="text-6xl font-semibold text-violet-200">
+        Projects and Work Portfolio
       </h1>
     </header>
 
@@ -10,9 +10,8 @@
       <li
         v-for="project in projects"
         :key="project.slug"
-        class="p-2 w-full md:w-1/2"
       >
-        <WorkExcerpt type="work" :data="project" />
+        <WorkExcerpt :data="project" />
       </li>
     </ul>
   </section>
@@ -23,7 +22,7 @@ import WorkExcerpt from '~/components/WorkExcerpt'
 
 export default {
   components: { WorkExcerpt },
-  layout: 'gray',
+  layout: 'purple',
   asyncData() {
     const projects = require
       .context('~/content/work/', true, /\.md$/)
@@ -33,10 +32,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.body {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-}
-</style>

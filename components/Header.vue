@@ -1,11 +1,11 @@
 <template>
   <header class="wrapper flex items-center py-4">
-    <nuxt-link to="/" class="hover:text-orange-600 w-6">
+    <nuxt-link to="/" class="hover:text-amber-600 w-6">
       <LhLogo />
     </nuxt-link>
     <div class="flex-grow"></div>
     <nuxt-link to="/" class="link" exact>Bio</nuxt-link>
-    <!-- <nuxt-link to="/work" class="link">Work</nuxt-link> -->
+    <nuxt-link to="/work/" class="link">Work</nuxt-link>
     <nuxt-link to="/writing/" class="link">Writing</nuxt-link>
   </header>
 </template>
@@ -27,7 +27,7 @@ export default {
 
 .link:after {
   content: '';
-  @apply block absolute border-b-2 border-orange-500;
+  @apply block absolute border-b-2 border-amber-500;
   width: 0;
   left: 50%;
   transition: width 0.3s, left 0.3s;

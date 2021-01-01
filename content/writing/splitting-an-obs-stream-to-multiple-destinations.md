@@ -107,7 +107,7 @@ On the "Output" settings tab:
 - Bitrate: at least `5000 Kbps` (otherwise YouTube complains)
 - Keyframe Interval: `2` (at least every 2 seconds, otherwise YouTube complains)
 
-<div class="flex justify-around flex-wrap md:flex-no-wrap">
+<div class="flex justify-around flex-wrap md:flex-nowrap">
   <figure class="w-full md:w-1/2 md:pr-2">
     <a href="/img/writing/obs-restream-setup-1.jpg">
       <img

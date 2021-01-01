@@ -16,6 +16,6 @@ a {
   border-bottom: 1px dotted currentcolor;
 }
 a:hover {
-  @apply border-solid border-orange-500;
+  @apply border-solid border-amber-500;
 }
 </style>

@@ -104,7 +104,7 @@ public class GridController : MonoBehaviour
 After some header code, which should not be too cryptic for any developer, are four private serialized properties. `[SerializeField]` exposes this property in the Unity editor where we can reference the game elements that we need for our code to work.
 
 
-<div class="flex justify-around flex-wrap md:flex-no-wrap">
+<div class="flex justify-around flex-wrap md:flex-nowrap">
   <div class="w-full md:w-1/2">
 
 ```csharp

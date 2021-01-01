@@ -1,11 +1,11 @@
 <template>
   <div>
     <site-header />
-    <hr class="border-t border-gray-300 m-0" />
-    <div class="bg-gray-100 pb-24">
+    <!-- <hr class="border-t border-amber-300 m-0" /> -->
+    <div class="bg-gradient-to-br from-amber-600 to-red-600 pb-24">
       <nuxt />
     </div>
-    <hr class="border-t border-gray-300 m-0" />
+    <!-- <hr class="border-t border-amber-300 m-0" /> -->
     <site-footer />
   </div>
 </template>

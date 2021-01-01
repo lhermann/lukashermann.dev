@@ -1,8 +1,22 @@
-// See default config https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
+// tailwind.config.js
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   important: true,
   theme: {
-    extend: {},
+    colors: {
+      ...colors,
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.warmGray,
+      // blue: colors.blue,
+      // orange: colors.amber,
+      // yellow: colors.yellow,
+      // lime: colors.lime,
+      // purple: colors.violet,
+    },
   },
   variants: {},
   purge: [

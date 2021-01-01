@@ -1,7 +1,7 @@
 <template>
   <component
     :is="attr.canonical_url ? 'a' : 'nuxt-link'"
-    class="excerpt block transition-transform duration-300"
+    class="excerpt block transition-transform duration-300 text-white"
     :to="url"
     :href="url"
   >
@@ -9,7 +9,7 @@
       <div class="w-full">
         <time
           v-if="created"
-          class="text-gray-600"
+          class="text-black"
           :datetime="attr.created"
           :title="created"
         >
@@ -17,19 +17,21 @@
         </time>
       </div>
       <div class="w-full md:w-1/3">
-        <h2 class="title text-2xl font-semibold leading-tight text-gray-900 my-1">
+        <h2 class="title text-2xl font-semibold leading-tight my-1">
           {{ attr.title }}
         </h2>
       </div>
       <div class="w-full md:w-2/3 pl-0 md:pl-12">
-        <p>{{ attr.description }}</p>
+        <p class="mb-2">
+          {{ attr.description }}
+        </p>
         <p
           v-if="attr.canonical_plattform"
-          class="text-sm text-gray-500 mb-2"
+          class="text-sm text-black mb-2"
         >
           Originally published on: <strong>{{ attr.canonical_plattform }}</strong>
         </p>
-        <TmTags v-if="attr.tags" :tags="attr.tags" />
+        <TmTags v-if="attr.tags" :tags="attr.tags" ghost />
       </div>
     </article>
   </component>
@@ -73,7 +75,6 @@ export default {
 .image {
   @apply relative rounded shadow bg-white w-full;
   @apply transition-shadow duration-300;
-  /*padding-top: 42%;*/
   padding-top: 50%;
 }
 

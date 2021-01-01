@@ -10,29 +10,29 @@
         </p>
         <ul class="flex text-gray-600">
           <li class="mb-3 mr-3">
-            <a href="https://twitter.com/_lhermann" class="hover:text-orange-600">
+            <a href="https://twitter.com/_lhermann" class="hover:text-amber-600">
               <TwitterIcon class="text-2xl inline-block align-top" />
             </a>
           </li>
           <li class="mb-3 mr-3">
-            <a href="https://github.com/lhermann" class="hover:text-orange-600">
+            <a href="https://github.com/lhermann" class="hover:text-amber-600">
               <GithubIcon class="text-2xl inline-block align-top" />
             </a>
           </li>
           <li class="mb-3 mr-3">
-            <a href="https://www.linkedin.com/in/lukas-hermann/" class="hover:text-orange-600">
+            <a href="https://www.linkedin.com/in/lukas-hermann/" class="hover:text-amber-600">
               <LinkedinIcon class="text-2xl inline-block align-top" />
             </a>
           </li>
           <li class="mb-3 mr-3">
-            <a href="https://dev.to/lhermann" class="hover:text-orange-600">
+            <a href="https://dev.to/lhermann" class="hover:text-amber-600">
               <DevtoIcon class="text-2xl inline-block align-top" />
             </a>
           </li>
           <li class="mb-3 mr-3">
             <a
               v-email-obfuscate="'x.f'"
-              class="mail hover:text-orange-600"
+              class="mail hover:text-amber-600"
               href="mailto:Lukas%20Hermann<hx.fey@lukasherx.fmann.dev>?subject=Hey%20Lukas"
             >
               <MailIcon class="text-2xl inline-block align-top" />

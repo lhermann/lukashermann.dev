@@ -26,7 +26,7 @@ Bulbworld is, as can be surmised by the title, a tiny world in a lightbulb. The 
 
 Guitar Manual may look a bit bland at first. The provided stock was a top-down picture of the guitar. My inspiration was [this Team Fortress 2 art](https://wiki.teamfortress.com/wiki/Sandvich/de#/media/File:Meetthesandvich4.PNG) showing the building instructions for a benign sandwich in the style of a vintage-looking metal plaque advertisement. I especially love the outlined breakdown of the guitar and the small details at the bottom with specially crafted logos in the style of the time.
 
-<div class="flex items-stretch justify-around flex-wrap md:flex-no-wrap my-6">
+<div class="flex items-stretch justify-around flex-wrap md:flex-nowrap my-6">
   <figure class="w-full md:w-auto">
     <a href="/img/work/2d-orrery.jpg">
       <img
@@ -66,7 +66,7 @@ Guitar Manual may look a bit bland at first. The provided stock was a top-down p
 
 I gave myself the challenge to recreate simple real-world objects as faithful as possible. The fun part was to tweak the different surface materials until they felt just right.
 
-<div class="flex items-stretch justify-around flex-wrap md:flex-no-wrap my-6">
+<div class="flex items-stretch justify-around flex-wrap md:flex-nowrap my-6">
   <figure class="w-full md:w-auto">
     <a href="/img/work/3d-ipod-nano.jpg">
       <img
@@ -93,7 +93,7 @@ I gave myself the challenge to recreate simple real-world objects as faithful as
 
 These two buildings were created for a harbor scene as part of a 3D artist contest. I really like the video game feel of these models. They won the contest.
 
-<div class="flex items-stretch justify-around flex-wrap md:flex-no-wrap my-6">
+<div class="flex items-stretch justify-around flex-wrap md:flex-nowrap my-6">
   <figure class="w-full md:w-auto">
     <a href="/img/work/3d-harbor-storehouse.jpg">
       <img
@@ -131,7 +131,7 @@ These two buildings were created for a harbor scene as part of a 3D artist conte
 
 <!-- This work in progress render of a futuristic space ship comes with a turret animation. Even though the animation is very simple I had great fun tweaking it until it felt just right inconveying the mass and recoil of each shot.
 
-<div class="flex items-stretch justify-around flex-wrap md:flex-no-wrap my-6">
+<div class="flex items-stretch justify-around flex-wrap md:flex-nowrap my-6">
   <figure class="w-full md:w-auto">
     <a href="/img/work/3d-spaceship-feme.jpg">
       <img
@@ -167,7 +167,7 @@ Similar to user interface design, the challenge in print design lies not with wh
 
 The best results an artist achieves is not when working for a client but when creating a piece for the sake of the piece itself. That’s why I included the invitation card for my wedding that is imitating an airplane boarding pass.
 
-<div class="flex items-stretch justify-around flex-wrap md:flex-no-wrap my-6">
+<div class="flex items-stretch justify-around flex-wrap md:flex-nowrap my-6">
   <figure class="w-full md:w-auto">
     <a href="/img/work/print-ellen4all-flyer.jpg">
       <img
@@ -204,7 +204,7 @@ The best results an artist achieves is not when working for a client but when cr
 </div>
 
 
-<div class="flex items-stretch justify-around flex-wrap md:flex-no-wrap my-6">
+<div class="flex items-stretch justify-around flex-wrap md:flex-nowrap my-6">
   <figure class="w-full md:w-auto">
     <a href="/img/work/print-wedding-invite-1.jpg">
       <img
@@ -236,7 +236,7 @@ This section is more for fond memories than showing off. A lot of work goes into
 
 The first logo was for a summer camp (great memories!). The second one was for an acquaintance’s business idea of a bakery, the design being a mix between a traditional 19th century and modern style. The latter two are for a website and the podcast of my wife respectively.
 
-<div class="flex items-stretch justify-around flex-wrap md:flex-no-wrap my-6">
+<div class="flex items-stretch justify-around flex-wrap md:flex-nowrap my-6">
   <figure class="w-full md:w-auto">
     <a href="/img/work/logo-gallierlager.jpg">
       <img
@@ -294,7 +294,7 @@ The [Joel Media](https://www.joelmedia.de/) UI was a redesign of a video archive
 
 The latter three images are from more recent projects. The first two are from the prototyping phase of [Ellen4all](https://www.ellen4all.org/), a crowd translation platform. The last is from a project connected to my undergraduate thesis. I included them not because they are the most pretty, but because of the functional challenge they posed. The translation website has since gone through more iterations making it even simpler to use. Maybe I will write a separate post about it one day. CEMicro is extracting existing functionality from a point of sales software of a big car maker. As often the case with such software it has a feature set like a Swiss army knife with the usability of an income tax report. Even after boiling it down to as simple an interface as I could come up with the first impression is still daunting. But, to my personal joy, the existing users immediately understood how to use it. So there is that.
 
-<div class="flex items-stretch justify-around flex-wrap md:flex-no-wrap my-6">
+<div class="flex items-stretch justify-around flex-wrap md:flex-nowrap my-6">
   <figure class="w-full md:w-auto">
     <a href="/img/work/ui-exp-lan.jpg">
       <img
@@ -341,7 +341,7 @@ The latter three images are from more recent projects. The first two are from th
   </figure>
 </div>
 
-<div class="flex items-stretch justify-around flex-wrap md:flex-no-wrap my-6">
+<div class="flex items-stretch justify-around flex-wrap md:flex-nowrap my-6">
   <figure class="w-full md:w-auto">
     <a href="/img/work/ui-translation-editor.jpg">
       <img

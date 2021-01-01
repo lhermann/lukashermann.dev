@@ -1,7 +1,7 @@
 <template>
   <section class="wrapper">
-    <header class="mb-12">
-      <h1 class="text-6xl font-semibold text-gray-400">
+    <header class="mb-12 py-8">
+      <h1 class="text-6xl font-semibold text-orange-200">
         Articles
       </h1>
     </header>
@@ -22,7 +22,7 @@ import ArticleExcerpt from '~/components/ArticleExcerpt'
 
 export default {
   components: { ArticleExcerpt },
-  layout: 'gray',
+  layout: 'orange',
   asyncData() {
     const articles = require.context('~/content/writing/', true, /\.md$/)
       .keys()
