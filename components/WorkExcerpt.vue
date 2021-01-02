@@ -1,10 +1,10 @@
 <template>
-  <article class="flex">
+  <article class="flex items-center">
     <div class="w-1/4">
       <img
-        v-if="attr.thumbnail"
         class="rounded shadow"
         :src="attr.thumbnail"
+        :srcset="`${attr.thumbnail} 600w, ${attr.thumbnail2x} 1200w`"
       />
     </div>
     <div class="w-2/4 pl-8">
@@ -18,22 +18,29 @@
         tag-class="border border-violet-200 text-violet-200"
         ghost
       />
-      <p class="content text-violet-100 mb-3" v-html="data.html"></p>
+      <div class="text-violet-100 mb-3" v-html="data.html"></div>
       <p>
         <nuxt-link
-          class="inline-block rounded text-lg font-semibold bg-violet-800 hover:bg-purple-800 text-violet-100 hover:text-white px-4 py-2 shadow transition"
+          v-if="attr.read_more_link"
+          class="btn text-lg font-semibold px-4 py-2 shadow mr-2"
           :to="attr.read_more_link"
         >
           Read More
         </nuxt-link>
+        <a
+          v-if="attr.visit_link"
+          class="btn text-lg font-semibold px-4 py-2 shadow mr-2"
+          :href="attr.visit_link"
+        >
+          Visit
+        </a>
       </p>
+      <div class="animate"></div>
     </div>
   </article>
 </template>
 
 <script>
-import parseISO from 'date-fns/parseISO'
-import format from 'date-fns/format'
 import TmTags from '~/components/TmTags'
 
 export default {
@@ -42,25 +49,29 @@ export default {
   },
   props: {
     data: { type: Object, required: true },
-    type: { type: String, default: 'writing' },
   },
   computed: {
     attr() {
       return this.data ? this.data.attributes : {}
     },
-    // url() {
-    //   if (!this.data) return ''
-    //   const filename = this.data.meta.resourcePath
-    //     .split('/')
-    //     .pop()
-    //     .replace('.md', '')
-    //   return this.attr.canonical_url || `/${this.type}/${filename}/`
-    // },
-    created() {
-      return this.attr.created
-        ? format(parseISO(this.attr.created), 'MMMM d, y')
-        : ''
-    },
   },
 }
 </script>
+
+<style scoped>
+.btn {
+  @apply relative z-0 text-white overflow-hidden;
+  @apply inline-block rounded;
+}
+.btn::before {
+  content: "";
+  z-index: -1;
+  width: 200%;
+  @apply absolute top-0 left-0 h-full;
+  @apply bg-gradient-to-br from-fuchsia-500 to-purple-700;
+  @apply text-white transition-transform duration-300;
+}
+.btn:hover::before {
+  transform: translateX(-50%);
+}
+</style>

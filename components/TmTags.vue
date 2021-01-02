@@ -5,7 +5,7 @@
       :key="tag"
       class="inline text-sm py-0 px-1 rounded"
       :class="[tagClass, { 'mr-1': i < tagCount - 1 }]"
-      v-text="`#${tag}`"
+      v-text="`${tag}`"
     />
   </ul>
 </template>

@@ -10,6 +10,7 @@
       <li
         v-for="project in projects"
         :key="project.slug"
+        class="mb-12"
       >
         <WorkExcerpt :data="project" />
       </li>
@@ -28,6 +29,7 @@ export default {
       .context('~/content/work/', true, /\.md$/)
       .keys()
       .map(file => require(`~/content/work/${file.replace('./', '')}`))
+      .sort((a, b) => b.attributes.index - a.attributes.index)
     return { projects }
   },
 }
