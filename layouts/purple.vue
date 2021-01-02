@@ -2,7 +2,7 @@
   <div>
     <site-header />
     <!-- <hr class="border-t border-amber-300 m-0" /> -->
-    <div class="bg-gradient-to-br from-violet-500 to-indigo-600 pb-24">
+    <div class="bg-gradient-to-br from-violet-600 to-indigo-600 pb-24">
       <nuxt />
     </div>
     <!-- <hr class="border-t border-amber-300 m-0" /> -->

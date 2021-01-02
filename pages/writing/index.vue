@@ -7,7 +7,7 @@
     </header>
 
     <ul>
-      <li v-for="article in articles" :key="article.slug" class="mb-8">
+      <li v-for="article in articles" :key="article.slug" class="mb-10">
         <ArticleExcerpt :data="article" />
       </li>
     </ul>

@@ -31,7 +31,11 @@
         >
           Originally published on: <strong>{{ attr.canonical_plattform }}</strong>
         </p>
-        <TmTags v-if="attr.tags" :tags="attr.tags" ghost />
+        <TmTags
+          v-if="attr.tags"
+          :tags="attr.tags"
+          tag-class="border border-orange-200 text-orange-200"
+        />
       </div>
     </article>
   </component>

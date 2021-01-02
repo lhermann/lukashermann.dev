@@ -1,7 +1,7 @@
 <template>
   <section class="wrapper">
     <header class="mb-12 py-8">
-      <h1 class="text-6xl font-semibold text-violet-200">
+      <h1 class="text-6xl font-semibold text-violet-300">
         Projects and Work Portfolio
       </h1>
     </header>
