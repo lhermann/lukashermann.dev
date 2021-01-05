@@ -1,9 +1,9 @@
 <template>
-  <ul>
+  <ul class="flex flex-wrap">
     <li
       v-for="(tag, i) in tagArray"
       :key="tag"
-      class="inline text-sm py-0 px-1 rounded"
+      class="text-sm py-0 px-1 rounded"
       :class="[tagClass, { 'mr-1': i < tagCount - 1 }]"
       v-text="`${tag}`"
     />

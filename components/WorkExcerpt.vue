@@ -1,13 +1,13 @@
 <template>
-  <article class="flex items-center">
-    <div class="w-1/4">
+  <article class="flex flex-wrap items-center">
+    <div class="w-2/3 sm:w-1/3 lg:w-1/4 mb-4 sm:mb-0">
       <img
         class="rounded shadow"
         :src="attr.thumbnail"
         :srcset="`${attr.thumbnail} 600w, ${attr.thumbnail2x} 1200w`"
       />
     </div>
-    <div class="w-2/4 pl-8">
+    <div class="w-full sm:w-2/3 lg:w-2/4 sm:pl-8">
       <h2 class="text-4xl font-semibold text-white mb-3">
         {{ attr.title }}
       </h2>
