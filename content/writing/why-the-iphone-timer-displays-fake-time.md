@@ -53,7 +53,7 @@ Now I was curious how my iPhone solves this conundrum. So I set my iPhone timer 
   <figure data-gifpause onclick="gifpause_toggle(event)">
     <img
       class="rounded"
-      src="/img/writing/5s-timer-iphone.gif"
+      src="/img/writing/5s-timer-iphone-temp.gif"
       data-still="/img/writing/5s-timer-iphone.png"
       alt="5s countdown timer on the iPhone"
     />
