@@ -26,11 +26,11 @@
     <div class="markdown" v-html="html"></div>
 
     <footer class="max-w-xl text-center my-24 mx-auto">
-      <p class="text-2xl">I would love to hear from you if this article was helpful or if you have any questions</p>
+      <p class="text-5xl mb-3">Liked this article?</p>
       <a
-        class="text-blue-600 underline"
+        class="text-xl text-blue-600 hover:underline"
         href="https://twitter.com/_lhermann"
-      >Twitter</a>
+      >Follow me on Twitter for more</a>
     </footer>
   </article>
 </template>

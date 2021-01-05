@@ -67,7 +67,7 @@ figcaption {
   @apply text-2xl mt-8;
 }
 .markdown a {
-  @apply text-blue-600 underline;
+  @apply text-blue-600 hover:underline;
 }
 .markdown figure > a:hover,
 .markdown figure > a:focus {
