@@ -55,7 +55,7 @@ Now I was curious how my iPhone solves this conundrum. So I set my iPhone timer 
       class="rounded"
       src="/img/writing/5s-timer-iphone.png"
       data-still="/img/writing/5s-timer-iphone.png"
-      data-gif="/img/writing/5s-timer-iphone-temp.gif"
+      data-gif="/img/writing/5s-timer-iphone-2x.gif"
       alt="5s countdown timer on the iPhone"
     />
     <figcaption>5s countdown on an iPhone (click to play)</figcaption>
