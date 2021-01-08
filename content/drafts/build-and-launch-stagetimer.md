@@ -1,6 +1,5 @@
 ---
 title: 'Building a Side Project in Four Days and Launching It'
-published: true
 created:
 description:
 tags: nginx, docker

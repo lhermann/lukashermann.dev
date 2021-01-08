@@ -1,6 +1,5 @@
 ---
 title: 'How to keep CSS organized: 3 Rules'
-published: true
 created:
 description:
 tags: css
