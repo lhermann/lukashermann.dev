@@ -1,6 +1,6 @@
 ---
 title: 'Using socket.io with Vue and Vuex'
-created: 2012-01-13
+created: 2021-01-13
 description: A how-to guide for using socket.io with Vue components and inside the Vuex store with examples.
 tags: JS, Websockets, Vue, Vuex
 cover_image: /img/writing/covers/socketio-with-vue-and-vuex.jpg
