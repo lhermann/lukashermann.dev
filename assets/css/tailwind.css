@@ -44,9 +44,6 @@ figcaption {
 .markdown {
   @apply text-lg;
 }
-.markdown .hljs {
-  @apply text-base;
-}
 .markdown h1,
 .markdown h2,
 .markdown h3,
@@ -92,7 +89,11 @@ figcaption {
   @apply list-disc;
 }
 .markdown .hljs {
-  @apply rounded px-3;
+  @apply text-base rounded px-3;
+}
+.markdown .hljs-line-number {
+  @apply text-gray-600 font-normal mr-4;
+  user-select: none;
 }
 .markdown .header-anchor {
   @apply absolute -ml-12 pl-4 pr-8 no-underline text-gray-400 invisible;

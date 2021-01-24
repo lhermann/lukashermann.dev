@@ -5,7 +5,7 @@ import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItAttrs from 'markdown-it-attrs'
 import markdownItEmoji from 'markdown-it-emoji'
-import hljs from 'highlight.js'
+import markdownItHljs from './plugins/markdownItHljs'
 import uslug from 'uslug'
 const CONTENT_DIR = 'content/'
 
@@ -25,7 +25,7 @@ export default {
     // if no subcomponents specify a metaInfo.title, this title will be used
     title: 'Lukas Hermann – Front-End Developer & UI Designer',
     // all titles will be injected into this template
-    titleTemplate: '%s | Lukas Hermann',
+    // titleTemplate: '%s | Lukas Hermann',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -133,13 +133,7 @@ export default {
             html: true,
             typographer: true,
             linkify: true,
-            highlight: (str, lang) => {
-              const code =
-                lang && hljs.getLanguage(lang)
-                  ? hljs.highlight(lang, str).value
-                  : markdownIt().utils.escapeHtml(str)
-              return `<pre class="hljs"><code>${code}</code></pre>`
-            },
+            highlight: markdownItHljs,
           })
             .use(markdownItAnchor, {
               permalink: true,
