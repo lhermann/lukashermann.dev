@@ -1,18 +1,31 @@
 /**
  * Crudely injecting a function into the global scope
+ *
+ * Example Markup:
+ * <figure data-gifpause onclick="gifpause_toggle(event)">
+ *    <img
+ *      src="animation.gif"
+ *      data-still="animation-still.png"
+ *      alt="My Animation"
+ *    />
+ *    <figcaption>My Animation (click to play)</figcaption>
+ *  </figure>
  */
 export default () => {
   // Add gifpause_Toggle function to global namespace
   window.gifpause_toggle = event => {
+    // eslint-disable-next-line
+    if (!event) return console.error('Missing property event')
     const img = event.target.querySelector('img')
-    const paused = event.target.dataset.paused
-    if (paused === undefined) img.dataset.gif = img.src
-    if (paused === 'true') {
+    const isPaused = event.target.dataset.paused !== undefined
+    if (isPaused) {
+      img.dataset.still = img.src
       img.src = img.dataset.gif
-      event.target.dataset.paused = false
+      delete event.target.dataset.paused
     } else {
+      img.dataset.gif = img.src
       img.src = img.dataset.still
-      event.target.dataset.paused = true
+      event.target.dataset.paused = ''
     }
   }
 
@@ -49,9 +62,11 @@ export default () => {
       color: white;
       border-radius: 3px;
       font-weight: bold;
+      text-transform: uppercase;
     }
-    [data-gifpause][data-paused='true']::after {
+    [data-gifpause][data-paused]::after {
       content: 'play';
+      opacity: 0.75;
     }
     [data-gifpause]:hover::before,
     [data-gifpause]:hover::after {

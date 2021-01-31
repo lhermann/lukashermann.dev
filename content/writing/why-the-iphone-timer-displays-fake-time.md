@@ -50,11 +50,10 @@ Now the timer displays 0.9s seconds instead of 0s to show clearly that there is 
 Now I was curious how my iPhone solves this conundrum. So I set my iPhone timer to 5s:
 
 <div class="text-center mb-3">
-  <figure data-gifpause data-paused="true" onclick="gifpause_toggle(event)">
+  <figure data-gifpause onclick="gifpause_toggle(event)" data-paused>
     <img
       class="rounded"
       src="/img/writing/5s-timer-iphone.png"
-      data-still="/img/writing/5s-timer-iphone.png"
       data-gif="/img/writing/5s-timer-iphone-2x.gif"
       alt="5s countdown timer on the iPhone"
     />

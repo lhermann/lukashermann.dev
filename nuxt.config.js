@@ -1,12 +1,12 @@
 import path from 'path'
 import glob from 'glob'
 import Mode from 'frontmatter-markdown-loader/mode'
+import uslug from 'uslug'
 import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItAttrs from 'markdown-it-attrs'
 import markdownItEmoji from 'markdown-it-emoji'
 import markdownItHljs from './plugins/markdownItHljs'
-import uslug from 'uslug'
 const CONTENT_DIR = 'content/'
 
 require('dotenv').config()
