@@ -68,6 +68,7 @@ export default {
           name: 'description',
           content: this.attributes?.description,
         },
+        { name: 'article:published_time', content: this.attributes?.created },
         { name: 'og:title', content: this.attributes?.title },
         { name: 'og:description', content: this.attributes?.description },
         { name: 'og:image', content: image },
