@@ -1,6 +1,7 @@
 ---
 title: 'Debouncing User Input with Vue: Delay the input event until the user stops typing'
 created: 2021-01-24
+updated: 2021-03-02
 description: Persisting user input to the server without the need for "Submit" or "Save" buttons but as the user types. So-called "debouncing" can achieve this by waiting until the user stopped typing before sending the HTTP request to the server.
 tags: HTML, JS, Vue
 cover_image: /img/writing/covers/debouncing-user-input.jpg
