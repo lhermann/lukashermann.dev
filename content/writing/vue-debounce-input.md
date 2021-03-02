@@ -19,7 +19,7 @@ I was working on my app [stagetimer.io](https://stagetimer.io/). It allows multi
 
 ## The Solution
 
-This Vue component solved both problems. It is designed to be used as a drop-in replacement for the native `<input>` tag.
+This Vue component solves both problems. It is designed to be used as a drop-in replacement for the native `<input>` tag.
 
 First, here is the component in full. Underneath I explain what each part does and how it works.
 
@@ -38,7 +38,6 @@ import _debounce from 'lodash/debounce'
 export default {
   props: {
     value: String,
-    delay: { type: Number, default: 600 },
     type: { type: String, default: 'text' },
   },
   data () {
@@ -61,37 +60,37 @@ export default {
       this.touched = false
       this.$emit('input', value)
       this.$emit('update:value', value)
-    }, this.delay),
+    }, 600),
   },
 }
 </script>
 ```
 
-### Lines 2-6: Template
+### <template> (lines 2-6)
 
 `<input>` is the only HTML element inside the template. I use a copy of the passed `value` prop, called `internalValue`, for reasons explained later. The `type` prop is just a passthrough, more can be added as required.
 
 I am not using `v-model` to keep track of user input with the `touched` variable, see line 31.
 
-### Lines 14-16: Props
+### Props (lines 13-16)
 
 Besides the mandatory `value` prop I am giving default values to all others. This way I can safely omit them when using the component.
 
-### Lines 14-16: Data
+### Data (lines 17-22)
 
 I could use `value` directly and pass it to the input element, but this can lead to a race condition. If the app sends the value to the server it is common for it to respond with the same value causing an app update. Had the user continued typing, this update would reset the value removing the last typed characters. Therefore I added a decoupled `internalValue` to keep track of user input with the `touched` variable.
 
-### Lines 14-16: Watcher
+### Watcher (lines 23-27)
 
 Here I am watching the `value` prop for changes and update the `internalValue` only if the user hasn't touched the input, implying he hasn't typed anything else in the meantime.
 
-### Lines 30-32: updateInternalValue() Method
+### updateInternalValue() Method (lines 29-32)
 
 Every keystroke triggers this method. With `touched = true` I can keep track of it. It then calls the `updateValue()` method with that magic debouncing mechanic.
 
-### Lines 30-32: updateValue() Method
+### updateValue() Method (lines 33-37)
 
-This method is the heart of the entire component. I use [lodash's debounce method](https://lodash.com/docs/4#debounce), it can be called multiple times with the same parameters and only executes the callback function once the time given by `delay` has passed after the last call.
+This method is the heart of the entire component. It uses [lodash's debounce method](https://lodash.com/docs/4#debounce). `updateValue()` can be called multiple times with the same parameters and only executes the callback function the delay of 600 ms has passed after the last call.
 
 It is essential to use an anonymous function here, not an arrow function, to preserve Vue's `this` context.
 
