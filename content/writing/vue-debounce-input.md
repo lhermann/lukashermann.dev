@@ -66,7 +66,7 @@ export default {
 </script>
 ```
 
-### <template> (lines 2-6)
+### \<template> (lines 2-6)
 
 `<input>` is the only HTML element inside the template. I use a copy of the passed `value` prop, called `internalValue`, for reasons explained later. The `type` prop is just a passthrough, more can be added as required.
 
