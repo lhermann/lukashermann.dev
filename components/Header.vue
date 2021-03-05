@@ -1,6 +1,6 @@
 <template>
   <header class="wrapper flex items-center py-4">
-    <nuxt-link to="/" class="hover:text-amber-600 w-6">
+    <nuxt-link to="/" class="hover:text-amber-600 w-6" title="Lukas Hermann">
       <LhLogo />
     </nuxt-link>
     <div class="flex-grow"></div>
