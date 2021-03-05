@@ -10,22 +10,42 @@
         </p>
         <ul class="flex text-gray-600">
           <li class="mb-3 mr-3">
-            <a href="https://twitter.com/_lhermann" class="hover:text-amber-600">
+            <a
+              href="https://twitter.com/_lhermann"
+              title="Twitter"
+              class="hover:text-amber-600"
+              rel="noopener"
+            >
               <TwitterIcon class="text-2xl inline-block align-top" />
             </a>
           </li>
           <li class="mb-3 mr-3">
-            <a href="https://github.com/lhermann" class="hover:text-amber-600">
+            <a
+              href="https://github.com/lhermann"
+              title="Github"
+              class="hover:text-amber-600"
+              rel="noopener"
+            >
               <GithubIcon class="text-2xl inline-block align-top" />
             </a>
           </li>
           <li class="mb-3 mr-3">
-            <a href="https://www.linkedin.com/in/lukas-hermann/" class="hover:text-amber-600">
+            <a
+              href="https://www.linkedin.com/in/lukas-hermann/"
+              title="Linkedin"
+              class="hover:text-amber-600"
+              rel="noopener"
+            >
               <LinkedinIcon class="text-2xl inline-block align-top" />
             </a>
           </li>
           <li class="mb-3 mr-3">
-            <a href="https://dev.to/lhermann" class="hover:text-amber-600">
+            <a
+              href="https://dev.to/lhermann"
+              title="dev.to"
+              class="hover:text-amber-600"
+              rel="noopener"
+            >
               <DevtoIcon class="text-2xl inline-block align-top" />
             </a>
           </li>
@@ -79,7 +99,7 @@
               <p class="work">
                 <router-link to="/writing/print-and-visual-design/">Started working with Visual & Print Design and 3D Modeling</router-link>
               </p>
-              <p class="skills">Photoshop, InDesign, Cinema4D &middot; <router-link to="/writing/print-and-visual-design/">Read More</router-link></p>
+              <p class="skills">Photoshop, InDesign, Cinema4D</p>
             </dd>
             <dt class="year">2007</dt>
             <dd class="mb-4">
@@ -91,16 +111,17 @@
       </div>
 
       <div class="max-w-full md:w-1/3 mt-8 md:mt-0 flex-shrink-0">
-        <img
-          class="rounded-lg shadow-md"
-          src="/img/lukas-portrait-300.jpg"
-          alt="Portrait of me, Lukas Hermann"
-          srcset="
-            /img/lukas-portrait-1200.jpg 1200w,
-            /img/lukas-portrait-600.jpg   600w,
-            /img/lukas-portrait-300.jpg   300w
-          "
-        />
+        <div class="aspect-w-2 aspect-h-3">
+          <img
+            class="rounded-lg shadow-md"
+            src="/img/lukas-portrait-300.jpg"
+            alt="Portrait of me, Lukas Hermann"
+            srcset="
+              /img/lukas-portrait-600.jpg   600w,
+              /img/lukas-portrait-300.jpg   300w
+            "
+          />
+        </div>
       </div>
     </div>
 
@@ -108,17 +129,18 @@
 
     <div class="flex flex-wrap">
       <div class="w-full md:w-1/4 mb-8 md:pr-8">
-        <img
-          class="rounded shadow-md"
-          src="/img/katutubo-300.jpg"
-          alt="Katutubo, native of the Philippines"
-          srcset="
-            /img/katutubo-1200.jpg 1200w,
-            /img/katutubo-600.jpg   600w,
-            /img/katutubo-300.jpg   300w,
-            /img/katutubo-150.jpg   150w
-          "
-        />
+        <div class="aspect-w-1 aspect-h-1">
+          <img
+            class="rounded shadow-md"
+            src="/img/katutubo-300.jpg"
+            alt="Katutubo, native of the Philippines"
+            srcset="
+              /img/katutubo-600.jpg   600w,
+              /img/katutubo-300.jpg   300w,
+              /img/katutubo-150.jpg   150w
+            "
+          />
+        </div>
       </div>
       <div class="w-full md:w-3/4">
         <h2 class="text-lg font-semibold">Why Tentmaker?</h2>

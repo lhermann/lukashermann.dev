@@ -67,29 +67,29 @@ export default {
 </script>
 ```
 
-### \<template> (lines 2-6)
+### <span class="tag-dark">2–6</span> \<template>
 
 `<input>` is the only HTML element inside the template. I use a copy of the passed `value` prop, called `internalValue`, for reasons explained later. The `type` prop is just a passthrough, more can be added as required.
 
 I am not using `v-model` to keep track of user input with the `touched` variable, see line 31.
 
-### Props (lines 13-16)
+### <span class="tag-dark">13–16</span> Props
 
 Besides the mandatory `value` prop I am giving default values to all others. This way I can safely omit them when using the component.
 
-### Data (lines 17-22)
+### <span class="tag-dark">17–22</span> Data
 
 I could use `value` directly and pass it to the input element, but this can lead to a race condition. If the app sends the value to the server it is common for it to respond with the same value causing an app update. Had the user continued typing, this update would reset the value removing the last typed characters. Therefore I added a decoupled `internalValue` to keep track of user input with the `touched` variable.
 
-### Watcher (lines 23-27)
+### <span class="tag-dark">23–27</span> Watcher
 
 Here I am watching the `value` prop for changes and update the `internalValue` only if the user hasn't touched the input, implying he hasn't typed anything else in the meantime.
 
-### updateInternalValue() Method (lines 29-32)
+### <span class="tag-dark">29–32</span> updateInternalValue() Method
 
 Every keystroke triggers this method. With `touched = true` I can keep track of it. It then calls the `updateValue()` method with that magic debouncing mechanic.
 
-### updateValue() Method (lines 33-37)
+### <span class="tag-dark">33–37</span> updateValue() Method
 
 This method is the heart of the entire component. It uses [lodash's debounce method](https://lodash.com/docs/4#debounce). `updateValue()` can be called multiple times with the same parameters and only executes the callback function the delay of 600 ms has passed after the last call.
 

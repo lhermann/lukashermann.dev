@@ -18,6 +18,9 @@ module.exports = {
       // purple: colors.violet,
     },
   },
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
   variants: {},
   purge: [
     './layouts/**/*.vue',

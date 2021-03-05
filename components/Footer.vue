@@ -6,7 +6,7 @@
       &middot; Germany
     </p>
     <p class="text-center mt-2">
-      Powered by <a href="https://nuxtjs.org">Nuxt</a>, <a href="https://vuejs.org">Vue.js</a>, <a href="https://tailwindcss.com">Tailwindcss</a> and <a href="https://www.netlify.com">Netlify</a>
+      Powered by <a href="https://nuxtjs.org" rel="noopener">Nuxt</a>, <a href="https://vuejs.org" rel="noopener">Vue.js</a>, <a href="https://tailwindcss.com" rel="noopener">Tailwindcss</a> and <a href="https://www.netlify.com" rel="noopener">Netlify</a>
     </p>
   </footer>
 </template>
