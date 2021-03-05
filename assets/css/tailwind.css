@@ -89,11 +89,15 @@ figcaption {
   @apply list-disc;
 }
 .markdown .hljs {
-  @apply text-base rounded px-3;
+  @apply text-base rounded pl-0 pr-3;
 }
 .markdown .hljs-line-number {
-  @apply text-gray-600 font-normal mr-4;
+  @apply text-gray-600 font-normal;
   user-select: none;
+}
+.markdown .hljs-line-number::before {
+  @apply text-right inline-block w-8 mr-3;
+  content: attr(data-line-number);
 }
 .markdown .header-anchor {
   @apply absolute -ml-12 pl-4 pr-8 no-underline text-gray-400 invisible;
