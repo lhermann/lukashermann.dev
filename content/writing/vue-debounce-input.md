@@ -67,7 +67,7 @@ export default {
 </script>
 ```
 
-### <span class="tag-dark">2–6</span> \<template>
+### <span class="tag-dark">1–7</span> \<template>
 
 `<input>` is the only HTML element inside the template. I use a copy of the passed `value` prop, called `internalValue`, for reasons explained later. The `type` prop is just a passthrough, more can be added as required.
 
@@ -99,4 +99,10 @@ I set `touched = false` once the callback is executed, signifying that at this t
 
 Afterward, I emit two events. The `input` event enables the use of `v-model` with this component, and the `update:value` event ensures that [Vue's two-way binding](https://vuejs.org/v2/guide/components-custom-events.html#sync-Modifier) `value.sync` also works.
 
+<div class="bg-gray-100 border border-gray-200 rounded px-4 py-2" role="alert">
+
 _**Note:** This guide is for Vue version 2. For Vue 3 it is necessary to rename the prop `value` to `modelValue`, see https://v3.vuejs.org/guide/migration/v-model.html#v-model._
+{.mb-0}
+
+</div>
+

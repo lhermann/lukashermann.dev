@@ -125,7 +125,7 @@
       </div>
     </div>
 
-    <hr class="border-t border-gray-400 mb-16" />
+    <hr class="border-t border-gray-300 mb-16" />
 
     <div class="flex flex-wrap">
       <div class="w-full md:w-1/4 mb-8 md:pr-8">
