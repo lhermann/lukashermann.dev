@@ -64,7 +64,7 @@
         <section class="mt-10">
           <h2 class="text-2xl font-semibold mb-3">Life Excerpt</h2>
           <dl class="cv-list links">
-            <dt class="year">2020</dt>
+            <dt class="year">2020 &mdash; Present</dt>
             <dd class="mb-4">
               <p class="work">Currently working for <a href="https://laserhub.com/">Laserhub</a>, a Stuttgart based startup</p>
               <p class="skills">Vue.js, Express, MySQL, Figma</p>
