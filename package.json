@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.12.7",
-    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-config": "^6.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/svg": "^0.1.12",
     "@vue/test-utils": "^1.1.2",
