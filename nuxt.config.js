@@ -19,6 +19,7 @@ export default {
   router: {
     trailingSlash: true,
   },
+  target: 'static',
   /*
    ** Headers of the page
    */
@@ -160,7 +161,8 @@ export default {
 
 function getDynamicRoutes () {
   // get routes
-  const work = pathToRoute(CONTENT_DIR, 'work/*.md')
+  // const work = pathToRoute(CONTENT_DIR, 'work/*.md')
+  const work = []
   const writing = pathToRoute(CONTENT_DIR, 'writing/*.md')
 
   // return list
