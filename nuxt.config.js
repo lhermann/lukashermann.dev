@@ -6,6 +6,7 @@ import markdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItAttrs from 'markdown-it-attrs'
 import markdownItEmoji from 'markdown-it-emoji'
+import markdownItFootnote from 'markdown-it-footnote'
 import markdownItHljs from './plugins/markdownItHljs'
 const CONTENT_DIR = 'content/'
 
@@ -141,7 +142,8 @@ export default {
               slugify: s => uslug(s),
             })
             .use(markdownItAttrs)
-            .use(markdownItEmoji),
+            .use(markdownItEmoji)
+            .use(markdownItFootnote),
         },
       })
     },

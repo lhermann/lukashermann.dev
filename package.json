@@ -23,6 +23,7 @@
     "markdown-it-attrs": "^3.0.3",
     "markdown-it-container": "^3.0.0",
     "markdown-it-emoji": "^2.0.0",
+    "markdown-it-footnote": "^3.0.2",
     "nuxt": "^2.14.12",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "uslug": "^1.0.4"

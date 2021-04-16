@@ -128,7 +128,13 @@ figcaption {
   font-family: serif;
   @apply text-gray-200 leading-none;
 }
-
+.markdown table th:not(:last-child),
+.markdown table td:not(:last-child) {
+  @apply pr-3;
+}
+.markdown .footnotes-sep {
+  @apply mt-16;
+}
 .markdown .tag-dark {
   @apply bg-gray-800 text-gray-400;
   @apply text-sm py-0 px-1 rounded;
