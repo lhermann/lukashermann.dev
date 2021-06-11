@@ -125,9 +125,9 @@
       </div>
     </div>
 
-    <hr class="border-t border-gray-300 mb-16" />
+    <!-- <hr class="border-t border-gray-300 mb-16" /> -->
 
-    <div class="flex flex-wrap">
+    <!-- <div class="flex flex-wrap">
       <div class="w-full md:w-1/4 mb-8 md:pr-8">
         <div class="aspect-w-1 aspect-h-1">
           <img
@@ -152,7 +152,7 @@
           counsel, while earning a living with my trade, programming.
         </p>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 
