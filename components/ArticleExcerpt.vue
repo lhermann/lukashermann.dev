@@ -53,6 +53,7 @@ export default {
   props: {
     data: { type: Object, required: true },
     type: { type: String, default: 'writing' },
+    draft: Boolean,
   },
   computed: {
     attr() {
@@ -63,7 +64,7 @@ export default {
       const filename = this.data.meta.resourcePath
         .split('/')
         .pop()
-        .replace('.md', '')
+        .replace('.md', this.draft ? '-draft' : '')
       return this.attr.canonical_url || `/${this.type}/${filename}/`
     },
     created() {

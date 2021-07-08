@@ -7,6 +7,7 @@
     <nuxt-link to="/" class="link" exact>Bio</nuxt-link>
     <nuxt-link to="/work/" class="link">Work</nuxt-link>
     <nuxt-link to="/writing/" class="link">Writing</nuxt-link>
+    <nuxt-link v-if="development" to="/drafts/" class="link">Drafts</nuxt-link>
   </header>
 </template>
 
@@ -16,6 +17,11 @@ import LhLogo from '~/components/LhLogo'
 export default {
   components: {
     LhLogo,
+  },
+  computed: {
+    development () {
+      return process.env.NODE_ENV === 'development'
+    },
   },
 }
 </script>
