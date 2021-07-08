@@ -124,13 +124,10 @@ figcaption {
 }
 .markdown blockquote::before {
   content: "\201C";
-  position: absolute;
-  left: -0.3em;
-  top: -0.275em;
-  font-size: 6em;
+  @apply absolute -left-12 -top-4 text-gray-200 leading-none;
+  font-size: 5em;
   z-index: -1;
   font-family: serif;
-  @apply text-gray-200 leading-none;
 }
 .markdown table th:not(:last-child),
 .markdown table td:not(:last-child) {
