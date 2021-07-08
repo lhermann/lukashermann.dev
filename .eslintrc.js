@@ -2,19 +2,18 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true,
+    node: true
   },
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
+    requireConfigFile: false
   },
   extends: [
-    // 'prettier',
-    // 'prettier/vue',
-    // 'plugin:prettier/recommended',
     '@nuxtjs',
-    'plugin:nuxt/recommended',
+    'plugin:nuxt/recommended'
   ],
-  plugins: ['prettier'],
+  plugins: [
+  ],
   // add your custom rules here
   rules: {
     'vue/html-self-closing': 0,

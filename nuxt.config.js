@@ -25,7 +25,7 @@ export default {
    */
   head: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: 'Lukas Hermann – Front-End Developer & UI Designer',
+    title: 'Lukas Hermann – Maker and Full Stack Developer',
     // all titles will be injected into this template
     // titleTemplate: '%s | Lukas Hermann',
     meta: [
@@ -34,7 +34,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content: 'I\'m a Maker and Full Stack Developer who loves working with the Frontend, Vue.js and User Interface Design',
       },
       { name: 'msapplication-TileColor', content: '#E29449' },
       { name: 'theme-color', content: '#E29449' },
@@ -76,7 +76,7 @@ export default {
    */
   css: [
     '~/assets/css/tailwind.css',
-    'highlight.js/styles/gruvbox-dark.css',
+    'highlight.js/styles/base16/gruvbox-dark-hard.css',
   ],
   /*
    ** Plugins to load before mounting the App
@@ -85,14 +85,25 @@ export default {
     '@/plugins/email-obfuscate.js',
     { src: '@/plugins/gif-pause.js', mode: 'client' },
   ],
-  /*
-   ** Nuxt.js modules
+
+  /**
+   * Modules for dev and build
+   * https://go.nuxtjs.dev/config-modules
    */
-  modules: [
+  buildModules: [
     '@nuxtjs/eslint-module',
+    '@nuxtjs/tailwindcss',
     '@nuxtjs/svg',
     '@nuxtjs/sitemap',
   ],
+
+  /**
+   * Modules
+   * https://go.nuxtjs.dev/config-modules
+   */
+  modules: [
+  ],
+
   /*
    * Generate Dynamic Routes
    */
@@ -138,8 +149,9 @@ export default {
             highlight: markdownItHljs,
           })
             .use(markdownItAnchor, {
-              permalink: true,
-              permalinkBefore: true,
+              permalink: markdownItAnchor.permalink.ariaHidden({
+                placement: 'before',
+              }),
               slugify: s => uslug(s),
             })
             .use(markdownItAttrs)
