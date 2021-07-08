@@ -1,7 +1,7 @@
 <template>
   <article class="wrapper">
     <header v-if="attributes" class="mb-12">
-      <h1 v-if="attributes.title" class="text-4xl font-semibold leading-tight mb-4 md:mb-2">
+      <h1 v-if="attributes.title" class="text-6xl font-semibold leading-tight mb-4 md:mb-2">
         {{ attributes.title }}
       </h1>
       <div class="flex flex-wrap items-center">
