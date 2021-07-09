@@ -7,7 +7,7 @@ import markdownItAnchor from 'markdown-it-anchor'
 import markdownItAttrs from 'markdown-it-attrs'
 import markdownItEmoji from 'markdown-it-emoji'
 import markdownItFootnote from 'markdown-it-footnote'
-import markdownItHljs from './plugins/markdownItHljs'
+import markdownItHljs from './plugins/markdown-it-hljs'
 const CONTENT_DIR = 'content/'
 
 require('dotenv').config()
