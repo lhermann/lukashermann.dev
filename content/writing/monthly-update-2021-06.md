@@ -3,6 +3,8 @@ title: 'June 2021: Launching my first app'
 created: 2021-07-08
 description: My first monthly update. Why I made Stagetimer and how I got my first subscribers.
 tags: Monthly Update
+cover_image: /img/writing/covers/monthly-update-2021-06.jpg
+twitter_card: summary
 ---
 
 Taking inspiration from [Alex West](https://www.alexwest.co/) I am starting to write monthly updates.

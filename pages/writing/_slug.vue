@@ -77,7 +77,10 @@ export default {
         { name: 'twitter:title', content: this.attributes?.title },
         { name: 'twitter:description', content: this.attributes?.description },
         { name: 'twitter:image', content: image },
-        { name: 'twitter:card', content: 'summary_large_image' },
+        {
+          name: 'twitter:card',
+          content: this.attributes?.twitter_card || 'summary_large_image',
+        },
       ],
       link: [
         { rel: 'canonical', href: this.canonical },
