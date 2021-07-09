@@ -40,6 +40,7 @@ import parseISO from 'date-fns/parseISO'
 import format from 'date-fns/format'
 import TmIdentity from '~/components/TmIdentity'
 import TmTags from '~/components/TmTags'
+import { parseTwitterWidget } from '~/utils/twitterScript.js'
 
 export default {
   components: {
@@ -87,6 +88,9 @@ export default {
     canonical () {
       return this.attributes?.canonical_url || process.env.host + this.$route.path
     },
+  },
+  async mounted () {
+    if (this.html.includes('twitter-tweet')) await parseTwitterWidget()
   },
   methods: {
     formatDate(date) {
