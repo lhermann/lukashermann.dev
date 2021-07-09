@@ -1,9 +1,7 @@
 <template>
-  <component
-    :is="attr.canonical_url ? 'a' : 'nuxt-link'"
-    class="excerpt block transition-transform duration-300 text-white"
-    :to="url"
-    :href="url"
+  <nuxt-link
+    class="excerpt block text-white"
+    :to="article.url"
   >
     <article class="flex flex-wrap">
       <div class="w-full">
@@ -38,7 +36,7 @@
         />
       </div>
     </article>
-  </component>
+  </nuxt-link>
 </template>
 
 <script>
@@ -51,20 +49,12 @@ export default {
     TmTags,
   },
   props: {
-    data: { type: Object, required: true },
-    type: { type: String, default: 'writing' },
+    article: { type: Object, required: true },
+    draft: Boolean,
   },
   computed: {
     attr() {
-      return this.data ? this.data.attributes : {}
-    },
-    url() {
-      if (!this.data) return ''
-      const filename = this.data.meta.resourcePath
-        .split('/')
-        .pop()
-        .replace('.md', '')
-      return this.attr.canonical_url || `/${this.type}/${filename}/`
+      return this.article ? this.article.attributes : {}
     },
     created() {
       return this.attr.created

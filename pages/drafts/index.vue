@@ -2,13 +2,13 @@
   <section class="wrapper">
     <header class="mb-12 py-8">
       <h1 class="text-6xl font-semibold text-orange-200">
-        Articles
+        Drafts
       </h1>
     </header>
 
     <ul>
       <li v-for="article in articles" :key="article.slug" class="mb-10">
-        <ArticleExcerpt :article="article" />
+        <ArticleExcerpt :article="article" draft />
       </li>
     </ul>
   </section>
@@ -22,7 +22,7 @@ export default {
   components: { ArticleExcerpt },
   layout: 'orange',
   asyncData: () => ({
-    articles: getArticles(),
+    articles: getArticles({ drafts: true }),
   }),
 }
 </script>

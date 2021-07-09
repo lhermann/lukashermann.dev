@@ -24,10 +24,12 @@ figcaption {
   @apply text-gray-600 italic;
 }
 
-.links a {
+.links a,
+.link {
   border-bottom: 1px dotted currentcolor;
 }
-.links a:hover {
+.links a:hover,
+.link:hover {
   @apply border-solid border-amber-500;
 }
 
@@ -55,13 +57,13 @@ figcaption {
   @apply mb-4;
 }
 .markdown h1 {
-  @apply text-4xl mt-12;
+  @apply text-5xl font-semibold mt-12;
 }
 .markdown h2 {
-  @apply text-3xl mt-10;
+  @apply text-4xl font-semibold mt-10;
 }
 .markdown h3 {
-  @apply text-2xl mt-8;
+  @apply text-3xl font-semibold mt-8;
 }
 .markdown a {
   @apply text-blue-600 hover:underline;
@@ -89,7 +91,11 @@ figcaption {
   @apply list-disc;
 }
 .markdown .hljs {
-  @apply text-base rounded pl-0 pr-3;
+  @apply text-base rounded pl-0 py-2 pr-3;
+}
+.markdown .hljs ::selection {
+  color: inherit;
+  background-color: #504945;
 }
 .markdown .hljs-line-number {
   @apply text-gray-600 font-normal;
@@ -120,13 +126,10 @@ figcaption {
 }
 .markdown blockquote::before {
   content: "\201C";
-  position: absolute;
-  left: -0.3em;
-  top: -0.275em;
-  font-size: 6em;
+  @apply absolute -left-12 -top-4 text-gray-200 leading-none;
+  font-size: 5em;
   z-index: -1;
   font-family: serif;
-  @apply text-gray-200 leading-none;
 }
 .markdown table th:not(:last-child),
 .markdown table td:not(:last-child) {

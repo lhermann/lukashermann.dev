@@ -14,10 +14,10 @@ hljs.addPlugin({
   },
 })
 
-export default (str, lang) => {
+export default (str, language) => {
   const code =
-    lang && hljs.getLanguage(lang)
-      ? hljs.highlight(lang, str).value
+    language && hljs.getLanguage(language)
+      ? hljs.highlight(str, { language }).value
       : markdownIt().utils.escapeHtml(str)
   return `<pre class="hljs"><code>${code}</code></pre>`
 }
