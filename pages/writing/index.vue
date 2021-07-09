@@ -8,35 +8,22 @@
 
     <ul>
       <li v-for="article in articles" :key="article.slug" class="mb-10">
-        <ArticleExcerpt :data="article" />
+        <ArticleExcerpt :article="article" />
       </li>
     </ul>
   </section>
 </template>
 
 <script>
-import uslug from 'uslug'
-import compareDesc from 'date-fns/compareDesc'
-import parseISO from 'date-fns/parseISO'
 import ArticleExcerpt from '~/components/ArticleExcerpt'
+import getArticles from '~/utils/getArticles.js'
 
 export default {
   components: { ArticleExcerpt },
   layout: 'orange',
-  asyncData() {
-    const articles = require.context('~/content/writing/', true, /\.md$/)
-      .keys()
-      .map(file => {
-        const article = require(`~/content/writing/${file.replace('./', '')}`)
-        article.slug = uslug(article.attributes.title)
-        return article
-      })
-      .sort((a, b) => compareDesc(
-        parseISO(a.attributes.created),
-        parseISO(b.attributes.created),
-      ))
-    return { articles }
-  },
+  asyncData: () => ({
+    articles: getArticles(),
+  }),
 }
 </script>
 

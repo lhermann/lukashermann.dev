@@ -8,7 +8,7 @@
         <p class="text-xl mb-6">
           I'm a <strong>Maker</strong> and <strong>Full Stack Developer</strong> who loves working with the <strong>Frontend</strong>, <strong>Vue.js</strong> and <strong>User Interface Design</strong>.
         </p>
-        <ul class="flex text-gray-600">
+        <ul class="flex text-gray-600 mb-12">
           <li class="mb-3 mr-3">
             <a
               href="https://twitter.com/_lhermann"
@@ -61,52 +61,14 @@
           </li>
         </ul>
 
-        <section class="mt-10">
-          <h2 class="text-2xl font-semibold mb-3">Life Excerpt</h2>
-          <dl class="cv-list links">
-            <dt class="year">2020 &mdash; Present</dt>
-            <dd class="mb-4">
-              <p class="work">Currently working for <a href="https://laserhub.com/">Laserhub</a>, a Stuttgart based startup</p>
-              <p class="skills">Vue.js, Express, MySQL, Figma</p>
-            </dd>
-            <dt class="year">2020</dt>
-            <dd class="mb-4">
-              <p class="work">Got my Software Engineer degree from <a href="https://www.hs-esslingen.de/en/">HS Esslingen</a></p>
-              <p class="skills">Software Engineering / Computer Science</p>
-            </dd>
-            <dt class="year">2016</dt>
-            <dd class="mb-4">
-              <p class="work">Started my first company for web hosting and web development</p>
-              <p class="skills">Debian/Linux, PHP, Wordpress</p>
-            </dd>
-            <dt class="year">2015</dt>
-            <dd class="mb-4">
-              <p class="work">Moved to Brazil to study Theology</p>
-              <p class="skills">Portuguese, Theology</p>
-            </dd>
-            <dt class="year">2012</dt>
-            <dd class="mb-4">
-              <p class="work">Started developing Wordpress Themes</p>
-              <p class="skills">PHP, Wordpress, UI/UX</p>
-            </dd>
-            <dt class="year">2010</dt>
-            <dd class="mb-4">
-              <p class="work">Worked as volunteer teacher in a Filipino native village for a year</p>
-              <p class="skills">English, Education, People Skills</p>
-            </dd>
-            <dt class="year">2008</dt>
-            <dd class="mb-4">
-              <p class="work">
-                <router-link to="/writing/print-and-visual-design/">Started working with Visual & Print Design and 3D Modeling</router-link>
-              </p>
-              <p class="skills">Photoshop, InDesign, Cinema4D</p>
-            </dd>
-            <dt class="year">2007</dt>
-            <dd class="mb-4">
-              <p class="work">Got my first web development job while still in high school</p>
-              <p class="skills">HTML, CSS</p>
-            </dd>
-          </dl>
+        <section class="mb-12">
+          <h2 class="text-2xl font-semibold mb-2">Monthly Updates</h2>
+          <ArticleList :articles="monthlyUpdates" />
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-2xl font-semibold mb-2">Articles</h2>
+          <ArticleList :articles="regularArticles" />
         </section>
       </div>
 
@@ -122,6 +84,11 @@
             "
           />
         </div>
+
+        <section class="mt-10">
+          <h2 class="text-2xl font-semibold mb-3">Timeline</h2>
+          <Timeline />
+        </section>
       </div>
     </div>
 
@@ -157,6 +124,9 @@
 </template>
 
 <script>
+import ArticleList from '../components/ArticleList.vue'
+import Timeline from '../components/Timeline.vue'
+import getArticles from '../utils/getArticles.js'
 import TwitterIcon from '~/assets/icons/twitter.svg?inline'
 import GithubIcon from '~/assets/icons/github.svg?inline'
 import LinkedinIcon from '~/assets/icons/linkedin.svg?inline'
@@ -164,11 +134,34 @@ import DevtoIcon from '~/assets/icons/devto.svg?inline'
 import MailIcon from '~/assets/icons/mail.svg?inline'
 
 export default {
-  components: { TwitterIcon, GithubIcon, LinkedinIcon, DevtoIcon, MailIcon },
-  head() {
-    return {
-      link: [{ rel: 'canonical', href: 'https://lukashermann.dev' }],
-    }
+  components: {
+    ArticleList,
+    Timeline,
+    TwitterIcon,
+    GithubIcon,
+    LinkedinIcon,
+    DevtoIcon,
+    MailIcon,
+  },
+  // asyncData () {
+  //   getArticles()
+  //   // const articles = require.context('~/content/writing/', true, /\.md$/)
+  //   // console.log(articles)
+  //   // console.log(require, require.context)
+  // },
+  asyncData: () => ({
+    articles: getArticles(),
+  }),
+  head: () => ({
+    link: [{ rel: 'canonical', href: 'https://lukashermann.dev' }],
+  }),
+  computed: {
+    monthlyUpdates () {
+      return this.articles.filter(item => item.tags.includes('Monthly Update'))
+    },
+    regularArticles () {
+      return this.articles.filter(item => !item.tags.includes('Monthly Update'))
+    },
   },
 }
 </script>
@@ -180,14 +173,5 @@ export default {
 }
 .mail > i {
   font-style: normal;
-}
-.year {
-  @apply text-gray-600;
-}
-.work {
-  @apply font-semibold;
-}
-.skills {
-  @apply text-gray-600;
 }
 </style>

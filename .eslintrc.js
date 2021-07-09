@@ -2,15 +2,15 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
   },
   parserOptions: {
     parser: '@babel/eslint-parser',
-    requireConfigFile: false
+    requireConfigFile: false,
   },
   extends: [
     '@nuxtjs',
-    'plugin:nuxt/recommended'
+    'plugin:nuxt/recommended',
   ],
   plugins: [
   ],
@@ -23,6 +23,7 @@ module.exports = {
     'arrow-parens': 0,
     'space-before-function-paren': 0,
     'comma-dangle': ['warn', 'always-multiline'],
+    'no-unused-vars': 'warn',
     curly: ['warn', 'multi-line'],
     camelcase: 0,
   },

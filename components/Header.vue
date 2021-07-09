@@ -4,10 +4,10 @@
       <LhLogo />
     </nuxt-link>
     <div class="flex-grow"></div>
-    <nuxt-link to="/" class="link" exact>Bio</nuxt-link>
-    <nuxt-link to="/work/" class="link">Work</nuxt-link>
-    <nuxt-link to="/writing/" class="link">Writing</nuxt-link>
-    <nuxt-link v-if="development" to="/drafts/" class="link">Drafts</nuxt-link>
+    <nuxt-link to="/" class="h-link" exact>Bio</nuxt-link>
+    <nuxt-link to="/work/" class="h-link">Work</nuxt-link>
+    <nuxt-link to="/writing/" class="h-link">Writing</nuxt-link>
+    <nuxt-link v-if="development" to="/drafts/" class="h-link">Drafts</nuxt-link>
   </header>
 </template>
 
@@ -27,11 +27,11 @@ export default {
 </script>
 
 <style scoped>
-.link {
+.h-link {
   @apply relative text-lg font-semibold px-1 mx-2;
 }
 
-.link:after {
+.h-link:after {
   content: '';
   @apply block absolute border-b-2 border-amber-500;
   width: 0;
@@ -39,8 +39,8 @@ export default {
   transition: width 0.3s, left 0.3s;
 }
 
-.link.nuxt-link-active:after,
-.link:hover:after {
+.h-link.nuxt-link-active:after,
+.h-link:hover:after {
   width: calc(100% + 0.2em);
   left: -0.1em;
 }
