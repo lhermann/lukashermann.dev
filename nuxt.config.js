@@ -172,6 +172,10 @@ export default {
       },
     },
   },
+
+  tailwindcss: {
+    viewer: false,
+  },
 }
 
 function getDynamicRoutes () {
