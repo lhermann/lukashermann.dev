@@ -32,5 +32,8 @@ export default {
       .sort((a, b) => b.attributes.index - a.attributes.index)
     return { projects }
   },
+  head: () => ({
+    title: 'Work',
+  }),
 }
 </script>

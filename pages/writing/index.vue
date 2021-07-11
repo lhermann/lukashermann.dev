@@ -24,6 +24,9 @@ export default {
   asyncData: () => ({
     articles: getArticles(),
   }),
+  head: () => ({
+    title: 'Writing',
+  }),
 }
 </script>
 

@@ -14,7 +14,7 @@ require('dotenv').config()
 
 export default {
   env: {
-    host: process.env.VUE_APP_HOST || 'http://localhost:3000',
+    host: process.env.NUXT_ENV_HOST || 'http://localhost:3000',
   },
   router: {
     trailingSlash: true,
@@ -105,6 +105,13 @@ export default {
    * https://go.nuxtjs.dev/config-modules
    */
   modules: [
+    ['nuxt-matomo', {
+      matomoUrl: process.env.NUXT_ENV_MATOMO_URL,
+      siteId: process.env.NUXT_ENV_MATOMO_SITE_ID,
+      onMetaChange: true,
+      cookies: false,
+      doNotTrack: true,
+    }],
   ],
 
   /*
@@ -115,7 +122,7 @@ export default {
     fallback: '404.html',
   },
   sitemap: {
-    hostname: process.env.VUE_APP_HOST || 'http://localhost:3000',
+    hostname: process.env.NUXT_ENV_HOST || 'http://localhost:3000',
     trailingSlash: true,
   },
   /*
