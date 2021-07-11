@@ -14,7 +14,7 @@ require('dotenv').config()
 
 export default {
   env: {
-    host: process.env.NUXT_ENV_HOST || 'http://localhost:3000',
+    host: process.env.NUXT_ENV_HOST || 'https://lukashermann.dev',
   },
   router: {
     trailingSlash: true,
@@ -122,7 +122,7 @@ export default {
     fallback: '404.html',
   },
   sitemap: {
-    hostname: process.env.NUXT_ENV_HOST || 'http://localhost:3000',
+    hostname: process.env.NUXT_ENV_HOST || 'https://lukashermann.dev',
     trailingSlash: true,
   },
   /*
