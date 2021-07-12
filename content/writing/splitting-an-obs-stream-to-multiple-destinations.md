@@ -1,6 +1,7 @@
 ---
 title: 'Splitting an OBS Stream to multiple YouTube Channels'
 created: 2020-11-22
+updated: 2021-07-12
 description: Recently Joel Media needed to distribute a live stream from OBS Studio to four YouTube channels simultaneously. OBS Studio itself doesn’t provide a way to define more than one output, therefore we had to find a way to split the stream into four.
 tags: Docker, Nginx, OBS, Streaming
 cover_image: /img/writing/covers/splitting-an-obs-stream-to-multiple-destinations.jpg
@@ -57,7 +58,7 @@ vim nginx.conf
 
 The file should look something like this:
 
-```
+```sh
 rtmp {
   server {
     listen 1935;
