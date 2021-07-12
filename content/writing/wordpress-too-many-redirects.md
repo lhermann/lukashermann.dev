@@ -1,9 +1,9 @@
 ---
 title: Fixing the ERR_TOO_MANY_REDIRECTS error with Wordpress
 created: 2020-05-09
-updated: 2020-05-09
+updated: 2021-07-12
 description: Every Wordpress developer sooner or later faces the ERR_TOO_MANY_REDIRECTS problem. Here is how to fix it.
-tags: php, wordpress, reverse-proxy, error
+tags: PHP, Wordpress, Reverse-Proxy, Error
 cover_image: /img/writing/covers/wordpress-too-many-redirects.png
 --canonical_plattform: dev.to
 --canonical_url: https://dev.to/codinglukas/vue-js-pattern-for-async-requests-using-renderless-components-3gd
@@ -11,25 +11,56 @@ cover_image: /img/writing/covers/wordpress-too-many-redirects.png
 
 Every Wordpress developer sooner or later faces the ERR_TOO_MANY_REDIRECTS problem. You navigate to the correct URL but instead of the Wordpress page you are greeted with an error like this (or a similar depending on the browser):
 
-![Chrome browser with redirect error](/img/writing/too-many-redirects/chrome-error.jpg){.max-w-lg .mx-auto}
+<figure class="max-w-lg mx-auto mb-4">
+  <a href="/img/writing/too-many-redirects/chrome-error.jpg">
+    <img
+      class="rounded inline-block shadow"
+      src="/img/writing/too-many-redirects/chrome-error.jpg"
+      alt="Chrome browser with redirect error"
+    />
+  </a>
+  <figcaption>Redirect Error</figcaption>
+</figure>
 
 # The Problem
-
-([Jump to the solution](#the-solution))
 
 ## Let's diagnose
 
 Basically, a miscommunication is happening between your browser and Wordpress that goes something like this:
 
-![Simplified chat between browser and web server](/img/writing/too-many-redirects/client-wp-chat.png){.max-w-2xl .mx-auto}
+<figure class="max-w-3xl mx-auto mb-4">
+  <a href="/img/writing/too-many-redirects/client-wp-chat.png">
+    <img
+      class="rounded inline-block"
+      src="/img/writing/too-many-redirects/client-wp-chat.png"
+      alt="Simplified chat between browser and web server"
+    />
+  </a>
+</figure>
 
 You can see this unfold in the network tab of your developer console. In Chrome, hit <kbd>⌘</kbd> + <kbd>alt</kbd> + <kbd>I</kbd> (<kbd>F12</kbd> or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> on Windows) to open the dev tools panel. Go to the "Network" tab, make sure "Preserve log" and "Disable cache" are checked, and then reload the page.
 
-![Developer Tools network tab with redirects](/img/writing/too-many-redirects/dev-console-redirects.jpg)
+<figure class="mb-4">
+  <a href="/img/writing/too-many-redirects/dev-console-redirects.jpg">
+    <img
+      class="rounded inline-block shadow"
+      src="/img/writing/too-many-redirects/dev-console-redirects.jpg"
+      alt="Developer Tools network tab with redirects"
+    />
+  </a>
+</figure>
 
 You will see that your browser requests the page as instructed but gets a response with status 301 which stands for "permanent redirect" telling your browser that the page you are looking for is actually somewhere else. Let's open one of the entries in the list and check for the `location` response header.
 
-![Developer Tools network tab showing details about a single redirect](/img/writing/too-many-redirects/dev-console-redirects-details.jpg)
+<figure class="mb-4">
+  <a href="/img/writing/too-many-redirects/dev-console-redirects-details.jpg">
+    <img
+      class="rounded inline-block shadow"
+      src="/img/writing/too-many-redirects/dev-console-redirects-details.jpg"
+      alt="Developer Tools network tab showing details about a single redirect"
+    />
+  </a>
+</figure>
 
 You can see that the `location: http://localhost:8081` here is identical to the `Request URL: http://localhost:8081`. Essentially the browser is asking for `http://localhost:8081` but the server is not responding with the page but telling the browser to look in another location. So the browser doesn't know any better than to ask for the page in this "other" location, which is really the same URL all along. This is called a redirect loop. Eventually, your browser gets tired and gives up with a `TOO_MANY_REDIRECTS` error.
 
@@ -41,7 +72,15 @@ In 9 out of 10 cases this problem is caused by a reverse proxy. A reverse proxy 
 
 Whatever the setup, in reality, the above conversation looks more like this:
 
-![Simplified chat between browser and webserver with proxy in between](/img/writing/too-many-redirects/client-proxy-wp-chat.png){.max-w-2xl .mx-auto}
+<figure class="max-w-3xl mx-auto mb-4">
+  <a href="/img/writing/too-many-redirects/client-proxy-wp-chat.png">
+    <img
+      class="rounded inline-block"
+      src="/img/writing/too-many-redirects/client-proxy-wp-chat.png"
+      alt="Simplified chat between browser and webserver with proxy in between"
+    />
+  </a>
+</figure>
 
 By asking for `https://example.com` your browser is actually talking to a middleman (the reverse proxy) who then, in turn, asks for the server with Wordpress at another location. Wordpress usually deals with this very well except if the middleman changes the port, then Wordpress seems to panic.
 

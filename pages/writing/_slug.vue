@@ -1,23 +1,26 @@
 <template>
   <article class="wrapper">
     <header v-if="attributes" class="mb-12">
-      <h1 v-if="attributes.title" class="text-6xl font-semibold leading-tight mb-4 md:mb-2">
+      <h1
+        v-if="attributes.title"
+        class="text-6xl font-semibold leading-tight break-words mb-4 md:mb-2"
+      >
         {{ attributes.title }}
       </h1>
-      <div class="flex flex-wrap items-center">
-        <TmIdentity class="mb-3 md:mb-0 mr-5" />
-        <div v-if="attributes.created" class="mr-5">
+      <div class="flex flex-wrap items-center -ml-2">
+        <TmIdentity class="p-2" />
+        <div v-if="attributes.created" class="p-2">
           <time class="text-gray-500" :datetime="attributes.created">
             {{ formatDate(attributes.created) }}
           </time>
         </div>
-        <div v-if="attributes.updated" class="mr-5 text-gray-500">
+        <div v-if="attributes.updated" class="text-gray-500 p-2">
           Updated on
           <time :datetime="attributes.updated">
             {{ formatDate(attributes.updated) }}
           </time>
         </div>
-        <div v-if="attributes.tags">
+        <div v-if="attributes.tags" class="p-2">
           <TmTags class="test" :tags="attributes.tags" />
         </div>
       </div>
