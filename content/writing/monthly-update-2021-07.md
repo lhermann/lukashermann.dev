@@ -17,7 +17,7 @@ I know that I have to do marketing. As a developer adding features comes natural
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">3 answers are in:<br><br>💬 &quot;Simon Roberts actually recommended it&quot;<br><br>🔎 &quot;We found it by extensively looking for a proper solution on Google&quot;<br><br>🔎 &quot;I just found it by googling stage timers&quot;<br><br>👉Guess I will up my SEO game then! <a href="https://t.co/EZW5Cyvim7">https://t.co/EZW5Cyvim7</a></p>&mdash; Lukas Hermann (@_lhermann) <a href="https://twitter.com/_lhermann/status/1410629873056555009?ref_src=twsrc%5Etfw">July 1, 2021</a></blockquote>
 
-And yes, I wanted to know just that. How did people find my app? How are they using it? I cannot assume to know which problems my app is solving. I have to listen to those who spend money on it. For example, [Dashcom](https://twitter.com/dashcom_) uses it as I had envisioned it, letting his studio guests know when their time is up. Pet from [innervation.com](http://innervation.com/), on the other hand, managed to get it working with a Raspberry Pi 7" touch screen. I love this use case! I don't have experience with the professional audio-video production world, so I want to learn as much from my customers as possible.
+And yes, I wanted to know just that. How did people find my app? How are they using it? I cannot assume to know which problems my app is solving. I have to listen to those who spend money on it. For example, [Dashcom](https://twitter.com/dashcom_) uses it as I had envisioned it, letting his studio guests know when their time is up. Pat from [innervation.com](http://innervation.com/), on the other hand, managed to get it working with a Raspberry Pi 7" touch screen. I love this use case! I don't have experience with the professional audio-video production world, so I want to learn as much from my customers as possible.
 
 <div class="flex items-stretch justify-around flex-wrap md:flex-nowrap my-6">
   <figure class="w-full md:w-auto">
@@ -34,11 +34,11 @@ And yes, I wanted to know just that. How did people find my app? How are they us
       src="/img/writing/2021-07-stagetimer-pat@innervation.com.jpg"
       alt=""
     />
-    <figcaption>On a Raspberry Pi (Pet, scissors for scale)</figcaption>
+    <figcaption>On a Raspberry Pi (Pat, scissors for scale)</figcaption>
   </figure>
 </div>
 
-In retrospect, this month gave me a feeling for the customer. Who is he? How did he find me? Google seemed to be a prevalent answer. So naturally, Google will be my focus next month. I don't necessarily want to be in first positing in searches. But I want to be among the first ten. And when people see my search result they should have a solid idea of what stagetimer.io does and where it excels.
+In retrospect, this month gave me a feeling for the customer. Who is he? How did he find me? Google seemed to be a prevalent answer. So naturally, Google will be my focus next month. I don't necessarily want to be in first position in searches. But I want to be among the first ten. And when people see my search result they should have a solid idea of what stagetimer.io does and where it excels.
 
 And for that, I need to learn marketing and copywriting. I am also writing these monthly updates for this reason. To be able to put ideas into text and to make them easy to read. I'm still far away from that, but I'm taking my first steps.
 
