@@ -67,10 +67,16 @@ export default {
     return {
       title: this.attributes?.title,
       meta: [
+        { name: 'author', content: 'Lukas Hermann' },
         {
           hid: 'description',
           name: 'description',
           content: this.attributes?.description,
+        },
+        {
+          name: 'publish_date',
+          property: 'og:publish_date',
+          content: this.attributes?.created,
         },
         { name: 'article:published_time', content: this.attributes?.created },
         { property: 'og:title', content: this.attributes?.title },
@@ -80,10 +86,7 @@ export default {
         { name: 'twitter:title', content: this.attributes?.title },
         { name: 'twitter:description', content: this.attributes?.description },
         { name: 'twitter:image', content: image },
-        {
-          name: 'twitter:card',
-          content: this.attributes?.twitter_card || 'summary_large_image',
-        },
+        { name: 'twitter:card', content: this.attributes?.twitter_card || 'summary_large_image' },
       ],
       link: [
         { rel: 'canonical', href: this.canonical },
