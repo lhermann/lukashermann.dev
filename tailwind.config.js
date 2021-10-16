@@ -1,5 +1,6 @@
 // tailwind.config.js
 const colors = require('tailwindcss/colors')
+delete colors['lightBlue']
 
 module.exports = {
   mode: 'jit',
