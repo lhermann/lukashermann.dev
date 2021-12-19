@@ -92,6 +92,40 @@
       </div>
     </div>
 
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-2">Testimonials</h2>
+      <div class="space-y-4 text-xl">
+        <blockquote class="font-light">
+          Thank you for being always so insightful and willing to challenge the status quo!
+          <br><span class="text-sm">– <a href="https://www.linkedin.com/in/rsrubkowski/" class="link">Radek Srubkowski</a></span>
+        </blockquote>
+        <blockquote class="font-light">
+          We will miss your question-asking skills and your multi-tasking capacity.
+          <br><span class="text-sm">– <a href="https://www.linkedin.com/in/tatiana-messiant/" class="link">Tatiana Messiant</a></span>
+        </blockquote>
+        <blockquote class="font-light">
+          Really amazing skills you have when asking questions!
+          <br><span class="text-sm">– <a href="https://www.linkedin.com/in/dr-daniel-michaelis/" class="link">Dr. Daniel Michaelis</a></span>
+        </blockquote>
+        <blockquote class="font-light">
+          Good job keeping the housekeeping backlog under control and iterating on the process of handling these tasks.
+          <br><span class="text-sm">– <a href="https://www.linkedin.com/in/mgoria/" class="link">Marcel Goria</a></span>
+        </blockquote>
+        <blockquote class="font-light">
+          Love your your storytelling talent.
+          <br><span class="text-sm">– <a href="https://www.linkedin.com/in/franziska-franz-91465436/" class="link">Franziska Franz</a></span>
+        </blockquote>
+        <blockquote class="font-light">
+          Amazing facilitation of the retrospective, thank you!
+          <br><span class="text-sm">– <a href="https://www.linkedin.com/in/vsevolod-tkach-271348162/" class="link">Vsevolod Tkach</a></span>
+        </blockquote>
+        <blockquote class="font-light">
+          You always challenge yourself, me, the company, and everyone you work with.
+          <br><span class="text-sm">– <a href="https://www.linkedin.com/in/tatiana-messiant/" class="link">Tatiana Messiant</a></span>
+        </blockquote>
+      </div>
+    </section>
+
     <!-- <hr class="border-t border-gray-300 mb-16" /> -->
 
     <!-- <div class="flex flex-wrap">
