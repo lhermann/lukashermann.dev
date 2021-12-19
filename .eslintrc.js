@@ -24,6 +24,7 @@ module.exports = {
     'space-before-function-paren': 0,
     'comma-dangle': ['warn', 'always-multiline'],
     'no-unused-vars': 'warn',
+    'vue/multi-word-component-names': 'off',
     curly: ['warn', 'multi-line'],
     camelcase: 0,
   },
