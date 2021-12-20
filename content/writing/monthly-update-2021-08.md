@@ -23,6 +23,8 @@ The outcome can be found here: https://stagetimer.io/for-studios/
 
 <blockquote class="twitter-tweet" data-theme="light" data-chrome="noheader"><p lang="en" dir="ltr">How did I write my landing page?<br>A step by step breakdown 👇 <a href="https://t.co/Sd8kTZ4SSY">pic.twitter.com/Sd8kTZ4SSY</a></p>&mdash; Lukas Hermann (@_lhermann) <a href="https://twitter.com/_lhermann/status/1428025421199720455?ref_src=twsrc%5Etfw">August 18, 2021</a></blockquote>
 
+Bonus reading resource: https://www.designerhire.com/landing-pages-best-practices
+
 ## Love and hate for Astro
 
 While creating the landing page it became apparent that I needed to find a way to pre-render the site into static pages. stagetimer.io currently is a Single Page Application. When a user enters the site they have to download a large javascript file before anything is visible in the browser. This limitation includes meta tags.
