@@ -7,7 +7,7 @@
           Hi, I'm Lukas
         </h1>
         <p class="text-xl mb-4">
-          I bootstrap profitable companies and <a class="link" href="https://twitter.com/_lhermann" rel="noopener">tweet</a> about it. Building great <nuxt-link class="link" to="/work/">products</nuxt-link> is something I love doing.
+          I bootstrap a profitable business and <a class="link" href="https://twitter.com/_lhermann" rel="noopener">tweet</a> about it. Building great <nuxt-link class="link" to="/work/">products</nuxt-link> is something I love doing.
         </p>
         <p class="text-xl mb-8">
           In the process <a class="link" href="https://twitter.com/_lhermann/status/1506665241458921476?s=20&t=gtIL_nOik50hIOkEsB6Cng" rel="noopener">I'm going to get rich</a> or fail trying 😄
