@@ -119,7 +119,7 @@ But for your browser, this is exactly the same URL he just asked for.
 
 # The Solution
 
-We must tell Wordpress he facts of the original request from the browser before the reverse proxy middleman messed things up for us.
+We must tell Wordpress the facts of the original browser request before the reverse proxy middleman messed things up for us.
 
 Fortunately, with the `HTTP_X_FORWARDED` headers, the reverse proxy is kind enough to tell Wordpress what the browser originally asked for. We can look for these headers and then clear things up for Wordpress.
 
