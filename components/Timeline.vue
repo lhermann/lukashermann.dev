@@ -1,33 +1,43 @@
 <template>
   <dl class="cv-list links">
-    <dt class="year">2020 &mdash; Present</dt>
+    <dt class="year">2022 &mdash; Present</dt>
     <dd class="mb-4">
-      <p class="work">Currently working for <a href="https://laserhub.com/">Laserhub</a>, a Stuttgart based startup</p>
-      <p class="skills">Vue.js, Express, MySQL, Figma</p>
+      <p class="work">Working on my own Project <a href="https://stagetimer.io/">stagetimer.io</a></p>
+      <p class="skills">Founder, MEVN Stack</p>
+    </dd>
+    <dt class="year">2021 &mdash; 2022</dt>
+    <dd class="mb-4">
+      <p class="work">Product Owner at <a href="https://www.seervision.com/">Seervision AG</a> for the AIRD project (now discontinued)</p>
+      <p class="skills">Product Owner, MERN Stack</p>
+    </dd>
+    <dt class="year">2020 &mdash; 2021</dt>
+    <dd class="mb-4">
+      <p class="work">Frontend Developer and Innovation Carrier at <a href="https://laserhub.com/">Laserhub</a></p>
+      <p class="skills">Stuttgart based manufacturing-as-a-service startup, MEVN Stack, Figma</p>
     </dd>
     <dt class="year">2020</dt>
     <dd class="mb-4">
-      <p class="work">Got my Software Engineer degree from <a href="https://www.hs-esslingen.de/en/">HS Esslingen</a></p>
-      <p class="skills">Software Engineering / Computer Science</p>
+      <p class="work">Software Engineering degree from <a href="https://www.hs-esslingen.de/en/">HS Esslingen</a></p>
+      <p class="skills">B.Eng. Software Engineering</p>
     </dd>
     <dt class="year">2016</dt>
     <dd class="mb-4">
-      <p class="work">Started my first company for web hosting and web development</p>
-      <p class="skills">Debian/Linux, PHP, Wordpress</p>
+      <p class="work">Started company for web hosting and web development</p>
+      <p class="skills">LAMP Stack, Wordpress</p>
     </dd>
     <dt class="year">2015</dt>
     <dd class="mb-4">
       <p class="work">Moved to Brazil to study Theology</p>
-      <p class="skills">Portuguese, Theology</p>
+      <p class="skills">B.A. Theology, Portuguese</p>
     </dd>
     <dt class="year">2012</dt>
     <dd class="mb-4">
       <p class="work">Started developing Wordpress Themes</p>
-      <p class="skills">PHP, Wordpress, UI/UX</p>
+      <p class="skills">LAMP Stack, Wordpress, UI/UX</p>
     </dd>
     <dt class="year">2010</dt>
     <dd class="mb-4">
-      <p class="work">Worked as volunteer teacher in a Filipino native village for a year</p>
+      <p class="work">Volunteer Teacher in a native village, Philippines</p>
       <p class="skills">English, Education, People Skills</p>
     </dd>
     <dt class="year">2008</dt>
