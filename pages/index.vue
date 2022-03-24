@@ -6,8 +6,11 @@
         <h1 class="text-5xl leading-tight font-semibold mb-8">
           Hi, I'm Lukas
         </h1>
-        <p class="text-xl mb-6">
-          I'm a <strong>Maker</strong> and <strong>Full Stack Developer</strong> who loves working with the <strong>Frontend</strong>, <strong>Vue.js</strong> and <strong>User Interface Design</strong>.
+        <p class="text-xl mb-4">
+          I bootstrap companies and <a class="link" href="https://twitter.com/_lhermann" rel="noopener">tweet</a> about it. Building great <nuxt-link class="link" to="/work/">products</nuxt-link> is something I love doing.
+        </p>
+        <p class="text-xl mb-8">
+          In the process <a class="link" href="https://twitter.com/_lhermann/status/1506665241458921476?s=20&t=gtIL_nOik50hIOkEsB6Cng" rel="noopener">I'm going to get rich</a> or fail trying 😄
         </p>
         <ul class="flex justify-center md:justify-start text-gray-600">
           <li class="mb-3 mr-3">
