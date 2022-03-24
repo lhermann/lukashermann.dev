@@ -12,7 +12,7 @@ const CONTENT_DIR = 'content/'
 
 require('dotenv').config()
 
-const metaDescription = 'I\'m bootstraping a profitable business and tweet about it. Building great products is something I love doing.'
+const metaDescription = 'I bootstrap a profitable business and tweet about it. Building great products is something I love doing.'
 const metaImage = 'https://lukashermann.dev/lukashermann-meta-img.jpg'
 
 export default {

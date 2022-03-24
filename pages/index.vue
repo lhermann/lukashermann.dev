@@ -92,7 +92,7 @@
           <ArticleList :articles="regularArticles" />
         </section>
       </div>
-      <div class="md:flex-none w-full md:w-64">
+      <div class="md:flex-none w-full md:w-64 mt-16 md:mt-0">
         <section>
           <h2 class="text-2xl font-semibold mb-3">Timeline</h2>
           <Timeline />
