@@ -60,6 +60,10 @@ export default {
   },
   head: () => ({
     title: 'Work',
+    meta: [
+      { name: 'twitter:title', content: 'Work' },
+      { property: 'og:title', content: 'Work' },
+    ],
   }),
   computed: {
     activeProjects () {

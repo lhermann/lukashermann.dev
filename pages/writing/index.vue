@@ -26,6 +26,10 @@ export default {
   }),
   head: () => ({
     title: 'Writing',
+    meta: [
+      { name: 'twitter:title', content: 'Writing' },
+      { property: 'og:title', content: 'Writing' },
+    ],
   }),
 }
 </script>
