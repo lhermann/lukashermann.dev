@@ -11,12 +11,12 @@ function bind (el, { value }) {
   el.addEventListener('focus', defuscate, eventListeneerOptions)
   el.addEventListener('mouseenter', defuscate, eventListeneerOptions)
 
-  for (const child of el.children) {
-    if (child.nodeName === 'B') {
-      child.style.visibility = 'hidden'
-      child.style.fontSize = 0
-    }
-    if (child.nodeName === 'I') child.style.fontStyle = 'normal'
+  for (const child of el.querySelectorAll('b')) {
+    child.style.visibility = 'hidden'
+    child.style.fontSize = 0
+  }
+  for (const child of el.querySelectorAll('i')) {
+    child.style.fontStyle = 'normal'
   }
 }
 
