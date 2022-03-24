@@ -1,9 +1,9 @@
 <template>
-  <ul>
+  <ul class="space-y-4">
     <li
       v-for="article in articles"
       :key="article.slug"
-      class="flex items-baseline space-y-3"
+      class="flex items-baseline"
     >
       <time
         class="flex-shrink-0 w-24 text-gray-400"

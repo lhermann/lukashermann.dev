@@ -20,8 +20,13 @@ module.exports = {
   plugins: [
     require('@tailwindcss/aspect-ratio'),
   ],
-  variants: {},
   content: [
+    './layouts/**/*.vue',
+    './components/**/*.vue',
+    './pages/**/*.vue',
+    './content/**/*.md',
+  ],
+  purge: [
     './layouts/**/*.vue',
     './components/**/*.vue',
     './pages/**/*.vue',

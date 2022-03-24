@@ -1,14 +1,15 @@
 <template>
-  <section class="wrapper">
-    <div class="flex flex-wrap mb-16">
-      <div class="md:pr-12 md:w-2/3">
-        <h1 class="text-5xl leading-tight font-semibold mb-6">
-          Hi, I'm Lukas Hermann
+  <div class="wrapper space-y-16">
+    <!-- Hero Section -->
+    <section class="flex items-center flex-wrap justify-center md:flex-nowrap md:justify-start">
+      <div class="flex-auto text-center md:text-left md:pr-12">
+        <h1 class="text-5xl leading-tight font-semibold mb-8">
+          Hi, I'm Lukas
         </h1>
         <p class="text-xl mb-6">
           I'm a <strong>Maker</strong> and <strong>Full Stack Developer</strong> who loves working with the <strong>Frontend</strong>, <strong>Vue.js</strong> and <strong>User Interface Design</strong>.
         </p>
-        <ul class="flex text-gray-600 mb-12">
+        <ul class="flex justify-center md:justify-start text-gray-600">
           <li class="mb-3 mr-3">
             <a
               href="https://twitter.com/_lhermann"
@@ -49,50 +50,55 @@
               <DevtoIcon class="text-2xl inline-block align-top" />
             </a>
           </li>
-          <li class="mb-3 mr-3">
+          <li class="mb-3 mr-3 truncate">
             <a
               v-email-obfuscate="'x.f'"
               class="mail hover:text-amber-600"
               href="mailto:Lukas%20Hermann<hx.fey@lukasherx.fmann.dev>?subject=Hey%20Lukas"
             >
               <MailIcon class="text-2xl inline-block align-top" />
-              h<b>x.f</b>ey@<i>luk</i>asher<b>tty</b>mann.dev
+              <span class="hidden md:inline">
+                h<b>x.f</b>ey@<i>luk</i>asher<b>tty</b>mann.dev
+              </span>
             </a>
           </li>
         </ul>
+      </div>
+      <div class="flex-none w-64 mt-8 md:mt-0">
+        <img
+          class="rounded-lg shadow-md"
+          src="/img/lukas-portrait-300.jpg"
+          alt="Portrait of me, Lukas Hermann"
+          srcset="/img/lukas-portrait-600.jpg 600w, /img/lukas-portrait-300.jpg 300w"
+          width="600"
+          height="900"
+        />
+      </div>
+    </section>
 
-        <section class="mb-12">
-          <h2 class="text-2xl font-semibold mb-2">Monthly Updates</h2>
+    <!-- Article/Timeline Section -->
+    <section class="flex flex-wrap md:flex-nowrap md:space-x-12">
+      <div class="flex-auto w-full md: w-auto space-y-12">
+        <section>
+          <h2 class="text-2xl font-semibold mb-3">Monthly Updates</h2>
           <ArticleList :articles="monthlyUpdates" />
         </section>
 
-        <section class="mb-12">
-          <h2 class="text-2xl font-semibold mb-2">Articles</h2>
+        <section>
+          <h2 class="text-2xl font-semibold mb-3">Articles</h2>
           <ArticleList :articles="regularArticles" />
         </section>
       </div>
-
-      <div class="max-w-full md:w-1/3 mt-8 md:mt-0 flex-shrink-0">
-        <div class="aspect-w-2 aspect-h-3">
-          <img
-            class="rounded-lg shadow-md"
-            src="/img/lukas-portrait-300.jpg"
-            alt="Portrait of me, Lukas Hermann"
-            srcset="
-              /img/lukas-portrait-600.jpg   600w,
-              /img/lukas-portrait-300.jpg   300w
-            "
-          />
-        </div>
-
-        <section class="mt-10">
+      <div class="md:flex-none w-full md:w-64">
+        <section>
           <h2 class="text-2xl font-semibold mb-3">Timeline</h2>
           <Timeline />
         </section>
       </div>
-    </div>
+    </section>
 
-    <section class="mb-12">
+    <!-- Testimonials Section -->
+    <section>
       <h2 class="text-2xl font-semibold mb-2">Testimonials</h2>
       <div class="space-y-4 text-xl">
         <blockquote class="font-light">
@@ -125,36 +131,7 @@
         </blockquote>
       </div>
     </section>
-
-    <!-- <hr class="border-t border-gray-300 mb-16" /> -->
-
-    <!-- <div class="flex flex-wrap">
-      <div class="w-full md:w-1/4 mb-8 md:pr-8">
-        <div class="aspect-w-1 aspect-h-1">
-          <img
-            class="rounded shadow-md"
-            src="/img/katutubo-300.jpg"
-            alt="Katutubo, native of the Philippines"
-            srcset="
-              /img/katutubo-600.jpg   600w,
-              /img/katutubo-300.jpg   300w,
-              /img/katutubo-150.jpg   150w
-            "
-          />
-        </div>
-      </div>
-      <div class="w-full md:w-3/4">
-        <h2 class="text-lg font-semibold">Why Tentmaker?</h2>
-        <p class="text-gray-600">
-          The concept derived from the apostle Paul who used to earn his living
-          with his trade, tent making, while ministering in different cities in
-          Asia Minor. Similarly, my wife and I are supporting several social
-          projects in foreign countries financially, actively in person and with
-          counsel, while earning a living with my trade, programming.
-        </p>
-      </div>
-    </div> -->
-  </section>
+  </div>
 </template>
 
 <script>
