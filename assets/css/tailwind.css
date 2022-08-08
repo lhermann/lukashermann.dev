@@ -53,7 +53,8 @@ figcaption {
 .markdown pre,
 .markdown ol,
 .markdown ul,
-.markdown iframe {
+.markdown iframe,
+.markdown hr {
   @apply mb-4;
 }
 .markdown h1 {
@@ -118,8 +119,11 @@ figcaption {
 .markdown iframe {
   @apply my-6;
 }
-.markdown figure {
-  @apply text-center;
+.markdown figure img {
+  @apply rounded;
+}
+.markdown figure figcaption {
+  @apply text-sm;
 }
 .markdown blockquote {
   @apply font-light mx-12 my-8 relative;

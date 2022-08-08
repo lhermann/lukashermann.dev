@@ -23,7 +23,7 @@ export default function getArticles ({ drafts = false } = {}) {
 }
 
 function _getUrl (article, draft = false) {
-  const root = draft ? 'drafts' : 'writing'
+  // const root = draft ? 'drafts' : 'writing'
   const filename = article.meta.resourcePath.split('/').pop().replace('.md', draft ? '-draft' : '')
-  return `/${root}/${filename}/`
+  return `/writing/${filename}/`
 }

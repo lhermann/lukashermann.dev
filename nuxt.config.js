@@ -8,6 +8,7 @@ import markdownItAttrs from 'markdown-it-attrs'
 import markdownItEmoji from 'markdown-it-emoji'
 import markdownItFootnote from 'markdown-it-footnote'
 import markdownItHljs from './plugins/markdown-it-hljs'
+import markdownItImaginations from 'markdown-it-imagination'
 const CONTENT_DIR = 'content/'
 
 require('dotenv').config()
@@ -173,7 +174,8 @@ export default {
             })
             .use(markdownItAttrs)
             .use(markdownItEmoji)
-            .use(markdownItFootnote),
+            .use(markdownItFootnote)
+            .use(markdownItImaginations),
         },
       })
     },

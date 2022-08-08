@@ -8,7 +8,7 @@ twitter_card: summary
 ---
 
 - Lots of new customers
-- Curn & new pricing option
+- Churn & new pricing option
 
 
 ## Stats
