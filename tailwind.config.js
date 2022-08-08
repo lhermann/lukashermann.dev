@@ -26,14 +26,4 @@ module.exports = {
     './pages/**/*.vue',
     './content/**/*.md',
   ],
-  purge: [
-    './layouts/**/*.vue',
-    './components/**/*.vue',
-    './pages/**/*.vue',
-    './content/**/*.md',
-  ],
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
 }
