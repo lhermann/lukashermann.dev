@@ -17,7 +17,6 @@ const metaDescription = 'I bootstrap a profitable business and tweet about it. B
 const metaImage = 'https://lukashermann.dev/lukashermann-meta-img.jpg'
 
 export default {
-  ssr: false,
   env: {
     host: process.env.NUXT_ENV_HOST || 'https://lukashermann.dev',
   },
