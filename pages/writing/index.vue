@@ -27,8 +27,8 @@ export default {
   head: () => ({
     title: 'Writing',
     meta: [
-      { name: 'twitter:title', content: 'Writing' },
-      { property: 'og:title', content: 'Writing' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'Writing' },
+      { hid: 'og:title', property: 'og:title', content: 'Writing' },
     ],
   }),
 }

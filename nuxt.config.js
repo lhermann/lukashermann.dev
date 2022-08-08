@@ -7,8 +7,8 @@ import markdownItAnchor from 'markdown-it-anchor'
 import markdownItAttrs from 'markdown-it-attrs'
 import markdownItEmoji from 'markdown-it-emoji'
 import markdownItFootnote from 'markdown-it-footnote'
-import markdownItHljs from './plugins/markdown-it-hljs'
 import markdownItImaginations from 'markdown-it-imagination'
+import markdownItHljs from './plugins/markdown-it-hljs'
 const CONTENT_DIR = 'content/'
 
 require('dotenv').config()
@@ -17,6 +17,7 @@ const metaDescription = 'I bootstrap a profitable business and tweet about it. B
 const metaImage = 'https://lukashermann.dev/lukashermann-meta-img.jpg'
 
 export default {
+  ssr: false,
   env: {
     host: process.env.NUXT_ENV_HOST || 'https://lukashermann.dev',
   },
@@ -40,14 +41,14 @@ export default {
       { name: 'theme-color', content: '#E29449' },
       { name: 'theme-color', content: '#E29449' },
       { name: 'twitter:site', content: '@_lhermann' },
-      { name: 'twitter:image', content: metaImage },
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Hi, I\'m Lukas' },
-      { name: 'twitter:description', content: metaDescription },
-      { property: 'og:title', content: 'Hi, I\'m Lukas' },
-      { property: 'og:description', content: metaDescription },
-      { property: 'og:image', content: metaImage },
-      { property: 'og:url', content: 'https://lukashermann.dev' },
+      { hid: 'twitter:image', name: 'twitter:image', content: metaImage },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'Hi, I\'m Lukas' },
+      { hid: 'twitter:description', name: 'twitter:description', content: metaDescription },
+      { hid: 'og:title', property: 'og:title', content: 'Hi, I\'m Lukas' },
+      { hid: 'og:description', property: 'og:description', content: metaDescription },
+      { hid: 'og:image', property: 'og:image', content: metaImage },
+      { hid: 'og:url', property: 'og:url', content: 'https://lukashermann.dev' },
     ],
     link: [
       {

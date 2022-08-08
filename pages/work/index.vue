@@ -61,8 +61,8 @@ export default {
   head: () => ({
     title: 'Work',
     meta: [
-      { name: 'twitter:title', content: 'Work' },
-      { property: 'og:title', content: 'Work' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'Work' },
+      { hid: 'og:title', property: 'og:title', content: 'Work' },
     ],
   }),
   computed: {
