@@ -8,4 +8,4 @@ created: 2020-11-01
 active: true
 ---
 
-Free web-based timer app for stage presentations, events and livestreams with synchronization between devices. This is one of my side projects.
+A web-based timer app for stage presentations, events and livestreams with synchronization between devices. Any internet-connected device can use it. It works on all screen sizes, even tablets and phones.

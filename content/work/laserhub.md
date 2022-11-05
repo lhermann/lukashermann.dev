@@ -8,4 +8,4 @@ created: 2020-10-01
 active: false
 ---
 
-An online plattform streamlining the calculation, ordering and logistics process for custom metal parts. I am currently working full-time for Laserhub as a Fullstack Developer with focus on the Frontend.
+An online plattform streamlining the calculation, ordering and logistics process for custom metal parts. I was working full-time for Laserhub as a Fullstack Developer with focus on the Frontend.

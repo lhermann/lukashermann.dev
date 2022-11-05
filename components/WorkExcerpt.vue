@@ -33,6 +33,8 @@
           v-if="attr.visit_link"
           class="btn text-lg font-semibold px-4 py-2 shadow mr-2"
           :href="attr.visit_link"
+          target="_blank"
+          rel="noopener"
         >
           Visit
         </a>
