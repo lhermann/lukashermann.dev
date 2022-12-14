@@ -86,7 +86,7 @@ export default {
    ** Global CSS
    */
   css: [
-    '~/assets/css/tailwind.css',
+    '@/assets/css/tailwind.css',
     'highlight.js/styles/base16/gruvbox-dark-hard.css',
   ],
   /*
@@ -103,7 +103,7 @@ export default {
    */
   buildModules: [
     '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8',
     '@nuxtjs/svg',
     '@nuxtjs/sitemap',
   ],
@@ -146,7 +146,8 @@ export default {
     },
     postcss: {
       plugins: {
-        tailwindcss: './tailwind.config.js',
+        tailwindcss: {},
+        autoprefixer: {},
       },
     },
     /*
@@ -189,9 +190,9 @@ export default {
     },
   },
 
-  tailwindcss: {
-    viewer: false,
-  },
+  // tailwindcss: {
+  //   viewer: false,
+  // },
 }
 
 function getDynamicRoutes () {

@@ -21,9 +21,11 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
   ],
   content: [
+    './components/**/*.{js,vue,ts}',
     './layouts/**/*.vue',
-    './components/**/*.vue',
     './pages/**/*.vue',
     './content/**/*.md',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
   ],
 }
