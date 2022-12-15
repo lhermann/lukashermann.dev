@@ -17,8 +17,6 @@ Midjourney AI is an image generator that uses text prompts to create a wide rang
 
 In addition to using the words in the prompt to generate the image, the Midjourney AI also uses style modifiers to provide additional instructions and control over the appearance of the generated image. Style modifiers are special suffixes or phrases that are attached to specific words in the prompt, and they provide additional information to the AI about the desired appearance or style of the generated image. By using style modifiers in the text prompt, users can produce a wider range of different visual effects in the generated image.
 
-Overall, the Midjourney AI image generation system is a powerful and versatile tool that allows users to create a wide range of interesting and varied images. By providing a text prompt that includes specific words and style modifiers, users can generate images that are highly relevant and specific to their needs, and that can be used for a wide range of different purposes and applications.
-
 ## Effects of word order and emphasis on image generation
 
 Let's explore how Midjourney interprets simple word combinations. In this experiment, we use the words "human" and "car" in a variety of different combinations in the text prompt, and observe the resulting images to see how the order and emphasis of the words affect the appearance of the generated image.
@@ -88,11 +86,11 @@ In this section, we will explore the use of different style modifiers in the tex
   </figure>
 </div>
 
-In the following sections, we will use these three subjects - suitcase, blacksmith, and island - in combination with different style modifiers to generate images with a wide range of different visual effects and styles. The text prompts used to generate the images will be kept deliberately simple, with the subject and the style modifier separated by a comma, such as `suitcase, <modifier>`, `blacksmith, <modifier>`, or `island, <modifier>`. This approach will allow us to clearly and consistently compare the effects of different style modifiers on the appearance of the images, and to see how these modifiers can be used to create a wide range of different visual effects and styles.
+In the following sections, we will use these three subjects - suitcase, blacksmith, and island. The text prompts used to generate the images will be kept deliberately simple, with the subject and the style modifier separated by a comma, such as `suitcase, <modifier>`, `blacksmith, <modifier>`, or `island, <modifier>`. This approach will allow us to clearly and consistently compare the effects of different style modifiers on the appearance of the images, and to see how powerful these modifiers affect the resulting style of the images.
 
-You can use these examples as a starting point or reference for generating your own images with similar or related style modifiers. You can add more qualifying words to the text prompt to create more complex and specific instructions for the AI, and to produce more detailed and varied images. For example, you could use a text prompt like `suitcase surrounded by roses, in the Victorian age, under bright sunlight, highly detailed` to generate an image of a suitcase in a specific context and with specific visual characteristics.
+You can use these examples as a starting point or reference for generating your own images with similar or related modifier words. Add more qualifying words to the text prompt to create more complex and specific instructions for the AI, and to produce more detailed and varied images. For example, you could use a text prompt like `suitcase surrounded by roses, in the Victorian age, under bright sunlight, highly detailed`.
 
-The next sections will include a table of style modifiers and corresponding images, with one image for each subject. The table will allow you to easily compare the effects of different style modifiers on the appearance of the suitcase, blacksmith, and island images, and to see how the style modifiers can be used to create a wide range of different visual effects and styles.
+The next sections will include tables of style modifiers and corresponding images, with one image for each subject. The tables will allow you to easily compare the effects of different style modifiers on the appearance of the suitcase, blacksmith, and island images, and to see how well they translate into the resulting image.
 
 ### Art Styles
 
