@@ -120,10 +120,10 @@ figcaption {
   @apply my-6;
 }
 .markdown figure img {
-  @apply rounded;
+  @apply min-w-[160px] rounded inline-block shadow;
 }
 .markdown figure figcaption {
-  @apply text-sm;
+  @apply text-sm text-center not-italic;
 }
 .markdown blockquote {
   @apply font-light mx-12 my-8 relative;
@@ -135,9 +135,8 @@ figcaption {
   z-index: -1;
   font-family: serif;
 }
-.markdown table th:not(:last-child),
-.markdown table td:not(:last-child) {
-  @apply pr-3;
+.markdown table {
+  @apply border-spacing-4 border-separate -mx-4;
 }
 .markdown .footnotes-sep {
   @apply mt-16;

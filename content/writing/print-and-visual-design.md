@@ -30,7 +30,7 @@ Guitar Manual may look a bit bland at first. The provided stock was a top-down p
   <figure class="w-full md:w-auto">
     <a href="/img/writing/print-visual-design/2d-orrery.jpg">
       <img
-        class="md:max-h-64 rounded inline-block shadow"
+        class="md:max-h-64"
         src="/img/writing/print-visual-design/2d-orrery-480.jpg"
         srcset="/img/writing/print-visual-design/2d-orrery-480.jpg 480w, /img/writing/print-visual-design/2d-orrery-640.jpg 640w, /img/writing/print-visual-design/2d-orrery-960.jpg 960w, /img/writing/print-visual-design/2d-orrery.jpg"
         alt="Orrery"
@@ -41,7 +41,7 @@ Guitar Manual may look a bit bland at first. The provided stock was a top-down p
   <figure class="w-full md:w-auto mt-3 md:mt-0 md:ml-3">
     <a href="/img/writing/print-visual-design/2d-bulbworld.jpg">
       <img
-        class="md:max-h-64 rounded inline-block shadow"
+        class="md:max-h-64"
         src="/img/writing/print-visual-design/2d-bulbworld-480.jpg"
         srcset="/img/writing/print-visual-design/2d-bulbworld-480.jpg 480w, /img/writing/print-visual-design/2d-bulbworld-640.jpg 640w, /img/writing/print-visual-design/2d-bulbworld-960.jpg 960w, /img/writing/print-visual-design/2d-bulbworld.jpg"
         alt="Buldworld"
@@ -52,7 +52,7 @@ Guitar Manual may look a bit bland at first. The provided stock was a top-down p
   <figure class="w-full md:w-auto mt-3 md:mt-0 md:ml-3">
     <a href="/img/writing/print-visual-design/2d-guitar-manual.jpg">
       <img
-        class="md:max-h-64 rounded inline-block shadow"
+        class="md:max-h-64"
         src="/img/writing/print-visual-design/2d-guitar-manual-480.jpg"
         srcset="/img/writing/print-visual-design/2d-guitar-manual-480.jpg 480w, /img/writing/print-visual-design/2d-guitar-manual-640.jpg 640w, /img/writing/print-visual-design/2d-guitar-manual-960.jpg 960w, /img/writing/print-visual-design/2d-guitar-manual.jpg"
         alt="Guitar Manual"
@@ -70,7 +70,7 @@ I gave myself the challenge to recreate simple real-world objects as faithful as
   <figure class="w-full md:w-auto">
     <a href="/img/writing/print-visual-design/3d-ipod-nano.jpg">
       <img
-        class="md:max-h-64 rounded inline-block shadow"
+        class="md:max-h-64"
         src="/img/writing/print-visual-design/3d-ipod-nano-480.jpg"
         srcset="/img/writing/print-visual-design/3d-ipod-nano-480.jpg 480w, /img/writing/print-visual-design/3d-ipod-nano-640.jpg 640w, /img/writing/print-visual-design/3d-ipod-nano-960.jpg 960w, /img/writing/print-visual-design/3d-ipod-nano.jpg"
         alt="3D render of an iPod nano (4th generation)"
@@ -81,7 +81,7 @@ I gave myself the challenge to recreate simple real-world objects as faithful as
   <figure class="w-full md:w-auto mt-3 md:mt-0 md:ml-3">
     <a href="/img/writing/print-visual-design/3d-axe-deodorant.jpg">
       <img
-        class="md:max-h-64 rounded inline-block shadow"
+        class="md:max-h-64"
         src="/img/writing/print-visual-design/3d-axe-deodorant-480.jpg"
         srcset="/img/writing/print-visual-design/3d-axe-deodorant-480.jpg 480w, /img/writing/print-visual-design/3d-axe-deodorant-640.jpg 640w, /img/writing/print-visual-design/3d-axe-deodorant-960.jpg 960w, /img/writing/print-visual-design/3d-axe-deodorant.jpg"
         alt="3D render of a fictional Axe deodorant spray"
@@ -97,7 +97,7 @@ These two buildings were created for a harbor scene as part of a 3D artist conte
   <figure class="w-full md:w-auto">
     <a href="/img/writing/print-visual-design/3d-harbor-storehouse.jpg">
       <img
-        class="md:max-h-64 rounded inline-block shadow"
+        class="md:max-h-64"
         src="/img/writing/print-visual-design/3d-harbor-storehouse-480.jpg"
         srcset="/img/writing/print-visual-design/3d-harbor-storehouse-480.jpg 480w, /img/writing/print-visual-design/3d-harbor-storehouse-640.jpg 640w, /img/writing/print-visual-design/3d-harbor-storehouse-960.jpg 960w, /img/writing/print-visual-design/3d-harbor-storehouse.jpg"
         alt="3D render of a harbor storehouse"
