@@ -70,6 +70,7 @@ figcaption {
   @apply text-blue-600 hover:underline;
 }
 .markdown figure > a {
+  --tw-ring-inset: ;
   @apply inline-block ring-2 ring-offset-1 ring-transparent rounded;
 }
 .markdown figure > a:hover,
