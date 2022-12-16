@@ -69,9 +69,12 @@ figcaption {
 .markdown a {
   @apply text-blue-600 hover:underline;
 }
+.markdown figure > a {
+  @apply inline-block ring-2 ring-offset-1 ring-transparent rounded;
+}
 .markdown figure > a:hover,
 .markdown figure > a:focus {
-  @apply inline-block outline outline-offset-1 outline-2 rounded;
+  @apply ring-sky-500;
 }
 .markdown :not(pre) > code {
   font-size: 80%;
