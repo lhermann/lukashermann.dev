@@ -86,7 +86,7 @@ In this section, we will explore the use of different style modifiers in the tex
   </figure>
 </div>
 
-In the following sections, we will use these three subjects - suitcase, blacksmith, and island. The text prompts used to generate the images will be kept deliberately simple, with the subject and the style modifier separated by a comma, such as `suitcase, <modifier>`, `blacksmith, <modifier>`, or `island, <modifier>`. This approach will allow us to clearly and consistently compare the effects of different style modifiers on the appearance of the images, and to see how powerful these modifiers affect the resulting style of the images.
+In the following sections, we will use these three subjects - suitcase, blacksmith, and island. The text prompts used to generate the images will be kept deliberately simple, with the subject and the style modifier separated by a comma, such as `suitcase, <modifier> --v 4`, `blacksmith, <modifier> --v 4`, or `island, <modifier> --v 4`. This approach will allow us to clearly and consistently compare the effects of different style modifiers on the appearance of the images, and to see how powerful these modifiers affect the resulting style of the images. The `--v 4` parameter instructs Midjourney to use it's newest version 4 generation engine, all examples in this article use version 4.
 
 You can use these examples as a starting point or reference for generating your own images with similar or related modifier words. Add more qualifying words to the text prompt to create more complex and specific instructions for the AI, and to produce more detailed and varied images. For example, you could use a text prompt like `suitcase surrounded by roses, in the Victorian age, under bright sunlight, highly detailed`.
 

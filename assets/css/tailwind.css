@@ -71,7 +71,7 @@ figcaption {
 }
 .markdown figure > a:hover,
 .markdown figure > a:focus {
-  @apply inline-block ring rounded;
+  @apply inline-block outline outline-offset-1 outline-2 rounded;
 }
 .markdown :not(pre) > code {
   font-size: 80%;
