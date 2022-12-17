@@ -1247,6 +1247,60 @@ Further designers you can experiment with: Giorgetto Giugiaro, Philippe Starck, 
         </a></figure>
       </td>
     </tr>
+    <tr>
+      <th class="text-left">Zdzislaw Beksinski</th>
+      <td>
+        <figure><a href="/img/writing/midjourney/suitcase_Zdzislaw_Beksinski_347a5804-c115-48cc-a500-88eff10adec5.jpg">
+          <img src="/img/writing/midjourney/suitcase_Zdzislaw_Beksinski_347a5804-c115-48cc-a500-88eff10adec5.jpg" alt="suitcase">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/blacksmith_Zdzislaw_Beksinski_30c1f756-5672-4df0-a843-2971d004d09f.jpg">
+          <img src="/img/writing/midjourney/blacksmith_Zdzislaw_Beksinski_30c1f756-5672-4df0-a843-2971d004d09f.jpg" alt="blacksmith">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/island_Zdzislaw_Beksinski_87a98b43-932e-4a50-a4c7-db481d0b624d.jpg">
+          <img src="/img/writing/midjourney/island_Zdzislaw_Beksinski_87a98b43-932e-4a50-a4c7-db481d0b624d.jpg" alt="island">
+        </a></figure>
+      </td>
+    </tr>
+    <tr>
+      <th class="text-left">Hieronymus Bosch</th>
+      <td>
+        <figure><a href="/img/writing/midjourney/suitcase_Hieronymus_Bosch_7e070cd2-215d-40c7-8f53-27052b16b8cf.jpg">
+          <img src="/img/writing/midjourney/suitcase_Hieronymus_Bosch_7e070cd2-215d-40c7-8f53-27052b16b8cf.jpg" alt="suitcase">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/blacksmith_Hieronymus_Bosch_23c1a3cd-bcd0-49f4-9332-281f4f94c4f0.jpg">
+          <img src="/img/writing/midjourney/blacksmith_Hieronymus_Bosch_23c1a3cd-bcd0-49f4-9332-281f4f94c4f0.jpg" alt="blacksmith">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/island_Hieronymus_Bosch_437287f1-7d97-4abf-9f85-1c99110e6f90.jpg">
+          <img src="/img/writing/midjourney/island_Hieronymus_Bosch_437287f1-7d97-4abf-9f85-1c99110e6f90.jpg" alt="island">
+        </a></figure>
+      </td>
+    </tr>
+    <tr>
+      <th class="text-left">Francisco Goya</th>
+      <td>
+        <figure><a href="/img/writing/midjourney/suitcase_Francisco_Goya_fbcd30da-0e04-434f-9c03-0fde251dc083.jpg">
+          <img src="/img/writing/midjourney/suitcase_Francisco_Goya_fbcd30da-0e04-434f-9c03-0fde251dc083.jpg" alt="suitcase">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/blacksmith_Francisco_Goya_deeaac04-f3d4-4b80-97f9-75189fd3055a.jpg">
+          <img src="/img/writing/midjourney/blacksmith_Francisco_Goya_deeaac04-f3d4-4b80-97f9-75189fd3055a.jpg" alt="blacksmith">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/island_Francisco_Goya_88916092-1f30-4cab-adce-cbff0c4f801f.jpg">
+          <img src="/img/writing/midjourney/island_Francisco_Goya_88916092-1f30-4cab-adce-cbff0c4f801f.jpg" alt="island">
+        </a></figure>
+      </td>
+    </tr>
   </tbody>
 </table>
 
