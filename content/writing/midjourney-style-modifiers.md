@@ -479,8 +479,8 @@ Further historical periods you can experiment with: Middle Ages, Renaissance, Ba
     <tr>
       <th class="text-left">Long-exposure photography</th>
       <td>
-        <figure><a href="/img/writing/midjourney/suitcase_Long-exposure_photography_521cf453-79e7-47c4-be66-326765e1b981.jpg">
-          <img src="/img/writing/midjourney/suitcase_Long-exposure_photography_521cf453-79e7-47c4-be66-326765e1b981.jpg" alt="suitcase">
+        <figure><a href="/img/writing/midjourney/suitcase_Long-exposure_photography_941f07eb-9bec-43d8-bd75-daba8928294c.jpg">
+          <img src="/img/writing/midjourney/suitcase_Long-exposure_photography_941f07eb-9bec-43d8-bd75-daba8928294c.jpg" alt="suitcase">
         </a></figure>
       </td>
       <td>
@@ -566,10 +566,46 @@ Further historical periods you can experiment with: Middle Ages, Renaissance, Ba
         </a></figure>
       </td>
     </tr>
+    <tr>
+      <th class="text-left">Double-Exposure Photography</th>
+      <td>
+        <figure><a href="/img/writing/midjourney/\suitcase_Double_Exposure_100543b8-1ebd-4104-b98c-b95deb2b6e94.jpg">
+          <img src="/img/writing/midjourney/\suitcase_Double_Exposure_100543b8-1ebd-4104-b98c-b95deb2b6e94.jpg" alt="suitcase">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/\blacksmith_Double_Exposure_c33a641e-ff26-42a2-834c-74df40716631.jpg">
+          <img src="/img/writing/midjourney/\blacksmith_Double_Exposure_c33a641e-ff26-42a2-834c-74df40716631.jpg" alt="blacksmith">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/\island_Double_Exposure_9378f4c9-9ea1-4d18-9c87-001bf3e0097e.jpg">
+          <img src="/img/writing/midjourney/\island_Double_Exposure_9378f4c9-9ea1-4d18-9c87-001bf3e0097e.jpg" alt="island">
+        </a></figure>
+      </td>
+    </tr>
+    <tr>
+      <th class="text-left">High-Speed Photography</th>
+      <td>
+        <figure><a href="/img/writing/midjourney/suitcase_High-speed_Photography_c833bfc2-aed4-4595-8721-2dadb9ec2253.jpg">
+          <img src="/img/writing/midjourney/suitcase_High-speed_Photography_c833bfc2-aed4-4595-8721-2dadb9ec2253.jpg" alt="suitcase">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/blacksmith_High-speed_Photography_c14e9c5e-0019-48fa-bb98-323e5c96fa12.jpg">
+          <img src="/img/writing/midjourney/blacksmith_High-speed_Photography_c14e9c5e-0019-48fa-bb98-323e5c96fa12.jpg" alt="blacksmith">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/island_High-speed_Photography_9466b092-9bb5-4ca3-958f-f4bd39488c60.jpg">
+          <img src="/img/writing/midjourney/island_High-speed_Photography_9466b092-9bb5-4ca3-958f-f4bd39488c60.jpg" alt="island">
+        </a></figure>
+      </td>
+    </tr>
   </tbody>
 </table>
 
-Further photography techniques you can experiment with: Infrared Photography, Time-lapse Photography, Night Photography, High-speed Photography, Underwater Photography, Aerial Photography, Stereoscopic Photography, Long-exposure Photography, 360-degree Panoramic Photography, Double Exposure, Cross Processing, Light Painting, Panning, Toning, Grunge, Lomography
+Further photography techniques you can experiment with: Infrared Photography, Time-lapse Photography, Night Photography, Underwater Photography, Aerial Photography, Stereoscopic Photography, 360-degree Panoramic Photography, Cross Processing, Light Painting, Panning, Toning, Grunge, Lomography
 
 ### Miscellaneous Styles
 
@@ -821,185 +857,6 @@ Further photography techniques you can experiment with: Infrared Photography, Ti
 </table>
 
 Further miscellaneous styles you can experiment with: Fantasy, Science Fiction, Horror, Thriller, Mystery, Adventure, Romance, Comedy, Action, Drama, Gothic, Medieval, Nostalgia, New Wave, Retro, Industrial, Experimental, Avant-garde, Acid, Geometric, Organic
-
-### Designers
-
-<table>
-  <thead>
-    <tr>
-      <th width="16%" class="text-left">Style Modifier</th>
-      <th width="28%">Suitcase</th>
-      <th width="28%">Blacksmith</th>
-      <th width="28%">Island</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th class="text-left">Jonathan Ive</th>
-      <td>
-        <figure><a href="/img/writing/midjourney/suitcase_Jonathan_Ive_96e5daf8-74d2-467b-b655-1da0b020bdec.jpg">
-          <img src="/img/writing/midjourney/suitcase_Jonathan_Ive_96e5daf8-74d2-467b-b655-1da0b020bdec.jpg" alt="suitcase">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/blacksmith_Jonathan_Ive_1a42b229-e9d7-48f6-a783-a35d130bcfb4.jpg">
-          <img src="/img/writing/midjourney/blacksmith_Jonathan_Ive_1a42b229-e9d7-48f6-a783-a35d130bcfb4.jpg" alt="blacksmith">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/island_Jonathan_Ive_28adb495-1032-45e9-a2d0-633934b68e06.jpg">
-          <img src="/img/writing/midjourney/island_Jonathan_Ive_28adb495-1032-45e9-a2d0-633934b68e06.jpg" alt="island">
-        </a></figure>
-      </td>
-    </tr>
-    <tr>
-      <th class="text-left">Dieter Rams</th>
-      <td>
-        <figure><a href="/img/writing/midjourney/suitcase_Dieter_Rams_a9739277-ebc2-4d32-9874-71b939dd9f38.jpg">
-          <img src="/img/writing/midjourney/suitcase_Dieter_Rams_a9739277-ebc2-4d32-9874-71b939dd9f38.jpg" alt="suitcase">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/blacksmith_Dieter_Rams_e4465f73-a319-42bc-b0d6-8380c4dbb094.jpg">
-          <img src="/img/writing/midjourney/blacksmith_Dieter_Rams_e4465f73-a319-42bc-b0d6-8380c4dbb094.jpg" alt="blacksmith">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/island_Dieter_Rams_24ca528d-367e-4eb3-8945-cefc95dd6695.jpg">
-          <img src="/img/writing/midjourney/island_Dieter_Rams_24ca528d-367e-4eb3-8945-cefc95dd6695.jpg" alt="island">
-        </a></figure>
-      </td>
-    </tr>
-    <tr>
-      <th class="text-left">Marcel Breuer</th>
-      <td>
-        <figure><a href="/img/writing/midjourney/suitcase_Marcel_Breuer_9d7bf71b-19c7-4c3e-b3e7-c810f68a6742.jpg">
-          <img src="/img/writing/midjourney/suitcase_Marcel_Breuer_9d7bf71b-19c7-4c3e-b3e7-c810f68a6742.jpg" alt="suitcase">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/blacksmith_Marcel_Breuer_509793e6-9c54-492d-94ba-bef3ed3cd842.jpg">
-          <img src="/img/writing/midjourney/blacksmith_Marcel_Breuer_509793e6-9c54-492d-94ba-bef3ed3cd842.jpg" alt="blacksmith">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/island_Marcel_Breuer_f013149f-8cc4-4ab5-8662-f579ee2dea25.jpg">
-          <img src="/img/writing/midjourney/island_Marcel_Breuer_f013149f-8cc4-4ab5-8662-f579ee2dea25.jpg" alt="island">
-        </a></figure>
-      </td>
-    </tr>
-    <tr>
-      <th class="text-left">Raymond Loewy</th>
-      <td>
-        <figure><a href="/img/writing/midjourney/suitcase_Raymond_Loewy_ce98ebb4-a189-4015-84ec-5c1f414bb01c.jpg">
-          <img src="/img/writing/midjourney/suitcase_Raymond_Loewy_ce98ebb4-a189-4015-84ec-5c1f414bb01c.jpg" alt="suitcase">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/blacksmith_Raymond_Loewy_033ac995-5fbe-4de9-bb0a-6557c68419ee.jpg">
-          <img src="/img/writing/midjourney/blacksmith_Raymond_Loewy_033ac995-5fbe-4de9-bb0a-6557c68419ee.jpg" alt="blacksmith">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/island_Raymond_Loewy_95bacc23-fcd0-4a56-bc1e-ac8c2e843410.jpg">
-          <img src="/img/writing/midjourney/island_Raymond_Loewy_95bacc23-fcd0-4a56-bc1e-ac8c2e843410.jpg" alt="island">
-        </a></figure>
-      </td>
-    </tr>
-    <tr>
-      <th class="text-left">Karim Rashid</th>
-      <td>
-        <figure><a href="/img/writing/midjourney/suitcase_Karim_Rashid_a2986124-508f-402a-9a74-a514838acda6.jpg">
-          <img src="/img/writing/midjourney/suitcase_Karim_Rashid_a2986124-508f-402a-9a74-a514838acda6.jpg" alt="suitcase">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/blacksmith_Karim_Rashid_462543d1-f04e-4939-966e-5d3f07f72024.jpg">
-          <img src="/img/writing/midjourney/blacksmith_Karim_Rashid_462543d1-f04e-4939-966e-5d3f07f72024.jpg" alt="blacksmith">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/island_Karim_Rashid_dcd4ee78-997e-4b00-88e9-2e4f9531ccd7.jpg">
-          <img src="/img/writing/midjourney/island_Karim_Rashid_dcd4ee78-997e-4b00-88e9-2e4f9531ccd7.jpg" alt="island">
-        </a></figure>
-      </td>
-    </tr>
-    <tr>
-      <th class="text-left">Naoto Fukasawa</th>
-      <td>
-        <figure><a href="/img/writing/midjourney/suitcase_Naoto_Fukasawa_e6332035-83e5-4a53-b76b-4fcb57dfbf56.jpg">
-          <img src="/img/writing/midjourney/suitcase_Naoto_Fukasawa_e6332035-83e5-4a53-b76b-4fcb57dfbf56.jpg" alt="suitcase">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/blacksmith_Naoto_Fukasawa_a61d52a2-5aec-488a-8f68-dc5890700226.jpg">
-          <img src="/img/writing/midjourney/blacksmith_Naoto_Fukasawa_a61d52a2-5aec-488a-8f68-dc5890700226.jpg" alt="blacksmith">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/island_Naoto_Fukasawa_01750938-5a10-4796-b993-5a915c8ecfa8.jpg">
-          <img src="/img/writing/midjourney/island_Naoto_Fukasawa_01750938-5a10-4796-b993-5a915c8ecfa8.jpg" alt="island">
-        </a></figure>
-      </td>
-    </tr>
-    <tr>
-      <th class="text-left">Yves Saint Laurent</th>
-      <td>
-        <figure><a href="/img/writing/midjourney/suitcase_Yves_Saint_Laurent_ad9ccd4d-cd77-4ba2-b9f6-b5701eeca0a1.jpg">
-          <img src="/img/writing/midjourney/suitcase_Yves_Saint_Laurent_ad9ccd4d-cd77-4ba2-b9f6-b5701eeca0a1.jpg" alt="suitcase">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/blacksmith_Yves_Saint_Laurent_af8d345c-a4e1-42a9-a37f-9e66e4924fff.jpg">
-          <img src="/img/writing/midjourney/blacksmith_Yves_Saint_Laurent_af8d345c-a4e1-42a9-a37f-9e66e4924fff.jpg" alt="blacksmith">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/island_Yves_Saint_Laurent_9cdbeceb-3c29-4ce2-831a-b88a830b96dd.jpg">
-          <img src="/img/writing/midjourney/island_Yves_Saint_Laurent_9cdbeceb-3c29-4ce2-831a-b88a830b96dd.jpg" alt="island">
-        </a></figure>
-      </td>
-    </tr>
-    <tr>
-      <th class="text-left">Alexander McQueen</th>
-      <td>
-        <figure><a href="/img/writing/midjourney/suitcase_Alexander_McQueen_c8897fdd-d0aa-4923-a672-275ce4ff0c59.jpg">
-          <img src="/img/writing/midjourney/suitcase_Alexander_McQueen_c8897fdd-d0aa-4923-a672-275ce4ff0c59.jpg" alt="suitcase">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/blacksmith_Alexander_McQueen_ba1f5bd1-8f77-4ccf-9806-7f2d732cab60.jpg">
-          <img src="/img/writing/midjourney/blacksmith_Alexander_McQueen_ba1f5bd1-8f77-4ccf-9806-7f2d732cab60.jpg" alt="blacksmith">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/island_Alexander_McQueen_625fc73d-5844-455e-a013-1aa7bf2be152.jpg">
-          <img src="/img/writing/midjourney/island_Alexander_McQueen_625fc73d-5844-455e-a013-1aa7bf2be152.jpg" alt="island">
-        </a></figure>
-      </td>
-    </tr>
-    <tr>
-      <th class="text-left">Coco Chanel</th>
-      <td>
-        <figure><a href="/img/writing/midjourney/suitcase_Coco_Chanel_c74bc60c-1097-4a95-8865-f19ecafd54d6.jpg">
-          <img src="/img/writing/midjourney/suitcase_Coco_Chanel_c74bc60c-1097-4a95-8865-f19ecafd54d6.jpg" alt="suitcase">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/blacksmith_Coco_Chanel_b5807f8b-0aa2-4352-8e2b-43ce4702e914.jpg">
-          <img src="/img/writing/midjourney/blacksmith_Coco_Chanel_b5807f8b-0aa2-4352-8e2b-43ce4702e914.jpg" alt="blacksmith">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/island_Coco_Chanel_3862dd3f-a60e-4e70-9acc-af18eaf75dd0.jpg">
-          <img src="/img/writing/midjourney/island_Coco_Chanel_3862dd3f-a60e-4e70-9acc-af18eaf75dd0.jpg" alt="island">
-        </a></figure>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-Further designers you can experiment with: Giorgetto Giugiaro, Philippe Starck, Marcel Wanders, Eero Saarinen, Le Corbusier, Ludwig Mies van der Rohe, Mies van der Rohe, Richard Meier, Norman Foster, Kenzo Tange, Kazuyo Sejima, Toyo Ito, Renzo Piano
 
 ### Artists
 
@@ -1305,6 +1162,185 @@ Further designers you can experiment with: Giorgetto Giugiaro, Philippe Starck, 
 </table>
 
 Further artists you can experiment with: Jackson Pollock, Andy Warhol, Rembrandt, Michelangelo, Raphael, Titian, Vermeer, Caravaggio, Jan Vermeer, Henri Matisse, Paul Klee, Piet Mondrian
+
+### Designers
+
+<table>
+  <thead>
+    <tr>
+      <th width="16%" class="text-left">Style Modifier</th>
+      <th width="28%">Suitcase</th>
+      <th width="28%">Blacksmith</th>
+      <th width="28%">Island</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="text-left">Jonathan Ive</th>
+      <td>
+        <figure><a href="/img/writing/midjourney/suitcase_Jonathan_Ive_96e5daf8-74d2-467b-b655-1da0b020bdec.jpg">
+          <img src="/img/writing/midjourney/suitcase_Jonathan_Ive_96e5daf8-74d2-467b-b655-1da0b020bdec.jpg" alt="suitcase">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/blacksmith_Jonathan_Ive_1a42b229-e9d7-48f6-a783-a35d130bcfb4.jpg">
+          <img src="/img/writing/midjourney/blacksmith_Jonathan_Ive_1a42b229-e9d7-48f6-a783-a35d130bcfb4.jpg" alt="blacksmith">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/island_Jonathan_Ive_28adb495-1032-45e9-a2d0-633934b68e06.jpg">
+          <img src="/img/writing/midjourney/island_Jonathan_Ive_28adb495-1032-45e9-a2d0-633934b68e06.jpg" alt="island">
+        </a></figure>
+      </td>
+    </tr>
+    <tr>
+      <th class="text-left">Dieter Rams</th>
+      <td>
+        <figure><a href="/img/writing/midjourney/suitcase_Dieter_Rams_a9739277-ebc2-4d32-9874-71b939dd9f38.jpg">
+          <img src="/img/writing/midjourney/suitcase_Dieter_Rams_a9739277-ebc2-4d32-9874-71b939dd9f38.jpg" alt="suitcase">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/blacksmith_Dieter_Rams_e4465f73-a319-42bc-b0d6-8380c4dbb094.jpg">
+          <img src="/img/writing/midjourney/blacksmith_Dieter_Rams_e4465f73-a319-42bc-b0d6-8380c4dbb094.jpg" alt="blacksmith">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/island_Dieter_Rams_24ca528d-367e-4eb3-8945-cefc95dd6695.jpg">
+          <img src="/img/writing/midjourney/island_Dieter_Rams_24ca528d-367e-4eb3-8945-cefc95dd6695.jpg" alt="island">
+        </a></figure>
+      </td>
+    </tr>
+    <tr>
+      <th class="text-left">Marcel Breuer</th>
+      <td>
+        <figure><a href="/img/writing/midjourney/suitcase_Marcel_Breuer_9d7bf71b-19c7-4c3e-b3e7-c810f68a6742.jpg">
+          <img src="/img/writing/midjourney/suitcase_Marcel_Breuer_9d7bf71b-19c7-4c3e-b3e7-c810f68a6742.jpg" alt="suitcase">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/blacksmith_Marcel_Breuer_509793e6-9c54-492d-94ba-bef3ed3cd842.jpg">
+          <img src="/img/writing/midjourney/blacksmith_Marcel_Breuer_509793e6-9c54-492d-94ba-bef3ed3cd842.jpg" alt="blacksmith">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/island_Marcel_Breuer_f013149f-8cc4-4ab5-8662-f579ee2dea25.jpg">
+          <img src="/img/writing/midjourney/island_Marcel_Breuer_f013149f-8cc4-4ab5-8662-f579ee2dea25.jpg" alt="island">
+        </a></figure>
+      </td>
+    </tr>
+    <tr>
+      <th class="text-left">Raymond Loewy</th>
+      <td>
+        <figure><a href="/img/writing/midjourney/suitcase_Raymond_Loewy_ce98ebb4-a189-4015-84ec-5c1f414bb01c.jpg">
+          <img src="/img/writing/midjourney/suitcase_Raymond_Loewy_ce98ebb4-a189-4015-84ec-5c1f414bb01c.jpg" alt="suitcase">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/blacksmith_Raymond_Loewy_033ac995-5fbe-4de9-bb0a-6557c68419ee.jpg">
+          <img src="/img/writing/midjourney/blacksmith_Raymond_Loewy_033ac995-5fbe-4de9-bb0a-6557c68419ee.jpg" alt="blacksmith">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/island_Raymond_Loewy_95bacc23-fcd0-4a56-bc1e-ac8c2e843410.jpg">
+          <img src="/img/writing/midjourney/island_Raymond_Loewy_95bacc23-fcd0-4a56-bc1e-ac8c2e843410.jpg" alt="island">
+        </a></figure>
+      </td>
+    </tr>
+    <tr>
+      <th class="text-left">Karim Rashid</th>
+      <td>
+        <figure><a href="/img/writing/midjourney/suitcase_Karim_Rashid_a2986124-508f-402a-9a74-a514838acda6.jpg">
+          <img src="/img/writing/midjourney/suitcase_Karim_Rashid_a2986124-508f-402a-9a74-a514838acda6.jpg" alt="suitcase">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/blacksmith_Karim_Rashid_462543d1-f04e-4939-966e-5d3f07f72024.jpg">
+          <img src="/img/writing/midjourney/blacksmith_Karim_Rashid_462543d1-f04e-4939-966e-5d3f07f72024.jpg" alt="blacksmith">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/island_Karim_Rashid_dcd4ee78-997e-4b00-88e9-2e4f9531ccd7.jpg">
+          <img src="/img/writing/midjourney/island_Karim_Rashid_dcd4ee78-997e-4b00-88e9-2e4f9531ccd7.jpg" alt="island">
+        </a></figure>
+      </td>
+    </tr>
+    <tr>
+      <th class="text-left">Naoto Fukasawa</th>
+      <td>
+        <figure><a href="/img/writing/midjourney/suitcase_Naoto_Fukasawa_e6332035-83e5-4a53-b76b-4fcb57dfbf56.jpg">
+          <img src="/img/writing/midjourney/suitcase_Naoto_Fukasawa_e6332035-83e5-4a53-b76b-4fcb57dfbf56.jpg" alt="suitcase">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/blacksmith_Naoto_Fukasawa_a61d52a2-5aec-488a-8f68-dc5890700226.jpg">
+          <img src="/img/writing/midjourney/blacksmith_Naoto_Fukasawa_a61d52a2-5aec-488a-8f68-dc5890700226.jpg" alt="blacksmith">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/island_Naoto_Fukasawa_01750938-5a10-4796-b993-5a915c8ecfa8.jpg">
+          <img src="/img/writing/midjourney/island_Naoto_Fukasawa_01750938-5a10-4796-b993-5a915c8ecfa8.jpg" alt="island">
+        </a></figure>
+      </td>
+    </tr>
+    <tr>
+      <th class="text-left">Yves Saint Laurent</th>
+      <td>
+        <figure><a href="/img/writing/midjourney/suitcase_Yves_Saint_Laurent_ad9ccd4d-cd77-4ba2-b9f6-b5701eeca0a1.jpg">
+          <img src="/img/writing/midjourney/suitcase_Yves_Saint_Laurent_ad9ccd4d-cd77-4ba2-b9f6-b5701eeca0a1.jpg" alt="suitcase">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/blacksmith_Yves_Saint_Laurent_af8d345c-a4e1-42a9-a37f-9e66e4924fff.jpg">
+          <img src="/img/writing/midjourney/blacksmith_Yves_Saint_Laurent_af8d345c-a4e1-42a9-a37f-9e66e4924fff.jpg" alt="blacksmith">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/island_Yves_Saint_Laurent_9cdbeceb-3c29-4ce2-831a-b88a830b96dd.jpg">
+          <img src="/img/writing/midjourney/island_Yves_Saint_Laurent_9cdbeceb-3c29-4ce2-831a-b88a830b96dd.jpg" alt="island">
+        </a></figure>
+      </td>
+    </tr>
+    <tr>
+      <th class="text-left">Alexander McQueen</th>
+      <td>
+        <figure><a href="/img/writing/midjourney/suitcase_Alexander_McQueen_c8897fdd-d0aa-4923-a672-275ce4ff0c59.jpg">
+          <img src="/img/writing/midjourney/suitcase_Alexander_McQueen_c8897fdd-d0aa-4923-a672-275ce4ff0c59.jpg" alt="suitcase">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/blacksmith_Alexander_McQueen_ba1f5bd1-8f77-4ccf-9806-7f2d732cab60.jpg">
+          <img src="/img/writing/midjourney/blacksmith_Alexander_McQueen_ba1f5bd1-8f77-4ccf-9806-7f2d732cab60.jpg" alt="blacksmith">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/island_Alexander_McQueen_625fc73d-5844-455e-a013-1aa7bf2be152.jpg">
+          <img src="/img/writing/midjourney/island_Alexander_McQueen_625fc73d-5844-455e-a013-1aa7bf2be152.jpg" alt="island">
+        </a></figure>
+      </td>
+    </tr>
+    <tr>
+      <th class="text-left">Coco Chanel</th>
+      <td>
+        <figure><a href="/img/writing/midjourney/suitcase_Coco_Chanel_c74bc60c-1097-4a95-8865-f19ecafd54d6.jpg">
+          <img src="/img/writing/midjourney/suitcase_Coco_Chanel_c74bc60c-1097-4a95-8865-f19ecafd54d6.jpg" alt="suitcase">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/blacksmith_Coco_Chanel_b5807f8b-0aa2-4352-8e2b-43ce4702e914.jpg">
+          <img src="/img/writing/midjourney/blacksmith_Coco_Chanel_b5807f8b-0aa2-4352-8e2b-43ce4702e914.jpg" alt="blacksmith">
+        </a></figure>
+      </td>
+      <td>
+        <figure><a href="/img/writing/midjourney/island_Coco_Chanel_3862dd3f-a60e-4e70-9acc-af18eaf75dd0.jpg">
+          <img src="/img/writing/midjourney/island_Coco_Chanel_3862dd3f-a60e-4e70-9acc-af18eaf75dd0.jpg" alt="island">
+        </a></figure>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+Further designers you can experiment with: Giorgetto Giugiaro, Philippe Starck, Marcel Wanders, Eero Saarinen, Le Corbusier, Ludwig Mies van der Rohe, Mies van der Rohe, Richard Meier, Norman Foster, Kenzo Tange, Kazuyo Sejima, Toyo Ito, Renzo Piano
 
 ### Brands
 
