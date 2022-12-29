@@ -808,24 +808,6 @@ Further photography techniques you can experiment with: Infrared Photography, Ti
       </td>
     </tr>
     <tr>
-      <th class="text-left">Abstract</th>
-      <td>
-        <figure><a href="/img/writing/midjourney/suitcase_Abstract_1779bcd9-6ac9-470e-801e-77a690f94b8e.jpg">
-          <img src="/img/writing/midjourney/suitcase_Abstract_1779bcd9-6ac9-470e-801e-77a690f94b8e.jpg" alt="suitcase" width="1024" height="1024" loading="lazy">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/blacksmith_Abstract_15f8be13-6817-43a1-a404-5dbcc79ea6e9.jpg">
-          <img src="/img/writing/midjourney/blacksmith_Abstract_15f8be13-6817-43a1-a404-5dbcc79ea6e9.jpg" alt="blacksmith" width="1024" height="1024" loading="lazy">
-        </a></figure>
-      </td>
-      <td>
-        <figure><a href="/img/writing/midjourney/island_Abstract_1e2b07f2-a564-412a-822d-96e6177dcb13.jpg">
-          <img src="/img/writing/midjourney/island_Abstract_1e2b07f2-a564-412a-822d-96e6177dcb13.jpg" alt="island" width="1024" height="1024" loading="lazy">
-        </a></figure>
-      </td>
-    </tr>
-    <tr>
       <th class="text-left">ASCII</th>
       <td>
         <figure><a href="/img/writing/midjourney/suitcase_ASCII_e766fc98-366f-465d-b41f-0fe1b74eb1ad.jpg">
