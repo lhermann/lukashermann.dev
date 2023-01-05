@@ -82,10 +82,10 @@
     <!-- Article/Timeline Section -->
     <section class="flex flex-wrap md:flex-nowrap md:space-x-12">
       <div class="flex-auto w-full md: w-auto space-y-12">
-        <section>
+        <!-- <section>
           <h2 class="text-2xl font-semibold mb-3">Monthly Updates</h2>
           <ArticleList :articles="monthlyUpdates" />
-        </section>
+        </section> -->
 
         <section>
           <h2 class="text-2xl font-semibold mb-3">Articles</h2>
@@ -170,9 +170,9 @@ export default {
     link: [{ rel: 'canonical', href: 'https://lukashermann.dev' }],
   }),
   computed: {
-    monthlyUpdates () {
-      return this.articles.filter(item => item.tags.includes('Monthly Update'))
-    },
+    // monthlyUpdates () {
+    //   return this.articles.filter(item => item.tags.includes('Monthly Update'))
+    // },
     regularArticles () {
       return this.articles.filter(item => !item.tags.includes('Monthly Update'))
     },
