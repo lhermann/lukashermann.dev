@@ -69,12 +69,12 @@ By making sure that **the content of the page matches the keyword and URL**, it'
 
 <div class="flex flex-wrap md:flex-nowrap gap-8 mb-12">
   <img
-    class="rounded shadow w-full"
+    class="rounded shadow w-full min-w-0"
     src="/img/writing/programmatic-seo/page-for-30-00.jpg"
     alt="Page with the 30:00 timer"
   />
   <img
-    class="rounded shadow w-full"
+    class="rounded shadow w-full min-w-0"
     src="/img/writing/programmatic-seo/page-for-1-15-00.jpg"
     alt="Page with the 1:15:00 timer"
   />
