@@ -56,6 +56,7 @@ export default {
       .keys()
       .map(file => require(`~/content/work/${file.replace('./', '')}`))
       .sort((a, b) => new Date(b.attributes.created) - new Date(a.attributes.created))
+      .sort((a, b) => (a.attributes.order || 99) - (b.attributes.order || 99))
     return { projects }
   },
   head: () => ({
