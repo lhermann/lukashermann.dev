@@ -1,5 +1,5 @@
 ---
-title: "Programmatic SEO: A Step-by-Step Guide"
+title: "Programmatic SEO in 2023: A Step-by-Step Guide"
 created: 2023-01-05
 description: "Learn how to optimize your website's search engine rankings with programmatic SEO in this step-by-step guide. From choosing a keyword to the end result, we'll cover all the basics to help you succeed."
 tags: SEO, Growth
