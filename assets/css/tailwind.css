@@ -191,6 +191,10 @@ figcaption {
 /*
  * Twitter
  */
+.twitter-tweet {
+  margin-left: auto;
+  margin-right: auto;
+}
 .twitter-tweet-rendered iframe {
   margin-top: 0;
   /* Unfortunately this requires some JS to adjust the height */

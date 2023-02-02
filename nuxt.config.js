@@ -8,6 +8,7 @@ import markdownItAttrs from 'markdown-it-attrs'
 import markdownItEmoji from 'markdown-it-emoji'
 import markdownItFootnote from 'markdown-it-footnote'
 import markdownItImaginations from 'markdown-it-imagination'
+import markdownItLinkAttributes from 'markdown-it-link-attributes'
 import markdownItHljs from './plugins/markdown-it-hljs'
 const CONTENT_DIR = 'content/'
 
@@ -174,6 +175,9 @@ export default {
               slugify: s => uslug(s),
             })
             .use(markdownItAttrs)
+            .use(markdownItLinkAttributes, {
+              attrs: { rel: 'noopener' },
+            })
             .use(markdownItEmoji)
             .use(markdownItFootnote)
             .use(markdownItImaginations),
