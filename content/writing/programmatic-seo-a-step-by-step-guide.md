@@ -12,7 +12,7 @@ Have you ever heard of programmatic SEO? If not, you're not alone. Many people a
 
 The first step in programmatic SEO is to choose a keyword or phrase that you want to optimize your website for. This will depend on the content of your website and the audience you are trying to reach.
 
-In our example we have website for a countdown timer called Stagetimer. So we'll choose the keywords "30 minute timer" or "1 hour timer" as these are **phrases that people use when searching** for a timer online. By optimizing our website for these keywords, we increase the chances that it will show up in search results when someone searches for these terms.
+In our example we have a countdown timer called Stagetimer. So we'll choose the keywords "30 minute timer" or "1 hour timer" as these are **phrases that people use when searching** for a timer online. By optimizing our website for these keywords, we increase the chances that it will show up in search results when someone searches for these terms.
 
 <figure class="max-w-prose mx-auto mb-12">
   <img
@@ -20,7 +20,7 @@ In our example we have website for a countdown timer called Stagetimer. So we'll
     src="/img/writing/programmatic-seo/google-impressions-go-up.jpg"
     alt="Rise in Google Search impressions after introducing programmatic SEO"
   />
-  <figcaption>Rise in Google Search impressions after introducing programmatic SEO</figcaption>
+  <figcaption>Rise in Google Search impressions after introducing programmatic SEO on stagetimer.io</figcaption>
 </figure>
 
 ## Step 2: Recognize the Challenges
@@ -31,9 +31,7 @@ Before you start optimizing your website for a particular keyword, it's importan
 - **There's strong competition:** There are already a lot of websites ranking highly for the keyword we've chosen, it will be harder for us to break into the top search results.
 - **Google has their own tool for it:** Google has its own timer tool, which appears at the top of search results for keywords like "30 minute timer." This means that it will be hard for us to compete for these keywords.
 
-Despite these challenges, it's still possible to succeed with programmatic SEO. As you'll see in the following steps, there are many ways to optimize your website and improve its search engine rankings.
-
-In our case it worked out, in spite of these challenges.
+Despite these challenges, it's still possible to succeed with programmatic SEO. As you'll see in the following steps. In our case it worked out, in spite of these challenges.
 
 <figure class="max-w-prose mx-auto mb-12">
   <img
@@ -46,9 +44,9 @@ In our case it worked out, in spite of these challenges.
 
 ## Step 3: Design the URL
 
-One important aspect of programmatic SEO is the structure of your website's URLs. Include your keyword in the URL!
+It's important for programmatic SEO to include your keyword in the URL!
 
-For example, the URL for the "30 minute timer" page on the Stagetimer website is be **http://stagetimer.io/go/30-minutes/**. This helps search engines understand what the page is about and makes it more likely to show up in search results for the relevant keyword.
+For example, the URL for the "30 minute timer" page on the Stagetimer website is **http://stagetimer.io/go/30-minutes/**. This helps search engines understand what the page is about and makes it more likely to show up in search results for the this keyword.
 
 <figure class="max-w-prose mx-auto mb-12">
   <img
@@ -88,8 +86,6 @@ To help search engines find and index our programmatically generated pages, we a
 
 In addition, we include **a few internal links in the global footer** of our website, pointing to the most common timer pages such as "30 minute timer" or "1 hour timer." This helps search engines discover and crawl the rest of our pages.
 
-By adding internal links, you can help search engines understand the structure and content of your website, which can improve your search engine rankings.
-
 <figure class="max-w-prose mx-auto mb-12">
   <img
     class="rounded shadow"
@@ -110,7 +106,7 @@ By adding internal links, you can help search engines understand the structure a
 
 ## Step 6: Wait and Watch
 
-After you've optimized your website for programmatic SEO, it's important to let search engines index your pages and see how they perform. This can take some time, so be patient and keep an eye on your website's search engine rankings and traffic. Three months as a rule of thumb.
+After you've optimized your website for programmatic SEO, it's important to let search engines index your pages and see how they perform. This can take some time, so be patient and keep an eye on your website's search engine rankings and traffic. As a rule of thumb, it takes around three months to see results.
 
 If you've done a good job optimizing your website, you may see a significant increase in impressions (the number of times your website appears in search results) and possibly even a boost in your click-through rate (the percentage of people who click on your website in search results).
 
