@@ -1,6 +1,6 @@
 <template>
-  <article class="flex flex-wrap items-center">
-    <div class="w-2/3 sm:w-1/3 lg:w-1/4 mb-4 sm:mb-0">
+  <article class="md:flex items-center gap-8 space-y-8 md:space-y-0">
+    <div class="flex-none" style="width: 224px;">
       <div class="aspect-w-1 aspect-h-1">
         <img
           class="rounded shadow"
@@ -9,7 +9,7 @@
         />
       </div>
     </div>
-    <div class="w-full sm:w-2/3 lg:w-2/4 sm:pl-8">
+    <div class="flex-1">
       <h2 class="text-4xl font-semibold text-white mb-3">
         {{ attr.title }}
       </h2>
