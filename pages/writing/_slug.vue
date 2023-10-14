@@ -1,5 +1,8 @@
 <template>
-  <article class="wrapper">
+  <article
+    class="wrapper"
+    :lang="attributes.lang || 'en'"
+  >
     <header v-if="attributes" class="mb-12">
       <h1
         v-if="attributes.title"
@@ -26,7 +29,10 @@
       </div>
     </header>
 
-    <div class="markdown" v-html="html"></div>
+    <div
+      class="markdown"
+      v-html="html"
+    ></div>
 
     <footer class="max-w-xl text-center my-24 mx-auto">
       <p class="text-5xl mb-3">Liked this article?</p>
@@ -83,6 +89,9 @@ export default {
       link: [
         { rel: 'canonical', href: this.canonical },
       ],
+      htmlAttrs: {
+        lang: this.attributes?.lang || 'en',
+      },
     }
   },
   computed: {

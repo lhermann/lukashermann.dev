@@ -30,7 +30,7 @@ services:
 
 I use the lightweight `node:14-alpine`[^2] image and mount my current working directory as volume.
 
-The `command` starts the cron daemon and it will look for the file `/home/node/app/crontab/root`. Remove `-l 0` if you don't like a super verbose log. In my working directory I created the file `crontab/root` with this contents:
+The `command` starts the cron daemon and it will look for the file `/home/node/app/crontab/root`. Remove `-l 0` if you don't like a super verbose log. In my working directory I created the file `crontab/root` with this content:
 
 ```bash
 # min hour day month weekday command

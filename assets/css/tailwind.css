@@ -149,6 +149,10 @@ figcaption {
   @apply bg-gray-800 text-gray-400;
   @apply text-sm py-0 px-1 rounded;
 }
+.markdown .footnotes,
+.markdown .footnotes ol {
+  @apply text-sm text-gray-600;
+}
 
 /*
  * CV List
