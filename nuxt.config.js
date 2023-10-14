@@ -104,7 +104,6 @@ export default {
    */
   buildModules: [
     '@nuxtjs/eslint-module',
-    '@nuxt/postcss8',
     '@nuxtjs/svg',
     '@nuxtjs/sitemap',
   ],
@@ -138,6 +137,7 @@ export default {
    ** Build configuration
    */
   build: {
+    extractCSS: true,
     loaders: {
       vue: {
         compilerOptions: {
@@ -146,9 +146,11 @@ export default {
       },
     },
     postcss: {
-      plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
+      postcssOptions: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
       },
     },
     /*
