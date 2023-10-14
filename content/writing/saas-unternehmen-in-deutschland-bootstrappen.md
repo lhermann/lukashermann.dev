@@ -1,7 +1,7 @@
 ---
-title: 'Bootstrapping: Ein eigenfinanziertes SaaS-Unternehmen in Deutschland starten'
+title: "Ein SaaS-Unternehmen in Deutschland bootstrappen: So habe ich's gemacht"
 created: 2023-10-15
-description: 'Lukas Hermann, Gründer von Stagetimer, taucht tief in die Feinheiten ein, ein SaaS-Unternehmen in Deutschland eigenfinanziert aufzubauen. Erfahre mehr über den Umgang mit Bürokratie, Steuerverwaltung, Produktentwicklung, Technologie-Stack, Marketing und mehr. Ein Muss für angehende deutsche Unternehmer.'
+description: "Lukas Hermann, Gründer von Stagetimer, zeigt wie er ein SaaS-Unternehmen in Deutschland eigenfinanziert aufgebaut hat. Erfahre Details zu Bürokratie, Steuermanagement, Preisgestaltung, Produktentwicklung, Tech, Marketing und vieles mehr. Ein Muss für angehende deutsche Unternehmer."
 tags: Bootstrapping, Deutschland
 cover_image: /img/writing/covers/bootstrapped-saas-germany.jpg
 lang: de
@@ -14,8 +14,9 @@ Hallo, ich bin Lukas, und ich habe Stagetimer von 0 € auf über 10.000 € in 
 ## Gliederung
 1. [Mein Werdegang und warum ich das hier schreibe](#1-mein-werdegang-und-warum-ich-das-hier-schreibe)
 2. [Was ist eigentlich Bootstrapping?](#2-was-ist-eigentlich-bootstrapping)
+3. [Software-as-a-Service und Preisgestaltung](#3-software-as-a-service-und-preisgestaltung)
 4. [Durch die deutsche Bürokratie navigieren](#4-durch-die-deutsche-bürokratie-navigieren)
-5. [Steuern bewältigen](#5-steuern-bewältigen)
+5. [Der Umgang mit Steuern](#5-der-umgang-mit-steuern)
 6. [Brauche ich einen Steuerberater?](#6-brauche-ich-einen-steuerberater)
 7. [Wie entwickle ich ein Produkt?](#7-wie-entwickle-ich-ein-produkt)
 8. [Der SaaS-Technologie-Stack](#8-der-saas-technologie-stack)
@@ -152,7 +153,7 @@ Deine lokalen Stadtbeamten sind vielleicht keine Business-Experten, können dich
   <figcaption>Durch die deutsche Bürokratie so einfach wie möglich navigieren.</figcaption>
 </figure>
 
-## 5. Steuern bewältigen
+## 5. Der Umgang mit Steuern
 
 ### Wichtig: Verstehen
 

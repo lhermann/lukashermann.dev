@@ -1,9 +1,10 @@
 ---
-title: 'How to Start a Bootstrapped SaaS Business in Germany: From Personal Experience'
+title: "Bootstrapping a SaaS Business in Germany: How I did it"
 created: 2023-10-15
-description: 'Lukas Hermann, founder of Stagetimer, delves into the nitty-gritty of bootstrapping a SaaS business in Germany. Learn about navigating bureaucracy, tax management, product development, tech stack, marketing, and more. A must-read for aspiring German entrepreneurs.'
+description: "Lukas Hermann, founder of Stagetimer, delves into the nitty-gritty of bootstrapping a SaaS business in Germany. Learn about navigating bureaucracy, tax management, pricing, product development, tech stack, marketing, and more. A must-read for aspiring German entrepreneurs."
 tags: Bootstrapping, Germany
 cover_image: /img/writing/covers/bootstrapped-saas-germany.jpg
+lang: en
 ---
 
 If you're reading this, you're probably interested in starting a SaaS business in Germany. You're also likely overwhelmed with questions about taxes, regulations and all the rest. Trust me, I've been there. When I started, I had zero clue about what I needed to get off the ground. This article is a deep dive into all those nitty-gritty details, sprinkled with my personal experiences and mistakes.
