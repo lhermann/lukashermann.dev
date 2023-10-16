@@ -169,7 +169,7 @@ Every business, big or small, needs to handle three types of taxes:
 
 ### Business Tax vs Corporate Tax
 
-Let's clear up a common point of confusion. Business tax goes to the city, while corporate tax goes to the country. As a Kapitalgesellschaft, you'll pay yourself a salary and, on that, pay income tax. If you opt for an Einzelunternehmer, you won't be dealing with corporate tax; all your profit is considered income, and you pay income tax on that. Is one option more tax-efficient than the other? A tax consultant can answer that, but honestly, the difference is negligible when you're starting out, and simpler bureaucracy will probably save you more money.
+Let's clear up a common point of confusion. Business tax goes to the city, while corporate tax goes to the country. As a Kapitalgesellschaft, you'll pay yourself a salary and, on that, pay income tax. If you opt for an Einzelunternehmer, you won't be dealing with corporate tax; all your profit is considered income, and you pay income tax on that. Is one option more tax-efficient than the other? A tax consultant can answer that, but honestly, the difference is negligible when you're starting out, and simpler bureaucracy will probably save you more money. Remember to lay aside some money to pay these taxes at the end of year one. I put aside 30% of profit.
 
 ### VAT: The Complicated One
 

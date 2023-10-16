@@ -29,7 +29,7 @@ Hallo, ich bin Lukas, und ich habe Stagetimer von 0 € auf über 10.000 € in 
 
 ### Zeitachse und Wachstum
 
-Am 1. November 2020 habe ich meinen ersten Commit für das gemacht, was Stagetimer werden sollte. Etwa drei Wochen später führte ein Reddit-Post zu meinem ersten Benutzer. Im Februar 2021 habe ich dann ein deutsches Einzelunternehmen gegründet. Meinen ersten zahlenden Kunden have ich im Juni 2021 bekommen. Im September 2023 hatte ich ein monatliches wiederkehrendes Einkommen (MRR) von 10.000 €.
+Am 1. November 2020 habe ich meinen ersten Commit für das gemacht, was Stagetimer werden sollte. Etwa drei Wochen später führte ein Reddit-Post zu meinem ersten Benutzer. Im Februar 2021 habe ich dann ein deutsches Einzelunternehmen gegründet. Meinen ersten zahlenden Kunden habe ich im Juni 2021 bekommen. Im September 2023 hatte ich ein monatliches wiederkehrendes Einkommen (MRR) von 10.000 €.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Stagetimer crossed €10k MRR 🎉<br><br>Free → Paid: 8 months<br>0 → 1k: 10 month<br>1k → 5k: 8 months<br>5k → 10k: 10 months<br><br>We&#39;re starting to understand positioning, pricing and marketing in our niche. <a href="https://t.co/uxagMDo5dV">pic.twitter.com/uxagMDo5dV</a></p>&mdash; Lukas Hermann (@_lhermann) <a href="https://twitter.com/_lhermann/status/1697951410371908005?ref_src=twsrc%5Etfw">September 2, 2023</a></blockquote>
 
@@ -169,7 +169,7 @@ Jedes Unternehmen, ob groß oder klein, muss sich um drei Arten von Steuern küm
 
 ### Gewerbesteuer vs. Körperschaftsteuer
 
-Klären wir einen oft missverstandenen Punkt: Die Gewerbesteuer geht an die Stadt, die Körperschaftsteuer an den Staat. Als Kapitalgesellschaft zahlst du dir ein Gehalt und darauf Einkommensteuer. Wenn du dich für einen Einzelunternehmer entscheidest, hast du nichts mit Körperschaftsteuer zu tun; dein gesamter Gewinn gilt als Einkommen, und darauf zahlst du Einkommensteuer. Ist eine Option steuereffizienter als die andere? Ein Steuerberater kann das beantworten, aber ehrlich gesagt ist der Unterschied am Anfang vernachlässigbar, und weniger Bürokratie wird dich wahrscheinlich mehr Geld sparen.
+Klären wir einen oft missverstandenen Punkt: Die Gewerbesteuer geht an die Stadt, die Körperschaftsteuer an den Staat. Als Kapitalgesellschaft zahlst du dir ein Gehalt und darauf Einkommensteuer. Wenn du dich für einen Einzelunternehmer entscheidest, hast du nichts mit Körperschaftsteuer zu tun; dein gesamter Gewinn gilt als Einkommen, und darauf zahlst du Einkommensteuer. Ist eine Option steuereffizienter als die andere? Ein Steuerberater kann das beantworten, aber ehrlich gesagt ist der Unterschied am Anfang vernachlässigbar, und weniger Bürokratie wird dich wahrscheinlich mehr Geld sparen. Vergiss nicht Geld auf die Seite zu legen für diese Steuern nach dem ersten Jahr. Ich lege ca. 30% des Gewinns zurück.
 
 ### Mehrwertsteuer
 

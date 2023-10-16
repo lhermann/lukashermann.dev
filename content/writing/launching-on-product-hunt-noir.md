@@ -62,5 +62,7 @@ We made it. Product of the Day!
 Stagetimer on Product Hunt → https://www.producthunt.com/products/stagetimer-io
 
 <div class="border rounded p-2 text-sm text-center max-w-prose mx-auto mt-16">
-  👉 93% of this article was written by OpenAI's GTP-3. I had the fun of my life instructing the AI to generate text about a founder launching on Product Hunt in noir-style.
+  👉 93% of this article was written by OpenAI's GTP-3. I had fun instructing the AI to generate text about a founder launching on Product Hunt in noir-style.
+
+  Edit (2023-10-16): Nowadays AI copywriting is commonplace. This article was written before the days of ChatGPT and with the first iteration of GPT-3.
 </div>

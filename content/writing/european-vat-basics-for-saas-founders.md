@@ -82,6 +82,10 @@ Fortunately, Europe realized that this is a bit wild and created the Mini-One-St
 
 If I sell to France I put 20% VAT on my invoice. With MOSS I can return the money to the German authorities.
 
+<div class="border rounded p-2 text-sm text-center max-w-prose mx-auto mt-16">
+  👉 MOSS has been renamed to OSS (One Stop Shop) in July 2021 and simplified a bit. See: https://vat-one-stop-shop.ec.europa.eu/index_en
+</div>
+
 <div class="bg-gray-100 border border-gray-200 rounded px-4 py-2 mb-4" role="alert">
 
 **Example**
@@ -128,7 +132,7 @@ Seller: Germany &middot; Customer: Canada &middot; Yearly revenue ≤CAD $30k
 
 | My awesome thing        | € 20.00 |
 |:------------------------|--------:|
-| VAT (0%) reverse charge |  € 0.00 |
+| VAT (0%)                |  € 0.00 |
 | Total                   | € 20.00 |
 
 </div>
