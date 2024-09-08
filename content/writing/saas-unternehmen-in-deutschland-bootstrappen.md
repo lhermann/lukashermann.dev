@@ -81,7 +81,7 @@ Stagetimer habe ich als Nebenprojekt gestartet, während ich meinen regulären J
 
 ### Betriebskosten
 
-Einer der Vorteile von SaaS sind die geringen Betriebskosten. Für Stagetimer habe ich kaum €20 pro Monat für die technische Infrastruktur ausgegeben. Viele Tools und Dienste bieten großzügige kostenlose Pakete an, die deine Kosten erheblich senken können.
+Einer der Vorteile von SaaS sind die geringen Betriebskosten. Für Stagetimer habe ich kaum €150 pro Monat für die technische Infrastruktur ausgegeben. Viele Tools und Dienste bieten großzügige kostenlose Pakete an, die deine Kosten erheblich senken können.
 
 <figure class="max-w-xl">
   <img

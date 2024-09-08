@@ -81,7 +81,7 @@ I began Stagetimer as a side project while keeping my day job. Working on weekni
 
 ### Operating Costs
 
-One of the benefits of running a SaaS business is the low operational costs. For Stagetimer, I spent barely €20 per month on tech infrastructure. Many tools and services offer generous free tiers, which can keep your costs down significantly.
+One of the benefits of running a SaaS business is the low operational costs. For Stagetimer, I spent barely €150 per month on tech infrastructure. Many tools and services offer generous free tiers, which can keep your costs down significantly.
 
 <figure class="max-w-xl">
   <img
