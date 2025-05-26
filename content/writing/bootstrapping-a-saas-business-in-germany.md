@@ -33,7 +33,7 @@ On November 1, 2020, I made my first commit for what would become Stagetimer. Ab
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Stagetimer crossed €10k MRR 🎉<br><br>Free → Paid: 8 months<br>0 → 1k: 10 month<br>1k → 5k: 8 months<br>5k → 10k: 10 months<br><br>We&#39;re starting to understand positioning, pricing and marketing in our niche. <a href="https://t.co/uxagMDo5dV">pic.twitter.com/uxagMDo5dV</a></p>&mdash; Lukas Hermann (@_lhermann) <a href="https://twitter.com/_lhermann/status/1697951410371908005?ref_src=twsrc%5Etfw">September 2, 2023</a></blockquote>
 
-### How I Come Up with the Idea
+### How I Came Up with the Idea
 
 One day, I visited a friend who owned a studio. They used an outdated Flash app on an old laptop to time speakers. To even start the timer, my friend had to run into the recording room, hit 'Start,' and then dash back to the video mixer. I thought, "There must be a more efficient solution." After some research, I realized there weren't any browser-based solutions, just a few native apps. So, I built the first version of Stagetimer in one weekend. [^1]
 
@@ -105,7 +105,7 @@ If you're considering going full-time right away, make sure you've got enough sa
 
 ### Choosing a Price
 
-Pricing is a huge challenge in the SaaS space, because there's no real additional cost for each user you add. You could charge €5/month or €69/month, and the cost to you would essentially be the same. Your price is essentially just made up by you. Here are some factors to consider:
+Pricing is a huge challenge in the SaaS space, because there's no real additional cost for each user you add. Should you charge €5/month or €69/month? Your price is essentially just made up by you. Here are some factors to consider:
 
 1. **Target Customer**: If you're aiming at individual consumers (B2C), your pricing will typically be lower, between €5 and €20/month. Businesses (B2B), however, are willing to shell out more, potentially hundreds per month, if your solution solves a significant problem for them.
 
@@ -169,7 +169,7 @@ Every business, big or small, needs to handle three types of taxes:
 
 ### Business Tax vs Corporate Tax
 
-Let's clear up a common point of confusion. Business tax goes to the city, while corporate tax goes to the country. As a Kapitalgesellschaft, you'll pay yourself a salary and, on that, pay income tax. If you opt for an Einzelunternehmer, you won't be dealing with corporate tax; all your profit is considered income, and you pay income tax on that. Is one option more tax-efficient than the other? A tax consultant can answer that, but honestly, the difference is negligible when you're starting out, and simpler bureaucracy will probably save you more money. Remember to lay aside some money to pay these taxes at the end of year one. I put aside 30% of profit.
+Let's clear up a common point of confusion. Business tax goes to the city, while corporate tax goes to the country. As a Kapitalgesellschaft, you'll pay yourself a salary and, on that, pay income tax. If you opt for an Einzelunternehmer, you won't be dealing with corporate tax; all your profit is considered income, and you pay income tax on that. Is one option more tax-efficient than the other? A tax consultant can answer that, but honestly, the difference is negligible when you're starting out, and simpler bureaucracy will probably save you more money. Remember to lay aside some money to pay these taxes at the end of year one. I put aside 30% of revenue.
 
 ### VAT: The Complicated One
 
@@ -197,11 +197,11 @@ Hiring a tax advisor isn't cheap; you're looking at a minimum of €1,200 per ye
 
 ### Going Solo: What You Need
 
-If you're opting to handle taxes yourself, start by learning how to fill out the "Fragebogen zur steuerlichen Erfassung für Einzelunternehmen". There are good online guides for that. Next, get accounting software that can generate an Einnahmeüberschussrechnung (EUR, or simple accounting document) for your annual income tax declaration. Unlike in the US, filing income tax isn't mandatory for employees in Germany, but it is when you have a business. I use Lexoffice. Here's my [affiliate link](https://app.lexoffice.de/buy/direct-purchase-select.html?pid=TVvGrszacL&pdata=qwKeyHkkT3&cid=1777&utm_medium=affiliate&utm_source=recommend-TVvGrszacL&utm_campaign=kunden-werben-kunden&couponCode=LXOK4YWK) if you want to try it out.
+If you're opting to handle taxes yourself, start by learning how to fill out the "Fragebogen zur steuerlichen Erfassung für Einzelunternehmen". There are good online guides for that. Next, get accounting software that can generate an Einnahmeüberschussrechnung (EUR, or simple accounting document) for your annual income tax declaration. Unlike in the US, filing income tax isn't mandatory for employees in Germany, but it is when you have a business. I use Lexware Office. Here's my [affiliate link for Lexware Office](https://app.lexoffice.de/buy/direct-purchase-select.html?pid=TVvGrszacL&pdata=qwKeyHkkT3&cid=1777&utm_medium=affiliate&utm_source=recommend-TVvGrszacL&utm_campaign=kunden-werben-kunden&couponCode=LXOK4YWK) if you want to try it out.
 
 ### With an Advisor: Points to Note
 
-Make sure they know what SaaS is; not all do. And importantly, clarify if you can use your own accounting software (like Lexoffice) and then export the data to their DATEV system. Why? Because if they're not okay with that, they'll manually re-enter your receipts and double-check your bank transactions, and those hours add up, making it even more expensive.
+Make sure they know what SaaS is; not all do. And importantly, clarify if you can use your own accounting software and then export the data to their DATEV system. Why? Because if they're not okay with that, they'll manually re-enter your receipts and double-check your bank transactions, and those hours add up, making it even more expensive.
 
 ### Tax Advisor in the Family
 
