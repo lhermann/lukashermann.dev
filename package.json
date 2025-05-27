@@ -27,7 +27,6 @@
     "markdown-it-imagination": "^1.0.1",
     "markdown-it-link-attributes": "^4.0.1",
     "nuxt": "^3.15.4",
-    "nuxt-matomo": "^1.2.4",
     "ufo": "^1.0.1",
     "uslug": "^1.0.4"
   },

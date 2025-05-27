@@ -113,13 +113,6 @@ export default {
    * https://go.nuxtjs.dev/config-modules
    */
   modules: [
-    ['nuxt-matomo', {
-      matomoUrl: process.env.NUXT_ENV_MATOMO_URL,
-      siteId: process.env.NUXT_ENV_MATOMO_SITE_ID,
-      onMetaChange: true,
-      cookies: false,
-      doNotTrack: true,
-    }],
   ],
 
   /*
