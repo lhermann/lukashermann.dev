@@ -73,18 +73,25 @@ export default {
     return {
       title: this.attributes?.title,
       meta: [
+        // Add these Twitter Card specific tags
+        { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+        { hid: 'twitter:site', name: 'twitter:site', content: '@_lhermann' },
+        { hid: 'twitter:creator', name: 'twitter:creator', content: '@_lhermann' },
+
+        // Your existing meta tags...
         { hid: 'author', name: 'author', content: 'Lukas Hermann' },
         { hid: 'description', name: 'description', content: this.attributes?.description },
         { hid: 'publish_date', name: 'publish_date', property: 'og:publish_date', content: this.attributes?.created },
         { hid: 'article:published_time', name: 'article:published_time', content: this.attributes?.created },
+        { hid: 'twitter:title', name: 'twitter:title', content: this.attributes?.title },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.attributes?.description },
+        { hid: 'twitter:image', name: 'twitter:image', content: image },
+
+        // Keep your existing OG tags as fallbacks
         { hid: 'og:title', property: 'og:title', content: this.attributes?.title },
         { hid: 'og:description', property: 'og:description', content: this.attributes?.description },
         { hid: 'og:image', property: 'og:image', content: image },
         { hid: 'og:url', property: 'og:url', content: this.canonical },
-        { hid: 'twitter:title', name: 'twitter:title', content: this.attributes?.title },
-        { hid: 'twitter:description', name: 'twitter:description', content: this.attributes?.description },
-        { hid: 'twitter:image', name: 'twitter:image', content: image },
-        { hid: 'twitter:card', name: 'twitter:card', content: this.attributes?.twitter_card || 'summary_large_image' },
       ],
       link: [
         { rel: 'canonical', href: this.canonical },
