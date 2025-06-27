@@ -21,10 +21,13 @@ export default {
   env: {
     host: process.env.NUXT_ENV_HOST || 'https://lukashermann.dev',
   },
+
   router: {
     trailingSlash: true,
   },
+
   target: 'static',
+
   /*
    ** Headers of the page
    */
@@ -79,10 +82,12 @@ export default {
       lang: 'en',
     },
   },
+
   /*
    ** Customize the progress-bar color
    */
   loading: { color: '#fff' },
+
   /*
    ** Global CSS
    */
@@ -90,6 +95,7 @@ export default {
     '@/assets/css/tailwind.css',
     'highlight.js/styles/base16/gruvbox-dark-hard.css',
   ],
+
   /*
    ** Plugins to load before mounting the App
    */
@@ -122,13 +128,18 @@ export default {
     routes: getDynamicRoutes(),
     fallback: '404.html',
   },
+
   sitemap: {
     hostname: process.env.NUXT_ENV_HOST || 'https://lukashermann.dev',
     trailingSlash: true,
   },
+
   /*
    ** Build configuration
    */
+  // tailwindcss: {
+  //   viewer: false,
+  // },
   build: {
     extractCSS: true,
     loaders: {
@@ -189,9 +200,7 @@ export default {
     },
   },
 
-  // tailwindcss: {
-  //   viewer: false,
-  // },
+  compatibilityDate: '2025-06-27',
 }
 
 function getDynamicRoutes () {
