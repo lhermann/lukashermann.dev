@@ -1,0 +1,151 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Fetch articles using Astro.glob()
+const articles = await Astro.glob('./writing/*.md');
+
+// Sort and filter articles (mimicking getArticles function)
+const sortedArticles = articles
+  .map(article => ({
+    ...article.frontmatter,
+    slug: article.file.split('/').pop()?.replace('.md', ''),
+    // Add any other properties you need from the article
+  }))
+  .sort((a, b) => new Date(b.created) - new Date(a.created));
+
+const regularArticles = sortedArticles.filter(item => !item.tags?.includes('Monthly Update'));
+---
+
+<Layout>
+  <div class="wrapper space-y-16">
+    <!-- Hero Section -->
+    <section class="flex items-center flex-wrap justify-center md:flex-nowrap md:justify-start">
+      <div class="flex-auto text-center md:text-left md:pr-12">
+        <h1 class="text-5xl leading-tight font-semibold mb-8">
+          Hi, I'm Lukas
+        </h1>
+        <p class="text-xl mb-4">
+          I bootstrap a profitable business and <a class="link" href="https://twitter.com/_lhermann" rel="noopener">tweet</a> about it. Building great <a class="link" href="/work/">products</a> is something I love doing.
+        </p>
+        <p class="text-xl mb-8">
+          In the process <a class="link" href="https://twitter.com/_lhermann/status/1506665241458921476?s=20&t=gtIL_nOik50hIOkEsB6Cng" rel="noopener">I'm going to get rich</a> or fail trying 😄
+        </p>
+        <ul class="flex justify-center md:justify-start text-gray-600">
+          <li class="mb-3 mr-3">
+            <a
+              href="https://twitter.com/_lhermann"
+              title="Twitter"
+              class="hover:text-amber-600"
+              rel="noopener"
+            >
+              <i class="fab fa-twitter text-2xl"></i>
+            </a>
+          </li>
+          <li class="mb-3 mr-3">
+            <a
+              href="https://github.com/lhermann"
+              title="Github"
+              class="hover:text-amber-600"
+              rel="noopener"
+            >
+              <i class="fab fa-github text-2xl"></i>
+            </a>
+          </li>
+          <li class="mb-3 mr-3">
+            <a
+              href="https://www.linkedin.com/in/lukas-hermann/"
+              title="Linkedin"
+              class="hover:text-amber-600"
+              rel="noopener"
+            >
+              <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+          </li>
+          <li class="mb-3 mr-3">
+            <a
+              href="https://dev.to/lhermann"
+              title="dev.to"
+              class="hover:text-amber-600"
+              rel="noopener"
+            >
+              <i class="fab fa-dev text-2xl"></i>
+            </a>
+          </li>
+          <li class="mb-3 mr-3 truncate">
+            <a
+              v-email-obfuscate="'x.f'"
+              class="mail hover:text-amber-600"
+              href="mailto:Lukas%20Hermann<hx.fey@lukasherx.fmann.dev>?subject=Hey%20Lukas"
+            >
+              <i class="fas fa-envelope text-2xl"></i>
+              <span class="hidden md:inline">
+                h<b class="sr-only">x.f</b>ey@<i class="not-italic">luk</i>asher<b class="sr-only">tty</b>mann.dev
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex-none w-64 mt-8 md:mt-0">
+        <img
+          class="rounded-lg shadow-md"
+          src="/img/lukas-portrait-300.jpg"
+          alt="Portrait of me, Lukas Hermann"
+          srcset="/img/lukas-portrait-600.jpg 600w, /img/lukas-portrait-300.jpg 300w"
+          width="600"
+          height="900"
+        />
+      </div>
+    </section>
+
+    <!-- Article/Timeline Section -->
+    <section class="flex flex-wrap md:flex-nowrap md:space-x-12">
+      <div class="flex-auto w-full md:w-auto space-y-12">
+        <section>
+          <h2 class="text-2xl font-semibold mb-3">Articles</h2>
+          <!-- <ArticleList articles={regularArticles} client:load /> -->
+        </section>
+      </div>
+      <div class="md:flex-none w-full md:w-64 mt-16 md:mt-0">
+        <section>
+          <h2 class="text-2xl font-semibold mb-3">Timeline</h2>
+          <!-- <Timeline client:load /> -->
+        </section>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">Testimonials</h2>
+      <div class="space-y-4 text-xl">
+        <blockquote class="font-light">
+          Thank you for being always so insightful and willing to challenge the status quo!
+          <br><span class="text-sm">– <a href="https://www.linkedin.com/in/rsrubkowski/" class="link">Radek Srubkowski</a></span>
+        </blockquote>
+        <blockquote class="font-light">
+          We will miss your question-asking skills and your multi-tasking capacity.
+          <br><span class="text-sm">– <a href="https://www.linkedin.com/in/tatiana-messiant/" class="link">Tatiana Messiant</a></span>
+        </blockquote>
+        <blockquote class="font-light">
+          Really amazing skills you have when asking questions!
+          <br><span class="text-sm">– <a href="https://www.linkedin.com/in/dr-daniel-michaelis/" class="link">Dr. Daniel Michaelis</a></span>
+        </blockquote>
+        <blockquote class="font-light">
+          Good job keeping the housekeeping backlog under control and iterating on the process of handling these tasks.
+          <br><span class="text-sm">– <a href="https://www.linkedin.com/in/mgoria/" class="link">Marcel Goria</a></span>
+        </blockquote>
+        <blockquote class="font-light">
+          Love your your storytelling talent.
+          <br><span class="text-sm">– <a href="https://www.linkedin.com/in/franziska-franz-91465436/" class="link">Franziska Franz</a></span>
+        </blockquote>
+        <blockquote class="font-light">
+          Amazing facilitation of the retrospective, thank you!
+          <br><span class="text-sm">– <a href="https://www.linkedin.com/in/vsevolod-tkach-271348162/" class="link">Vsevolod Tkach</a></span>
+        </blockquote>
+        <blockquote class="font-light">
+          You always challenge yourself, me, the company, and everyone you work with.
+          <br><span class="text-sm">– <a href="https://www.linkedin.com/in/tatiana-messiant/" class="link">Tatiana Messiant</a></span>
+        </blockquote>
+      </div>
+    </section>
+  </div>
+</Layout>
