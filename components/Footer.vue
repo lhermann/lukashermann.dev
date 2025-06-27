@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <footer class="wrapper py-6 text-gray-700">
     <p class="text-center">
       <strong>&copy; Lukas Hermann</strong>

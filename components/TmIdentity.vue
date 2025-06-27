@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <div class="flex items-center" :class="[data.class, data.staticClass]">
     <img
       class="h-8 w-8 rounded-full mr-3"
