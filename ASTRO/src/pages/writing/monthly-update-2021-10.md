@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: 'October 2021: Solid growth and enjoyable work'
 created: 2021-11-08
 description: 'October was marked by solid growth of paying customers for Stagetimer. Working on it now is more exciting than when I started with it late last year. But while my side project continues to grow and my days at Laserhub come to an end, I am also trying to enjoy life more.'

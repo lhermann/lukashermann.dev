@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: "Bootstrapping a SaaS Business in Germany: How I did it"
 created: 2023-10-15
 description: "Lukas Hermann, founder of Stagetimer, delves into the nitty-gritty of bootstrapping a SaaS business in Germany. Learn about navigating bureaucracy, tax management, pricing, product development, tech stack, marketing, and more. A must-read for aspiring German entrepreneurs."

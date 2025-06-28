@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: 'August 2021: Marketing like a real engineer'
 created: 2021-09-07
 description: Like a real engineer I decided to spend most my month of marketing with refactoring the page. The static site generator Astro makes it easier to optimize pages for SEO.

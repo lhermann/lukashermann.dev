@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: "Exploring the Use of Style Modifiers in Midjourney AI Image Generation (With Examples)"
 created: 2022-12-15
 description: "Learn how to use style modifiers in prompts for Mid-Journey AI image generation to create a wide range of visual effects and styles. See examples of generated images using different modifiers, and get a comprehensive list of modifiers grouped into different categories."

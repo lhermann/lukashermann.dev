@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: 'September 2021: I found a co-founder'
 created: 2021-10-16
 description: It's time for me to move on from my current day-job. Visitor numbers for Stagetimer are on the rise. A big feature droped and my wife joins me as co-founder.

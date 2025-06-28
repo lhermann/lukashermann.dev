@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: 'Debouncing User Input with Vue: Delay the input event until the user stops typing'
 created: 2021-01-24
 updated: 2021-03-02

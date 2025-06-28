@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: 'Nov & Dec 2021: The experience of switching jobs'
 created: 2021-12-19
 description: 'The last 45 days saw me leaving my full-time job at Laserhub and starting employment at Seervision. In between, I had two weeks of vacation which I used to work on my side project stagetimer.io'

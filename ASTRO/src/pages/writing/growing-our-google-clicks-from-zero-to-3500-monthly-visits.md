@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: "Growing Our Google Clicks from Zero to 3,500 Monthly Visits in 1.5 Years: A Journey"
 created: 2023-02-02
 description: "Learn how to grow your website's Google clicks from zero without funding or prior experience. Follow the journey of a  bootstrapped business and discover the strategies they used to succeed."

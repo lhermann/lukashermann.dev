@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: "My Journey with Bootstrapped B2B SaaS Success: Twitter AMA Key Takeaways"
 created: 2023-04-28
 description: "Discover the key insights from a bootstrapped B2B SaaS founder's Twitter AMA, including growth strategies, tech stack, and lessons learned."

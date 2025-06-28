@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: Fixing the ERR_TOO_MANY_REDIRECTS error with Wordpress
 created: 2020-05-09
 updated: 2021-07-12

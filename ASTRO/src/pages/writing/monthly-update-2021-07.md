@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: 'July 2021: I have to learn marketing'
 created: 2021-08-03
 description: I want to learn how to create a business. As a software developer I like adding features. But as a founder, I have to learn marketing.

@@ -1,0 +1,28 @@
+---
+export interface Props {
+  tags: string | string[]
+  tagClass?: string
+  class?: string
+}
+
+const { 
+  tags, 
+  tagClass = 'bg-amber-300 text-amber-900',
+  class: className = ''
+} = Astro.props
+
+// Handle both string and array formats
+const tagArray = Array.isArray(tags) 
+  ? tags 
+  : tags.split(',').map(tag => tag.trim())
+---
+
+<ul class={`flex flex-wrap ${className}`}>
+  {tagArray.map((tag, i) => (
+    <li
+      class={`text-sm py-0 px-1 rounded ${tagClass} ${i < tagArray.length - 1 ? 'mr-1' : ''}`}
+    >
+      {tag}
+    </li>
+  ))}
+</ul>

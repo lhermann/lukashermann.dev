@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: 'Why the iPhone Timer App displays a Fake Time'
 created: 2020-12-22
 updated: 2020-12-30

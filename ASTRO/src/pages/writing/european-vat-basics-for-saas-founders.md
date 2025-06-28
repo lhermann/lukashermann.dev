@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: 'European VAT basics for SaaS founders: What you need to know about sales tax when starting'
 created: 2021-04-15
 description: I am creating a SaaS business from Germany. Here’s what I figured out so far about sales tax and value-added tax (VAT) when selling my subscriptions in Europe and globally. This guide assumes your business is in Germany or another European member state.

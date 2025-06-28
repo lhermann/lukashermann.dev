@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: 'Splitting an OBS Stream to multiple YouTube Channels'
 created: 2020-11-22
 updated: 2021-07-12

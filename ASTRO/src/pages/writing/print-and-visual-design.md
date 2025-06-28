@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: 'My Print and Visual Design Showcase'
 created: 2020-02-15
 description: I did some design work through the years, both for print and web, that I still treasure

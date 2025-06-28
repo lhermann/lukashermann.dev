@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: 'Launching on Product Hunt, a noir story'
 created: 2022-08-01
 description: 'It was a dark and stormy night. The kind of night that made you want to stay inside with a good book and a cup of tea. But I had a job to do. I was brooding over my new product, ready to take it to the masses.'

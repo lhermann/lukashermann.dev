@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: "Most people don't understand B2B SaaS"
 created: 2024-09-08
 description: "Discover the hidden advantages of B2B SaaS from a successful founder. Learn why businesses are great clients, how to thrive without a sales team, and the challenges of marketing in niche markets."

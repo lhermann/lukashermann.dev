@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: "Ein SaaS-Unternehmen in Deutschland bootstrappen: So habe ich's gemacht"
 created: 2023-10-15
 description: "Lukas Hermann, Gründer von Stagetimer, zeigt wie er ein SaaS-Unternehmen in Deutschland eigenfinanziert aufgebaut hat. Erfahre Details zu Bürokratie, Steuermanagement, Preisgestaltung, Produktentwicklung, Tech, Marketing und vieles mehr. Ein Muss für angehende deutsche Unternehmer."

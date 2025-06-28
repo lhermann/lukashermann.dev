@@ -1,0 +1,19 @@
+---
+export interface Props {
+  class?: string
+}
+
+const { class: className = '' } = Astro.props
+---
+
+<div class={`flex items-center ${className}`}>
+  <img
+    class="h-8 w-8 rounded-full mr-3"
+    src="/img/lukas-thumbnail-150.jpg"
+    alt="Portrait of me, Lukas Hermann"
+    srcset="/img/lukas-thumbnail-600.jpg 600w, /img/lukas-thumbnail-300.jpg 300w"
+    width="32"
+    height="32"
+  />
+  <a href="/">Lukas Hermann</a>
+</div>

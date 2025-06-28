@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: 'Schedule Script Execution in a Node.js Docker Image with Cron'
 created: 2021-04-23
 description: Cron is a popular tool to schedule tasks, it comes pre-installed on almost any Linux image such as Debian or Ubuntu. Most answers on StackOverflow suggest installing extra packages or building a custom image, but neither approach is necessary. The vanilla Node.js Docker image has everything needed to schedule the execution of javascript files.

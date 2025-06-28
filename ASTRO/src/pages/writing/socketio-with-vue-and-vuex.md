@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: 'Using socket.io with Vue and Vuex'
 created: 2021-01-13
 description: A how-to guide for using socket.io with Vue components and inside the Vuex store with examples.

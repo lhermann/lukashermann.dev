@@ -1,0 +1,96 @@
+---
+// src/layouts/Article.astro
+import Layout from './Layout.astro'
+import ArticleIdentity from '../components/ArticleIdentity.astro'
+import ArticleTags from '../components/ArticleTags.astro'
+import FaIcon from '../components/FaIcon.astro'
+import { faSquareTwitter } from '@fortawesome/free-brands-svg-icons'
+
+const { frontmatter } = Astro.props
+const { title, created, updated, tags, description, cover_image, lang = 'en' } = frontmatter
+
+// Format date function
+function formatDate(date) {
+  if (!date) return date
+  return new Date(date).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  })
+}
+
+// SEO data
+const image = cover_image ? `${Astro.site}${cover_image}` : undefined
+const canonical = `${Astro.site}${Astro.url.pathname}`
+---
+
+<Layout 
+  title={title}
+  description={description}
+  image={image}
+  canonical={canonical}
+  lang={lang}
+>
+  <article class="wrapper" lang={lang}>
+    <header class="mb-12">
+      {title && (
+        <h1 class="text-6xl font-semibold leading-tight break-words mb-4 md:mb-2">
+          {title}
+        </h1>
+      )}
+      <div class="flex flex-wrap items-center -ml-2">
+        <ArticleIdentity class="p-2" />
+        {created && (
+          <div class="p-2">
+            <time class="text-gray-500" datetime={created}>
+              {formatDate(created)}
+            </time>
+          </div>
+        )}
+        {updated && (
+          <div class="text-gray-500 p-2">
+            Updated on
+            <time datetime={updated}>
+              {formatDate(updated)}
+            </time>
+          </div>
+        )}
+        {tags && (
+          <div class="p-2">
+            <ArticleTags class="test" tags={tags} />
+          </div>
+        )}
+      </div>
+    </header>
+
+    <div class="markdown">
+      <slot />
+    </div>
+
+    <footer class="max-w-xl text-center my-24 mx-auto">
+      <p class="text-5xl mb-3">Liked this article?</p>
+      <p class="text-xl text-blue-600">
+        <FaIcon icon={faSquareTwitter} />
+        <a
+          class="hover:underline"
+          href="https://twitter.com/_lhermann"
+          target="_blank"
+          rel="noopener"
+        >Follow me on Twitter</a>
+      </p>
+    </footer>
+  </article>
+</Layout>
+
+<script>
+  // Handle Twitter widgets if needed
+  document.addEventListener('DOMContentLoaded', () => {
+    if (document.querySelector('.twitter-tweet')) {
+      // Load Twitter widget script if needed
+      const script = document.createElement('script')
+      script.src = 'https://platform.twitter.com/widgets.js'
+      script.async = true
+      document.head.appendChild(script)
+    }
+  })
+</script>

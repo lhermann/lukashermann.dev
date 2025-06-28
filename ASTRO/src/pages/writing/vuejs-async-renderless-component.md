@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: 'Vue.js Pattern for Async Requests: Using Renderless Components'
 created: 2019-08-04
 updated: 2020-02-15
