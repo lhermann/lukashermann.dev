@@ -99,7 +99,7 @@ I set `touched = false` once the callback is executed, signifying that at this t
 
 Afterward, I emit two events. The `input` event enables the use of `v-model` with this component, and the `update:value` event ensures that [Vue's two-way binding](https://vuejs.org/v2/guide/components-custom-events.html#sync-Modifier) `value.sync` also works.
 
-<div class="bg-gray-100 border border-gray-200 rounded px-4 py-2" role="alert">
+<div class="bg-neutral-100 border border-neutral-200 rounded px-4 py-2" role="alert">
 
 _**Note:** This guide is for Vue version 2. For Vue 3 it is necessary to rename the prop `value` to `modelValue`, see https://v3.vuejs.org/guide/migration/v-model.html#v-model._
 {.mb-0}

@@ -40,7 +40,7 @@ European VAT distinguishes between B2C (selling to individuals) and B2B (selling
 
 If the customer is in your country you simply apply your country's VAT rate, if the customer is an individual or a business. You keep the tax on your bank account and send it to the tax authority when you file your taxes.
 
-<div class="bg-gray-100 border border-gray-200 rounded px-4 py-2 mb-4" role="alert">
+<div class="bg-neutral-100 border border-neutral-200 rounded px-4 py-2 mb-4" role="alert">
 
 **Example**
 
@@ -61,7 +61,7 @@ If your revenue inside Europe is below 10,000 EUR/year, then you don't need to w
 
 If I sell to France, for example, I just write Germany's 19% on my invoice even though their tax rate is 20%. The taxes are filed and returned to my local tax authority.
 
-<div class="bg-gray-100 border border-gray-200 rounded px-4 py-2 mb-4" role="alert">
+<div class="bg-neutral-100 border border-neutral-200 rounded px-4 py-2 mb-4" role="alert">
 
 **Example**
 
@@ -86,7 +86,7 @@ If I sell to France I put 20% VAT on my invoice. With MOSS I can return the mone
   👉 MOSS has been renamed to OSS (One Stop Shop) in July 2021 and simplified a bit. See: https://vat-one-stop-shop.ec.europa.eu/index_en
 </div>
 
-<div class="bg-gray-100 border border-gray-200 rounded px-4 py-2 mb-4" role="alert">
+<div class="bg-neutral-100 border border-neutral-200 rounded px-4 py-2 mb-4" role="alert">
 
 **Example**
 
@@ -105,7 +105,7 @@ Selling to businesses inside Europe is much simpler. All you need to do is to ge
 
 Reverse charge means your customer is responsible to take care of VAT, but you still need to report those sales. You need the customer's VAT number for that.
 
-<div class="bg-gray-100 border border-gray-200 rounded px-4 py-2 mb-4" role="alert">
+<div class="bg-neutral-100 border border-neutral-200 rounded px-4 py-2 mb-4" role="alert">
 
 **Example**
 
@@ -124,7 +124,7 @@ In a sense, this is the simplest of all cases. In the beginning, you can simply 
 
 Countries generally have a yearly revenue threshold here. In Canada, for example, this threshold is 30,000 CAD/year[^5]. Other countries have similar thresholds. Meaning you only have to worry about these regulations if you do a significant amount of business with a particular country. So keep that in mind and keep an eye on your customers.
 
-<div class="bg-gray-100 border border-gray-200 rounded px-4 py-2 mb-4" role="alert">
+<div class="bg-neutral-100 border border-neutral-200 rounded px-4 py-2 mb-4" role="alert">
 
 **Example**
 

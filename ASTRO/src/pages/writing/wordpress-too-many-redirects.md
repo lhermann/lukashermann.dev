@@ -64,7 +64,7 @@ You will see that your browser requests the page as instructed but gets a respon
 
 You can see that the `location: http://localhost:8081` here is identical to the `Request URL: http://localhost:8081`. Essentially the browser is asking for `http://localhost:8081` but the server is not responding with the page but telling the browser to look in another location. So the browser doesn't know any better than to ask for the page in this "other" location, which is really the same URL all along. This is called a redirect loop. Eventually, your browser gets tired and gives up with a `TOO_MANY_REDIRECTS` error.
 
-_Note that `http://localhost:8081` is a development server on my local computer which I use to reproduce the problem. In your case, it may be `https://phaserbeam-computers.com` or so._{.text-gray-600}
+_Note that `http://localhost:8081` is a development server on my local computer which I use to reproduce the problem. In your case, it may be `https://phaserbeam-computers.com` or so._{.text-neutral-600}
 
 ## So why does the server give this response?
 
@@ -93,7 +93,7 @@ die();
 
 With these two lines, we instruct the server to print the `$_SERVER` variable and then stop any further execution. When you now reload the page you should see some gibberish on the screen that looks like this:
 
-_Note: without the `die();` the server continues execution of Wordpress' PHP files and the gibberish we want to see gets drowned by other stuff. By using it we only get the variable dumped on the screen._{.text-gray-600}
+_Note: without the `die();` the server continues execution of Wordpress' PHP files and the gibberish we want to see gets drowned by other stuff. By using it we only get the variable dumped on the screen._{.text-neutral-600}
 
 ```text
 Array
@@ -130,7 +130,7 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
   $_SERVER['HTTPS'] = 'on';
 }
 ```
-_Note: The `wp-config.php` should be in your Wordpress root directory. Add the PHP snipped somewhere above the `/* That's all, stop editing! Happy publishing. */` line_{.text-gray-600}
+_Note: The `wp-config.php` should be in your Wordpress root directory. Add the PHP snipped somewhere above the `/* That's all, stop editing! Happy publishing. */` line_{.text-neutral-600}
 
 If, however, you are like me and get the error because you are using a webpack dev server or some other more complex setup, this snipped should do the trick:
 

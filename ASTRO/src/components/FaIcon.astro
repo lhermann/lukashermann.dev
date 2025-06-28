@@ -1,0 +1,16 @@
+---
+/**
+ * Styles: https://github.com/FortAwesome/Font-Awesome/blob/6.x/js-packages/%40fortawesome/fontawesome-svg-core/styles.css
+ */
+
+import { icon as faIcon } from '@fortawesome/fontawesome-svg-core'
+
+const {
+  icon,
+  className = 'fa-xs',
+} = Astro.props
+
+const html = faIcon(icon, { classes: [...className.split(' ')] }).html
+---
+
+<Fragment set:html={html} />

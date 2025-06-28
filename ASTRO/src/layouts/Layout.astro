@@ -1,20 +1,20 @@
 ---
-import '../styles/global.css'
+import Base from './Base.astro'
+import SiteHeader from '../components/SiteHeader.astro'
+import SiteFooter from '../components/SiteFooter.astro'
+
+const { wrapperClass } = Astro.props
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-
-		<!-- Font Awesome CDN -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+<Base {...Astro.props}>
+  <div class="max-w-5xl mx-auto px-16 mb-16">
+    <SiteHeader />
+  </div>
+  <main class={['max-w-5xl mx-auto px-16', wrapperClass].join(' ')}>
+    <slot />
+  </main>
+  <hr class="border-t border-neutral-300 mt-24 mb-0" />
+  <div class="max-w-5xl mx-auto px-16 py-6">
+    <SiteFooter />
+  </div>
+</Base>

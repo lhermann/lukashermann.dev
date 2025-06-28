@@ -15,7 +15,7 @@ The created hook is a [lifecycle hook](https://vuejs.org/v2/guide/instance.html#
 
 We can simply declare the `created ()` method as `async` and perform our asynchronous actions inside. In this example, we are loading a list of users.
 
-_Don't forget to handle the `null` state of users until the data is available. Use `v-if="users"` in your template or better, add a loading animation_{.text-gray-600}
+_Don't forget to handle the `null` state of users until the data is available. Use `v-if="users"` in your template or better, add a loading animation_{.text-neutral-600}
 
 ```js
 export default {
