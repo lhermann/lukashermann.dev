@@ -1,0 +1,83 @@
+---
+// src/pages/work/index.astro
+import Layout from '../../layouts/Layout.astro'
+import WorkExcerpt from '../../components/WorkExcerpt.astro'
+
+// Simple type for work project structure
+interface WorkFrontmatter {
+  title: string
+  tags: string
+  thumbnail: string
+  thumbnail2x: string
+  visit_link?: string
+  read_more_link?: string
+  created: string
+  order?: number
+  active: boolean
+}
+
+interface WorkProject {
+  frontmatter: WorkFrontmatter
+  url: string
+  file: string
+  compiledContent: () => string
+}
+
+// Fetch work projects using eager glob
+const projects = Object.values(import.meta.glob('./*.md', { eager: true })) as WorkProject[]
+
+// Sort by creation date first, then by order
+const sortedProjects = projects
+  .sort((a, b) => new Date(b.frontmatter.created).getTime() - new Date(a.frontmatter.created).getTime())
+  .sort((a, b) => (a.frontmatter.order || 99) - (b.frontmatter.order || 99))
+
+// Split into active and inactive projects
+const activeProjects = sortedProjects.filter(project => project.frontmatter.active)
+const inactiveProjects = sortedProjects.filter(project => !project.frontmatter.active)
+---
+
+<Layout
+  title="Work"
+  description="Projects and Work Portfolio"
+  wrapperClass="bg-gradient-to-br from-violet-600 to-indigo-600"
+>
+  <section class="wrapper space-y-20">
+    <header class="mb-20">
+      <h1 class="text-6xl font-semibold text-violet-300">
+        Projects and Work Portfolio
+      </h1>
+    </header>
+
+    <section>
+      <h2 class="flex items-center space-x-3 mb-8">
+        <span class="text-3xl font-semibold text-violet-300">
+          Current
+        </span>
+        <span class="flex-grow bg-violet-300 h-1" />
+      </h2>
+      <ul class="flex flex-wrap gap-16">
+        {activeProjects.map((project) => (
+          <li>
+            <WorkExcerpt project={project} />
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="flex items-center space-x-3 mb-8">
+        <span class="text-3xl font-semibold text-violet-300">
+          Past
+        </span>
+        <span class="flex-grow bg-violet-300 h-1" />
+      </h2>
+      <ul class="flex flex-wrap gap-16">
+        {inactiveProjects.map((project) => (
+          <li>
+            <WorkExcerpt project={project} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  </section>
+</Layout>

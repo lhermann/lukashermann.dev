@@ -1,0 +1,34 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import ArticleExcerpt from '../../components/ArticleExcerpt.astro'
+import type { Article } from '../../types/Article.ts'
+
+// Fetch articles using eager glob
+const articles = Object.values(import.meta.glob('./*.md', { eager: true })) as Article[]
+
+// Sort by creation date (newest first)
+const sortedArticles = articles
+  .sort((a, b) => new Date(b.frontmatter.created).getTime() - new Date(a.frontmatter.created).getTime())
+---
+
+<Layout 
+  title="Writing"
+  description="Articles about bootstrapping, SaaS development, and entrepreneurship"
+  wrapperClass="bg-gradient-to-br from-amber-600 to-red-600"
+>
+  <section class="wrapper">
+    <header class="mb-20">
+      <h1 class="text-6xl font-semibold text-white">
+        Articles
+      </h1>
+    </header>
+
+    <ul class="space-y-16">
+      {sortedArticles.map((article) => (
+        <li>
+          <ArticleExcerpt article={article} />
+        </li>
+      ))}
+    </ul>
+  </section>
+</Layout>

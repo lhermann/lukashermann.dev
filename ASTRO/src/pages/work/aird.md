@@ -3,7 +3,7 @@ title: 'AIRD (by Seervision AG)'
 tags: Product Owner, MERN Stack
 thumbnail: /img/work/aird-600.jpg
 thumbnail2x: /img/work/aird-1200.jpg
-visit_link: https://getaird.com/
+visit_link: https://www.seervision.com/
 created: 2021-12-01
 active: false
 ---

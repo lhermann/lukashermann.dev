@@ -3,17 +3,19 @@ import Base from './Base.astro'
 import SiteHeader from '../components/SiteHeader.astro'
 import SiteFooter from '../components/SiteFooter.astro'
 
-const { wrapperClass } = Astro.props
+const { wrapperClass = '' } = Astro.props
 ---
 
 <Base {...Astro.props}>
-  <div class="max-w-5xl mx-auto px-16 mb-16">
+  <div class="max-w-5xl mx-auto px-16">
     <SiteHeader />
   </div>
-  <main class={['max-w-5xl mx-auto px-16', wrapperClass].join(' ')}>
-    <slot />
-  </main>
-  <hr class="border-t border-neutral-300 mt-24 mb-0" />
+  <div class={[wrapperClass].join(' ')}>
+    <main class="max-w-5xl mx-auto px-16 py-24">
+      <slot />
+    </main>
+  </div>
+  {!wrapperClass.includes('bg-') && <hr class="border-t border-neutral-300" />}
   <div class="max-w-5xl mx-auto px-16 py-6">
     <SiteFooter />
   </div>

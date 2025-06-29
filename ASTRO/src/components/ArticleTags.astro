@@ -17,10 +17,10 @@ const tagArray = Array.isArray(tags)
   : tags.split(',').map(tag => tag.trim())
 ---
 
-<ul class={`flex flex-wrap ${className}`}>
+<ul class={`flex flex-wrap gap-2 ${className}`}>
   {tagArray.map((tag, i) => (
     <li
-      class={`text-sm py-0 px-1 rounded ${tagClass} ${i < tagArray.length - 1 ? 'mr-1' : ''}`}
+      class={`py-0 px-[0.5em] rounded ${tagClass}`}
     >
       {tag}
     </li>

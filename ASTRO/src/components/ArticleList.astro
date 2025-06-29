@@ -1,0 +1,45 @@
+---
+import type { Article } from '../../types/Article.ts'
+
+export interface Props {
+  articles: Article[]
+  limit?: number
+}
+
+const { articles = [], limit = 10 } = Astro.props
+
+// Format date function - shorter format for the list
+function formatDate(date: string) {
+  if (!date) return ''
+  return new Date(date).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  })
+}
+
+// Limit to latest articles (default 10)
+const sortedArticles = articles.sort((a, b) => new Date(b.frontmatter.created).getTime() - new Date(a.frontmatter.created).getTime())
+const displayArticles = sortedArticles.slice(0, limit)
+---
+
+<ul class="space-y-4">
+  {displayArticles.map((article) => (
+    <li class="flex items-baseline">
+      <time
+        class="flex-shrink-0 w-24 text-gray-400"
+        datetime={article.frontmatter.created}
+      >
+        {formatDate(article.frontmatter.created)}
+      </time>
+      <a
+        class="text-xl font-semibold leading-tight"
+        href={article.url}
+      >
+        <span class="link border-gray-400 hover:border-amber-500">
+          {article.frontmatter.title}
+        </span>
+      </a>
+    </li>
+  ))}
+</ul>
