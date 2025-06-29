@@ -1,0 +1,51 @@
+---
+function obfuscate (email, snare, html = false) {
+  let parts = email.split('@')
+  parts = parts.map(part => {
+    const pos = Math.floor(Math.random() * (part.length + 1))
+    const iSnare = html ? `<b>${snare}</b>` : snare
+    return part.substr(0, pos) + iSnare + part.substr(pos)
+  })
+  return parts.join('@')
+}
+
+const { email, subject = '', className = '' } = Astro.props
+const snare = Math.random().toString(36).substr(2, 5)
+const elId = 'email-obfuscate-' + snare
+
+const preparedSubject = encodeURIComponent(subject)
+---
+<a
+  data-email-obfuscate={snare}
+  class={className}
+  href={`mailto:${obfuscate(email, snare)}?subject=${preparedSubject}`}
+>
+  <slot>
+    <Fragment set:html={obfuscate(email, snare, true)} />
+  </slot>
+</a>
+
+<script>
+function defuscate (event) {
+  const el = event.target.closest('[data-email-obfuscate]')
+  if (!el) return
+
+  const regex = new RegExp(el.dataset.emailObfuscate, 'g')
+  el.href = (el.href || '').replace(regex, '')
+}
+
+const nodes = document.querySelectorAll('[data-email-obfuscate]')
+const el = nodes[nodes.length - 1]
+el.addEventListener('focus', defuscate, { once: true })
+el.addEventListener('mouseenter', defuscate, { once: true })
+</script>
+
+<style>
+[data-email-obfuscate] > :global(b) {
+  visibility: hidden;
+  font-size: 0;
+}
+[data-email-obfuscate] > :global(i) {
+  font-style: normal;
+}
+</style>

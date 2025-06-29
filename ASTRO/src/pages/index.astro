@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import EmailObfuscate from '../components/EmailObfuscate.astro'
 import ArticleList from '../components/ArticleList.astro'
 import Timeline from '../components/Timeline.astro'
 import FaIcon from '../components/FaIcon.astro'
@@ -65,16 +66,16 @@ const articles = Object.values(import.meta.glob('./writing/*.md', { eager: true 
             </a>
           </li>
           <li class="flex-1 truncate">
-            <a
-              v-email-obfuscate="'x.f'"
-              class="mail hover:text-amber-600"
-              href="mailto:Lukas%20Hermann<hx.fey@lukasherx.fmann.dev>?subject=Hey%20Lukas"
+            <EmailObfuscate
+              email="hey@lukashermann.dev"
+              subject="Hey Lukas"
+              className="hover:text-amber-600"
             >
               <FaIcon icon={faSquareEnvelope} className="fa-2xl" />
               <span class="hidden md:inline ml-1">
-                h<b class="sr-only">x.f</b>ey@<i class="not-italic">luk</i>asher<b class="sr-only">tty</b>mann.dev
+                h<b class="sr-only select-none">x.f</b>ey@<i class="not-italic">luk</i>asher<b class="sr-only select-none">tty</b>mann.dev
               </span>
-            </a>
+            </EmailObfuscate>
           </li>
         </ul>
       </div>
