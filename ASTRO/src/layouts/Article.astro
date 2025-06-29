@@ -10,7 +10,7 @@ const { frontmatter } = Astro.props
 const { title, created, updated, tags, description, cover_image, lang = 'en' } = frontmatter
 
 // Format date function
-function formatDate(date) {
+function formatDate (date: Date | string) {
   if (!date) return date
   return new Date(date).toLocaleDateString('en-US', {
     year: 'numeric',
@@ -31,8 +31,14 @@ const canonical = `${Astro.site}${Astro.url.pathname}`
   canonical={canonical}
   lang={lang}
 >
-  <article class="wrapper" lang={lang}>
+  <article lang={lang}>
     <header class="mb-12">
+      <div class="mb-2 text-sm">
+        <a href="/writing/" class="text-neutral-600 hover:text-orange-600 transition-colors">
+          ← Back to Writing
+        </a>
+      </div>
+
       {title && (
         <h1 class="text-6xl font-semibold leading-tight break-words mb-4 md:mb-2">
           {title}
@@ -57,7 +63,7 @@ const canonical = `${Astro.site}${Astro.url.pathname}`
         )}
         {tags && (
           <div class="p-2">
-            <ArticleTags class="test" tags={tags} />
+            <ArticleTags tags={tags} />
           </div>
         )}
       </div>

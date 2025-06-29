@@ -14,10 +14,6 @@ html {
   box-sizing: border-box;
 }
 
-a {
-  transition: color 0.3s;
-}
-
 figcaption {
   @apply text-neutral-600 italic;
 }
@@ -25,6 +21,7 @@ figcaption {
 .links a,
 .link {
   border-bottom: 1px dotted currentcolor;
+  transition: color 0.3s, background-color 0.3s;
 }
 .links a:hover,
 .link:hover {

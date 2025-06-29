@@ -32,11 +32,11 @@ const created = formatDate(frontmatter.created)
 ---
 
 <a
-  class="block group text-white"
+  class="relative block group text-white hover:-translate-x-2 transition-transform"
   href={article.url}
 >
   <article class="space-y-3">
-    <h2 class="text-2xl font-semibold leading-tight group-hover:underline decoration-black">
+    <h2 class="text-2xl font-semibold leading-tight group-hover:underline">
       {frontmatter.title}
     </h2>
     {frontmatter.description && (
@@ -44,7 +44,7 @@ const created = formatDate(frontmatter.created)
         {frontmatter.description}
       </p>
     )}
-    <div class="text-xs flex items-baseline gap-2 text-orange-200/75">
+    <div class="text-xs flex items-baseline gap-2 text-orange-200/80">
       {created && (
         <time
           datetime={frontmatter.created}
@@ -66,4 +66,7 @@ const created = formatDate(frontmatter.created)
       )}
     </div>
   </article>
+  <div class="absolute -left-20 top-1/2 -translate-y-1/2 text-4xl group-hover:translate-x-4 opacity-0 group-hover:opacity-100 transition-all pointer-events-none">
+    →
+  </div>
 </a>
