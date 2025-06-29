@@ -1,0 +1,56 @@
+---
+// src/pages/talks/index.astro
+import Layout from '../../layouts/Layout.astro'
+import TalkExcerpt from '../../components/TalkExcerpt.astro'
+
+// Simple type for talk structure
+interface TalkFrontmatter {
+  title: string
+  date: string
+  image: string
+  link: string
+  host: string
+  tags?: string[]
+  language: 'en' | 'de'
+}
+
+interface Talk {
+  frontmatter: TalkFrontmatter
+  url: string
+  file: string
+  compiledContent: () => string
+}
+
+// Fetch talks using eager glob
+const talks = Object.values(import.meta.glob('./*.md', { eager: true })) as Talk[]
+
+// Sort by date (newest first)
+const sortedTalks = talks
+  .sort((a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime())
+---
+
+<Layout
+  title="Talks"
+  description="Podcast interviews and guest appearances about entrepreneurship and SaaS development"
+  wrapperClass="bg-gradient-to-br from-emerald-500 to-teal-600"
+>
+  <section class="wrapper space-y-20">
+    <header class="mb-20">
+      <h1 class="text-6xl font-semibold text-emerald-100">
+        Talks & Interviews
+      </h1>
+      <p class="text-xl text-emerald-200 mt-4 max-w-2xl">
+        Podcast interviews and guest appearances where I share insights about bootstrapping, 
+        SaaS development, and entrepreneurship.
+      </p>
+    </header>
+
+    <section>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {sortedTalks.map((talk) => (
+          <TalkExcerpt talk={talk} />
+        ))}
+      </div>
+    </section>
+  </section>
+</Layout>
