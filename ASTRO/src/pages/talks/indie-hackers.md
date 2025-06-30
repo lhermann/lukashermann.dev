@@ -1,10 +1,10 @@
 ---
-title: "Making $8k/mo Targeting $100M/yr with Lukas and Liz Hermann of StageTimer.io"
+title: "Making $8k/mo Targeting $100M/yr with Lukas and Liz Hermann of stagetimer.io"
 date: "2023-06-15"
 image: "/img/talks/indie-hackers-640x360.jpg"
 link: "https://share.transistor.fm/s/f614549b"
 host: "Indie Hackers Podcast"
-tags: ["Indie Hacking", "Ambition", "Spouse Co-founder", "$8k MRR"]
+tags: [] # ["Indie Hacking", "Ambition", "Co-founder Spouse"]
 language: "en"
 layout: "../../layouts/Talk.astro"
 ---

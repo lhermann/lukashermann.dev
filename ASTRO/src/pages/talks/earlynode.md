@@ -4,7 +4,7 @@ date: "2023-05-19"
 image: "/img/talks/earlynode.jpg"
 link: "https://earlynode.com/podcasts/lukas-hermann-co-founding-saas-with-spouse"
 host: "The Bootstrapped SaaS Operator Podcast"
-tags: ["SaaS", "Entrepreneurship", "Co-founding", "Spouse Partnership"]
+tags: [] # ["SaaS", "Entrepreneurship", "Co-founding", "Spouse Partnership"]
 language: "en"
 layout: "../../layouts/Talk.astro"
 ---

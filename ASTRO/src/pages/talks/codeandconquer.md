@@ -4,7 +4,7 @@ date: "2024-11-29"
 image: "/img/talks/codeandconquer.jpg"
 link: "https://codeandconquer.fm/episode/029-building-for-tech-b2b-with-lukas-hermann"
 host: "Code and Conquer Podcast"
-tags: ["B2B", "Product Development", "Pricing Strategy", "German Entrepreneurship"]
+tags: [] # ["B2B", "Product Dev", "Pricing", "German Entrepreneurship"]
 language: "en"
 layout: "../../layouts/Talk.astro"
 ---

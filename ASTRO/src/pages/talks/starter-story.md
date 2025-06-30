@@ -4,7 +4,7 @@ date: "2025-06-25"
 image: "/img/talks/starter-story.jpg"
 link: "https://www.youtube.com/watch?v=HBCwzfFbopE"
 host: "Starter Story"
-tags: [] # ["Bootstrapping", "SaaS", "Stagetimer", "Entrepreneurship", "Reddit Validation"]
+tags: [] # ["Bootstrapping", "SaaS", "Entrepreneurship", "Reddit"]
 language: "en"
 layout: "../../layouts/Talk.astro"
 ---

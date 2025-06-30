@@ -4,7 +4,7 @@ date: "2024-09-11"
 image: "/img/talks/morning-maker-show.jpg"
 link: "https://www.youtube.com/live/G-aqYHJXhL4"
 host: "Morning Maker Show"
-tags: ["Bootstrapping", "B2B", "Startups", "Europe"]
+tags: [] # ["Bootstrapping", "B2B", "Startups", "Europe"]
 language: "en"
 layout: "../../layouts/Talk.astro"
 ---
