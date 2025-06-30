@@ -18,17 +18,12 @@ function formatDate (date: Date | string) {
     day: 'numeric'
   })
 }
-
-// SEO data
-const image = cover_image ? `${Astro.site}${cover_image}` : undefined
-const canonical = `${Astro.site}${Astro.url.pathname}`
 ---
 
 <Layout 
   title={title}
   description={description}
-  image={image}
-  canonical={canonical}
+  image={cover_image}
   lang={lang}
 >
   <article lang={lang}>

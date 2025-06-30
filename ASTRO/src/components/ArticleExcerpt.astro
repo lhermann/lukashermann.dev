@@ -1,17 +1,9 @@
 ---
 import ArticleTags from './ArticleTags.astro'
+import type { Article } from '../types/Article.ts'
 
 export interface Props {
-  article: {
-    frontmatter: {
-      title: string
-      created: string
-      description?: string
-      tags?: string[]
-      canonical_plattform?: string
-    }
-    url: string
-  }
+  article: Article,
   draft?: boolean
 }
 
@@ -27,6 +19,8 @@ function formatDate(date: string) {
     day: 'numeric'
   })
 }
+
+const languageFlag = frontmatter.lang === 'en' ? '' : '🇩🇪'
 
 const created = formatDate(frontmatter.created)
 ---
@@ -58,6 +52,9 @@ const created = formatDate(frontmatter.created)
           tags={frontmatter.tags}
           tagClass="border border-current"
         />
+      )}
+      {frontmatter.lang === 'de' && (
+        <span>🇩🇪</span>
       )}
       {frontmatter.canonical_plattform && (
         <span>

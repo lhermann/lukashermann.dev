@@ -44,7 +44,7 @@ figcaption {
 .markdown ul,
 .markdown iframe,
 .markdown hr {
-  @apply mb-4;
+  @apply mb-4 border-neutral-200;
 }
 .markdown h1 {
   @apply text-5xl font-semibold mt-12;

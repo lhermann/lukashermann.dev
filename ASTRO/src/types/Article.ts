@@ -6,6 +6,7 @@ export interface ArticleFrontmatter {
   tags?: string[]
   cover_image?: string
   lang?: string
+  canonical_plattform?: string
 }
 
 export interface Article {
