@@ -1,35 +1,20 @@
 ---
-// src/layouts/Talk.astro
 import Layout from './Layout.astro'
 import ArticleTags from '../components/ArticleTags.astro'
+import { generateDescription } from '../utils/generateDescription'
+import { formatDate } from '../utils/formatDate'
 
 const { frontmatter } = Astro.props
 const { title, date, image, link, host, tags, language = 'en' } = frontmatter
 
-// Format date function
-function formatDate (date: Date | string) {
-  if (!date) return date
-  return new Date(date).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  })
-}
-
-// Get language flag
 const languageFlag = language === 'en' ? '🇺🇸' : '🇩🇪'
-
-// SEO data
-const seoImage = image ? `${Astro.site}${image}` : undefined
-const canonical = `${Astro.site}${Astro.url.pathname}`
-const description = `Watch my interview on ${host} about entrepreneurship and SaaS development.`
+const description = generateDescription(Astro.props.rawContent()) || `Watch my interview on ${host} about entrepreneurship and SaaS development.`
 ---
 
 <Layout 
   title={title}
   description={description}
-  image={seoImage}
-  canonical={canonical}
+  image={image}
   lang={language}
 >
   <article lang={language}>

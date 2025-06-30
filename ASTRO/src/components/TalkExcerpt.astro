@@ -1,38 +1,16 @@
 ---
-// src/components/TalkExcerpt.astro
+import type { Talk } from '../types/Talk'
 import ArticleTags from './ArticleTags.astro'
+import { formatDate } from '../utils/formatDate'
 
 export interface Props {
-  talk: {
-    frontmatter: {
-      title: string
-      date: string
-      image: string
-      link: string
-      host: string
-      tags?: string[]
-      language: 'en' | 'de'
-    }
-    url: string
-    compiledContent: () => string
-  }
+  talk: Talk
 }
 
 const { talk } = Astro.props
 const { frontmatter } = talk
 
-// Format date function
-function formatDate(date: string) {
-  if (!date) return ''
-  return new Date(date).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  })
-}
-
 const languageFlag = frontmatter.language === 'en' ? '🇺🇸' : '🇩🇪'
-
 const formattedDate = formatDate(frontmatter.date)
 ---
 

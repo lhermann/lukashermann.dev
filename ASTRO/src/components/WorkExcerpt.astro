@@ -1,19 +1,9 @@
 ---
+import type { Work } from '../types/Work'
 import ArticleTags from './ArticleTags.astro'
 
 export interface Props {
-  project: {
-    frontmatter: {
-      title: string
-      tags: string
-      thumbnail: string
-      thumbnail2x: string
-      visit_link?: string
-      read_more_link?: string
-      active: boolean
-    }
-    compiledContent: () => string
-  }
+  project: Work
 }
 
 const { project } = Astro.props
