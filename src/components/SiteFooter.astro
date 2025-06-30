@@ -1,0 +1,20 @@
+---
+import FaIcon from './FaIcon.astro'
+import { faCreativeCommons } from '@fortawesome/free-brands-svg-icons'
+---
+
+<footer class="text-neutral-700">
+  <p class="text-center">
+    <strong>&copy; Lukas Hermann</strong> &middot; 🇩🇪 Stuttgart, Germany
+  </p>
+  <p class="text-center text-sm text-neutral-500 mt-2">
+    This site uses no cookies or tracking
+    &middot;
+    <FaIcon icon={faCreativeCommons} /> <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener" class="border-b border-dotted border-current hover:border-solid hover:border-amber-500">Writing under CC BY-NC-ND</a>
+    &middot;
+    Built with
+    <a href="https://astro.build" target="_blank" rel="noopener" class="border-b border-dotted border-current hover:border-solid hover:border-amber-500">Astro</a>,
+    <a href="https://tailwindcss.com" target="_blank" rel="noopener" class="border-b border-dotted border-current hover:border-solid hover:border-amber-500">Tailwindcss</a> and
+    <a href="https://www.netlify.com" target="_blank" rel="noopener" class="border-b border-dotted border-current hover:border-solid hover:border-amber-500">Netlify</a>
+  </p>
+</footer>

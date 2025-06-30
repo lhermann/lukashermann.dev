@@ -1,0 +1,85 @@
+---
+import SiteLogo from './SiteLogo.astro'
+
+const currentPath = Astro.url.pathname
+---
+
+<header class="flex items-center py-4">
+  <a href="/" class="hover:text-amber-600 w-6" title="Lukas Hermann">
+    <!-- eslint-disable-next-line -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 320 384">
+      <path fill="currentcolor" d="M0 0h64v384c-35.346 0-64-28.654-64-64V0zM128 0h64v384h-64zM256 192c35.346 0 64 28.654 64 64v128h-64V192z" />
+    </svg>
+  </a>
+  <div class="flex-grow"></div>
+  <nav class="flex items-center space-x-4">
+    <a
+      href="/"
+      class={[
+        'relative text-lg font-semibold px-1 mx-2 group',
+        (currentPath === '/' ? 'active' : ''),
+      ].join(' ')}
+    >
+      Bio
+      <span
+        class={[
+          'block absolute border-b-2 border-amber-500 transition-all duration-300',
+          (currentPath === '/'
+            ? 'w-[calc(100%+0.4em)] -left-[0.2em]'
+            : 'w-0 left-1/2 group-hover:w-[calc(100%+0.4em)] group-hover:-left-[0.2em]'),
+        ].join(' ')}
+      />
+    </a>
+    <a
+      href="/work/"
+      class={[
+        'relative text-lg font-semibold px-1 mx-2 group',
+        (currentPath.startsWith('/work') ? 'active' : ''),
+      ].join(' ')}
+    >
+      Work
+      <span
+        class={[
+          'block absolute border-b-2 border-amber-500 transition-all duration-300',
+          (currentPath.startsWith('/work')
+            ? 'w-[calc(100%+0.4em)] -left-[0.2em]'
+            : 'w-0 left-1/2 group-hover:w-[calc(100%+0.4em)] group-hover:-left-[0.2em]'),
+        ].join(' ')}
+      />
+    </a>
+    <a
+      href="/writing/"
+      class={[
+        'relative text-lg font-semibold px-1 mx-2 group',
+        (currentPath.startsWith('/writing') ? 'active' : ''),
+      ].join(' ')}
+    >
+      Writing
+      <span
+        class={[
+          'block absolute border-b-2 border-amber-500 transition-all duration-300',
+          (currentPath.startsWith('/writing')
+            ? 'w-[calc(100%+0.4em)] -left-[0.2em]'
+            : 'w-0 left-1/2 group-hover:w-[calc(100%+0.4em)] group-hover:-left-[0.2em]'),
+        ].join(' ')}
+      />
+    </a>
+    <a
+      href="/talks/"
+      class={[
+        'relative text-lg font-semibold px-1 mx-2 group',
+        (currentPath.startsWith('/talks') ? 'active' : ''),
+      ].join(' ')}
+    >
+      Talks
+      <span
+        class={[
+          'block absolute border-b-2 border-amber-500 transition-all duration-300',
+          (currentPath.startsWith('/talks')
+            ? 'w-[calc(100%+0.4em)] -left-[0.2em]'
+            : 'w-0 left-1/2 group-hover:w-[calc(100%+0.4em)] group-hover:-left-[0.2em]'),
+        ].join(' ')}
+      />
+    </a>
+  </nav>
+</header>

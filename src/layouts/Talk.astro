@@ -1,0 +1,82 @@
+---
+import Layout from './Layout.astro'
+import ArticleTags from '../components/ArticleTags.astro'
+import { generateDescription } from '../utils/generateDescription'
+import { formatDate } from '../utils/formatDate'
+
+const { frontmatter } = Astro.props
+const { title, date, image, link, host, tags, language = 'en' } = frontmatter
+
+const languageFlag = language === 'en' ? '🇺🇸' : '🇩🇪'
+const description = generateDescription(Astro.props.rawContent()) || `Watch my interview on ${host} about entrepreneurship and SaaS development.`
+---
+
+<Layout 
+  title={title}
+  description={description}
+  image={image}
+  lang={language}
+>
+  <article lang={language}>
+    <header class="mb-12">
+      <div class="mb-2 text-sm">
+        <a href="/talks/" class="text-neutral-600 hover:text-emerald-600 transition-colors">
+          ← Back to Talks
+        </a>
+      </div>
+      
+      {title && (
+        <h1 class="text-4xl md:text-6xl font-semibold leading-tight mb-4 md:mb-2">
+          {title}
+        </h1>
+      )}
+      
+      <div class="flex flex-wrap items-center gap-4">
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener"
+          class="text-neutral-600 hover:text-emerald-600 transition-colors"
+        >
+          <span class="font-medium">{host}</span> ↗
+        </a>
+        <!-- <span>&middot;</span> -->
+        {date && (
+          <time datetime={date} class="text-gray-500">
+            {formatDate(date)}
+          </time>
+        )}
+        <span>{languageFlag}</span>
+        
+        {tags && (
+          <ArticleTags
+            tags={tags}
+            tagClass="bg-emerald-300 text-emerald-900"
+          />
+        )}
+      </div>
+      
+    </header>
+
+    <div class="markdown">
+      <slot />
+    </div>
+    
+    <footer class="flex flex-col sm:flex-row gap-4 items-center justify-center mt-16">
+      <a
+        href="/talks/"
+        class="text-emerald-600 hover:text-black transition-colors"
+      >
+        ← Browse More Talks
+      </a>
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener"
+        class="bg-white text-emerald-600 hover:bg-emerald-100 hover:text-emerald-800 px-4 py-1 rounded font-semibold transition-colors"
+      >
+        Watch Full Interview ↗
+      </a>
+    </footer>
+  </article>
+</Layout>

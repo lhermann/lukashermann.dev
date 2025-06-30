@@ -1,0 +1,52 @@
+---
+import type { Talk } from '../types/Talk'
+import ArticleTags from './ArticleTags.astro'
+import { formatDate } from '../utils/formatDate'
+
+export interface Props {
+  talk: Talk
+}
+
+const { talk } = Astro.props
+const { frontmatter } = talk
+
+const languageFlag = frontmatter.language === 'en' ? '🇺🇸' : '🇩🇪'
+const formattedDate = formatDate(frontmatter.date)
+---
+
+<article class="bg-white rounded-lg shadow-lg overflow-hidden">
+  <a href={talk.url} class="block group">
+    <div class="aspect-video overflow-hidden">
+      <img
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        src={frontmatter.image}
+        alt={frontmatter.title}
+        loading="lazy"
+      />
+    </div>
+    
+    <div class="p-6">
+      <h2 class="text-xl font-semibold text-gray-900 mb-2 group-hover:underline">
+        {frontmatter.title}
+      </h2>
+      
+      <div class="flex flex-wrap gap-2 text-sm text-gray-600">
+        <span class="font-medium">{frontmatter.host}</span>
+        <span>&middot;</span>
+        {formattedDate && (
+          <time datetime={frontmatter.date}>
+            {formattedDate}
+          </time>
+        )}
+        <span>{languageFlag}</span>
+        {frontmatter.tags && (
+          <ArticleTags
+            tags={frontmatter.tags}
+            tagClass="bg-emerald-100 text-emerald-800"
+          />
+        )}
+      </div>
+      
+    </div>
+  </a>
+</article>

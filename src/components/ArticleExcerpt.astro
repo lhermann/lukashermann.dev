@@ -1,0 +1,60 @@
+---
+import type { Article } from '../types/Article.ts'
+import ArticleTags from './ArticleTags.astro'
+import { formatDate } from '../utils/formatDate'
+
+export interface Props {
+  article: Article,
+  draft?: boolean
+}
+
+const { article, draft = false } = Astro.props
+const { frontmatter } = article
+
+const languageFlag = frontmatter.lang === 'en' ? '' : '🇩🇪'
+
+const created = formatDate(frontmatter.created)
+---
+
+<a
+  class="relative block group text-white"
+  href={article.url}
+>
+  <article class="space-y-3">
+    <h2 class="text-2xl font-semibold leading-tight group-hover:underline">
+      {frontmatter.title}
+    </h2>
+    {frontmatter.description && (
+      <p>
+        {frontmatter.description}
+      </p>
+    )}
+    <div class="text-xs flex items-baseline gap-2 text-orange-200/80">
+      {created && (
+        <time
+          datetime={frontmatter.created}
+          title={created}
+        >
+          {created}
+        </time>
+      )}
+      {frontmatter.tags && (
+        <ArticleTags
+          tags={frontmatter.tags}
+          tagClass="border border-current"
+        />
+      )}
+      {frontmatter.lang === 'de' && (
+        <span>🇩🇪</span>
+      )}
+      {frontmatter.canonical_plattform && (
+        <span>
+          Originally published on: <strong>{frontmatter.canonical_plattform}</strong>
+        </span>
+      )}
+    </div>
+  </article>
+  <div class="absolute -left-20 top-1/2 -translate-y-1/2 text-4xl group-hover:translate-x-4 opacity-0 group-hover:opacity-100 transition-all pointer-events-none">
+    →
+  </div>
+</a>

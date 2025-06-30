@@ -1,0 +1,61 @@
+---
+import type { Work } from '../types/Work'
+import ArticleTags from './ArticleTags.astro'
+
+export interface Props {
+  project: Work
+}
+
+const { project } = Astro.props
+const { frontmatter } = project
+
+// Get the compiled HTML content
+const htmlContent = project.compiledContent()
+---
+
+<article class="md:flex items-center gap-8 space-y-8 md:space-y-0">
+  <div class="flex-none w-56">
+    <div class="aspect-square">
+      <img
+        class="rounded shadow w-full h-full object-cover"
+        src={frontmatter.thumbnail}
+        srcset={`${frontmatter.thumbnail} 600w, ${frontmatter.thumbnail2x} 1200w`}
+        alt={frontmatter.title}
+        loading="lazy"
+      />
+    </div>
+  </div>
+  <div class="flex-1">
+    <h2 class="text-4xl font-semibold text-white mb-3">
+      {frontmatter.title}
+    </h2>
+    {frontmatter.tags && (
+      <ArticleTags
+        class="mb-3 text-sm"
+        tags={frontmatter.tags}
+        tagClass="border border-current text-violet-200"
+      />
+    )}
+    <div class="text-violet-100 mb-3" set:html={htmlContent}></div>
+    <p>
+      {frontmatter.read_more_link && (
+        <a
+          class="btn group relative z-0 text-white overflow-hidden inline-block rounded text-lg font-semibold px-8 py-2 shadow mr-2 before:content-[''] before:z-[-1] before:w-[200%] before:absolute before:top-0 before:left-0 before:h-full before:bg-gradient-to-br before:from-fuchsia-500 before:to-purple-700 before:transition-transform before:duration-300 hover:before:translate-x-[-50%]"
+          href={frontmatter.read_more_link}
+        >
+          Read More
+        </a>
+      )}
+      {frontmatter.visit_link && (
+        <a
+          class="btn group relative z-0 text-white overflow-hidden inline-block rounded text-lg font-semibold px-8 py-2 shadow mr-2 before:content-[''] before:z-[-1] before:w-[200%] before:absolute before:top-0 before:left-0 before:h-full before:bg-gradient-to-br before:from-fuchsia-500 before:to-purple-700 before:transition-transform before:duration-300 hover:before:translate-x-[-50%]"
+          href={frontmatter.visit_link}
+          target="_blank"
+          rel="noopener"
+        >
+          Visit
+        </a>
+      )}
+    </p>
+  </div>
+</article>
