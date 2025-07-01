@@ -2,24 +2,7 @@
 // src/pages/talks/index.astro
 import Layout from '../../layouts/Layout.astro'
 import TalkExcerpt from '../../components/TalkExcerpt.astro'
-
-// Simple type for talk structure
-interface TalkFrontmatter {
-  title: string
-  date: string
-  image: string
-  link: string
-  host: string
-  tags?: string[]
-  language: 'en' | 'de'
-}
-
-interface Talk {
-  frontmatter: TalkFrontmatter
-  url: string
-  file: string
-  compiledContent: () => string
-}
+import type { Talk } from '../../types/Talk'
 
 // Fetch talks using eager glob
 const talks = Object.values(import.meta.glob('./*.md', { eager: true })) as Talk[]
@@ -30,7 +13,7 @@ const sortedTalks = talks
 ---
 
 <Layout
-  title="Talks"
+  title="Talks of Lukas Hermann - Entrepreneur & Full-Stack Developer"
   description="Podcast interviews and guest appearances about entrepreneurship and SaaS development"
   wrapperClass="bg-gradient-to-br from-emerald-500 to-teal-600"
 >
