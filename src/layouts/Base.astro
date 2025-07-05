@@ -89,6 +89,14 @@ const schemadotorg = {
     <!-- Generator -->
     <meta name="generator" content={Astro.generator} />
 
+    <!-- RSS Feed Auto-Discovery -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Lukas Hermann - Article RSS Feed"
+      href="/rss.xml"
+    />
+
     <!-- Title, Description -->
     <title>{iTitle}</title>
     <meta name="description" content={iDescription} />

@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro'
 import ArticleExcerpt from '../../components/ArticleExcerpt.astro'
+import FaIcon from '../../components/FaIcon.astro'
+import { faRss } from '@fortawesome/free-solid-svg-icons'
 import type { Article } from '../../types/Article.ts'
 
 // Fetch articles using eager glob
@@ -11,16 +13,27 @@ const sortedArticles = articles
   .sort((a, b) => new Date(b.frontmatter.created).getTime() - new Date(a.frontmatter.created).getTime())
 ---
 
-<Layout 
+<Layout
   title="Writing of Lukas Hermann - Entrepreneur & Full-Stack Developer"
   description="Articles about bootstrapping, SaaS development, and entrepreneurship"
   wrapperClass="bg-gradient-to-br from-amber-600 to-red-600"
 >
   <section class="wrapper">
     <header class="mb-20">
-      <h1 class="text-6xl font-semibold text-amber-100">
-        Articles
-      </h1>
+      <div class="flex items-center justify-between">
+        <h1 class="text-6xl font-semibold text-amber-100">
+          Articles
+        </h1>
+        <a
+          href="/rss.xml"
+          class="flex items-center gap-2 px-3 py-1 text-amber-100 border border-amber-200/30 rounded-lg hover:bg-amber-200/10 hover:border-amber-200/50 transition-colors"
+          title="Subscribe to RSS feed"
+          aria-label="Subscribe to RSS feed"
+        >
+          <FaIcon icon={faRss} />
+          <span class="hidden sm:inline">RSS</span>
+        </a>
+      </div>
     </header>
 
     <ul class="space-y-16">
