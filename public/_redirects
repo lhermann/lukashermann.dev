@@ -7,7 +7,20 @@ https://www.tentmaker.dev/* https://lukashermann.dev/:splat 301!
 # Optional: Redirect default Netlify subdomain to primary domain
 https://lukashermann.netlify.com/* https://lukashermann.dev/:splat 301!
 
-# Rockrolling intruders
+# Rickrolling intruders
 /.env         https://youtube.com/watch?v=dQw4w9WgXcQ
 /wp-login.php https://youtube.com/watch?v=dQw4w9WgXcQ
 /wp-admin     https://youtube.com/watch?v=dQw4w9WgXcQ
+
+# Talks
+
+/talks/starter-story        /talks/2025-06-25-starter-story
+/talks/pippo-and-paul       /talks/2025-05-14-pippo-and-paul
+/talks/solos                /talks/2025-01-06-solos
+/talks/codeandconquer       /talks/2024-11-29-codeandconquer
+/talks/minimal-empires      /talks/2024-11-25-minimal-empires
+/talks/morning-maker-show   /talks/2024-09-11-morning-maker-show
+/talks/earlynode            /talks/2023-05-19-earlynode
+/talks/carl-anderson        /talks/2024-01-22-carl-anderson
+/talks/indie-hackers        /talks/2023-06-15-indie-hackers
+/talks/happy-bootstrapping  /talks/2023-06-01-happy-bootstrapping
