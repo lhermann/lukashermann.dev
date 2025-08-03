@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 html {
-  @apply text-neutral-800;
+  @apply text-neutral-800 bg-white;
 
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
