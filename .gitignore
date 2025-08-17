@@ -35,4 +35,6 @@ pnpm-debug.log*
 # Vim swap files
 *.swp
 
+.claude
+
 
