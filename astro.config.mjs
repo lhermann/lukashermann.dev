@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 import rehypeExternalLinks from 'rehype-external-links'
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import remarkCaptions from 'remark-captions'
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,6 +18,9 @@ export default defineConfig({
   },
 
   markdown: {
+    remarkPlugins: [
+      remarkCaptions,
+    ],
     rehypePlugins: [
       [rehypeExternalLinks, { target: '_blank', rel: ['noopener'] }],
       rehypeSlug, // Required for rehypeAutolinkHeadings
