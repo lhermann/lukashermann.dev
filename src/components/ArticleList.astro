@@ -14,22 +14,20 @@ const sortedArticles = articles.sort((a, b) => new Date(b.frontmatter.created).g
 const displayArticles = sortedArticles.slice(0, limit)
 ---
 
-<ul class="space-y-4">
+<ul class="space-y-8">
   {displayArticles.map((article) => (
-    <li class="flex items-baseline">
+    <li class="">
       <time
-        class="flex-shrink-0 w-24 text-gray-400"
+        class="block text-gray-400"
         datetime={article.frontmatter.created}
       >
         {formatDate(article.frontmatter.created)}
       </time>
       <a
-        class="text-xl font-semibold leading-tight"
+        class="text-xl font-semibold leading-tight hover:text-amber-600 transition-colors"
         href={article.url}
       >
-        <span class="link border-gray-400 hover:border-amber-500">
-          {article.frontmatter.title}
-        </span>
+        {article.frontmatter.title}
       </a>
     </li>
   ))}
