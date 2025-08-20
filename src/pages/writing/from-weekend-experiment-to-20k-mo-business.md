@@ -4,11 +4,12 @@ title: "From weekend experiment to $20k/mo business"
 created: 2025-08-13
 description: "How I built Stagetimer from a simple weekend project into a profitable SaaS business generating $20k/month by focusing on simplicity and listening to customers."
 tags: ["SaaS", "Indie Hacker", "Stagetimer", "Bootstrap"]
+cover_image: /img/writing/covers/from-weekend-experiment-to-20k-mo-business.avif
 canonical_plattform: indiehackers.com
 canonical_url: "https://www.indiehackers.com/post/tech/from-weekend-experiment-to-20k-mo-business-aP4YP2DouOUuicCtcnCB"
 ---
 
-*This interview was originally published on [Indie Hackers](https://www.indiehackers.com/post/tech/from-weekend-experiment-to-20k-mo-business-aP4YP2DouOUuicCtcnCB) on August 13, 2025, by [James Fleischmann](https://www.indiehackers.com/authors/james-fleischmann).*
+*This interview was originally published on [Indie Hackers](https://www.indiehackers.com/post/tech/from-weekend-experiment-to-20k-mo-business-aP4YP2DouOUuicCtcnCB) on August 13, 2025, by [James Fleischmann](https://www.indiehackers.com/authors/james-fleischmann). Republished with permission.*
 
 ---
 
