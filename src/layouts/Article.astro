@@ -8,13 +8,14 @@ import { formatDate } from '../utils/formatDate'
 import { faSquareTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const { frontmatter } = Astro.props
-const { title, created, updated, tags, description, cover_image, lang = 'en' } = frontmatter
+const { title, created, updated, tags, description, cover_image, canonical_url, lang = 'en' } = frontmatter
 ---
 
 <Layout 
   title={title}
   description={description}
   image={cover_image}
+  canonical_url={canonical_url}
   lang={lang}
 >
   <article lang={lang}>
