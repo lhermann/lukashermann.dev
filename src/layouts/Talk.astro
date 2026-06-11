@@ -4,11 +4,16 @@ import ArticleTags from '../components/ArticleTags.astro'
 import { generateDescription } from '../utils/generateDescription'
 import { formatDate } from '../utils/formatDate'
 
-const { frontmatter } = Astro.props
+const { frontmatter, url } = Astro.props
 const { title, date, image, link, host, tags, language = 'en' } = frontmatter
 
 const languageFlag = language === 'en' ? '🇺🇸' : '🇩🇪'
 const description = generateDescription(Astro.props.rawContent()) || `Watch my interview on ${host} about entrepreneurship and SaaS development.`
+
+const slug = url?.split('/').filter(Boolean).pop()
+const transcripts = import.meta.glob('../transcripts/*.md')
+const hasTranscript = slug && Object.keys(transcripts).some((path) => path.endsWith(`/${slug}.md`))
+const transcriptUrl = `/talks/${slug}/transcript/`
 ---
 
 <Layout 
@@ -47,7 +52,16 @@ const description = generateDescription(Astro.props.rawContent()) || `Watch my i
           </time>
         )}
         <span>{languageFlag}</span>
-        
+
+        {hasTranscript && (
+          <a
+            href={transcriptUrl}
+            class="text-neutral-600 hover:text-emerald-600 transition-colors"
+          >
+            📄 {language === 'de' ? 'Transkript' : 'Transcript'}
+          </a>
+        )}
+
         {tags && (
           <ArticleTags
             tags={tags}
@@ -69,6 +83,14 @@ const description = generateDescription(Astro.props.rawContent()) || `Watch my i
       >
         ← Browse More Talks
       </a>
+      {hasTranscript && (
+        <a
+          href={transcriptUrl}
+          class="bg-white text-emerald-600 hover:bg-emerald-100 hover:text-emerald-800 px-4 py-1 rounded font-semibold transition-colors"
+        >
+          📄 {language === 'de' ? 'Transkript lesen' : 'Read the Full Transcript'}
+        </a>
+      )}
       <a
         href={link}
         target="_blank"

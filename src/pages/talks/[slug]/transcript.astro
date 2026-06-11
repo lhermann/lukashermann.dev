@@ -1,0 +1,91 @@
+---
+import Layout from '../../../layouts/Layout.astro'
+import { formatDate } from '../../../utils/formatDate'
+
+export async function getStaticPaths() {
+  const transcripts = import.meta.glob('../../../transcripts/*.md', { eager: true })
+  return Object.entries(transcripts).map(([path, mod]) => ({
+    params: { slug: path.split('/').pop()!.replace(/\.md$/, '') },
+    props: { transcript: mod },
+  }))
+}
+
+const { slug } = Astro.params
+const { transcript } = Astro.props
+const { Content, frontmatter } = transcript
+const { title, date, host, language = 'en', source } = frontmatter
+
+const languageFlag = language === 'en' ? '🇺🇸' : '🇩🇪'
+const isGerman = language === 'de'
+const note = isGerman
+  ? 'Dieses Transkript wurde automatisch aus der Aufnahme erstellt und leicht für die Lesbarkeit bearbeitet. Die Sprecherzuordnung ist Best-effort. Es dient als Archiv-Kopie, falls die Originalquelle nicht mehr verfügbar ist.'
+  : 'This transcript was auto-generated from the recording and lightly edited for readability. Speaker attribution is best-effort. It serves as an archival copy in case the original source becomes unavailable.'
+const description = isGerman
+  ? `Vollständiges Transkript meines Interviews bei ${host} vom ${formatDate(date)}.`
+  : `Full transcript of my interview on ${host} from ${formatDate(date)}.`
+---
+
+<Layout
+  title={`Transcript: ${title}`}
+  description={description}
+  lang={language}
+>
+  <article lang={language}>
+    <header class="mb-12">
+      <div class="mb-2 text-sm">
+        <a href={`/talks/${slug}/`} class="text-neutral-600 hover:text-emerald-600 transition-colors">
+          ← Back to Talk
+        </a>
+      </div>
+
+      <h1 class="text-4xl md:text-6xl font-semibold leading-tight mb-4 md:mb-2">
+        {isGerman ? 'Transkript: ' : 'Transcript: '}{title}
+      </h1>
+
+      <div class="flex flex-wrap items-center gap-4">
+        <a
+          href={source}
+          target="_blank"
+          rel="noopener"
+          class="text-neutral-600 hover:text-emerald-600 transition-colors"
+        >
+          <span class="font-medium">{host}</span> ↗
+        </a>
+        {date && (
+          <time datetime={date} class="text-gray-500">
+            {formatDate(date)}
+          </time>
+        )}
+        <span>{languageFlag}</span>
+        <a
+          href={`/talks/${slug}/transcript.md`}
+          class="text-neutral-600 hover:text-emerald-600 transition-colors text-sm"
+        >
+          {isGerman ? 'Als Markdown ansehen' : 'View as Markdown'}
+        </a>
+      </div>
+    </header>
+
+    <div class="markdown">
+      <blockquote>{note}</blockquote>
+      <Content />
+    </div>
+
+    <footer class="flex flex-col sm:flex-row gap-4 items-center justify-center mt-16">
+      <a
+        href={`/talks/${slug}/`}
+        class="text-emerald-600 hover:text-black transition-colors"
+      >
+        ← Back to Talk
+      </a>
+      <a
+        href={source}
+        target="_blank"
+        rel="noopener"
+        class="bg-white text-emerald-600 hover:bg-emerald-100 hover:text-emerald-800 px-4 py-1 rounded font-semibold transition-colors"
+      >
+        {isGerman ? 'Original ansehen' : 'Watch Original'} ↗
+      </a>
+    </footer>
+  </article>
+</Layout>
