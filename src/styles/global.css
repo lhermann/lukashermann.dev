@@ -241,15 +241,3 @@ blockquote.twitter-tweet a:hover,
 blockquote.twitter-tweet a:focus {
   text-decoration: underline;
 }
-
-/*
- * Utilities
- */
-.max-h-64 {
-  max-height: 16rem;
-}
-@screen md {
-  .md\:max-h-64 {
-    max-height: 16rem;
-  }
-}

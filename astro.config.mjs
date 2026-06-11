@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config'
+import { unified } from '@astrojs/markdown-remark'
 import vue from '@astrojs/vue'
 import tailwindcss from '@tailwindcss/vite'
 import rehypeExternalLinks from 'rehype-external-links'
@@ -18,25 +19,27 @@ export default defineConfig({
   },
 
   markdown: {
-    remarkPlugins: [
-      remarkCaptions,
-    ],
-    rehypePlugins: [
-      [rehypeExternalLinks, { target: '_blank', rel: ['noopener'] }],
-      rehypeSlug, // Required for rehypeAutolinkHeadings
-      [rehypeAutolinkHeadings, {
-        properties: {
-          className: ['header-anchor'],
-          ariaLabel: 'Link to this section',
-          ariaHidden: true,
-          tabIndex: -1,
-        },
-        content: {
-          type: 'text',
-          value: '#',
-        }
-      }],
-    ],
+    processor: unified({
+      remarkPlugins: [
+        remarkCaptions,
+      ],
+      rehypePlugins: [
+        [rehypeExternalLinks, { target: '_blank', rel: ['noopener'] }],
+        rehypeSlug, // Required for rehypeAutolinkHeadings
+        [rehypeAutolinkHeadings, {
+          properties: {
+            className: ['header-anchor'],
+            ariaLabel: 'Link to this section',
+            ariaHidden: true,
+            tabIndex: -1,
+          },
+          content: {
+            type: 'text',
+            value: '#',
+          }
+        }],
+      ],
+    }),
 
     // Markdown syntax highlighting
     shikiConfig: {
