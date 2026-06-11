@@ -1,6 +1,6 @@
 ---
-title: 'stagetimer.io'
-tags: Founder, MEVN Stack, Websockets
+title: 'Stagetimer'
+tags: Founder, Event Production, B2B SaaS
 thumbnail: /img/work/stagetimer-600.jpg
 thumbnail2x: /img/work/stagetimer-1200.jpg
 visit_link: https://stagetimer.io/
@@ -9,4 +9,4 @@ order: 1
 active: true
 ---
 
-A web-based timer app for stage presentations, events and livestreams with synchronization between devices. Any internet-connected device can use it. It works on all screen sizes, even tablets and phones.
+The countdown timer for live events. From eSports finals to church services to product launches at Google — if there's a clock counting down behind a speaker, there's a decent chance it's ours. Bootstrapped, profitable, since 2021.
