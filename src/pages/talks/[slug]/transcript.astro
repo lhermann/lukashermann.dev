@@ -33,7 +33,7 @@ const description = isGerman
   <article lang={language}>
     <header class="mb-12">
       <div class="mb-2 text-sm">
-        <a href={`/talks/${slug}/`} class="text-neutral-600 hover:text-emerald-600 transition-colors">
+        <a href={`/talks/${slug}/`} class="text-neutral-600 hover:text-amber-600 transition-colors">
           ← Back to Talk
         </a>
       </div>
@@ -47,7 +47,7 @@ const description = isGerman
           href={source}
           target="_blank"
           rel="noopener"
-          class="text-neutral-600 hover:text-emerald-600 transition-colors"
+          class="text-neutral-600 hover:text-amber-600 transition-colors"
         >
           <span class="font-medium">{host}</span> ↗
         </a>
@@ -59,7 +59,7 @@ const description = isGerman
         <span>{languageFlag}</span>
         <a
           href={`/talks/${slug}/transcript.md`}
-          class="text-neutral-600 hover:text-emerald-600 transition-colors text-sm"
+          class="text-neutral-600 hover:text-amber-600 transition-colors text-sm"
         >
           {isGerman ? 'Als Markdown ansehen' : 'View as Markdown'}
         </a>
@@ -74,7 +74,7 @@ const description = isGerman
     <footer class="flex flex-col sm:flex-row gap-4 items-center justify-center mt-16">
       <a
         href={`/talks/${slug}/`}
-        class="text-emerald-600 hover:text-black transition-colors"
+        class="text-neutral-600 hover:text-amber-600 transition-colors"
       >
         ← Back to Talk
       </a>
@@ -82,7 +82,7 @@ const description = isGerman
         href={source}
         target="_blank"
         rel="noopener"
-        class="bg-white text-emerald-600 hover:bg-emerald-100 hover:text-emerald-800 px-4 py-1 rounded font-semibold transition-colors"
+        class="bg-amber-600 text-white hover:bg-amber-700 px-4 py-1 rounded font-semibold transition-colors"
       >
         {isGerman ? 'Original ansehen' : 'Watch Original'} ↗
       </a>

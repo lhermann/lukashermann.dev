@@ -14,7 +14,7 @@ const languageFlag = frontmatter.language === 'en' ? '🇺🇸' : '🇩🇪'
 const formattedDate = formatDate(frontmatter.date)
 ---
 
-<article class="bg-white rounded-lg shadow-lg overflow-hidden">
+<article class="bg-white rounded-lg border border-neutral-200 shadow-sm overflow-hidden">
   <a href={talk.url} class="block group">
     <div class="aspect-video overflow-hidden">
       <img
@@ -42,7 +42,7 @@ const formattedDate = formatDate(frontmatter.date)
         {frontmatter.tags && (
           <ArticleTags
             tags={frontmatter.tags}
-            tagClass="bg-emerald-100 text-emerald-800"
+            tagClass="bg-neutral-100 text-neutral-600"
           />
         )}
       </div>
