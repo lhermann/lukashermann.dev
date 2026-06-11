@@ -2,14 +2,21 @@
 import Layout from '../layouts/Layout.astro';
 import EmailObfuscate from '../components/EmailObfuscate.astro'
 import ArticleList from '../components/ArticleList.astro'
+import TalkExcerpt from '../components/TalkExcerpt.astro'
 import Timeline from '../components/Timeline.astro'
 import FaIcon from '../components/FaIcon.astro'
 import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faSquareTwitter, faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import type { Article } from '../types/Article.ts'
+import type { Talk } from '../types/Talk.ts'
 
 // Fetch articles using eager glob
 const articles = Object.values(import.meta.glob('./writing/*.md', { eager: true })) as Article[]
+
+// Fetch the latest talks/podcasts
+const latestTalks = (Object.values(import.meta.glob('./talks/*.md', { eager: true })) as Talk[])
+  .sort((a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime())
+  .slice(0, 3)
 ---
 
 <Layout
@@ -103,6 +110,19 @@ const articles = Object.values(import.meta.glob('./writing/*.md', { eager: true 
           <h2 class="text-2xl font-semibold mb-3">Timeline</h2>
           <Timeline />
         </section>
+      </div>
+    </section>
+
+    <!-- Talks Section -->
+    <section>
+      <div class="flex items-baseline justify-between mb-8">
+        <h2 class="text-2xl font-semibold">Latest Talks & Interviews</h2>
+        <a href="/talks/" class="link">All talks →</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {latestTalks.map((talk) => (
+          <TalkExcerpt talk={talk} />
+        ))}
       </div>
     </section>
 
