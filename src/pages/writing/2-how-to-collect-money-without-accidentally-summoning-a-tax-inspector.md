@@ -9,7 +9,7 @@ cover_image: /img/writing/covers/bureaucracy-handbook-part-2.jpg
 
 <div class="text-sm text-neutral-600 border-t border-b border-neutral-200 pt-8 pb-4">
 
-**Series:** The Solopreneur's German Bureaucracy Handbook – Part 2
+**Series:** The German Bootstrapper's Playbook – Part 2
 
 </div>
 
@@ -85,11 +85,11 @@ The inspector wants to trace VAT through your so-called "value chain." See, it's
 
 <div class="text-sm text-neutral-600 border-t border-neutral-200 pt-8">
 
-**Series:** The Solopreneur's German Bureaucracy Handbook – Part 2
+**Series:** The German Bootstrapper's Playbook – Part 2
 
 **Next in this series:** Part 3 – In Progress...
 
-<!-- **More from this series:** [The Solopreneur's German Bureaucracy Handbook](/series/german-bureaucracy-handbook) -->
+<!-- **More from this series:** [The German Bootstrapper's Playbook](/series/german-bureaucracy-handbook) -->
 
 </div>
 

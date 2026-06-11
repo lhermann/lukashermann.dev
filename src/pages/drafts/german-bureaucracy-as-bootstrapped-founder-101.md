@@ -1,4 +1,4 @@
-The Solopreneur's German Bureaucracy Handbook
+The German Bootstrapper's Playbook
 Handle German Bureaucracy as Bootstrapped Founder 101
 
 https://allaboutberlin.com/glossary/Gewerbeanmeldung
