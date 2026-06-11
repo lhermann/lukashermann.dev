@@ -1,6 +1,9 @@
 ---
 import '../styles/global.css'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
+import { imageSize } from 'image-size'
 
 const {
   title,
@@ -17,7 +20,18 @@ const {
 // Simple title handling - no automatic suffixes
 const iTitle = title || 'Lukas Hermann - Entrepreneur & Full-Stack Developer'
 const iDescription = description || 'I bootstrap a profitable business and tweet about it. Building great products is something I love doing.'
-const iImage = image ? new URL(image, Astro.url).href : new URL('/lukashermann-meta-2.jpg', Astro.url).href
+const imagePath = image || '/lukashermann-meta-2.jpg'
+const iImage = new URL(imagePath, Astro.url).href
+
+// Measure local images (in /public) at build time for og:image:width/height
+let imageDimensions = null
+if (imagePath.startsWith('/')) {
+  try {
+    imageDimensions = imageSize(readFileSync(join(process.cwd(), 'public', imagePath)))
+  } catch {
+    // image missing or unsupported format — omit the dimension tags
+  }
+}
 const canonicalURL = canonical_url || Astro.url // new URL(Astro.url.pathname, Astro.site)
 
 const defaultMeta = [
@@ -33,8 +47,10 @@ const defaultMeta = [
   { property: 'og:title', content: iTitle },
   { property: 'og:description', content: iDescription },
   { property: 'og:image', content: iImage },
-  { property: 'og:image:height', content: "900" },
-  { property: 'og:image:width', content: "600" },
+  ...(imageDimensions ? [
+    { property: 'og:image:width', content: String(imageDimensions.width) },
+    { property: 'og:image:height', content: String(imageDimensions.height) },
+  ] : []),
   { property: 'og:image:alt', content: 'Lukas Hermann - Entrepreneur & Front-End Developer' },
   { property: 'og:type', content: 'website' },
   { property: 'og:url', content: canonicalURL },
