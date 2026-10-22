@@ -19,7 +19,7 @@ npm install        # Install dependencies
 This is an Astro-based personal website and blog with the following key architectural decisions:
 
 ### Tech Stack
-- **Astro 5.10** - Static site generator with zero-JS by default
+- **Astro 7** - Static site generator with zero-JS by default
 - **TypeScript** - Strict mode enabled for type safety
 - **Tailwind CSS 4.x** - Utility-first styling via Vite plugin
 - **Markdown** - Content management with frontmatter metadata
@@ -61,3 +61,4 @@ The site uses file-based routing with Markdown content:
 3. **Global styles**: Edit `/src/styles/global.css` for site-wide changes
 4. **Type safety**: Define interfaces in `/src/types/` for any new content types
 5. **RSS updates**: Automatic inclusion via glob pattern in `/src/pages/rss.xml.js`
+6. **Writing articles**: Follow `STYLEGUIDE.md` for voice, length and structure

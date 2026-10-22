@@ -1,19 +1,11 @@
 ---
 layout: ../../layouts/Article.astro
-title: "Part 2: How to collect money without accidentally summoning a tax inspector"
+title: "How to collect money without accidentally summoning a tax inspector"
 created: 2025-06-27
 description: A German solopreneur's guide to collecting payments without tax headaches. From PayPal to Paddle, and what to do when inspectors visit.
 tags: Bootstrapping, Germany, Taxes
 cover_image: /img/writing/covers/bureaucracy-handbook-part-2.jpg
 ---
-
-<div class="text-sm text-neutral-600 border-t border-b border-neutral-200 pt-8 pb-4">
-
-**Series:** The German Bootstrapper's Playbook – Part 2
-
-</div>
-
-# Part 2: How to collect money without accidentally summoning a tax inspector
 
 So, I actually had a tax inspection in 2023!
 
@@ -83,15 +75,6 @@ First of all, don't panic! Tax officers may turn out surprisingly friendly, and 
 
 The inspector wants to trace VAT through your so-called "value chain." See, it's called value added tax for a reason. The idea is that somewhere along the life of a product, tax should be paid exactly once, ideally by the final consumer. If you can show, like in my case, that Paddle collects and remits the tax before it hits my bank account, then the "taxed exactly once" condition is satisfied and the inspector will be happy.
 
-<div class="text-sm text-neutral-600 border-t border-neutral-200 pt-8">
-
-**Series:** The German Bootstrapper's Playbook – Part 2
-
-**Next in this series:** Part 3 – In Progress...
-
-<!-- **More from this series:** [The German Bootstrapper's Playbook](/series/german-bureaucracy-handbook) -->
-
-</div>
 
 
 [^1]: There's also capital gains tax which shows up when you pay yourself in dividends instead of a paycheck. But that's advanced stuff.

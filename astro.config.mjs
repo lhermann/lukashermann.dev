@@ -1,7 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config'
 import { unified } from '@astrojs/markdown-remark'
-import vue from '@astrojs/vue'
 import tailwindcss from '@tailwindcss/vite'
 import rehypeExternalLinks from 'rehype-external-links'
 import rehypeSlug from 'rehype-slug'
@@ -12,7 +11,8 @@ import remarkCaptions from 'remark-captions'
 export default defineConfig({
   site: 'https://lukashermann.dev',
 
-  integrations: [vue()],
+  // Astro 7 defaults to 'jsx', which drops whitespace between inline elements
+  compressHTML: true,
 
   vite: {
     plugins: [tailwindcss()]

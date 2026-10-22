@@ -133,8 +133,8 @@ const schemadotorg = {
       <meta property={item.property} content={item.content} />
     ))}
 
+    <!-- Schema.org markup for Google -->
     {schemadotorg && (
-      <!-- Schema.org markup for Google -->
       <script type="application/ld+json" set:html={JSON.stringify(schemadotorg)}></script>
     )}
 

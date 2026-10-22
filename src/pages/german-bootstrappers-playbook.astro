@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { playbook } from '../data/playbook'
+---
+
+<Layout
+  title={`${playbook.title} - Lukas Hermann`}
+  description="How I run a bootstrapped SaaS business from Germany: the legal and tax side, from the first invoice to a GmbH with a holding."
+  image="/img/writing/covers/bureaucracy-handbook-part-2.jpg"
+>
+  <section class="wrapper">
+    <header class="mb-16">
+      <h1 class="text-5xl font-semibold leading-tight mb-6">{playbook.title}</h1>
+      <p class="text-xl text-neutral-700 max-w-2xl">
+        How I run a bootstrapped SaaS business from Germany: the legal and tax side, from the first invoice to a GmbH with a holding. Real numbers, real letters, in the order you'll need them.
+      </p>
+    </header>
+
+    <ol class="space-y-10">
+      {playbook.parts.map((part, i) => (
+        <li class="flex gap-6">
+          <span class="text-3xl font-semibold text-neutral-300 w-8 shrink-0 text-right">{i + 1}</span>
+          <div>
+            <a href={part.url} class="text-xl font-semibold leading-tight hover:text-amber-600 transition-colors">
+              {part.title}
+            </a>
+            <p class="mt-1 text-neutral-600">{part.summary}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </section>
+</Layout>
