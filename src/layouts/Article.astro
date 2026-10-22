@@ -44,7 +44,7 @@ const nextPart = partIndex >= 0 ? playbook.parts[partIndex + 1] : undefined
           {t.back}
         </a>
         {translation && (
-          <a href={translation} hreflang={de ? 'en' : 'de'} class="ml-4 text-amber-700 hover:underline">
+          <a href={translation} hreflang={de ? 'en' : 'de'} class="ml-4 text-amber-700 dark:text-amber-500 hover:underline">
             {t.otherLanguage}
           </a>
         )}
@@ -74,7 +74,7 @@ const nextPart = partIndex >= 0 ? playbook.parts[partIndex + 1] : undefined
         )}
         {partIndex >= 0 && (
           <div class="text-gray-500 p-2">
-            {t.part} {partIndex + 1} {t.of} <a href={playbook.url} class="text-amber-700 hover:underline">{playbook.title}</a>
+            {t.part} {partIndex + 1} {t.of} <a href={playbook.url} class="text-amber-700 dark:text-amber-500 hover:underline">{playbook.title}</a>
           </div>
         )}
         {tags && (
@@ -115,7 +115,7 @@ const nextPart = partIndex >= 0 ? playbook.parts[partIndex + 1] : undefined
 
     <footer class="max-w-xl text-center my-24 mx-auto">
       <p class="text-3xl md:text-5xl mb-3">{t.liked}</p>
-      <p class="text-xl text-amber-700">
+      <p class="text-xl text-amber-700 dark:text-amber-500">
         <FaIcon icon={faSquareTwitter} />
         <a
           class="hover:underline"

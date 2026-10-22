@@ -1,5 +1,39 @@
 @import "tailwindcss";
 
+/*
+ * Dark mode: flip the neutral/gray scales so every existing utility adapts.
+ * Accent colors (amber, red, green) stay as they are.
+ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --color-neutral-50: oklch(17% 0 0);
+    --color-neutral-100: oklch(21% 0 0);
+    --color-neutral-200: oklch(28% 0 0);
+    --color-neutral-300: oklch(36% 0 0);
+    --color-neutral-400: oklch(50% 0 0);
+    --color-neutral-500: oklch(60% 0 0);
+    --color-neutral-600: oklch(72% 0 0);
+    --color-neutral-700: oklch(80% 0 0);
+    --color-neutral-800: oklch(88% 0 0);
+    --color-neutral-900: oklch(93% 0 0);
+    --color-neutral-950: oklch(97% 0 0);
+
+    --color-gray-50: var(--color-neutral-50);
+    --color-gray-100: var(--color-neutral-100);
+    --color-gray-200: var(--color-neutral-200);
+    --color-gray-300: var(--color-neutral-300);
+    --color-gray-400: var(--color-neutral-400);
+    --color-gray-500: var(--color-neutral-500);
+    --color-gray-600: var(--color-neutral-600);
+    --color-gray-700: var(--color-neutral-700);
+    --color-gray-800: var(--color-neutral-800);
+    --color-gray-900: var(--color-neutral-900);
+    --color-gray-950: var(--color-neutral-950);
+  }
+}
+
 html {
   @apply text-neutral-900 bg-neutral-50;
 
@@ -59,7 +93,7 @@ figcaption {
   @apply text-3xl font-semibold mt-8;
 }
 .markdown a {
-  @apply text-amber-700 hover:underline;
+  @apply text-amber-700 dark:text-amber-500 hover:underline;
 }
 .markdown figure > a img {
   --tw-ring-inset: var(--tw-empty, );

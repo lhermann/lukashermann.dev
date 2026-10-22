@@ -107,7 +107,8 @@ const schemadotorg = {
     {alternates.map((alt) => (
       <link rel="alternate" hreflang={alt.lang} href={new URL(alt.href, Astro.url).href} />
     ))}
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#171717" media="(prefers-color-scheme: dark)">
 
     <!-- Generator -->
     <meta name="generator" content={Astro.generator} />
