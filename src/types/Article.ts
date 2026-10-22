@@ -7,6 +7,7 @@ export interface Article {
     tags?: string[]
     cover_image?: string
     lang?: string
+    translation?: string
     canonical_plattform?: string
   }
   url: string

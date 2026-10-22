@@ -5,6 +5,7 @@ created: 2026-10-20
 description: "A walkthrough of the German tax registration questionnaire for a newly founded GmbH that takes over an Einzelunternehmen: what each line asks, what I answered, and the eight weeks of letters and phone calls that followed."
 tags: Bootstrapping, Germany, Taxes
 cover_image: /img/writing/covers/fragebogen-steuerliche-erfassung.jpg
+translation: /writing/fragebogen-zur-steuerlichen-erfassung-gmbh-ausfuellen/
 ---
 
 The tax registration questionnaire (*Fragebogen zur steuerlichen Erfassung*, FsE) is how a new company introduces itself to the tax office. Until it's processed, the GmbH has no tax number. Without a tax number there are no VAT returns, no payroll and no VAT ID.
@@ -21,7 +22,7 @@ I filed the FsE five days after the tax office asked for it. The tax number came
 
 Two blocks matter the most. Lines 91–94 link the old business to the new GmbH and need its tax number. Lines 165–168 are the profit estimates, and the tax office set my prepayments straight from them.
 
-When the BZSt's online VAT ID form said “not possible”, the tax office hadn't set my VAT flag yet.
+When the BZSt's online VAT ID form said “not possible”, the tax office hadn't set my VAT flag (Umsatzsteuersignal) yet.
 
 ## Before filing
 
@@ -108,7 +109,7 @@ Figure: Page 4. The founding block on top, then the estimates that decide the pr
 This is the block that matters for an Einbringung:
 
 - **Line 91:** cash founding (“Bargründung”). That's what it legally was.
-- **Next:** "In connection with the cash founding, the company took over assets by…" Here I ticked *Einbringung eines Betriebs… nach § 20 Absatz 1 UmwStG*.
+- **Next:** "In connection with the cash founding, the company took over assets by…" Here I ticked *Einbringung eines Betriebs, Teilbetriebs oder Mitunternehmeranteils nach § 20 Absatz 1 UmwStG*.
 - **Lines 93–94:** the name of the Einzelunternehmen and *its* tax number.
 
 Lines 93–94 are how the tax office links the old business to the new one. The tax-neutral contribution at book value is a [separate application](/writing/from-einzelunternehmen-to-gmbh/#phase-5-tax-number-vat-id-and-payroll-from-day-54), which I filed months later. Here I only told them it happened.
@@ -143,7 +144,7 @@ With a contribution retroactive to December 31st, the GmbH's first year carries 
 | 173 | Expected wage tax for the calendar year |
 | 174–177 | Where payroll is run from |
 
-This block didn't set the employer flag at the tax office. It took a [phone call](#why-wage-tax-and-vat-were-missing-from-the-tax-number), which [payroll practitioners describe](https://www.datev-community.de/t5/Personalwirtschaft/A-Signal/td-p/439799) as the usual way.
+This block didn't set the employer flag (Lohnsteuersignal) at the tax office. It took a [phone call](#why-wage-tax-and-vat-were-missing-from-the-tax-number), which [payroll practitioners describe](https://www.datev-community.de/t5/Personalwirtschaft/A-Signal/td-p/439799) as the usual way.
 
 ### VAT (lines 178–197)
 

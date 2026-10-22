@@ -5,6 +5,7 @@ created: 2026-10-20
 description: "How I turned a German sole proprietorship with a profitable SaaS into a GmbH plus holding. The real timeline, the real costs, the real letters, and the traps nobody tells you about."
 tags: Bootstrapping, Germany, Taxes
 cover_image: /img/writing/covers/from-einzelunternehmen-to-gmbh.jpg
+translation: /writing/vom-einzelunternehmen-zur-gmbh/
 ---
 
 <div class="text-sm text-neutral-600 border-t border-b border-neutral-200 pt-4 my-6">
@@ -15,7 +16,7 @@ cover_image: /img/writing/covers/from-einzelunternehmen-to-gmbh.jpg
 
 Here I am with my Einzelunternehmen and a SaaS product.
 
-The product is [Stagetimer](https://stagetimer.io), a remote-controlled countdown timer for live events. The Einzelunternehmen (sole proprietorship) is "Lukas Hermann Software Service", registered in 2021 at my parents' address. It's profitable, and it has outgrown its legal clothes.
+The product is [Stagetimer](https://stagetimer.io), a remote-controlled countdown timer for live events. The Einzelunternehmen (sole proprietorship) was registered in 2021 at my parents' address. It's profitable, and it has outgrown its legal clothes.
 
 This is the guide to founding a GmbH in Germany I wish I had when I started: Every step in order, how long each one took, what it cost, which letters arrived (including the one I mistook for a scam), and the traps that ate my weekends. Confidential details are blurred, everything else is in here.
 
@@ -84,7 +85,7 @@ My reasons, in order:
 
 1. **Taxes on retained profit.** As a sole proprietor, all profit is personal income at your top tax rate. A GmbH pays about 30% (corporate tax, solidarity surcharge, trade tax) on profit it *keeps*. I pay myself a salary and reinvest the rest. At my revenue, the difference pays for the bureaucracy many times over.
 2. **A holding structure** to reinvest profits (almost) for free into future projects.
-3. **The product's name, not mine.** "Lukas Hermann Software Service" looks like a one-man show (which it is) and reads awkwardly on an enterprise invoice. "Stagetimer GmbH" looks like a company, and I even have a letterhead.
+3. **The product's name, not mine.** A company named after me looks like a one-man show (which it is) and reads awkwardly on an enterprise invoice. "Stagetimer GmbH" looks like a company, and I even have a letterhead.
 
 ## Why not incorporate abroad?
 
@@ -259,7 +260,7 @@ The register entry triggered everything else.
 
 **Tax number (day 54).** It arrived two weeks after the questionnaire (See [FsE walkthrough](/writing/fragebogen-zur-steuerlichen-erfassung-gmbh/)). Until then nothing works on the tax side: no VAT returns, no payroll, no ELSTER account.
 
-**Missing employer flag (day 61).** My payroll software refused to submit the first wage tax return (Lohnsteuer): the employer flag wasn't set at the tax office. So I had to make a phone call, and talk to a real human, to get this resolved.
+**Missing employer flag (day 61).** My payroll software refused to submit the first wage tax return (Lohnsteuer): the employer flag (Lohnsteuersignal) wasn't set at the tax office. So I had to make a phone call, and talk to a real human, to get this resolved.
 
 **ELSTER access (day 67).** I upgraded the GmbH's ELSTER account with the tax number. The activation code came by post, a week after I applied.
 
@@ -267,7 +268,7 @@ The register entry triggered everything else.
 
 **Minijob registration (day 69).** The Minijob-Zentrale sent its own welcome letter, with its own activation code, by post.
 
-**The VAT ID saga (days 89–99).** I had requested the VAT ID in the questionnaire on day 39. Seven weeks later, nothing. The online form of the Federal Central Tax Office (BZSt), which can issue VAT IDs, said "assignment not possible". So I called the tax office (again): the VAT flag had never been set. That also meant the VAT returns I'd filed for January to April had never been processed. The clerk set the flag during the ten-minute call. The BZSt issued the VAT ID three days later, and the letter arrived a week after that.
+**The VAT ID saga (days 89–99).** I had requested the VAT ID in the questionnaire on day 39. Seven weeks later, nothing. The online form of the Federal Central Tax Office (BZSt), which can issue VAT IDs, said "assignment not possible". So I called the tax office (again): the VAT flag (Umsatzsteuersignal) had never been set. That also meant the VAT returns I'd filed for January to April had never been processed. The clerk set the flag during the ten-minute call. The BZSt issued the VAT ID three days later, and the letter arrived a week after that.
 
 **The lesson: call.** The tax office doesn't tell you when something is missing. Now, when something is overdue, I pick up the phone. It feels very 1995. It works.
 

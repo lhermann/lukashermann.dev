@@ -6,6 +6,7 @@ description: "Lukas Hermann, founder of Stagetimer, delves into the nitty-gritty
 tags: Bootstrapping, Germany
 cover_image: /img/writing/covers/bootstrapped-saas-germany.jpg
 lang: en
+translation: /writing/saas-unternehmen-in-deutschland-bootstrappen/
 ---
 
 If you're reading this, you're probably interested in starting a SaaS business in Germany. You're also likely overwhelmed with questions about taxes, regulations and all the rest. Trust me, I've been there. When I started, I had zero clue about what I needed to get off the ground. This article is a deep dive into all those nitty-gritty details, sprinkled with my personal experiences and mistakes.

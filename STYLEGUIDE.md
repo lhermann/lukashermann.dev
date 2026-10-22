@@ -46,3 +46,15 @@ Voice and content conventions for articles on lukashermann.dev. Adapted from the
 
 - Curly quotes. Write them directly (“…”) where the Markdown pipeline gets them wrong, such as at the start of a table cell.
 - Euro amounts as €2,500 (symbol first, comma thousands separator).
+
+## German articles
+
+German versions are separate posts (`lang: de`), linked to their English twin with `translation:` in the frontmatter. The rules above apply, with these changes:
+
+- **Du, not Sie.** First person for experience stays first person.
+- **German terms are the terms.** No English in parentheses, no italics for *Einbringung* and friends. Keep English only where Germans use it too (SaaS, Merchant of Record, Bootstrapping).
+- **Natural German, not translated English.** Rewrite sentences that read like a translation. Keep the short paragraphs and the dry tone.
+- **Numbers the German way:** 1.909,10 €, 25.000 €, 14 Wochen. Percent with a space: 17 %.
+- **Typographic quotes:** „…“ and ‚…‘.
+- **Headings in German**, so anchors change. Update in-page `#anchor` links to the new heading slugs.
+- **Link the German twin** wherever a German version of a linked post exists.

@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { playbook as en, playbookDe as de } from '../data/playbook'
+import type { Playbook } from '../data/playbook'
+
+export interface Props {
+  playbook: Playbook
+}
+
+const { playbook } = Astro.props
+const other = playbook.lang === 'de' ? en : de
+const intro = playbook.lang === 'de'
+  ? 'Echte Zahlen, echte Briefe, in der Reihenfolge, in der du sie brauchst.'
+  : "Real numbers, real letters, in the order you'll need them."
+const otherLanguage = playbook.lang === 'de' ? 'Also in English' : 'Auch auf Deutsch'
+---
+
+<Layout
+  title={`${playbook.title} - Lukas Hermann`}
+  description={playbook.description}
+  image={playbook.image}
+  lang={playbook.lang}
+  alternates={[{ lang: playbook.lang, href: playbook.url }, { lang: other.lang, href: other.url }]}
+>
+  <section class="wrapper">
+    <header class="mb-16">
+      <h1 class="text-5xl font-semibold leading-tight mb-6">{playbook.title}</h1>
+      <p class="text-xl text-neutral-700 max-w-2xl">
+        {playbook.description} {intro}
+      </p>
+      <p class="mt-4">
+        <a href={other.url} hreflang={other.lang} class="text-amber-700 hover:underline">{otherLanguage}</a>
+      </p>
+    </header>
+
+    <ol class="space-y-10">
+      {playbook.parts.map((part, i) => (
+        <li class="flex gap-6">
+          <span class="text-3xl font-semibold text-neutral-300 w-8 shrink-0 text-right">{i + 1}</span>
+          <div>
+            <a href={part.url} class="text-xl font-semibold leading-tight hover:text-amber-600 transition-colors">
+              {part.title}
+            </a>
+            <p class="mt-1 text-neutral-600">{part.summary}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </section>
+</Layout>

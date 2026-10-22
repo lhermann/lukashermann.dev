@@ -5,14 +5,25 @@ import ArticleIdentity from '../components/ArticleIdentity.astro'
 import ArticleTags from '../components/ArticleTags.astro'
 import FaIcon from '../components/FaIcon.astro'
 import { formatDate } from '../utils/formatDate'
-import { playbook } from '../data/playbook'
+import { playbooks } from '../data/playbook'
 import { faSquareTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const { frontmatter } = Astro.props
-const { title, created, updated, tags, description, cover_image, canonical_url, lang = 'en' } = frontmatter
+const { title, created, updated, tags, description, cover_image, canonical_url, lang = 'en', translation } = frontmatter
+
+const de = lang === 'de'
+const t = de
+  ? { back: '← Zurück zu Writing', updated: 'Aktualisiert am', part: 'Teil', of: 'von', previous: '← Zurück', next: 'Weiter →', otherLanguage: 'Also in English', liked: 'Hat dir der Artikel gefallen?', follow: 'Folge mir auf Twitter' }
+  : { back: '← Back to Writing', updated: 'Updated on', part: 'Part', of: 'of', previous: '← Previous', next: 'Next →', otherLanguage: 'Auch auf Deutsch', liked: 'Liked this article?', follow: 'Follow me on Twitter' }
+
+// hreflang pair for posts that exist in both languages
+const alternates = translation
+  ? [{ lang, href: Astro.url.pathname }, { lang: de ? 'en' : 'de', href: translation }]
+  : []
 
 // Series navigation for posts listed in the playbook
 const path = Astro.url.pathname.replace(/\/?$/, '/')
+const playbook = playbooks.find((series) => series.parts.some((part) => part.url === path)) ?? playbooks[0]
 const partIndex = playbook.parts.findIndex((part) => part.url === path)
 const previousPart = partIndex > 0 ? playbook.parts[partIndex - 1] : undefined
 const nextPart = partIndex >= 0 ? playbook.parts[partIndex + 1] : undefined
@@ -24,13 +35,19 @@ const nextPart = partIndex >= 0 ? playbook.parts[partIndex + 1] : undefined
   image={cover_image}
   canonical_url={canonical_url}
   lang={lang}
+  alternates={alternates}
 >
   <article lang={lang}>
     <header class="mb-12">
       <div class="mb-2 text-sm">
         <a href="/writing/" class="text-neutral-600 hover:text-amber-600 transition-colors">
-          ← Back to Writing
+          {t.back}
         </a>
+        {translation && (
+          <a href={translation} hreflang={de ? 'en' : 'de'} class="ml-4 text-amber-700 hover:underline">
+            {t.otherLanguage}
+          </a>
+        )}
       </div>
 
       {title && (
@@ -43,21 +60,21 @@ const nextPart = partIndex >= 0 ? playbook.parts[partIndex + 1] : undefined
         {created && (
           <div class="p-2">
             <time class="text-gray-500" datetime={created}>
-              {formatDate(created)}
+              {formatDate(created, lang)}
             </time>
           </div>
         )}
         {updated && (
           <div class="text-gray-500 p-2">
-            Updated on
+            {t.updated}
             <time datetime={updated}>
-              {formatDate(updated)}
+              {formatDate(updated, lang)}
             </time>
           </div>
         )}
         {partIndex >= 0 && (
           <div class="text-gray-500 p-2">
-            Part {partIndex + 1} of <a href={playbook.url} class="text-amber-700 hover:underline">{playbook.title}</a>
+            {t.part} {partIndex + 1} {t.of} <a href={playbook.url} class="text-amber-700 hover:underline">{playbook.title}</a>
           </div>
         )}
         {tags && (
@@ -76,18 +93,18 @@ const nextPart = partIndex >= 0 ? playbook.parts[partIndex + 1] : undefined
       <nav class="text-lg max-w-[68ch] mx-auto mt-16" aria-label={playbook.title}>
         <div class="pt-8 border-t border-neutral-200">
           <p class="text-neutral-600 mb-4">
-            <a href={playbook.url} class="text-amber-600 hover:underline">{playbook.title}</a>, part {partIndex + 1} of {playbook.parts.length}
+            <a href={playbook.url} class="text-amber-600 hover:underline">{playbook.title}</a>, {t.part} {partIndex + 1} {t.of} {playbook.parts.length}
           </p>
           <div class="grid gap-4 sm:grid-cols-2 text-sm">
             {previousPart && (
               <a href={previousPart.url} class="block p-4 border border-neutral-200 rounded-lg hover:border-amber-600 transition-colors">
-                <span class="block text-neutral-500">← Previous</span>
+                <span class="block text-neutral-500">{t.previous}</span>
                 <span class="block font-semibold">{previousPart.title}</span>
               </a>
             )}
             {nextPart && (
               <a href={nextPart.url} class="block p-4 border border-neutral-200 rounded-lg hover:border-amber-600 transition-colors sm:col-start-2 sm:text-right">
-                <span class="block text-neutral-500">Next →</span>
+                <span class="block text-neutral-500">{t.next}</span>
                 <span class="block font-semibold">{nextPart.title}</span>
               </a>
             )}
@@ -97,7 +114,7 @@ const nextPart = partIndex >= 0 ? playbook.parts[partIndex + 1] : undefined
     )}
 
     <footer class="max-w-xl text-center my-24 mx-auto">
-      <p class="text-5xl mb-3">Liked this article?</p>
+      <p class="text-5xl mb-3">{t.liked}</p>
       <p class="text-xl text-amber-700">
         <FaIcon icon={faSquareTwitter} />
         <a
@@ -105,7 +122,7 @@ const nextPart = partIndex >= 0 ? playbook.parts[partIndex + 1] : undefined
           href="https://twitter.com/_lhermann"
           target="_blank"
           rel="noopener"
-        >Follow me on Twitter</a>
+        >{t.follow}</a>
       </p>
     </footer>
   </article>

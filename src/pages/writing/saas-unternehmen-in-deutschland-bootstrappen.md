@@ -6,6 +6,7 @@ description: "Lukas Hermann, Gründer von Stagetimer, zeigt wie er ein SaaS-Unte
 tags: Bootstrapping, Deutschland
 cover_image: /img/writing/covers/bootstrapped-saas-germany.jpg
 lang: de
+translation: /writing/bootstrapping-a-saas-business-in-germany/
 ---
 
 Wenn du das hier liest, bist du wahrscheinlich daran interessiert, ein SaaS-Unternehmen in Deutschland zu starten. Du bist auch wahrscheinlich überfordert mit Fragen zu Steuern, Vorschriften und allem, was dazugehört. Als ich anfing, hatte ich keine Ahnung was ich zu starten brauchte. Dieser Artikel ist ein tiefer Einblick in all diese Feinheiten, gespickt mit meinen persönlichen Erfahrungen und Fehlern.

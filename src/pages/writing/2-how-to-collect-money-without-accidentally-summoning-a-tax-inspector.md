@@ -5,6 +5,7 @@ created: 2025-06-27
 description: A German solopreneur's guide to collecting payments without tax headaches. From PayPal to Paddle, and what to do when inspectors visit.
 tags: Bootstrapping, Germany, Taxes
 cover_image: /img/writing/covers/bureaucracy-handbook-part-2.jpg
+translation: /writing/geld-einnehmen-ohne-steuerpruefer/
 ---
 
 So, I actually had a tax inspection in 2023!

@@ -15,6 +15,8 @@ const {
   meta = [],
   image,
   canonical_url,
+  lang = 'en',
+  alternates = [],
 } = Astro.props
 
 // Simple title handling - no automatic suffixes
@@ -53,6 +55,7 @@ const defaultMeta = [
   ] : []),
   { property: 'og:image:alt', content: 'Lukas Hermann - Entrepreneur & Front-End Developer' },
   { property: 'og:type', content: 'website' },
+  { property: 'og:locale', content: lang === 'de' ? 'de_DE' : 'en_US' },
   { property: 'og:url', content: canonicalURL },
 ]
 
@@ -88,7 +91,7 @@ const schemadotorg = {
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -101,6 +104,9 @@ const schemadotorg = {
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="canonical" href={canonicalURL} />
+    {alternates.map((alt) => (
+      <link rel="alternate" hreflang={alt.lang} href={new URL(alt.href, Astro.url).href} />
+    ))}
     <meta name="theme-color" content="#ffffff">
 
     <!-- Generator -->
