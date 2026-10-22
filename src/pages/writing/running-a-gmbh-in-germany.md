@@ -4,7 +4,7 @@ title: "Running a GmbH in Germany: accounting, costs and bureaucracy"
 created: 2026-10-21
 description: "What a small German GmbH needs after the founding: the accounting setup, the monthly, quarterly and yearly duties, what it costs, and the bureaucracy that comes with it."
 tags: Bootstrapping, Germany, Taxes
-cover_image: /img/writing/covers/bureaucracy-handbook-part-2.jpg
+cover_image: /img/writing/covers/running-a-gmbh-in-germany.jpg
 ---
 
 I run [Stagetimer](https://stagetimer.io), a bootstrapped SaaS, as a small German GmbH. This is what that takes after the founding: the accounting setup, the monthly to yearly tax duties, the fees, and the bureaucracy around it. Read [From Einzelunternehmen to GmbH](/writing/from-einzelunternehmen-to-gmbh/) for my experience creating a German GmbH.

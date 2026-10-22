@@ -4,7 +4,7 @@ title: "The Fragebogen zur steuerlichen Erfassung for a new GmbH, line by line"
 created: 2026-10-20
 description: "A walkthrough of the German tax registration questionnaire for a newly founded GmbH that takes over an Einzelunternehmen: what each line asks, what I answered, and the eight weeks of letters and phone calls that followed."
 tags: Bootstrapping, Germany, Taxes
-cover_image: /img/writing/covers/bureaucracy-handbook-part-2.jpg
+cover_image: /img/writing/covers/fragebogen-steuerliche-erfassung.jpg
 ---
 
 The tax registration questionnaire (*Fragebogen zur steuerlichen Erfassung*, FsE) is how a new company introduces itself to the tax office. Until it's processed, the GmbH has no tax number. Without a tax number there are no VAT returns, no payroll and no VAT ID.

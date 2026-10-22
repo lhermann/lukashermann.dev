@@ -4,7 +4,7 @@ title: "From Einzelunternehmen to GmbH – every step, every letter"
 created: 2026-10-20
 description: "How I turned a German sole proprietorship with a profitable SaaS into a GmbH plus holding. The real timeline, the real costs, the real letters, and the traps nobody tells you about."
 tags: Bootstrapping, Germany, Taxes
-cover_image: /img/writing/covers/bureaucracy-handbook-part-2.jpg
+cover_image: /img/writing/covers/from-einzelunternehmen-to-gmbh.jpg
 ---
 
 <div class="text-sm text-neutral-600 border-t border-b border-neutral-200 pt-4 my-6">
