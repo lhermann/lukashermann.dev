@@ -13,6 +13,7 @@ export interface Playbook {
   url: string
   description: string
   image: string
+  hero: string
   parts: PlaybookPart[]
 }
 
@@ -21,7 +22,8 @@ export const playbook: Playbook = {
   title: "The German Solopreneur's Playbook",
   url: '/german-solopreneur-playbook/',
   description: 'How I run a bootstrapped SaaS business from Germany: the legal and tax side, from the first invoice to a GmbH with a holding.',
-  image: '/img/writing/covers/german-bootstrappers-playbook.jpg',
+  image: '/img/writing/covers/german-solopreneur-playbook.jpg',
+  hero: '/img/writing/covers/german-solopreneur-playbook-hero.jpg',
   parts: [
     {
       url: '/writing/bootstrapping-a-saas-business-in-germany/',
@@ -56,7 +58,8 @@ export const playbookDe: Playbook = {
   title: 'Solo gründen in Deutschland',
   url: '/solo-gruenden-in-deutschland/',
   description: 'Wie ich ein eigenfinanziertes SaaS-Unternehmen in Deutschland führe: die rechtliche und steuerliche Seite, von der ersten Rechnung bis zur GmbH mit Holding.',
-  image: '/img/writing/covers/german-bootstrappers-playbook.jpg',
+  image: '/img/writing/covers/solo-gruenden-in-deutschland.jpg',
+  hero: '/img/writing/covers/solo-gruenden-in-deutschland-hero.jpg',
   parts: [
     {
       url: '/writing/saas-unternehmen-in-deutschland-bootstrappen/',

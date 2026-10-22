@@ -12,6 +12,9 @@ const other = playbook.lang === 'de' ? en : de
 const intro = playbook.lang === 'de'
   ? 'Echte Zahlen, echte Briefe, in der Reihenfolge, in der du sie brauchst.'
   : "Real numbers, real letters, in the order you'll need them."
+const alt = playbook.lang === 'de'
+  ? `${playbook.title}: Lukas Hermann mit Brezel und Laptop am Stuttgarter Schlossplatz`
+  : `${playbook.title}: Lukas Hermann with a pretzel and a laptop at Schlossplatz, Stuttgart`
 const otherLanguage = playbook.lang === 'de' ? 'Also in English' : 'Auch auf Deutsch'
 ---
 
@@ -24,6 +27,13 @@ const otherLanguage = playbook.lang === 'de' ? 'Also in English' : 'Auch auf Deu
 >
   <section class="wrapper">
     <header class="mb-16">
+      <img
+        src={playbook.hero}
+        alt={alt}
+        width="1672"
+        height="941"
+        class="w-full h-auto rounded-xl mb-10"
+      />
       <h1 class="text-5xl font-semibold leading-tight mb-6">{playbook.title}</h1>
       <p class="text-xl text-neutral-700 max-w-2xl">
         {playbook.description} {intro}
