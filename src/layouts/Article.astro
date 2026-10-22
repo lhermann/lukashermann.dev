@@ -51,7 +51,7 @@ const nextPart = partIndex >= 0 ? playbook.parts[partIndex + 1] : undefined
       </div>
 
       {title && (
-        <h1 class="text-6xl font-semibold leading-tight break-words mb-4 md:mb-2">
+        <h1 class="text-4xl md:text-6xl font-semibold leading-tight break-words mb-4 md:mb-2">
           {title}
         </h1>
       )}
@@ -114,7 +114,7 @@ const nextPart = partIndex >= 0 ? playbook.parts[partIndex + 1] : undefined
     )}
 
     <footer class="max-w-xl text-center my-24 mx-auto">
-      <p class="text-5xl mb-3">{t.liked}</p>
+      <p class="text-3xl md:text-5xl mb-3">{t.liked}</p>
       <p class="text-xl text-amber-700">
         <FaIcon icon={faSquareTwitter} />
         <a

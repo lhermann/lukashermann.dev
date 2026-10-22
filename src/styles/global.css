@@ -50,10 +50,10 @@ figcaption {
   @apply mb-4 border-neutral-200;
 }
 .markdown h1 {
-  @apply text-5xl font-semibold mt-12;
+  @apply text-3xl md:text-5xl font-semibold mt-12;
 }
 .markdown h2 {
-  @apply text-4xl font-semibold mt-10;
+  @apply text-3xl md:text-4xl font-semibold mt-10;
 }
 .markdown h3 {
   @apply text-3xl font-semibold mt-8;
