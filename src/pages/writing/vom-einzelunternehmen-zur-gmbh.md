@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/Article.astro
-title: "Vom Einzelunternehmen zur GmbH – jeder Schritt, jeder Brief"
+title: "Vom Einzelunternehmen zur GmbH: Jeder Schritt, jeder Brief"
 created: 2026-10-20
 description: "Wie ich ein deutsches Einzelunternehmen mit einem profitablen SaaS in eine GmbH samt Holding umgewandelt habe. Der echte Zeitplan, die echten Kosten, die echten Briefe und die Fallen, von denen dir keiner erzählt."
 tags: Bootstrapping, Deutschland, Steuern

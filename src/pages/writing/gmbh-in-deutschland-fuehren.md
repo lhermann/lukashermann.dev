@@ -13,19 +13,19 @@ Ich betreibe [Stagetimer](https://stagetimer.io), ein gebootstrapptes SaaS, als 
 
 ## Buchhaltungs-Setup
 
-**Buchhaltung: [Lexware Office](https://www.lexware.de/preise?pid=kC1hh07bGA&pdata=AIZvBWomhS&cid=1777&utm_medium=affiliate&utm_source=recommend-kC1hh07bGA&utm_campaign=kunden-werben-kunden&couponCode=LXOK4YWK)** (Empfehlungslink). Ich hatte es schon für das Einzelunternehmen genutzt. Die GmbH bekam einen neuen Account, und ich habe 111 Rechnungen von Januar bis April rübergezogen.
+**Buchhaltung: [Lexware Office](https://www.lexware.de/preise?pid=kC1hh07bGA&pdata=AIZvBWomhS&cid=1777&utm_medium=affiliate&utm_source=recommend-kC1hh07bGA&utm_campaign=kunden-werben-kunden&couponCode=LXOK4YWK)** (Empfehlungslink). Ich habe es schon für das Einzelunternehmen genutzt. Für die GmbH habe ich einen neuen Account angelegt und 111 Rechnungen von Januar bis April rübergezogen.
 
-Alles Steuerliche (Umsatzsteuervoranmeldungen, Zusammenfassende Meldungen) läuft darüber. Ich habe den größten Tarif genommen, weil der API-Zugang enthält, und ihn an meinen KI-Agenten angebunden.
+Alles Steuerliche (Umsatzsteuervoranmeldungen, Zusammenfassende Meldungen) läuft darüber. Ich habe den größten Tarif genommen, weil er API-Zugang hat, und ihn an meinen KI-Agenten angebunden.
 
 **Lohnabrechnung:** das Zusatzmodul Lexware Lohn & Gehalt, im selben Tool.
 
 **Steuerberater:** macht den Jahresabschluss und die Eröffnungsbilanz. Alles andere mache ich selbst.
 
-**Einen Steuerberater finden.** Das eigentliche Hindernis für Gründer in Deutschland. Viele Steuerberater nehmen keine kleinen Neukunden an, und du solltest einen haben, *bevor* du deinen ersten Euro verdienst. Frag andere Gründer nach Empfehlungen und fang früh mit der Suche an. Bei einer GmbH geht es nicht ohne.
+**Einen Steuerberater finden.** Das eigentliche Hindernis für Gründer in Deutschland. Viele Steuerberater nehmen keine kleinen Neukunden an. Du brauchst aber einen, *bevor* du deinen ersten Euro verdienst. Frag andere Gründer nach Empfehlungen und fang früh mit der Suche an. Bei einer GmbH geht es nicht ohne.
 
 **Bank: [Qonto](https://qonto.com/r/xp3mdc)** (Empfehlungslink).
 
-**Zahlungen:** [Paddle](https://paddle.com) als Merchant of Record für alle Self-Service-Abos, wie in [Geld einnehmen, ohne versehentlich einen Steuerprüfer heraufzubeschwören](/writing/geld-einnehmen-ohne-steuerpruefer/) beschrieben. Für Enterprise-Rechnungen bin ich auf Stripe Invoicing umgestiegen, weil Lexware keine lokalisierten Zahlenformate, keine anderen Währungen als EUR und keinen Zahlungslink für Kartenzahlung kann. Die Buchhaltung läuft trotzdem über Lexware.
+**Zahlungen:** [Paddle](https://paddle.com) als Merchant of Record für alle Self-Service-Abos, wie ich in [Geld einnehmen, ohne versehentlich einen Steuerprüfer heraufzubeschwören](/writing/geld-einnehmen-ohne-steuerpruefer/) beschrieben habe. Für Enterprise-Rechnungen bin ich auf Stripe Invoicing umgestiegen. Lexware kann keine lokalisierten Zahlenformate, keine anderen Währungen als EUR und keinen Zahlungslink für Kartenzahlung. Die Buchhaltung läuft trotzdem über Lexware.
 
 ## Wiederkehrende Pflichten
 
@@ -33,7 +33,7 @@ Alles Steuerliche (Umsatzsteuervoranmeldungen, Zusammenfassende Meldungen) läuf
 
 **Quartalsweise:** Zusammenfassende Meldung (für B2B-Kunden in der EU), Körperschaftsteuervorauszahlung (Finanzamt), Gewerbesteuervorauszahlung (Stadt).
 
-**Jährlich:** Jahresabschluss und dessen Offenlegung im Unternehmensregister, Körperschaftsteuer-, Gewerbesteuer- und Umsatzsteuererklärung, der Lohnnachweis an die Berufsgenossenschaft, der IHK-Beitrag, die Gebühr fürs Transparenzregister und 7 Jahre lang der Nachweis nach [§22 UmwStG](https://www.gesetze-im-internet.de/umwstg_2006/__22.html), wem die Anteile gehören.
+**Jährlich:** Jahresabschluss und dessen Offenlegung im Unternehmensregister, Körperschaftsteuer-, Gewerbesteuer- und Umsatzsteuererklärung, der Lohnnachweis an die Berufsgenossenschaft, der IHK-Beitrag, die Gebühr fürs Transparenzregister und 7 Jahre lang der Nachweis nach [§22 UmwStG](https://www.gesetze-im-internet.de/umwstg_2006/__22.html), dass mir die Anteile noch gehören.
 
 ## Laufende Kosten
 
@@ -54,16 +54,16 @@ Pro Jahr, ohne die Steuern selbst:
 
 Zum Vergleich: Mein vorheriger Steuerberater hat für das Einzelunternehmen etwa 3.000 € netto pro Jahr berechnet (EÜR plus Einkommensteuer-, Gewerbesteuer- und Umsatzsteuererklärung). Steuerberatergebühren richten sich nach einer gesetzlichen Gebührenordnung ([StBVV](https://www.gesetze-im-internet.de/stbgebv/)) und steigen mit Gewinn und Umsatz.
 
-**IHK-Beitrag.** Jede GmbH ist Pflichtmitglied ihrer Industrie- und Handelskammer. Meine hat mir einen vorläufigen Beitragsbescheid über 114 € für 2026 geschickt, die endgültige Berechnung folgt, sobald der Gewinn feststeht. Gefunden hat sie die GmbH über das Handelsregister, noch bevor das Gewerbeamt meine Gewerbeanmeldung bearbeitet hatte.
+**IHK-Beitrag.** Jede GmbH ist Pflichtmitglied ihrer Industrie- und Handelskammer. Meine hat mir einen vorläufigen Beitragsbescheid über 114 € für 2026 geschickt. Die endgültige Rechnung kommt, sobald der Gewinn feststeht. Die IHK hat die GmbH über das Handelsregister gefunden, noch bevor das Gewerbeamt meine Gewerbeanmeldung bearbeitet hat.
 
-**Rundfunkbeitrag.** Er fällt pro Wohnung *und* pro Betriebsstätte an, die Firma zahlt also getrennt von meinem privaten Haushalt. Bei mir wird außerdem der Firmenwagen mitgezählt, der meines Wissens nichts extra kosten sollte. Ein Antrag auf Korrektur läuft.
+**Rundfunkbeitrag.** Er fällt pro Wohnung *und* pro Betriebsstätte an. Die Firma zahlt also getrennt von meinem privaten Haushalt. Der Beitragsservice zählt bei mir außerdem den Firmenwagen mit. Meines Wissens sollte der nichts extra kosten. Ich habe eine Korrektur beantragt. Die Antwort steht noch aus.
 
 <div class="letters">
 <figure><a href="/img/writing/gmbh/rundfunkbeitrag.jpg" target="_blank" rel="noopener"><img src="/img/writing/gmbh/rundfunkbeitrag.jpg" alt="Schreiben des Beitragsservice: keine Angabe zur Zahl der Beschäftigten, daher gilt Stufe 1 (bis 8 Beschäftigte)" loading="lazy"></a><figcaption>Der Rundfunkbeitrag: Stufe 1, bis 8 Beschäftigte.</figcaption></figure>
 </div>
 
-**Krankenversicherung.** Als beherrschender Gesellschafter-Geschäftsführer meiner eigenen GmbH gelte ich in der Sozialversicherung als selbstständig, also zahle ich meine Krankenversicherung zu 100 % selbst. Ich bin gesetzlich versichert. Dort zahlt man einen Prozentsatz vom Einkommen bis zur Beitragsbemessungsgrenze (2026: 5.812,50 € pro Monat).
+**Krankenversicherung.** Als beherrschender Gesellschafter-Geschäftsführer meiner eigenen GmbH gelte ich in der Sozialversicherung als selbstständig, also zahle ich meine Krankenversicherung zu 100 % selbst. Ich bin gesetzlich versichert. Dort zahle ich einen Prozentsatz vom Einkommen bis zur Beitragsbemessungsgrenze (2026: 5.812,50 € pro Monat).
 
-Ich zahle den Höchstbeitrag: etwa 17 % für die Kranken- und 3,6 % für die Pflegeversicherung, rund 1.190 € pro Monat. Auch mit wenig Einkommen zahlst du ein paar hundert Euro im Monat, weil die gesetzliche Versicherung bei Selbstständigen ein [Mindesteinkommen](https://www.gesetze-im-internet.de/sgb_5/__240.html) ansetzt.
+Ich zahle den Höchstbeitrag: etwa 17 % für die Kranken- und 3,6 % für die Pflegeversicherung, rund 1.190 € pro Monat. Auch wer wenig verdient, zahlt ein paar hundert Euro im Monat. Die gesetzliche Versicherung setzt bei Selbstständigen ein [Mindesteinkommen](https://www.gesetze-im-internet.de/sgb_5/__240.html) an.
 
-Die private Versicherung wirkt günstiger, solange du jung und single bist, und wird mit Familie und Alter teuer. Zurückwechseln ist schwer.
+Die private Versicherung wirkt günstiger, solange man jung und single ist. Mit Familie und Alter wird sie teuer. Zurückwechseln ist schwer.
