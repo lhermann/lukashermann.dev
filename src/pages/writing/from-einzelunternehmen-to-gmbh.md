@@ -16,9 +16,9 @@ translation: /writing/vom-einzelunternehmen-zur-gmbh/
 
 Here I am with my Einzelunternehmen and a SaaS product.
 
-The product is [Stagetimer](https://stagetimer.io), a remote-controlled countdown timer for live events. The Einzelunternehmen (sole proprietorship) was registered in 2021 at my parents' address. It's profitable, and it has outgrown its legal clothes.
+The product is [Stagetimer](https://stagetimer.io), a remote-controlled countdown timer for live events. The Einzelunternehmen (sole proprietorship) was registered in 2021. It's profitable, and it has outgrown its legal clothes.
 
-This is the guide to founding a GmbH in Germany I wish I had when I started: Every step in order, how long each one took, what it cost, which letters arrived (including the one I mistook for a scam), and the traps that ate my weekends. Confidential details are blurred, everything else is in here.
+This is the guide to founding a GmbH in Germany I wish I had when I started: Every step in order, how long each one took, what it cost, which letters arrived and the traps that ate my weekends. Confidential details are blurred, everything else is in here.
 
 ## TL;DR
 
@@ -29,8 +29,6 @@ The GmbH was a regular cash founding, with the whole Einzelunternehmen contribut
 Preparation took about 4 months, mostly waiting for the closing balance sheet. From notary appointment to having a VAT ID and running payroll took another 14 weeks.
 
 Setup cost €2,263 in notary and court fees, plus the tax advisor. Running costs are €2,500+ a year for the tax advisor and a few hundred Euros for everything else.
-
-<!-- The biggest lesson: the authorities aren't slow, they're *silent*. When something is overdue, call. -->
 
 ## Contents
 
@@ -355,7 +353,7 @@ Things that each cost me an afternoon.
 - **Wind down the Einzelunternehmen.** Its town kept charging trade tax prepayments for 2026. I told them the business no longer exists, and they set them to zero and refunded what I'd paid. Same for my private income tax prepayments, still based on the old profit. Small fees also keep trickling into the old account. I booked them via the shareholder clearing account (*Verrechnungskonto Gesellschafter*) and kept them out of the GmbH's VAT returns.
 - **Correctly handle January invoices.** Supplier invoices from 2025 paid in January are liabilities the GmbH took over, not new purchases. Book them as purchases and you deduct the input VAT twice.
 - **Keep the shares for 7 years.** Both contributions (§20 and §21 UmwStG) come with a 7-year holding period. Every year I need to prove to the tax office that I still own the shares. They could look it up, but they require an explicit message.
-- **Move all contracts.** About 17 services needed a new entity, address, VAT ID or bank account. Bank accounts and insurance policies stay with the Einzelunternehmen, so check what covers the GmbH. Apple wants a D-U-N-S number for a company developer account. And [§35a GmbHG](https://www.gesetze-im-internet.de/gmbhg/__35a.html) requires a signature like this on every email or letter:
+- **Move all contracts.** About 17 services needed a new entity, address, VAT ID or bank account. Bank accounts stay with the Einzelunternehmen. Apple wants a D-U-N-S number for a company developer account. And [§35a GmbHG](https://www.gesetze-im-internet.de/gmbhg/__35a.html) requires a signature like this on every email or letter:
 
 <svg viewBox="0 0 580 64" width="580" class="block my-6 max-w-full" role="img" aria-label="Example email signature: Mustermann GmbH, Musterstraße 1, 12345 Musterstadt, Germany. Commercial Register: Amtsgericht Musterstadt HRB 123456. Managing Director: Max Mustermann">
   <rect x="0.75" y="0.75" width="578.5" height="62.5" rx="6" fill="none" stroke="#d4d4d4" stroke-width="1.5"/>

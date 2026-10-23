@@ -11,27 +11,25 @@ translation: /writing/from-einzelunternehmen-to-gmbh/
 
 <div class="text-sm text-neutral-600 border-t border-b border-neutral-200 pt-4 my-6">
 
-**Stand:** Das ist ein lebendes Dokument. Ich schreibe es, während der Prozess noch läuft, und aktualisiere es, sobald die offenen Punkte erledigt sind.
+**Stand:** Ich schreibe diesen Artikel, während der Prozess noch läuft. Die offenen Punkte trage ich nach, sobald sie erledigt sind.
 
 </div>
 
-Da stehe ich nun mit meinem Einzelunternehmen und einem SaaS-Produkt.
+Angefangen hat es mit meinem Einzelunternehmen und einem SaaS-Produkt.
 
-Das Produkt ist [Stagetimer](https://stagetimer.io), ein ferngesteuerter Countdown-Timer für Live-Events. Das Einzelunternehmen habe ich 2021 unter der Adresse meiner Eltern angemeldet. Es ist profitabel und seiner Rechtsform entwachsen.
+Das Produkt ist [Stagetimer](https://stagetimer.io), ein ferngesteuerter Countdown-Timer für Live-Events. Das Einzelunternehmen habe ich 2021 angemeldet. Es ist profitabel und seiner Rechtsform entwachsen.
 
-Das ist die Anleitung zur GmbH-Gründung in Deutschland, die ich mir am Anfang gewünscht hätte: jeder Schritt in der richtigen Reihenfolge, wie lange er gedauert hat, was er gekostet hat, welche Briefe kamen (auch der, den ich für Betrug hielt), und die Fallen, die mich meine Wochenenden gekostet haben. Vertrauliches ist geschwärzt, alles andere steht hier drin.
+Dieser Artikel ist die Anleitung zur GmbH-Gründung in Deutschland, die ich gerne selbst gehabt hätte: jeder Schritt in der richtigen Reihenfolge, wie lange er gedauert hat, wie viel er gekostet hat, welche Briefe kamen und die Fallen, die mich meine Wochenenden gekostet haben. Vertrauliches ist geschwärzt, alles andere steht hier drin.
 
 ## TL;DR
 
-Ich habe mein Einzelunternehmen, ein SaaS-Produkt mit über 200.000 € Jahresumsatz, in die Stagetimer GmbH überführt, die einer Holding-GmbH gehört. Der Hauptgrund sind Steuern: Die GmbH zahlt rund 30 % auf den Gewinn statt meines persönlichen Spitzensteuersatzes.
+Mein SaaS-Produkt mit über 200.000 € Jahresumsatz lief als Einzelunternehmen. 2026 habe ich es in eine GmbH mit Holding überführt. Der Hauptgrund: Die GmbH zahlt rund 30 % auf den Gewinn statt meines persönlichen Spitzensteuersatzes.
 
-Die GmbH war eine normale Bargründung, bei der zusätzlich das ganze Einzelunternehmen zu Buchwerten eingebracht wurde (§20 UmwStG, Stichtag 31.12.).
+Die GmbH ist eine normale Bargründung. Zusätzlich habe ich das ganze Einzelunternehmen zu Buchwerten eingebracht (§20 UmwStG, Stichtag 31.12.).
 
-Die Vorbereitung hat etwa 4 Monate gedauert, vor allem wegen des Wartens auf die Schlussbilanz. Vom Notartermin bis zur USt-IdNr. und laufenden Lohnabrechnung vergingen weitere 14 Wochen.
+Die Vorbereitung hat etwa 4 Monate gedauert, vor allem, weil ich auf die Schlussbilanz warten musste. Vom Notartermin bis zur USt-IdNr. und laufenden Lohnabrechnung vergingen weitere 14 Wochen.
 
-Die Gründung hat 2.263 € an Notar- und Gerichtskosten gekostet, plus Steuerberater. Laufend sind es über 2.500 € im Jahr für den Steuerberater und ein paar hundert Euro für alles andere.
-
-<!-- Die wichtigste Lektion: Die Behörden sind nicht langsam, sie sind *stumm*. Wenn etwas überfällig ist, ruf an. -->
+Für die Gründung habe ich 2.263 € an Notar- und Gerichtskosten bezahlt, plus Steuerberater. Laufend kommen über 2.500 € im Jahr für den Steuerberater dazu und ein paar hundert Euro für alles andere.
 
 ## Inhalt
 
@@ -62,41 +60,41 @@ Die Gründung hat 2.263 € an Notar- und Gerichtskosten gekostet, plus Steuerbe
 
 ## Warum mit einem Einzelunternehmen anfangen?
 
-In Deutschland kannst du ein Unternehmen mit einem einzigen Formular gründen: der Gewerbeanmeldung im Rathaus (oder auf dessen Website). Du zahlst eine kleine Gebühr, ein paar Tage später hast du einen Gewerbeschein und kannst Rechnungen schreiben.
+Mein Einzelunternehmen habe ich mit einem einzigen Formular gegründet: der Gewerbeanmeldung im Rathaus (oder auf dessen Website). Ich habe eine kleine Gebühr bezahlt, und ein paar Tage später hatte ich einen Gewerbeschein und konnte Rechnungen schreiben.
 
-Eine GmbH bedeutet, wie die nächsten 400 Zeilen zeigen, deutlich mehr Unsinn, bevor du deinen ersten Euro verdienst.
+Eine GmbH bedeutet hingegen, wie die nächsten 400 Zeilen zeigen, deutlich mehr Aufwand, bis die Firma ihren ersten Euro verdient.
 
-Ohne Umsatz und mit einer unbestätigten Idee ist die Wahl einfach. Das Einzelunternehmen ist günstig zu gründen, günstig zu führen (einfache Buchhaltung, keine Bilanz, keine Lohnabrechnung für dich selbst) und günstig zu schließen. Eine GmbH zu schließen dauert über ein Jahr und kostet ein paar tausend Euro, wie ich in [Ein SaaS-Unternehmen in Deutschland bootstrappen](/writing/saas-unternehmen-in-deutschland-bootstrappen/) geschrieben habe.
+Ohne Umsatz und mit einem neuen Produkt ist die Wahl einfach. Das Einzelunternehmen ist günstig zu gründen, günstig zu führen (einfache Buchhaltung, keine Bilanz, keine Lohnabrechnung für mich selbst) und günstig zu schließen. Eine GmbH zu schließen dauert über ein Jahr und kostet ein paar tausend Euro, wie ich in [Ein SaaS-Unternehmen in Deutschland bootstrappen](/writing/saas-unternehmen-in-deutschland-bootstrappen/) geschrieben habe.
 
 ### Und die Haftung?
 
 Meistens kommt das Argument: „Aber eine GmbH beschränkt doch die Haftung!“ Ja. Aber wofür eigentlich?
 
-Du verkaufst ein SaaS-Abo für 8 $ im Monat. Du unterschreibst keine mehrjährigen SLAs, und deine AGB begrenzen deine Haftung. Fällt der Dienst einen Nachmittag lang aus, kann ein Kunde ungefähr 8 $ verlangen.[^1] Solange du nichts Kritisches betreibst (Gesundheitsdaten, Zahlungsinfrastruktur), verklagt dich kein Kunde in die Privatinsolvenz.
+Ich verkaufe ein SaaS-Abo für 8 $ im Monat. Ich unterschreibe keine mehrjährigen SLAs, und meine AGB begrenzen meine Haftung. Fällt der Dienst einen Nachmittag lang aus, kann ein Kunde ungefähr 8 $ verlangen.[^1] Solange ich nichts Kritisches betreibe (Gesundheitsdaten, Zahlungsinfrastruktur), verklagt mich kein Kunde in die Privatinsolvenz.
 
-Die Haftung, die du *nicht* beschränken kannst, ist die gegenüber dem Finanzamt. Steuerschulden greifen durch jede GmbH hindurch auf den Geschäftsführer,[^69ao] und das Finanzamt ist der eine Gläubiger, der dir tatsächlich nachstellt. Verklagt wurde ich noch nie. Ein gepfändetes Bankkonto wegen einer (sehr) verspäteten Umsatzsteuerzahlung hatte ich dagegen *schon*. Eine GmbH hätte da nicht geholfen.
+*Nicht* beschränken kann ich die Haftung gegenüber dem Finanzamt. Für Steuerschulden haftet der Geschäftsführer persönlich, GmbH hin oder her.[^69ao] Und das Finanzamt ist der einzige Gläubiger, der wirklich hinter mir her ist. Mich hat noch nie jemand verklagt. Das Finanzamt hat mir dagegen *schon* einmal das Bankkonto gepfändet, wegen einer (sehr) verspäteten Umsatzsteuerzahlung. Eine GmbH hätte da nicht geholfen.
 
-Die Haftung stand also nicht auf meiner Liste der Gründe.
+Die Haftung war für mich also kein Grund.
 
 ## Wann zur GmbH wechseln?
 
-2023 habe ich geschrieben, dass sich eine GmbH irgendwo ab 100.000 € Jahresumsatz lohnt. Gemacht habe ich es, nachdem ich die **200.000 €** überschritten hatte.
+2023 habe ich geschrieben, dass sich eine GmbH irgendwo ab 100.000 € Jahresumsatz lohnt. Gemacht habe ich es erst bei über **200.000 €**.
 
 Meine Gründe, der Reihe nach:
 
-1. **Steuern auf einbehaltene Gewinne.** Als Einzelunternehmer ist der gesamte Gewinn persönliches Einkommen zu deinem Spitzensteuersatz. Eine GmbH zahlt rund 30 % (Körperschaftsteuer, Solidaritätszuschlag, Gewerbesteuer) auf den Gewinn, den sie *behält*. Ich zahle mir ein Gehalt und investiere den Rest. Bei meinem Umsatz bezahlt der Unterschied die Bürokratie um ein Vielfaches.
+1. **Steuern auf einbehaltene Gewinne.** Als Einzelunternehmer habe ich den gesamten Gewinn als persönliches Einkommen versteuert, zu meinem Spitzensteuersatz. Eine GmbH zahlt rund 30 % (Körperschaftsteuer, Solidaritätszuschlag, Gewerbesteuer) auf den Gewinn, den sie *behält*. Ich zahle mir ein Gehalt und investiere den Rest. Bei meinem Umsatz ist die Ersparnis um ein Vielfaches größer als die Kosten der Bürokratie.
 2. **Eine Holding-Struktur**, um Gewinne (fast) steuerfrei in zukünftige Projekte zu investieren.
-3. **Der Name des Produkts, nicht meiner.** Eine Firma mit meinem Namen wirkt wie eine One-Man-Show (was sie ist) und liest sich auf einer Rechnung an einen Konzern seltsam. „Stagetimer GmbH“ wirkt wie eine Firma, und ich habe sogar Briefpapier.
+3. **Der Name des Produkts statt meines eigenen.** Eine Firma mit meinem Namen sieht nach One-Man-Show aus (was sie ist) und macht sich auf einer Rechnung an einen Konzern seltsam. „Stagetimer GmbH“ klingt nach einer richtigen Firma, und ich habe sogar Briefpapier.
 
 ## Warum nicht im Ausland gründen?
 
 Gefühlt jeder hat eine UK Limited, eine Firma in Singapur oder eine Delaware LLC über Stripe Atlas. Warum sich überhaupt die deutsche Bürokratie antun?
 
-Das dachte ich auch. 2019 habe ich mir die estnische e-Residency geholt und eine glänzende estnische OÜ gegründet. Es fühlte sich an wie die Zukunft: echte elektronische Signaturen mit Kartenlesegerät statt krakeliger Pixel-Unterschriften im PDF. Mein Dienstleister xolo.io (damals „Leap In“) hatte das Unternehmen in wenigen Tagen am Laufen.
+Das dachte ich auch. 2019 habe ich mir die estnische e-Residency geholt und eine glänzende estnische OÜ gegründet. Es fühlte sich an wie die Zukunft: echte elektronische Signaturen mit Kartenlesegerät statt krakeliger Pixel-Unterschriften im PDF. Mein Dienstleister xolo.io (damals „Leap In“) hat das Unternehmen in wenigen Tagen eingerichtet.
 
 Du ahnst schon, dass diese Geschichte nicht gut ausging.
 
-Die Regel lautet: Du wirst dort besteuert, wo du arbeitest, und ein Unternehmen dort, wo es seine Entscheidungen trifft (am Ort der Geschäftsleitung). Damit blieben mir vier Möglichkeiten:
+Die Regel: Ich zahle dort Steuern, wo ich arbeite. Ein Unternehmen zahlt sie dort, wo die Entscheidungen fallen (am Ort der Geschäftsleitung). Damit blieben mir vier Möglichkeiten:
 
 1. Für jede unternehmerische Entscheidung nach Tallinn fliegen.
 2. Lügen, dass ich nach Tallinn fliege.
@@ -105,20 +103,20 @@ Die Regel lautet: Du wirst dort besteuert, wo du arbeitest, und ein Unternehmen 
 
 Möglichkeit 3 funktioniert für digitale Nomaden, bis sie das Reisen satthaben. Ich habe mich für Möglichkeit 4 entschieden. Ich hatte dieselbe teure Buchhaltung wie bei einer deutschen GmbH, *plus* die ganze Compliance in Estland. 2021 habe ich die Firma geschlossen und gerade die (hoffentlich) letzte Steuerberaterrechnung für die Schließung bezahlt. Schöne Zeiten.
 
-Dasselbe gilt für die UK Limited, die Firma in Singapur und die LLC. Wenn du sie von deinem Schreibtisch in Deutschland aus führst, wird sie in Deutschland besteuert, und du bekommst die ausländische Bürokratie *zusätzlich* zur deutschen. Die US-LLC bringt noch jährliche Meldungen mit, bei denen ein vergessenes Formular fünfstellig kostet.
+Dasselbe gilt für die UK Limited, die Firma in Singapur und die LLC. Wer sie vom Schreibtisch in Deutschland aus führt, zahlt in Deutschland Steuern und bekommt die ausländische Bürokratie *zusätzlich* zur deutschen. Die US-LLC bringt noch jährliche Meldungen mit, bei denen ein vergessenes Formular fünfstellig kostet.
 
 ## GmbH oder UG?
 
 Wahrscheinlich hat dir schon jemand zur UG geraten.
 
-Die UG (haftungsbeschränkt) ist die „Mini-GmbH“, die du mit 1 € Kapital gründen kannst. Jedes deutsche Gründerforum empfiehlt sie. Darum habe ich es nicht gemacht:
+Die UG (haftungsbeschränkt) ist die „Mini-GmbH“, die man mit 1 € Kapital gründen kann. Jedes deutsche Gründerforum empfiehlt sie. Ich habe mich trotzdem dagegen entschieden:
 
-- **Das Kapital ist nicht die Hürde.** Eine GmbH braucht 25.000 € Stammkapital, aber nur **12.500 € müssen eingezahlt werden**. Das ist keine Gebühr: Die Firma kann das Geld vom ersten Tag an für Betriebsausgaben verwenden.
+- **Das Kapital ist nicht die Hürde.** Eine GmbH braucht 25.000 € Stammkapital, aber ich musste nur **12.500 € einzahlen**. Das ist keine Gebühr: Die Firma kann das Geld vom ersten Tag an für Betriebsausgaben verwenden.
 - **Gleicher Aufwand.** Eine UG hat dieselbe Buchhaltung, dieselben Bilanzen, dieselbe Lohnabrechnung und dieselben Meldungen wie eine GmbH, und dieselbe Steuerberaterrechnung.
-- **Wirkung.** „UG (haftungsbeschränkt)“ auf deiner Rechnung sagt jeder Bank, jedem Lieferanten und jedem Kunden, dass du mit weniger als 25.000 € angefangen hast.
-- **Kein Schutz vor Steuerschulden**, der [Haftung, die dich tatsächlich bedroht](#und-die-haftung).
+- **Wirkung.** „UG (haftungsbeschränkt)“ auf meiner Rechnung würde jeder Bank, jedem Lieferanten und jedem Kunden sagen, dass ich mit weniger als 25.000 € angefangen habe.
+- **Kein Schutz vor Steuerschulden.** Das ist die [Haftung, die mich wirklich bedroht](#und-die-haftung).
 
-Dann gibt es noch die **UG & Co. KG**, die Solo-Gründern allen Ernstes empfohlen wird. Zwei juristische Personen, zwei Buchhaltungen, obendrauf die Besteuerung als Personengesellschaft. [Carmine Paolino ist diesen Weg gegangen](https://paolino.me/founding-a-company-in-germany/) und hat 11.800 € und 203 Tage gebraucht, bis er seine erste Rechnung schreiben konnte. Lass es.
+Dann gibt es noch die **UG & Co. KG**, die manche allen Ernstes Solo-Gründern empfehlen. Zwei juristische Personen, zwei Buchhaltungen, obendrauf die Besteuerung als Personengesellschaft. [Carmine Paolino ist diesen Weg gegangen](https://paolino.me/founding-a-company-in-germany/) und hat 11.800 € und 203 Tage gebraucht, bis er seine erste Rechnung schreiben konnte. Lass es.
 
 Ganz am Anfang: Einzelunternehmen. Wenn echtes Geld reinkommt: GmbH. Die UG beantwortet eine Frage, die sich in unserer Situation fast niemand stellt.
 
@@ -151,10 +149,10 @@ Ganz am Anfang: Einzelunternehmen. Wenn echtes Geld reinkommt: GmbH. Die UG bean
 So kommt man vom Einzelunternehmen dorthin:
 
 1. **Stagetimer GmbH gründen**, als Bargründung mit 25.000 € Stammkapital, zur Hälfte eingezahlt.
-2. **Das gesamte Einzelunternehmen einbringen**, zusätzlich zum Stammkapital (als Sachagio). Steuerlich ist das eine Einbringung nach [§20 UmwStG](https://www.gesetze-im-internet.de/umwstg_2006/__20.html) zu Buchwerten. Kein steuerpflichtiger Vorgang: Die GmbH übernimmt einfach das Geschäft, mit Kunden, Verträgen, Kontostand und allem.
+2. **Das gesamte Einzelunternehmen einbringen**, zusätzlich zum Stammkapital (als Sachagio). Steuerlich ist das eine Einbringung nach [§20 UmwStG](https://www.gesetze-im-internet.de/umwstg_2006/__20.html) zu Buchwerten. Dabei fallen keine Steuern an. Die GmbH übernimmt einfach das ganze Geschäft: Kunden, Verträge, Kontostand.
 3. **Die Holding-GmbH gründen** und die Anteile an der Stagetimer GmbH einbringen ([§21 UmwStG](https://www.gesetze-im-internet.de/umwstg_2006/__21.html), wieder zu Buchwerten).
 
-Warum nicht einfach eine neue GmbH neben dem alten Geschäft gründen? Weil der Wert im Produkt steckt: Code, Marke, Kunden. Jeder andere Weg, das zu übertragen, heißt, es dir selbst zum Marktwert zu *verkaufen*: Du bezahlst einen Sachverständigen für die Bewertung und dann Einkommensteuer darauf. Die Einbringung vermeidet beides. Der Haken ist eine [Sperrfrist von 7 Jahren](#stolperfallen-beim-wechsel): Verkaufst du die Anteile vorher, kommt die Steuer zurück. Ich habe nicht vor zu verkaufen, aber wenn du das planst, kann das ein K.-o.-Kriterium sein.
+Warum nicht einfach eine neue GmbH neben dem alten Geschäft gründen? Weil der Wert im Produkt steckt: Code, Marke, Kunden. Auf jedem anderen Weg hätte ich es mir selbst zum Marktwert *verkaufen* müssen. Dann hätte ich einen Gutachter für die Bewertung bezahlt und danach Einkommensteuer auf den Kaufpreis. Die Einbringung vermeidet beides. Der Haken ist eine [Sperrfrist von 7 Jahren](#stolperfallen-beim-wechsel): Verkaufe ich die Anteile vorher, zahle ich die Steuer nachträglich. Ich habe nicht vor zu verkaufen. Wenn du das planst, kann das aber ein K.-o.-Kriterium sein.
 
 Das habe ich etwa vier Monate vor dem Notartermin mit meinem Steuerberater ausgearbeitet.
 
@@ -183,7 +181,7 @@ Das habe ich etwa vier Monate vor dem Notartermin mit meinem Steuerberater ausge
 
 Die Gründung selbst geht schnell. Die Vorbereitung darauf hat vier Monate gedauert.
 
-**Ich habe mit einem Steuerberater angefangen.** Nicht mit einem Anwalt, nicht mit einem Notar. Die rechtliche Seite einer GmbH-Gründung ist standardisiert. Auf der steuerlichen Seite (das Einzelunternehmen übertragen, ohne Steuern auszulösen, der Stichtag) wird Geld gewonnen oder verloren. Meiner hat den ganzen Ablauf in einem Termin skizziert: GmbH gründen, Einzelunternehmen einbringen, Holding darüber setzen, Anträge auf Buchwertfortführung stellen.
+**Ich habe mit einem Steuerberater angefangen.** Nicht mit einem Anwalt, nicht mit einem Notar. Die rechtliche Seite einer GmbH-Gründung ist standardisiert. Bei den Steuern geht es dagegen um echtes Geld: wie ich das Einzelunternehmen übertrage, ohne Steuern auszulösen, und welchen Stichtag ich wähle. Meiner hat den ganzen Ablauf in einem Termin skizziert: GmbH gründen, Einzelunternehmen einbringen, Holding darüber setzen, Anträge auf Buchwertfortführung stellen.
 
 **Die IHK hat meinen Firmennamen geprüft.** Mehr habe ich von ihr nicht gebraucht. Immerhin war es kostenlos.
 
@@ -191,11 +189,11 @@ Die Gründung selbst geht schnell. Die Vorbereitung darauf hat vier Monate gedau
 
 **Die Schlussbilanz war der Engpass.** Die Notarurkunde braucht die Bilanz des Einzelunternehmens zum Stichtag (31. Dezember 2025). Mein Steuerberater musste also die alten Bücher *vor* dem Termin abschließen, mitten in seiner stressigsten Zeit. Sie kam eine Woche vorher.
 
-**Geld vor dem Stichtag entnehmen** ist der Tipp, den ich gern gehabt hätte. Bei einer Einbringung geht auch der Kontostand in die GmbH über. Alles, was vor dem 31. Dezember entnommen wird, ist einfach Privatgeld. Alles, was danach rausgenommen wird, muss in der Buchhaltung entwirrt werden, und das kostet Steuerberaterzeit.
+**Geld vor dem Stichtag entnehmen** ist der Tipp, den ich gern früher bekommen hätte. Bei einer Einbringung geht auch der Kontostand in die GmbH über. Was ich vor dem 31. Dezember entnommen hätte, wäre einfach Privatgeld gewesen. Ich habe es vergessen. Jetzt liegt das Geld in der GmbH, und mein Steuerberater muss es in der Buchhaltung entwirren. Das kostet Steuerberaterzeit.
 
 ## Phase 1: Notartermin (Tag 0)
 
-Der Termin hat etwa 1,5 Stunden gedauert. Der Notar muss gesetzlich jedes Dokument Wort für Wort vorlesen.
+Der Termin hat etwa 1,5 Stunden gedauert. Der Notar muss von Gesetzes wegen jedes Dokument Wort für Wort vorlesen.
 
 Was ich unterschrieben habe:
 
@@ -214,42 +212,42 @@ Bis zur Eintragung war meine Firma eine „GmbH in Gründung“ (i.G.). Sie konn
 
 ## Phase 2: Bankkonto und Stammkapital (Tag 5)
 
-Der Notar reicht die Registeranmeldung erst ein, wenn das Stammkapital auf ein Bankkonto eingezahlt ist. Obwohl die GmbH mein Einzelunternehmen übernimmt, habe ich ein eigenes Konto für die GmbH i.G. eröffnet, 12.500 € eingezahlt und die Bankbestätigung an den Notar geschickt.
+Der Notar reicht die Registeranmeldung erst ein, wenn das Stammkapital auf dem Konto ist. Die GmbH übernimmt zwar mein Einzelunternehmen, braucht aber trotzdem ein eigenes Konto. Ich habe eins für die GmbH i.G. eröffnet, 12.500 € eingezahlt und die Bankbestätigung an den Notar geschickt.
 
-Ich habe mich für [**Qonto**](https://qonto.com/r/xp3mdc) (Empfehlungslink) entschieden: gute Bewertungen für den Support, eine eigene Banklizenz statt einer Schicht über der Solarisbank, native Integration mit Lexware Office und eine kostenlose Debit-Mastercard. Fünf Tage nach dem Notartermin war das Konto eröffnet und das Kapital eingezahlt.
+Ich habe mich für [**Qonto**](https://qonto.com/r/xp3mdc) (Empfehlungslink) entschieden: gute Bewertungen für den Support, eine eigene Banklizenz (statt nur einer App auf Basis der Solarisbank), native Integration mit Lexware Office und eine kostenlose Debit-Mastercard. Fünf Tage nach dem Notartermin war das Konto eröffnet und das Kapital eingezahlt.
 
 ## Phase 3: Eintragung ins Handelsregister (Tag 29)
 
-Vier Wochen nach dem Notartermin war die Eintragung im Handelsregister erledigt, schneller als die Horrorgeschichten, die ich gehört hatte. Erfahren habe ich es über das [Onlineportal](https://www.handelsregister.de/rp_web/normalesuche/welcome.xhtml), das kostenlos ist, anders als andere Websites, die dir diese Daten verkaufen wollen. Die offizielle Mitteilung des Gerichts kam weitere 24 Tage später per Post.
+Vier Wochen nach dem Notartermin stand die Firma im Handelsregister. Das ging schneller als in den Horrorgeschichten, die ich kannte. Erfahren habe ich es über das kostenlose [Onlineportal](https://www.handelsregister.de/rp_web/normalesuche/welcome.xhtml). Andere Websites verkaufen dieselben Daten. Die offizielle Mitteilung des Gerichts kam erst 24 Tage später per Post.
 
-Mit der Mitteilung kam ein Merkblatt zu meinen neuen Pflichten und eine große Warnung vor [betrügerischen Rechnungen](#fake-rechnungen).
+Mit der Mitteilung kamen ein Merkblatt zu meinen neuen Pflichten und eine große Warnung vor [betrügerischen Rechnungen](#fake-rechnungen).
 
 <div class="letters">
 <figure><a href="/img/writing/gmbh/hr-eintragungsnachricht.jpg" target="_blank" rel="noopener"><img src="/img/writing/gmbh/hr-eintragungsnachricht.jpg" alt="Eintragungsnachricht des Amtsgerichts Stuttgart für die Stagetimer GmbH, mit dem Hinweis, dass Registerkosten nur von der Landesoberkasse abgerechnet werden" loading="lazy"></a><figcaption>Die Eintragungsnachricht. Achte auf die Warnung: Registerkosten kommen nur von der Landesoberkasse.</figcaption></figure>
 </div>
 
-Die Registergebühren wurden separat abgerechnet: **300 €** (225 € für die Eintragung, 75 € für die Bereitstellung der Registerdaten). Ich habe [die echte Rechnung für Betrug gehalten](#die-echte-rechnung-die-ich-für-betrug-hielt).
+Die Registergebühren kamen mit einer eigenen Rechnung: **300 €** (225 € für die Eintragung, 75 € für die Bereitstellung der Registerdaten). Ich habe [die echte Rechnung für Betrug gehalten](#die-echte-rechnung-die-ich-für-betrug-hielt).
 
 Die Eintragung hat alles Weitere ins Rollen gebracht.
 
 ## Phase 4: Anmeldungen und Verträge (Tag 35)
 
-**Transparenzregister.** Jede GmbH muss ihre wirtschaftlich Berechtigten an noch ein weiteres Register melden, von Hand. Und das kostet natürlich noch eine weitere kleine Jahresgebühr. Der Notar soll dich darauf hinweisen. Meiner hat dabei die Augen verdreht.
+**Transparenzregister.** Jede GmbH muss ihre wirtschaftlich Berechtigten an ein weiteres Register melden, und zwar von Hand. Das kostet natürlich wieder eine kleine Jahresgebühr. Der Notar soll darauf hinweisen. Meiner hat dabei die Augen verdreht.
 
-**Gewerbeanmeldung.** Warum auch immer braucht auch eine GmbH eine, getrennt vom Handelsregister. Ich habe sie an Tag 39 online über das Landesportal (Service-BW) eingereicht. Fünf Monate später: keine Bestätigung, keine Gebührenrechnung. Auf Nachfrage hieß es beim Gewerbeamt, man sei „zu beschäftigt“, schriftliche Anmeldungen dauerten *Monate*, persönlich vor Ort werde aber am selben Tag bearbeitet. Ich habe es liegen lassen: Die Handelsregistereintragung deckt ab, was ich brauche, und die IHK hat meine Firma trotzdem gefunden.
+**Gewerbeanmeldung.** Aus irgendeinem Grund braucht auch eine GmbH eine, zusätzlich zum Handelsregister. Ich habe sie an Tag 39 online über das Landesportal (Service-BW) eingereicht. Fünf Monate später: keine Bestätigung, keine Gebührenrechnung. Auf Nachfrage hieß es beim Gewerbeamt, man sei „zu beschäftigt“. Schriftliche Anmeldungen dauerten *Monate*, vor Ort gehe es am selben Tag. Ich habe es liegen lassen: Die Handelsregistereintragung deckt ab, was ich brauche, und die IHK hat meine Firma trotzdem gefunden.
 
-**Fragebogen zur steuerlichen Erfassung.** Der erste Zwischenboss des deutschen Unternehmertums. Ich habe ihn an Tag 39 über ELSTER abgegeben, inklusive Antrag auf eine USt-IdNr. [Die komplette FsE-Anleitung](/writing/fragebogen-zur-steuerlichen-erfassung-gmbh-ausfuellen/) habe ich in einen eigenen Beitrag gepackt, Zeile für Zeile, mit allem, was danach passiert ist.
+**Fragebogen zur steuerlichen Erfassung.** Der erste Zwischenboss des deutschen Unternehmertums. Ich habe ihn an Tag 39 über ELSTER abgegeben, inklusive Antrag auf eine USt-IdNr. [Die komplette FsE-Anleitung](/writing/fragebogen-zur-steuerlichen-erfassung-gmbh-ausfuellen/) steht in einem eigenen Beitrag: Zeile für Zeile und mit allem, was danach passiert ist.
 
-**Berufsgenossenschaft.** Sobald die GmbH Angestellte hat, muss sie sich bei ihrer Berufsgenossenschaft anmelden. Bei mir war das der Minijob: Als Mehrheitsgesellschafter und Geschäftsführer bin ich nicht automatisch versichert. Für Softwarefirmen ist das die VBG. Ein Onlineformular.
+**Berufsgenossenschaft.** Sobald die GmbH Angestellte hat, muss sie sich bei ihrer Berufsgenossenschaft anmelden. Bei mir löst das der Minijob aus. Ich selbst bin als Mehrheitsgesellschafter und Geschäftsführer nicht automatisch versichert. Für Softwarefirmen ist das die VBG. Ein Onlineformular.
 
-**Betriebsnummer.** Und wer dachte, das reicht, liegt falsch. Für die Lohnabrechnung braucht es noch eine weitere Nummer. Ich habe sie an Tag 40 von der Bundesagentur für Arbeit bekommen, einen Tag nach der Anmeldung bei der Berufsgenossenschaft. Die Reihenfolge muss so sein.
+**Betriebsnummer.** Und wer dachte, das reicht, liegt falsch. Für die Lohnabrechnung braucht es noch eine weitere Nummer. Ich habe sie an Tag 40 von der Bundesagentur für Arbeit bekommen, einen Tag nach der Anmeldung bei der Berufsgenossenschaft. Diese Reihenfolge ist Pflicht.
 
 <div class="letters">
 <figure><a href="/img/writing/gmbh/transparenzregister.jpg" target="_blank" rel="noopener"><img src="/img/writing/gmbh/transparenzregister.jpg" alt="Eingangsbestätigung des Transparenzregisters für die Stagetimer GmbH" loading="lazy"></a><figcaption>Transparenzregister: die Eingangsbestätigung.</figcaption></figure>
 <figure><a href="/img/writing/gmbh/betriebsnummer.jpg" target="_blank" rel="noopener"><img src="/img/writing/gmbh/betriebsnummer.jpg" alt="Zusammenfassung des Onlineantrags auf eine Betriebsnummer bei der Bundesagentur für Arbeit" loading="lazy"></a><figcaption>Der Onlineantrag für die Betriebsnummer.</figcaption></figure>
 </div>
 
-**Geschäftsführervertrag (Tag 48).** Als Geschäftsführer bin ich Angestellter meiner eigenen Firma. Dafür braucht es einen schriftlichen Vertrag, auf Briefpapier, datiert, zwischen mir und mir selbst als Gesellschafter beschlossen, ausgedruckt und unterschrieben. Das Gehalt muss den Fremdvergleich bestehen: Würde die Firma einem Fremden so viel zahlen? Wenn nicht, zählt der Überschuss als verdeckte Gewinnausschüttung. Jede spätere Gehaltsänderung braucht eine neue schriftliche Vereinbarung, *bevor* sie gilt.
+**Geschäftsführervertrag (Tag 48).** Als Geschäftsführer bin ich Angestellter meiner eigenen Firma. Dafür braucht es einen schriftlichen Vertrag: auf Briefpapier, mit Datum, ausgedruckt und unterschrieben. Als Gesellschafter beschließe ich ihn, als Geschäftsführer unterschreibe ich ihn. Das Gehalt muss den Fremdvergleich bestehen: Würde die Firma einem Fremden so viel zahlen? Wenn nicht, zählt der Überschuss als verdeckte Gewinnausschüttung. Jede spätere Gehaltsänderung braucht eine neue schriftliche Vereinbarung, *bevor* sie gilt.
 
 <div class="letters">
 <figure><a href="/files/gmbh/gesellschafterbeschluss-anstellungsvertrag.pdf" target="_blank" rel="noopener"><img src="/img/writing/gmbh/gesellschafterbeschluss-anstellungsvertrag.jpg" alt="Gesellschafterbeschluss zur Genehmigung des Anstellungsvertrags des Geschäftsführers, mit den wichtigsten Eckpunkten: Gehalt, Dienstwagen, Zuschuss zur Krankenversicherung, Urlaub, Kündigungsfrist" loading="lazy"></a><figcaption>Der Gesellschafterbeschluss zu meinem Vertrag (PDF). <a href="/files/gmbh/gesellschafterbeschluss-anstellungsvertrag-vorlage.md" download>Als Vorlage herunterladen</a> (Markdown, Deutsch).</figcaption></figure>
@@ -261,7 +259,7 @@ Die Eintragung hat alles Weitere ins Rollen gebracht.
 
 **Steuernummer (Tag 54).** Sie kam zwei Wochen nach dem Fragebogen (siehe [FsE-Anleitung](/writing/fragebogen-zur-steuerlichen-erfassung-gmbh-ausfuellen/)). Bis dahin geht steuerlich nichts: keine Umsatzsteuer-Voranmeldungen, keine Lohnabrechnung, kein ELSTER-Konto.
 
-**Fehlendes Lohnsteuersignal (Tag 61).** Meine Lohnsoftware wollte die erste Lohnsteuer-Anmeldung nicht übermitteln: Beim Finanzamt war das Lohnsteuersignal nicht gesetzt. Also musste ich anrufen und mit einem echten Menschen sprechen, um das zu klären.
+**Fehlendes Lohnsteuersignal (Tag 61).** Meine Lohnsoftware wollte die erste Lohnsteuer-Anmeldung nicht übermitteln: Das Finanzamt hat das Lohnsteuersignal nicht gesetzt. Also habe ich angerufen und das mit einem echten Menschen geklärt.
 
 **ELSTER-Zugang (Tag 67).** Ich habe das ELSTER-Konto der GmbH mit der Steuernummer erweitert. Der Aktivierungscode kam per Post, eine Woche nach dem Antrag.
 
@@ -269,16 +267,16 @@ Die Eintragung hat alles Weitere ins Rollen gebracht.
 
 **Minijob-Anmeldung (Tag 69).** Die Minijob-Zentrale hat ihren eigenen Willkommensbrief geschickt, mit ihrem eigenen Aktivierungscode, per Post.
 
-**Die Saga um die USt-IdNr. (Tag 89–99).** Die USt-IdNr. hatte ich an Tag 39 im Fragebogen beantragt. Sieben Wochen später: nichts. Das Onlineformular des Bundeszentralamts für Steuern (BZSt), das USt-IdNrn. vergeben kann, meldete „Vergabe nicht möglich“. Also habe ich (schon wieder) beim Finanzamt angerufen: Das Umsatzsteuersignal war nie gesetzt worden. Das hieß auch, dass die Umsatzsteuer-Voranmeldungen, die ich für Januar bis April abgegeben hatte, nie verarbeitet worden waren. Der Sachbearbeiter hat es während des zehnminütigen Telefonats gesetzt. Das BZSt hat die USt-IdNr. drei Tage später vergeben, der Brief kam eine Woche danach.
+**Die Saga um die USt-IdNr. (Tag 89–99).** Beantragt habe ich die USt-IdNr. an Tag 39 im Fragebogen. Sieben Wochen später: nichts. Das Bundeszentralamt für Steuern (BZSt) vergibt USt-IdNrn. auch über ein Onlineformular. Das meldete nur „Vergabe nicht möglich“. Also habe ich (schon wieder) beim Finanzamt angerufen. Dort hat nie jemand das Umsatzsteuersignal gesetzt. Deshalb hat das Finanzamt auch meine Umsatzsteuer-Voranmeldungen für Januar bis April nie verarbeitet. Der Sachbearbeiter hat das Signal noch während des zehnminütigen Telefonats gesetzt. Das BZSt hat die USt-IdNr. drei Tage später vergeben, der Brief kam eine Woche danach.
 
-**Die Lektion: anrufen.** Das Finanzamt sagt dir nicht, wenn etwas fehlt. Wenn heute etwas überfällig ist, greife ich zum Telefon. Fühlt sich sehr nach 1995 an. Funktioniert.
+**Die Lektion: anrufen.** Das Finanzamt sagt nicht Bescheid, wenn etwas fehlt. Wenn heute etwas überfällig ist, greife ich zum Telefon. Fühlt sich an wie 1995. Funktioniert aber.
 
-**Die Lücke bei der USt-IdNr. hatte Folgen.** Rechnungen an B2B-Kunden in der EU brauchen eine USt-IdNr. (Reverse Charge), und von Januar bis Juni hatte die GmbH keine. Mit dem Segen meines Steuerberaters („der hässliche, aber notwendige Mittelweg“) habe ich die alte USt-IdNr. des Einzelunternehmens als Brücke genutzt. Dann folgte der Papierkram:
+**Die Lücke bei der USt-IdNr. hatte Folgen.** Rechnungen an B2B-Kunden in der EU brauchen eine USt-IdNr. (Reverse Charge), und von Januar bis Juni hatte die GmbH keine. Mein Steuerberater nannte es „den hässlichen, aber notwendigen Mittelweg“: Ich habe übergangsweise die alte USt-IdNr. des Einzelunternehmens genutzt. Dann folgte der Papierkram:
 
 - Tag 103: Das Finanzamt fragt, warum ich innergemeinschaftliche B2B-Umsätze ohne USt-IdNr. gemeldet habe.
-- Tag 104: Das BZSt fordert die Zusammenfassende Meldung für das erste Quartal und droht mit 250 € Zwangsgeld. Zwölf Tage, nachdem das BZSt selbst meine USt-IdNr. vergeben hatte.
+- Tag 104: Das BZSt fordert die Zusammenfassende Meldung für das erste Quartal und droht mit 250 € Zwangsgeld. Zwölf Tage, nachdem das BZSt selbst mir die USt-IdNr. gegeben hat.
 
-Ich habe Q1 und Q2 innerhalb von zehn Tagen abgegeben, ohne Zwangsgeld. Wenn du B2B-Kunden in der EU hast, fang an Tag eins mit der Jagd nach der USt-IdNr. an.
+Ich habe Q1 und Q2 innerhalb von zehn Tagen abgegeben, ohne Zwangsgeld. Wenn du B2B-Kunden in der EU hast, kümmere dich vom ersten Tag an um die USt-IdNr.
 
 <div class="letters">
 <figure><a href="/img/writing/gmbh/steuernummer.jpg" target="_blank" rel="noopener"><img src="/img/writing/gmbh/steuernummer.jpg" alt="Brief mit der Steuernummer, gültig für Körperschaftsteuer, Gewerbesteuermessbetrag, Bilanz und Kapitalertragsteuer" loading="lazy"></a><figcaption>Tag 54: die Steuernummer. Keine Lohnsteuer, keine Umsatzsteuer auf der Liste.</figcaption></figure>
@@ -287,9 +285,9 @@ Ich habe Q1 und Q2 innerhalb von zehn Tagen abgegeben, ohne Zwangsgeld. Wenn du 
 <figure><a href="/img/writing/gmbh/zm-zwangsgeld.jpg" target="_blank" rel="noopener"><img src="/img/writing/gmbh/zm-zwangsgeld.jpg" alt="Aufforderung des BZSt zur Abgabe der Zusammenfassenden Meldung für Q1 2026, mit Androhung von 250 € Zwangsgeld" loading="lazy"></a><figcaption>Tag 104: Zusammenfassende Meldung abgeben oder 250 € zahlen.</figcaption></figure>
 </div>
 
-Alle Briefe vom Finanzamt, und wie du ein fehlendes Signal früh erkennst, stehen in der [FsE-Anleitung](/writing/fragebogen-zur-steuerlichen-erfassung-gmbh-ausfuellen/#was-danach-passierte).
+In der [FsE-Anleitung](/writing/fragebogen-zur-steuerlichen-erfassung-gmbh-ausfuellen/#was-danach-passierte) findest du alle Briefe vom Finanzamt und wie du ein fehlendes Signal früh erkennst.
 
-**Antrag auf Buchwertfortführung (Tag 217).** Die Einbringung ist nur steuerneutral, wenn die GmbH die Fortführung der Buchwerte *beantragt* ([§20 Abs. 2 UmwStG](https://www.gesetze-im-internet.de/umwstg_2006/__20.html)). Der Antrag geht an das Finanzamt der GmbH, spätestens mit der ersten Steuerbilanz der GmbH. Verpasst du ihn, werden die stillen Reserven besteuert. Niemand erinnert dich daran. Ich habe ihn selbst als formlose Nachricht über ELSTER geschickt. Die Holding braucht dasselbe für ihre Einbringung nach §21.
+**Antrag auf Buchwertfortführung (Tag 217).** Die Einbringung ist nur steuerneutral, wenn die GmbH die Fortführung der Buchwerte *beantragt* ([§20 Abs. 2 UmwStG](https://www.gesetze-im-internet.de/umwstg_2006/__20.html)). Der Antrag geht an das Finanzamt der GmbH, spätestens mit der ersten Steuerbilanz der GmbH. Verpasst die GmbH ihn, zahlt sie Steuern auf die stillen Reserven. Niemand hat mich daran erinnert. Ich habe ihn selbst als formlose Nachricht über ELSTER geschickt. Die Holding braucht dasselbe für ihre Einbringung nach §21.
 
 <div class="letters">
 <figure><a href="/img/writing/gmbh/antrag-buchwertfortfuehrung.jpg" target="_blank" rel="noopener"><img src="/img/writing/gmbh/antrag-buchwertfortfuehrung.jpg" alt="ELSTER-Übertragungsprotokoll einer Nachricht an das Finanzamt: Antrag auf Fortführung der Buchwerte nach §20 Abs. 2 S. 2 UmwStG für das eingebrachte Einzelunternehmen" loading="lazy"></a><figcaption>Der Antrag auf Buchwertfortführung, per ELSTER verschickt. <a href="/files/gmbh/antrag-buchwertfortfuehrung-vorlage.md" download>Als Vorlage herunterladen</a> (Markdown, Deutsch).</figcaption></figure>
@@ -297,9 +295,9 @@ Alle Briefe vom Finanzamt, und wie du ein fehlendes Signal früh erkennst, stehe
 
 ## Die Holding
 
-Die zweite GmbH, gegründet, sobald die operative Gesellschaft im Register stand.
+Die Holding ist die zweite GmbH. Ich habe sie gegründet, sobald die Stagetimer GmbH im Register stand.
 
-**Wozu der Aufwand?** Dividenden der Stagetimer GmbH an eine Holding-GmbH sind zu 95 % steuerfrei (§8b KStG). An mich persönlich ausgezahlt, werden sie sofort besteuert. Die Holding kann das Geld behalten und in das nächste Projekt investieren, und ich zahle erst persönlich Steuern, wenn ich es entnehme. Zukünftige Projekte kommen auch dorthin, nicht in die Stagetimer GmbH.
+**Wozu der Aufwand?** Dividenden der Stagetimer GmbH an eine Holding-GmbH sind zu 95 % steuerfrei (§8b KStG). Zahlt die GmbH sie an mich persönlich aus, zahle ich sofort Steuern darauf. Die Holding kann das Geld behalten und in das nächste Projekt investieren, und ich zahle erst persönlich Steuern, wenn ich es entnehme. Neue Projekte landen auch dort, nicht in der Stagetimer GmbH.
 
 Der Aufbau ist bewusst minimal:
 
@@ -307,11 +305,11 @@ Der Aufbau ist bewusst minimal:
 - 25.000 € Stammkapital, zur Hälfte eingezahlt. Das Geld muss *vor* der Eintragung auf dem Konto sein. Ich habe es vergessen, bis der Notar ein paar Wochen später nachgefragt hat.
 - Die Anteile an der Stagetimer GmbH gehen als Agio hinein, zu Buchwerten nach [§21 UmwStG](https://www.gesetze-im-internet.de/umwstg_2006/__21.html).
 - Angemeldet an einer Familienadresse, Bankkonto bei FYRST, keine Buchhaltungssoftware.
-- Kein Gewerbeschein, keine Lohnabrechnung, keine USt-IdNr. nötig, diesmal also viel einfacher.
+- Kein Gewerbeschein, keine Lohnabrechnung, keine USt-IdNr. Diesmal also viel einfacher.
 
 ## Fake-Rechnungen
 
-Sobald die Firma im Handelsregister steht, sind Name und Adresse öffentlich. Innerhalb weniger Tage kommen Briefe, die wie amtliche Rechnungen aussehen: Wappen, Paragrafen, ein Aktenzeichen, eine kurze Frist. Das ist Betrug, oder es sind „Angebote“ für wertlose Verzeichniseinträge, die wie eine Gebühr formuliert sind.
+Sobald die Firma im Handelsregister steht, sind Name und Adresse öffentlich. Innerhalb weniger Tage kommen Briefe, die wie amtliche Rechnungen aussehen: Wappen, Paragrafen, ein Aktenzeichen, eine kurze Frist. Manche sind glatter Betrug. Andere sind „Angebote“ für wertlose Verzeichniseinträge, die wie eine Gebühr klingen.
 
 Das Gericht warnt davor. Meiner Eintragungsnachricht lag ein Blatt mit dem Titel **„Achtung! Betrügerische Rechnungen“** bei: Registerkosten kommen *nur* von der Landeskasse, in Baden-Württemberg von der Landesoberkasse.
 
@@ -347,16 +345,16 @@ Diesmal habe ich Absenderadresse und Domain mit offiziellen Quellen abgeglichen 
 
 Am nächsten Tag bezahlt, ohne Mahngebühr.
 
-Bei einer Gründung schicken dir nur diese Stellen Rechnungen: der Notar, die Landeskasse, das Finanzamt, die Stadt (Gewerbesteuer), die IHK, die Berufsgenossenschaft und der Beitragsservice. Alles andere prüfe ich, bevor ich zahle. Und was ich nicht zuordnen kann, kommt auf einen Stapel, nicht in den Müll.
+Bei einer Gründung schicken nur diese Stellen echte Rechnungen: der Notar, die Landeskasse, das Finanzamt, die Stadt (Gewerbesteuer), die IHK, die Berufsgenossenschaft und der Beitragsservice. Alles andere prüfe ich, bevor ich zahle. Und was ich nicht zuordnen kann, kommt auf einen Stapel, nicht in den Müll.
 
 ## Stolperfallen beim Wechsel
 
 Dinge, die mich jeweils einen Nachmittag gekostet haben.
 
-- **Das Einzelunternehmen abwickeln.** Die Gemeinde des Einzelunternehmens hat für 2026 weiter Gewerbesteuer-Vorauszahlungen verlangt. Ich habe ihr mitgeteilt, dass es das Geschäft nicht mehr gibt, daraufhin wurden sie auf null gesetzt und das Gezahlte erstattet. Dasselbe bei meinen privaten Einkommensteuer-Vorauszahlungen, die noch auf dem alten Gewinn beruhten. Außerdem tröpfeln weiter kleine Gebühren auf das alte Konto. Die habe ich über das Verrechnungskonto Gesellschafter gebucht und aus den Umsatzsteuer-Voranmeldungen der GmbH herausgehalten.
-- **Januar-Rechnungen richtig behandeln.** Lieferantenrechnungen aus 2025, die im Januar bezahlt wurden, sind Verbindlichkeiten, die die GmbH übernommen hat, keine neuen Einkäufe. Buchst du sie als Einkäufe, ziehst du die Vorsteuer doppelt.
-- **Die Anteile 7 Jahre halten.** Beide Einbringungen (§20 und §21 UmwStG) haben eine Sperrfrist von 7 Jahren. Jedes Jahr muss ich dem Finanzamt nachweisen, dass mir die Anteile noch gehören. Sie könnten es nachschauen, verlangen aber eine ausdrückliche Mitteilung.
-- **Alle Verträge umziehen.** Bei etwa 17 Diensten brauchte es eine neue Firma, Adresse, USt-IdNr. oder Bankverbindung. Bankkonten und Versicherungen bleiben beim Einzelunternehmen, also prüf, was die GmbH abdeckt. Apple will für einen Entwickler-Account als Firma eine D-U-N-S-Nummer. Und [§35a GmbHG](https://www.gesetze-im-internet.de/gmbhg/__35a.html) verlangt eine Signatur wie diese auf jeder E-Mail und jedem Brief:
+- **Das Einzelunternehmen abwickeln.** Die Gemeinde des Einzelunternehmens hat für 2026 weiter Gewerbesteuer-Vorauszahlungen verlangt. Ich habe ihr mitgeteilt, dass es das Geschäft nicht mehr gibt. Daraufhin hat sie die Vorauszahlungen auf null gesetzt und das Gezahlte erstattet. Dasselbe bei meinen privaten Einkommensteuer-Vorauszahlungen, die noch auf dem alten Gewinn beruhten. Außerdem tröpfeln weiter kleine Gebühren auf das alte Konto. Die habe ich über das Verrechnungskonto Gesellschafter gebucht und aus den Umsatzsteuer-Voranmeldungen der GmbH herausgehalten.
+- **Januar-Rechnungen richtig behandeln.** Lieferantenrechnungen aus 2025, die ich erst im Januar bezahlt habe, sind Verbindlichkeiten. Die GmbH hat sie übernommen, es sind keine neuen Einkäufe. Hätte ich sie als Einkäufe gebucht, hätte ich die Vorsteuer doppelt gezogen.
+- **Die Anteile 7 Jahre halten.** Beide Einbringungen (§20 und §21 UmwStG) haben eine Sperrfrist von 7 Jahren. Jedes Jahr muss ich dem Finanzamt nachweisen, dass mir die Anteile noch gehören. Das Amt könnte es selbst nachschauen, will aber eine ausdrückliche Mitteilung.
+- **Alle Verträge umziehen.** Bei etwa 17 Diensten musste ich Firmenname, Adresse, USt-IdNr. oder Bankverbindung ändern. Bankkonten bleiben beim Einzelunternehmen. Apple will für einen Entwickler-Account als Firma eine D-U-N-S-Nummer. Und [§35a GmbHG](https://www.gesetze-im-internet.de/gmbhg/__35a.html) verlangt eine Signatur wie diese auf jeder E-Mail und jedem Brief:
 
 <svg viewBox="0 0 580 64" width="580" class="block my-6 max-w-full" role="img" aria-label="Beispiel für eine E-Mail-Signatur: Mustermann GmbH, Musterstraße 1, 12345 Musterstadt, Deutschland. Handelsregister: Amtsgericht Musterstadt HRB 123456. Geschäftsführer: Max Mustermann">
   <rect x="0.75" y="0.75" width="578.5" height="62.5" rx="6" fill="none" stroke="#d4d4d4" stroke-width="1.5"/>
@@ -370,10 +368,10 @@ Dinge, die mich jeweils einen Nachmittag gekostet haben.
 
 Ja, bei über 200.000 € Umsatz. Der Wechsel bei den 100.000 €, die ich 2023 empfohlen habe, wäre auch in Ordnung gewesen. Deutlich früher nicht: Solange das Geschäft klein ist, ist ein Einzelunternehmen günstiger und lässt mehr Zeit fürs Produkt.
 
-Die Kunden haben nur einen neuen Namen auf ihren Rechnungen bemerkt. Kein einzelner Schritt war schwer: Der Notar lief glatt, das Gericht war schnell, und beide Probleme mit dem Finanzamt hat ein zehnminütiges Telefonat gelöst. Die Arbeit liegt in der Menge kleiner Aufgaben, von denen viele auf einen Brief warten, verteilt über ein halbes Jahr. Ich habe ein paar Stunden pro Woche darin gesteckt.
+Die Kunden haben nur einen neuen Namen auf ihren Rechnungen bemerkt. Kein einzelner Schritt war schwer: Der Notar lief glatt, das Gericht war schnell, und beide Probleme mit dem Finanzamt hat ein zehnminütiges Telefonat gelöst. Die Arbeit liegt in den vielen kleinen Aufgaben, verteilt über ein halbes Jahr. Bei vielen habe ich auf einen Brief gewartet. Ich habe ein paar Stunden pro Woche darin gesteckt.
 
 Einige Schritte laufen noch, etwa der Antrag auf Buchwertfortführung der Holding und der erste Jahresabschluss. Ich aktualisiere diesen Beitrag, sobald sie erledigt sind.
 
 [^69ao]: Genau genommen nur, wenn der Geschäftsführer seine Pflichten vorsätzlich oder grob fahrlässig verletzt ([§69 AO](https://www.gesetze-im-internet.de/ao_1977/__69.html)). Zum Beispiel, indem er andere Rechnungen bezahlt, während das Finanzamt wartet, oder die Lohnsteuer nicht abführt.
 
-[^1]: Eine Klage funktioniert über Schadensersatz. Wenn dein Schaden 8 $ beträgt, schickt dich der Anwalt mit einem mitleidigen Lächeln wieder nach Hause.
+[^1]: Eine Klage funktioniert über Schadensersatz. Beträgt der Schaden 8 $, schickt der Anwalt den Kunden mit einem mitleidigen Lächeln wieder nach Hause.

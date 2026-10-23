@@ -53,7 +53,12 @@ German versions are separate posts (`lang: de`), linked to their English twin wi
 
 - **Du, not Sie.** First person for experience stays first person.
 - **German terms are the terms.** No English in parentheses, no italics for *Einbringung* and friends. Keep English only where Germans use it too (SaaS, Merchant of Record, Bootstrapping).
-- **Natural German, not translated English.** Rewrite sentences that read like a translation. Keep the short paragraphs and the dry tone.
+- **Natural German, not translated English.** Rewrite sentences that read like a translation. Keep the short paragraphs and the dry tone. Watch for English patterns: „lebendes Dokument“ (living document), „am Laufen haben“ (up and running), „der eine Gläubiger“ (the one creditor).
+- **Simple words, simple sentences.** Split nested clauses into two or three sentences. Prefer everyday words: „Aufwand“, not „Unsinn“; „neues Produkt“, not „unbestätigte Idee“.
+- **Active voice in most cases.** „Mich hat noch nie jemand verklagt“, not „Verklagt wurde ich noch nie“. Passive is fine when nobody cares who did it („bin nicht automatisch versichert“).
+- **Verbs, not nouns. Simple tenses.** „weil ich auf die Schlussbilanz warten musste“, not „wegen des Wartens auf die Schlussbilanz“. Perfekt or Präteritum over Plusquamperfekt: „Dort hat nie jemand das Signal gesetzt“, not „Das Signal war nie gesetzt worden“.
+- **First person by default.** „Ich musste nur 12.500 € einzahlen“, not „du musst nur 12.500 € einzahlen“. For general rules I didn't experience, use „wer“ or „man“, or drop the person. Keep „du“ for direct tips and asides to the reader („Lass es.“).
+- **Keep the twins in sync.** When a fact is cut or changed in one language, change it in the other.
 - **Numbers the German way:** 1.909,10 €, 25.000 €, 14 Wochen. Percent with a space: 17 %.
 - **Typographic quotes:** „…“ and ‚…‘.
 - **Headings in German**, so anchors change. Update in-page `#anchor` links to the new heading slugs.
