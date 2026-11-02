@@ -6,7 +6,12 @@ export interface Props {
 const { class: className = '' } = Astro.props
 ---
 
-<div class={`flex items-center ${className}`}>
+<a
+  href="https://www.linkedin.com/in/lukas-hermann/"
+  target="_blank"
+  rel="noopener noreferrer"
+  class={`flex items-center ${className}`}
+>
   <img
     class="h-8 w-8 rounded-full mr-3"
     src="/img/lukas-thumbnail-150.jpg"
@@ -15,5 +20,5 @@ const { class: className = '' } = Astro.props
     width="32"
     height="32"
   />
-  <a href="/">Lukas Hermann</a>
-</div>
+  <span>Lukas Hermann</span>
+</a>
